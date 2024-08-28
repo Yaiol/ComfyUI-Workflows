@@ -1,5 +1,5 @@
 {
-  "last_node_id": 54,
+  "last_node_id": 53,
   "last_link_id": 108,
   "nodes": [
     {
@@ -24,10 +24,10 @@
             77,
             78
           ],
+          "slot_index": 0,
           "widget": {
             "name": "text_g"
-          },
-          "slot_index": 0
+          }
         }
       ],
       "title": "prompt_negative",
@@ -52,7 +52,7 @@
         "1": 220
       },
       "flags": {},
-      "order": 7,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -64,10 +64,10 @@
           "name": "text_g",
           "type": "STRING",
           "link": 74,
+          "slot_index": 1,
           "widget": {
             "name": "text_g"
-          },
-          "slot_index": 1
+          }
         },
         {
           "name": "text_l",
@@ -85,8 +85,8 @@
           "links": [
             92
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "title": "clip_positive_xl",
@@ -100,8 +100,8 @@
         0,
         4096,
         4096,
-        "portrait of a woman by John Bauer",
-        "portrait of a woman by John Bauer"
+        "portrait of a woman by John Kenn Mortensen",
+        "portrait of a woman by John Kenn Mortensen"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -118,7 +118,7 @@
         "1": 220
       },
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -130,10 +130,10 @@
           "name": "text_g",
           "type": "STRING",
           "link": 77,
+          "slot_index": 1,
           "widget": {
             "name": "text_g"
-          },
-          "slot_index": 1
+          }
         },
         {
           "name": "text_l",
@@ -151,8 +151,8 @@
           "links": [
             93
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "title": "clip_negative_xl",
@@ -237,8 +237,8 @@
           "links": [
             87
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "title": "latent_batch",
@@ -263,7 +263,7 @@
         26
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -578,44 +578,6 @@
       }
     },
     {
-      "id": 31,
-      "type": "PrimitiveNode",
-      "pos": [
-        10,
-        550
-      ],
-      "size": {
-        "0": 440,
-        "1": 160
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            74,
-            75
-          ],
-          "widget": {
-            "name": "text_g"
-          },
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "portrait of a woman by John Bauer"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 46,
       "type": "TCDModelSamplingDiscrete",
       "pos": [
@@ -643,8 +605,8 @@
           "links": [
             107
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         },
         {
           "name": "SAMPLER",
@@ -652,8 +614,8 @@
           "links": [
             99
           ],
-          "shape": 3,
-          "slot_index": 1
+          "slot_index": 1,
+          "shape": 3
         },
         {
           "name": "SIGMAS",
@@ -661,8 +623,8 @@
           "links": [
             102
           ],
-          "shape": 3,
-          "slot_index": 2
+          "slot_index": 2,
+          "shape": 3
         }
       ],
       "title": "tcd",
@@ -677,6 +639,214 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        1300,
+        163
+      ],
+      "size": {
+        "0": 140,
+        "1": 60
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 98
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 67
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            41
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        10,
+        50
+      ],
+      "size": {
+        "0": 440,
+        "1": 100
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            89
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            73,
+            76
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            106
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "01 base\\sdxl-sai-base-v10-vae0.9.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 47,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        10,
+        200
+      ],
+      "size": {
+        "0": 440,
+        "1": 82
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 89
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            88
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "lora_model",
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "lora\\01 base\\sdhy-tcd-lora-8s.safetensors",
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 28,
+      "type": "SaveImage",
+      "pos": [
+        1300,
+        210
+      ],
+      "size": {
+        "0": 512.9578857421875,
+        "1": 557.4896240234375
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 41
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I_TCD_SDHY_CXL_%sampler.noise_seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 31,
+      "type": "PrimitiveNode",
+      "pos": [
+        10,
+        550
+      ],
+      "size": {
+        "0": 440,
+        "1": 160
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            74,
+            75
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_g"
+          }
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "portrait of a woman by John Kenn Mortensen"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 48,
@@ -731,8 +901,8 @@
           "links": [
             98
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         },
         {
           "name": "denoised_output",
@@ -747,187 +917,17 @@
       },
       "widgets_values": [
         true,
-        89093665364484,
+        758310519417979,
         "randomize",
         1
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
+      ]
     },
     {
-      "id": 8,
-      "type": "VAEDecode",
-      "pos": [
-        1301,
-        163
-      ],
-      "size": {
-        "0": 140,
-        "1": 60
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 98
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 67
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            41
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "vae_decode",
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        10,
-        50
-      ],
-      "size": {
-        "0": 440,
-        "1": 100
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            89
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            73,
-            76
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            106
-          ],
-          "slot_index": 2
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "001 base\\sdxl-sai-base v10 vae 0.9.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 47,
-      "type": "LoraLoaderModelOnly",
-      "pos": [
-        10,
-        200
-      ],
-      "size": {
-        "0": 440,
-        "1": 82
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 89
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            88
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "lora_model",
-      "properties": {
-        "Node name for S&R": "LoraLoaderModelOnly"
-      },
-      "widgets_values": [
-        "lora\\001 base\\sdtr-bd-hyper lora-8s.safetensors",
-        1
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 28,
-      "type": "SaveImage",
-      "pos": [
-        1300,
-        210
-      ],
-      "size": [
-        501.1081220034789,
-        549.2264534272604
-      ],
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 41
-        }
-      ],
-      "title": "image_output",
-      "properties": {},
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-TCD-SDHY-CXL_%sampler.noise_seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 54,
+      "id": 53,
       "type": "Note",
       "pos": [
-        1299,
-        799
+        1304,
+        816
       ],
       "size": {
         "0": 503.1575622558594,
@@ -940,7 +940,7 @@
         "text": ""
       },
       "widgets_values": [
-        "TXT2IMG TCD-SDHY-CXL\n========================================================================\nFile : txt2img-tcd-sdxl-cxl\nTCD  : Trajectory Consistency Distillation\nSDHY : SD Hyper\nCXL  : Clip XL\nID   : T2I-TCD-SDHY-CXL\n"
+        "txt2img-basic-tcd-sdhy-cxl\n========================================================================\nTCD  : Trajectory Consistency Distillation\nSDHY : SD Hyper\nCXL  : Clip Standard\nID   : T2I_TCD_SDHY_CXL"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1167,14 +1167,14 @@
   "groups": [],
   "config": {},
   "extra": {
-    "groupNodes": {},
     "ds": {
-      "scale": 0.620921323059155,
-      "offset": {
-        "0": 222.73887001672512,
-        "1": 39.29549421425437
-      }
-    }
+      "scale": 0.6209213230591554,
+      "offset": [
+        277.2040488668713,
+        -21.773687992629778
+      ]
+    },
+    "groupNodes": {}
   },
   "version": 0.4
 }
