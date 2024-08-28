@@ -1,0 +1,837 @@
+{
+  "last_node_id": 23,
+  "last_link_id": 41,
+  "nodes": [
+    {
+      "id": 17,
+      "type": "CLIPTextEncodeSDXL",
+      "pos": [
+        520,
+        360
+      ],
+      "size": {
+        "0": 220,
+        "1": 220
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 33
+        },
+        {
+          "name": "text_g",
+          "type": "STRING",
+          "link": 29,
+          "slot_index": 1,
+          "widget": {
+            "name": "text_g"
+          }
+        },
+        {
+          "name": "text_l",
+          "type": "STRING",
+          "link": 30,
+          "widget": {
+            "name": "text_l"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            27
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "clip_positive_xl",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeSDXL"
+      },
+      "widgets_values": [
+        4096,
+        4094,
+        0,
+        0,
+        4096,
+        4096,
+        "portrait of a woman by John Kenn Mortensen",
+        "portrait of a woman by John Kenn Mortensen"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 20,
+      "type": "CLIPTextEncodeSDXL",
+      "pos": [
+        520,
+        630
+      ],
+      "size": {
+        "0": 220,
+        "1": 220
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 34
+        },
+        {
+          "name": "text_g",
+          "type": "STRING",
+          "link": 31,
+          "slot_index": 1,
+          "widget": {
+            "name": "text_g"
+          }
+        },
+        {
+          "name": "text_l",
+          "type": "STRING",
+          "link": 32,
+          "widget": {
+            "name": "text_l"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            28
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "clip_negative_xl",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeSDXL"
+      },
+      "widgets_values": [
+        4096,
+        4096,
+        0,
+        0,
+        4096,
+        4096,
+        "",
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 19,
+      "type": "PrimitiveNode",
+      "pos": [
+        20,
+        630
+      ],
+      "size": {
+        "0": 440,
+        "1": 220
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            31,
+            32
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_g"
+          }
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        1168,
+        120
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 36
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 20,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        22,
+        894
+      ],
+      "size": {
+        "0": 210,
+        "1": 110
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            25
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "latent_image",
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 16,
+      "type": "KSampler",
+      "pos": [
+        810,
+        320
+      ],
+      "size": {
+        "0": 300,
+        "1": 262
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 38
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 27
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 28
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 41
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            36
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        760787216067433,
+        "randomize",
+        8,
+        1,
+        "euler",
+        "sgm_uniform",
+        1
+      ]
+    },
+    {
+      "id": 18,
+      "type": "PrimitiveNode",
+      "pos": [
+        20,
+        360
+      ],
+      "size": {
+        "0": 440,
+        "1": 220
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            29,
+            30
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_g"
+          }
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "portrait of a woman by John Kenn Mortensen"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 10,
+      "type": "LoraLoader",
+      "pos": [
+        20,
+        190
+      ],
+      "size": {
+        "0": 440,
+        "1": 130
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 10
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            15
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            33,
+            34
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "lora_model",
+      "properties": {
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "lora\\01 base\\sdlt-bd-lora-8s.safetensors",
+        1,
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        20,
+        50
+      ],
+      "size": {
+        "0": 440,
+        "1": 100
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            10
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            11
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            20
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "01 base\\sdxl-sai-base-v10-vae0.9.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 13,
+      "type": "RepeatLatentBatch",
+      "pos": [
+        249,
+        896
+      ],
+      "size": {
+        "0": 210,
+        "1": 110
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 25
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            39
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "latent_batch",
+      "properties": {
+        "Node name for S&R": "RepeatLatentBatch"
+      },
+      "widgets_values": [
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 22,
+      "type": "Reroute",
+      "pos": [
+        530,
+        280
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 39
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "LATENT",
+          "links": [
+            40
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 23,
+      "type": "Reroute",
+      "pos": [
+        660,
+        280
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 40
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "LATENT",
+          "links": [
+            41
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 11,
+      "type": "ModelSamplingDiscrete",
+      "pos": [
+        810,
+        190
+      ],
+      "size": {
+        "0": 290,
+        "1": 82
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            38
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingDiscrete"
+      },
+      "widgets_values": [
+        "lcm",
+        false
+      ]
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        1170,
+        170
+      ],
+      "size": {
+        "0": 550,
+        "1": 550
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I_LCM_SDLT_CXL_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 21,
+      "type": "Note",
+      "pos": [
+        1176,
+        776
+      ],
+      "size": {
+        "0": 519.1162109375,
+        "1": 106.91844940185547
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-lcm-sdlt-cxl\n========================================================================\nLCM  : Latent Consistency Model\nSDLT : SD Lightning\nCXL  : Clip XL\nID   : T2I_LCM_SDLT_CXL"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      9,
+      8,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      10,
+      4,
+      0,
+      10,
+      0,
+      "MODEL"
+    ],
+    [
+      11,
+      4,
+      1,
+      10,
+      1,
+      "CLIP"
+    ],
+    [
+      15,
+      10,
+      0,
+      11,
+      0,
+      "MODEL"
+    ],
+    [
+      20,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      25,
+      5,
+      0,
+      13,
+      0,
+      "LATENT"
+    ],
+    [
+      27,
+      17,
+      0,
+      16,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      28,
+      20,
+      0,
+      16,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      29,
+      18,
+      0,
+      17,
+      1,
+      "STRING"
+    ],
+    [
+      30,
+      18,
+      0,
+      17,
+      2,
+      "STRING"
+    ],
+    [
+      31,
+      19,
+      0,
+      20,
+      1,
+      "STRING"
+    ],
+    [
+      32,
+      19,
+      0,
+      20,
+      2,
+      "STRING"
+    ],
+    [
+      33,
+      10,
+      1,
+      17,
+      0,
+      "CLIP"
+    ],
+    [
+      34,
+      10,
+      1,
+      20,
+      0,
+      "CLIP"
+    ],
+    [
+      36,
+      16,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      38,
+      11,
+      0,
+      16,
+      0,
+      "MODEL"
+    ],
+    [
+      39,
+      13,
+      0,
+      22,
+      0,
+      "*"
+    ],
+    [
+      40,
+      22,
+      0,
+      23,
+      0,
+      "*"
+    ],
+    [
+      41,
+      23,
+      0,
+      16,
+      3,
+      "LATENT"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.620921323059155,
+      "offset": [
+        346.01342111224216,
+        11.037393876536102
+      ]
+    }
+  },
+  "version": 0.4
+}
