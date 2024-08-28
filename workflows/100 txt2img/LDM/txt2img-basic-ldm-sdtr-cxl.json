@@ -14,7 +14,7 @@
         26
       ],
       "flags": {},
-      "order": 9,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -50,7 +50,7 @@
         26
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -86,7 +86,7 @@
         26
       ],
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -160,7 +160,7 @@
         26
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -196,7 +196,7 @@
         "1": 220
       },
       "flags": {},
-      "order": 7,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -208,10 +208,10 @@
           "name": "text_g",
           "type": "STRING",
           "link": 74,
+          "slot_index": 1,
           "widget": {
             "name": "text_g"
-          },
-          "slot_index": 1
+          }
         },
         {
           "name": "text_l",
@@ -229,8 +229,8 @@
           "links": [
             82
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
@@ -243,8 +243,8 @@
         0,
         4096,
         4096,
-        "portrait of a woman by John Bauer",
-        "portrait of a woman by John Bauer"
+        "portrait of a woman by John Kenn Mortensen",
+        "portrait of a woman by John Kenn Mortensen"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -261,7 +261,7 @@
         "1": 220
       },
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -273,10 +273,10 @@
           "name": "text_g",
           "type": "STRING",
           "link": 77,
+          "slot_index": 1,
           "widget": {
             "name": "text_g"
-          },
-          "slot_index": 1
+          }
         },
         {
           "name": "text_l",
@@ -294,8 +294,8 @@
           "links": [
             83
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
@@ -313,160 +313,6 @@
       ],
       "color": "#322",
       "bgcolor": "#533"
-    },
-    {
-      "id": 32,
-      "type": "PrimitiveNode",
-      "pos": [
-        40,
-        490
-      ],
-      "size": {
-        "0": 440,
-        "1": 160
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            77,
-            78
-          ],
-          "widget": {
-            "name": "text_g"
-          },
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_negative",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "\n"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 5,
-      "type": "EmptyLatentImage",
-      "pos": [
-        40,
-        690
-      ],
-      "size": {
-        "0": 210,
-        "1": 110
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            89
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "latent_image",
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 45,
-      "type": "RepeatLatentBatch",
-      "pos": [
-        260,
-        690
-      ],
-      "size": {
-        "0": 210,
-        "1": 110
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 89
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            90
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "latent_batch",
-      "properties": {
-        "Node name for S&R": "RepeatLatentBatch"
-      },
-      "widgets_values": [
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 31,
-      "type": "PrimitiveNode",
-      "pos": [
-        40,
-        290
-      ],
-      "size": {
-        "0": 440,
-        "1": 160
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            74,
-            75
-          ],
-          "widget": {
-            "name": "text_g"
-          },
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "portrait of a woman by John Bauer"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 8,
@@ -512,6 +358,57 @@
       },
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        40,
+        140
+      ],
+      "size": {
+        "0": 432.6682434082031,
+        "1": 98
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            86
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            73,
+            76
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            81
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "03 gen\\sdtr-lykon-dreamshaper-v21-p.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 3,
@@ -564,10 +461,10 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        12202862336643,
+        7063766456669,
         "randomize",
         8,
-        1,
+        2,
         "euler",
         "sgm_uniform",
         1
@@ -576,55 +473,158 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
+      "id": 32,
+      "type": "PrimitiveNode",
       "pos": [
         40,
-        140
+        510
       ],
       "size": {
-        "0": 432.6682434082031,
-        "1": 98
+        "0": 440,
+        "1": 160
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            77,
+            78
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_g"
+          }
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "\n"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        40,
+        730
+      ],
+      "size": {
+        "0": 210,
+        "1": 110
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            89
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "latent_image",
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 45,
+      "type": "RepeatLatentBatch",
+      "pos": [
+        260,
+        730
+      ],
+      "size": {
+        "0": 210,
+        "1": 110
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 89
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            90
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "latent_batch",
+      "properties": {
+        "Node name for S&R": "RepeatLatentBatch"
+      },
+      "widgets_values": [
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 31,
+      "type": "PrimitiveNode",
+      "pos": [
+        40,
+        290
+      ],
+      "size": {
+        "0": 440,
+        "1": 160
       },
       "flags": {},
       "order": 3,
       "mode": 0,
       "outputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "STRING",
+          "type": "STRING",
           "links": [
-            86
+            74,
+            75
           ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            73,
-            76
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            81
-          ],
-          "slot_index": 2
+          "slot_index": 0,
+          "widget": {
+            "name": "text_g"
+          }
         }
       ],
-      "title": "checkpoint_model",
+      "title": "prompt_positive",
       "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
+        "Run widget replace on values": false
       },
       "widgets_values": [
-        "003 gen\\sdtr-lykon-dreamshaper-v21-p.safetensors"
+        "portrait of a woman by John Kenn Mortensen"
       ],
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 28,
@@ -633,10 +633,10 @@
         1143,
         168
       ],
-      "size": {
-        "0": 556.5425415039062,
-        "1": 630.5260009765625
-      },
+      "size": [
+        520,
+        580
+      ],
       "flags": {},
       "order": 15,
       "mode": 0,
@@ -648,9 +648,11 @@
         }
       ],
       "title": "output_image",
-      "properties": {},
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
       "widgets_values": [
-        "%date:yyMMdd%/%date:hhmmss%_T2I-LDM-SDTR-CXL_%ksampler.seed%"
+        "%date:yyMMdd%/%date:hhmmss%_T2I_LDM_SDTR_CXL_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
@@ -659,8 +661,8 @@
       "id": 46,
       "type": "Note",
       "pos": [
-        1146,
-        845
+        1140,
+        800
       ],
       "size": {
         "0": 519.1162109375,
@@ -673,7 +675,7 @@
         "text": ""
       },
       "widgets_values": [
-        "TXT2IMG LCM-SDTR-CXL\n========================================================================\nFile : txt2img-ldm-sdtr-cxl\nLDM  : Latent Diffusion Model\nSDTR : SD Turbo\nCXL  : Clip XL\nID   : T2I-LDM-SDTR-CXL\n"
+        "txt2img-basic-ldm-sdtr-cxl\n========================================================================\nLDM  : Latent Diffusion Model\nSDTR : SD Turbo\nCXL  : Clip XL\nID   : T2I_LDM_SDTR_CXL"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -836,14 +838,14 @@
   "groups": [],
   "config": {},
   "extra": {
-    "groupNodes": {},
     "ds": {
-      "scale": 0.7513148009015777,
-      "offset": {
-        "0": 21.079567807994245,
-        "1": -10.773745138948492
-      }
-    }
+      "scale": 0.6830134553650705,
+      "offset": [
+        207.9558219551989,
+        27.04230740689706
+      ]
+    },
+    "groupNodes": {}
   },
   "version": 0.4
 }
