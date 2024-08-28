@@ -208,10 +208,10 @@
           "name": "text_g",
           "type": "STRING",
           "link": 74,
+          "slot_index": 1,
           "widget": {
             "name": "text_g"
-          },
-          "slot_index": 1
+          }
         },
         {
           "name": "text_l",
@@ -229,8 +229,8 @@
           "links": [
             82
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
@@ -273,10 +273,10 @@
           "name": "text_g",
           "type": "STRING",
           "link": 77,
+          "slot_index": 1,
           "widget": {
             "name": "text_g"
-          },
-          "slot_index": 1
+          }
         },
         {
           "name": "text_l",
@@ -294,8 +294,8 @@
           "links": [
             83
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
@@ -336,10 +336,10 @@
             77,
             78
           ],
+          "slot_index": 0,
           "widget": {
             "name": "text_g"
-          },
-          "slot_index": 0
+          }
         }
       ],
       "title": "prompt_negative",
@@ -416,8 +416,8 @@
           "links": [
             90
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "title": "latent_batch",
@@ -452,10 +452,10 @@
             74,
             75
           ],
+          "slot_index": 0,
           "widget": {
             "name": "text_g"
-          },
-          "slot_index": 0
+          }
         }
       ],
       "title": "prompt_positive",
@@ -467,57 +467,6 @@
       ],
       "color": "#232",
       "bgcolor": "#353"
-    },
-    {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        40,
-        140
-      ],
-      "size": {
-        "0": 432.6682434082031,
-        "1": 98
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            86
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            73,
-            76
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            81
-          ],
-          "slot_index": 2
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "001 base\\sdlt-bd-8s.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 8,
@@ -615,7 +564,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        1099277160496299,
+        581712810164539,
         "randomize",
         8,
         1,
@@ -648,12 +597,65 @@
         }
       ],
       "title": "output_image",
-      "properties": {},
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
       "widgets_values": [
-        "%date:yyMMdd%/%date:hhmmss%_T2I-LDM-SDLT-CXL_%ksampler.seed%"
+        "%date:yyMMdd%/%date:hhmmss%_T2I_LDM_SDLT_CXL_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        40,
+        140
+      ],
+      "size": {
+        "0": 432.6682434082031,
+        "1": 98
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            86
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            73,
+            76
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            81
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "01 base\\sdlt-bd-8s.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 46,
@@ -673,7 +675,7 @@
         "text": ""
       },
       "widgets_values": [
-        "TXT2IMG LCM-SDLT-CXL\n========================================================================\nFile : txt2img-ldm-sdlt-cxl\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCXL  : Clip XL\nID   : T2I-LDM-SDLT-CXL\n"
+        "txt2img-basic-ldm-sdlt-cxl\n========================================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCXL  : Clip XL\nID   : T2I_LDM_SDLT_CXL\n"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -836,14 +838,14 @@
   "groups": [],
   "config": {},
   "extra": {
-    "groupNodes": {},
     "ds": {
-      "scale": 0.7513148009015777,
-      "offset": {
-        "0": 55.94066806130597,
-        "1": -27.539765169962262
-      }
-    }
+      "scale": 0.5644739300537773,
+      "offset": [
+        264.6764254513384,
+        71.70350349516899
+      ]
+    },
+    "groupNodes": {}
   },
   "version": 0.4
 }
