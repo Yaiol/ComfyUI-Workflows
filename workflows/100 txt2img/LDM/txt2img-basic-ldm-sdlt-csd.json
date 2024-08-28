@@ -352,7 +352,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        978206438637807,
+        346129594334638,
         "randomize",
         8,
         1,
@@ -447,7 +447,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-ldm-sdlt-csd\n========================================================================\nLDM  : Latent Consistency Model\nSDLT : SD Lightning\nCXL  : Clip Standard\nID   : T2I_LDM_SDLT_CSD\n"
+        "txt2img-basic-ldm-sdlt-csd\n========================================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCXL  : Clip Standard\nID   : T2I_LDM_SDLT_CSD\n"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -555,10 +555,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.751314800901578,
+      "scale": 0.6830134553650705,
       "offset": [
-        -35.80957371890473,
-        -241.13450984406896
+        -32.64287444554238,
+        -266.3471259357082
       ]
     }
   },
