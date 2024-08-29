@@ -28,9 +28,9 @@ SD30 | [Stable Diffusion 3.0](https://stability.ai/news/stable-diffusion-3-mediu
 SDCA | Stable Diffusion Cascade |
 
 ## Workflows
-Catagory | Num | ID | Name | Description |
+Catagory | Num | ID | Description |
 --- | --- | --- |  --- |
-Text to Image | 00100 | txt2img ||
+Text to Image | 00100 | txt2img | |
 Face To Image | 03000 | face2img-instantid | |
 Face To Image | 03010 | face2img-ipadapter faceid | |
 Face To Image | 03011 | face2img-ipadapter faceid lora  | |
