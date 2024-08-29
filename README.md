@@ -8,6 +8,7 @@ ID | Name | File ID |
 --- | --- | --- |
 txt2img | Text to Image | T2I |
 img2img | Image to Image | I2I |
+face2img | Face to Image | F2I |
 
 ## Methods
 ID | Name | Paper |
