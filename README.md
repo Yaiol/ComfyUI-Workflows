@@ -31,13 +31,13 @@ Num | Catagory | Workflow | Output File ID | Description |
 ## Method
 Each workflow can use several methods according to the model used
 
-ID | Name | Paper |Image|
+ID | Name | Paper | Works with |
 --- | --- | --- | --- |
-ADD | Adversarial Diffusion Distillation | [Adversarial Diffusion Distillation](https://arxiv.org/pdf/2311.17042) |![plot](workflows/001 txt2img/ADD/txt2img-basic-add-sdtr-csd.png)|
-LDM | Large Diffusion Model | [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) ||
-LCM | Latent Consistency Model | [LCM-LoRA: A Universal Stable-Diffusion Acceleration Module](https://arxiv.org/abs/2311.05556) ||
-MDT | Multimodal Diffusion Transformer | [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://arxiv.org/pdf/2403.03206) ||
-WSN | | --- ||
+LDM | Large Diffusion Model | [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) | SDXL, SDLT, SDTR, SDHY|
+ADD | Adversarial Diffusion Distillation | [Adversarial Diffusion Distillation](https://arxiv.org/abs/2311.17042) | SDTR |
+LCM | Latent Consistency Model | [LCM-LoRA: A Universal Stable-Diffusion Acceleration Module](https://arxiv.org/abs/2311.05556)  | SDLT, SDTR,  SDHY |
+WSN | Würstchen | [Würstchen: An Efficient Architecture for Large-Scale Text-to-Image Diffusion Models](https://openreview.net/forum?id=gU58d5QeGv) | SDCA |
+MDT | Multimodal Diffusion Transformer | [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2403.03206) <br> [Fast High-Resolution Image Synthesis with Latent Adversarial Diffusion Distillation](https://arxiv.org/abs/2403.12015)| SD30 |
 
 ## Model
 Each workflow is made for a special model class listed below
