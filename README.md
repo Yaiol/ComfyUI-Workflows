@@ -28,15 +28,16 @@ Num | Catagory | Workflow | Output File ID | Description |
 03010 | Face to Image | face2img-ipadapter faceid | | |
 03100 | Face Swap | faceswap-ipadapter faceid lora  | | |
 
-## Method
-Each workflow can use several methods according to the model used
+## Architecture
+Each workflow can use one or several architecture according to the model used
 
 ID | Name | Paper | Works with |
 --- | --- | --- | --- |
 LDM | Large Diffusion Model | [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) | SDXL, SDLT, SDTR, SDHY|
-ADD | Adversarial Diffusion Distillation | [Adversarial Diffusion Distillation](https://arxiv.org/abs/2311.17042) | SDTR |
 LCM | Latent Consistency Model | [LCM-LoRA: A Universal Stable-Diffusion Acceleration Module](https://arxiv.org/abs/2311.05556)  | SDLT, SDTR,  SDHY |
+ADD | Adversarial Diffusion Distillation | [Adversarial Diffusion Distillation](https://arxiv.org/abs/2311.17042) | SDTR |
 WSN | Würstchen | [Würstchen: An Efficient Architecture for Large-Scale Text-to-Image Diffusion Models](https://openreview.net/forum?id=gU58d5QeGv) | SDCA |
+TCD | Trajectory Consistency Distillation | [Trajectory Consistency Distillation: Improved Latent Consistency Distillation by Semi-Linear Consistency Function with Trajectory Mapping](https://arxiv.org/abs/2402.19159)| SDHY |
 MDT | Multimodal Diffusion Transformer | [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2403.03206) <br> [Fast High-Resolution Image Synthesis with Latent Adversarial Diffusion Distillation](https://arxiv.org/abs/2403.12015)| SD30 |
 
 ## Model
@@ -47,7 +48,7 @@ ID | Link |
 SD15 | [Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) |
 SDXL | [Stable Diffusion XL](https://stability.ai/news/stability-ai-sdxl-turbo) |
 SD30 | [Stable Diffusion 3.0](https://stability.ai/news/stable-diffusion-3-medium)|
-SDCA | Stable Diffusion Cascade |
+SDCA | [Stable Diffusion Cascade](https://github.com/Stability-AI/StableCascade) |
 
 ## Clip
 ID | Name |
