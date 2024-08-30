@@ -1,10 +1,10 @@
 52 different workflows 
 
-## File
+## Files
 Each worklow is name 
 [Category]-[Workflow]-[Method]-[Model]-[Clip]
 
-## Category
+## Categories
 Num | ID | Name | Output File ID |
 --- | --- | --- | --- |
 001 | txt2img | Text to Image | T2I |
@@ -24,11 +24,10 @@ Num | Catagory | Workflow | Output File ID | Description |
 00201 | Image to Image | img2img-cn | I2I-CN | Create an image using constraint from another image|
 00210 | Image to Image | img2img-wdtagger | I2I-WDT | Create an image using auto tag from another |
 00300 | Image Inpaint | img2img-inpaint | INP | Change part of image using mask and prompt |
-03000 | Face to Image | face2img-instantid | | |
-03010 | Face to Image | face2img-ipadapter faceid | | |
-03011 | Face to Image | 11 face2img-ipadapter faceid lora | | |
-03012 | Face to Image | face2img-ipadapter merge | F2I-IPA-MRG | Merge two faces to create a new face |
-
+03000 | Face to Image | face2img-instantid | F2I-IID |  Create an image using a face |
+03010 | Face to Image | face2img-ipadapter faceid | F2I-IFI| Create an image using a face |
+03011 | Face to Image | face2img-ipadapter faceid lora | F2I-IFI-LORA | Create an image using a face and a LoRA |
+03012 | Face to Image | face2img-ipadapter merge | F2I-IPA-MRG | Create an image by merging two faces |
 03100 | Face Swap | faceswap-ipadapter faceid lora  | | |
 
 ## Architecture
