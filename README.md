@@ -1,4 +1,4 @@
-50 different workflows 
+52 different workflows 
 
 ## File
 Each worklow is name 
@@ -26,6 +26,9 @@ Num | Catagory | Workflow | Output File ID | Description |
 00300 | Image Inpaint | img2img-inpaint | INP | Change part of image using mask and prompt |
 03000 | Face to Image | face2img-instantid | | |
 03010 | Face to Image | face2img-ipadapter faceid | | |
+03011 | Face to Image | 11 face2img-ipadapter faceid lora | | |
+03012 | Face to Image | face2img-ipadapter merge | F2I-IPA-MRG | Merge two faces to create a new face |
+
 03100 | Face Swap | faceswap-ipadapter faceid lora  | | |
 
 ## Architecture
