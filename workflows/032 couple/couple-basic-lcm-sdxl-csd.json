@@ -1,0 +1,663 @@
+{
+  "last_node_id": 33,
+  "last_link_id": 78,
+  "nodes": [
+    {
+      "id": 28,
+      "type": "Comfy Couple",
+      "pos": [
+        450,
+        -920
+      ],
+      "size": {
+        "0": 315,
+        "1": 215
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 74
+        },
+        {
+          "name": "positive_1",
+          "type": "CONDITIONING",
+          "link": 57
+        },
+        {
+          "name": "positive_2",
+          "type": "CONDITIONING",
+          "link": 58
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 59
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            62
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            60
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            63
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "title": "couple",
+      "properties": {
+        "Node name for S&R": "Comfy Couple"
+      },
+      "widgets_values": [
+        "horizontal",
+        0.5,
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": 31,
+      "type": "Reroute",
+      "pos": [
+        435.9461962095424,
+        -1012.2999446361666
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 76
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "VAE",
+          "links": [
+            77
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 32,
+      "type": "Reroute",
+      "pos": [
+        1040,
+        -1010
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 77
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "VAE",
+          "links": [
+            78
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        1160,
+        -980
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 78
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            65
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -10,
+        -990
+      ],
+      "size": {
+        "0": 370,
+        "1": 100
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            74
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            72,
+            73,
+            75
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            76
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "05 real\\sdxl-leosam-helloworld-v70-p.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": [
+        820,
+        -920
+      ],
+      "size": {
+        "0": 310,
+        "1": 270
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 62
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 60
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 63
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            7
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        775851228139922,
+        "randomize",
+        25,
+        6,
+        "dpmpp_2m_sde",
+        "karras",
+        1
+      ]
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        440,
+        -660
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            2
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        0,
+        -460
+      ],
+      "size": {
+        "0": 370,
+        "1": 140
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 75
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            59
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "text, title, logo, signature, beard"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 29,
+      "type": "SaveImage",
+      "pos": [
+        1150,
+        -920
+      ],
+      "size": {
+        "0": 360,
+        "1": 400
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 65
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CPL-LDM-SDXL-CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        0,
+        -840
+      ],
+      "size": {
+        "0": 360,
+        "1": 130
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 72
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            57
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_couple1",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "couple holding, 1man, old black thin man, (shaved:1.5), short gey hair, african shirt, looking at camera, guadeloupe shore, palm trees, sunset, shot on sony a1, 85mm F/1.4 ISO 100"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 10,
+      "type": "CLIPTextEncode",
+      "pos": [
+        0,
+        -650
+      ],
+      "size": {
+        "0": 370,
+        "1": 140
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 73
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            58
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_couple2",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "couple holding, 1woman, beautiful young white woman, short wavy black hair, looking at camera, wearing a bikini, guadeloupe shore, palm trees, sunset, shot on sony a1, 85mm F/1.4 ISO 100"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 33,
+      "type": "Note",
+      "pos": [
+        1160,
+        -470
+      ],
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "couple-basic-lcm-sdxl-csd\n==========================================================\nLDM  : Latent Consistency Model\nSDXK : SD XL\nCSD  : Clip Standard\nID   : CPL_LCM-LDXL-CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      2,
+      5,
+      0,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      7,
+      3,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      57,
+      6,
+      0,
+      28,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      58,
+      10,
+      0,
+      28,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      59,
+      7,
+      0,
+      28,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      60,
+      28,
+      1,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      62,
+      28,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      63,
+      28,
+      2,
+      3,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      65,
+      8,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      72,
+      4,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      73,
+      4,
+      1,
+      10,
+      0,
+      "CLIP"
+    ],
+    [
+      74,
+      4,
+      0,
+      28,
+      0,
+      "MODEL"
+    ],
+    [
+      75,
+      4,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      76,
+      4,
+      2,
+      31,
+      0,
+      "*"
+    ],
+    [
+      77,
+      31,
+      0,
+      32,
+      0,
+      "*"
+    ],
+    [
+      78,
+      32,
+      0,
+      8,
+      1,
+      "VAE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8264462809917354,
+      "offset": [
+        146.72834221713785,
+        1054.0832344225933
+      ]
+    }
+  },
+  "version": 0.4
+}
