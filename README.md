@@ -1,4 +1,4 @@
-52 different workflows 
+54 different workflows 
 
 ## Files
 Each worklow is name 
@@ -29,6 +29,7 @@ Num | Catagory | Workflow | Output File ID | Description |
 03011 | Face to Image | face2img-ipadapter faceid lora | F2I-IFI-LORA | Create an image using a face and a LoRA |
 03012 | Face to Image | face2img-ipadapter merge | F2I-IPA-MRG | Create an image by merging two faces |
 03100 | Face Swap | faceswap-ipadapter faceid lora  | | |
+03200 | Couple | couple-basic-lcm-sdxl-csd | CPL | Create a couple image |
 
 ## Architecture
 Each workflow can use one or several architecture according to the model used
