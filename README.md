@@ -1,8 +1,11 @@
 57 different workflows 
 
 ## Files
-Each worklow is name 
-[Category]-[Workflow]-[Method]-[Model]-[Clip]
+Each worklow is named using following convention :<br>
+\[Category\]-\[Workflow\]-\[Method\]-\[Model\]-\[Clip\]
+
+Each output image is named using following convention: <br>
+\[DateDir\]/\[DateTime\]\_\[ID\]\_\[Method\]\_\[Model\]\_\[Clip\]\_\[Seed\]
 
 ## Categories
 Num | ID | Name | Output File ID |
