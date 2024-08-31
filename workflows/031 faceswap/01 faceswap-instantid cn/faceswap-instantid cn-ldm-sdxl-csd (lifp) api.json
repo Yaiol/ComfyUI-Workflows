@@ -1,0 +1,296 @@
+{
+  "3": {
+    "inputs": {
+      "seed": 811890040830098,
+      "steps": 25,
+      "cfg": 4,
+      "sampler_name": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "denoise": 1,
+      "model": [
+        "60",
+        0
+      ],
+      "positive": [
+        "72",
+        0
+      ],
+      "negative": [
+        "72",
+        1
+      ],
+      "latent_image": [
+        "121",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "ksampler"
+    }
+  },
+  "4": {
+    "inputs": {
+      "ckpt_name": "05 real\\sdxl-epinikion-realism-v80-p.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "checkpoint_model"
+    }
+  },
+  "8": {
+    "inputs": {
+      "samples": [
+        "3",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "vae_decode"
+    }
+  },
+  "11": {
+    "inputs": {
+      "instantid_file": "sdxl-instantx-istantid.bin"
+    },
+    "class_type": "InstantIDModelLoader",
+    "_meta": {
+      "title": "instantid_model"
+    }
+  },
+  "16": {
+    "inputs": {
+      "control_net_name": "sdxl-instantid\\sdxl-instantx-istantid.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "instantid_controlnet"
+    }
+  },
+  "38": {
+    "inputs": {
+      "provider": "CUDA"
+    },
+    "class_type": "InstantIDFaceAnalysis",
+    "_meta": {
+      "title": "instantId_face"
+    }
+  },
+  "39": {
+    "inputs": {
+      "text": "portrait of a woman, by Gustav Klimt, highly detailed",
+      "clip": [
+        "4",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "prompt_positive"
+    }
+  },
+  "40": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "4",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "prompt_negative"
+    }
+  },
+  "60": {
+    "inputs": {
+      "weight": 0.9,
+      "start_at": 0,
+      "end_at": 1,
+      "instantid": [
+        "11",
+        0
+      ],
+      "insightface": [
+        "38",
+        0
+      ],
+      "control_net": [
+        "16",
+        0
+      ],
+      "image": [
+        "116",
+        0
+      ],
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "39",
+        0
+      ],
+      "negative": [
+        "40",
+        0
+      ],
+      "image_kps": [
+        "118",
+        0
+      ]
+    },
+    "class_type": "ApplyInstantID",
+    "_meta": {
+      "title": "instantid"
+    }
+  },
+  "72": {
+    "inputs": {
+      "strength": 0.65,
+      "start_percent": 0,
+      "end_percent": 0.5,
+      "positive": [
+        "60",
+        1
+      ],
+      "negative": [
+        "60",
+        2
+      ],
+      "control_net": [
+        "114",
+        0
+      ],
+      "image": [
+        "115",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced",
+    "_meta": {
+      "title": "controlnet"
+    }
+  },
+  "90": {
+    "inputs": {
+      "filename_prefix": "240831/240831-141400_FSW-FSW-IID-CN (depth_zoe)_LDM_SDXL_CSD_811890040830098",
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "image_output"
+    }
+  },
+  "91": {
+    "inputs": {
+      "images": [
+        "115",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "114": {
+    "inputs": {
+      "control_net_name": "sdxl-xinsir\\sdxl-xinsir-union-v20.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "controlnet_model"
+    }
+  },
+  "115": {
+    "inputs": {
+      "preprocessor": "depth_zoe",
+      "sd_version": "sdxl",
+      "resolution": 1024,
+      "preprocessor_override": "None",
+      "image": [
+        "118",
+        0
+      ]
+    },
+    "class_type": "AV_ControlNetPreprocessor",
+    "_meta": {
+      "title": "controlnet_preprocessor"
+    }
+  },
+  "116": {
+    "inputs": {
+      "image": "./arwyenn-real.jpg"
+    },
+    "class_type": "LoadImageFromPath",
+    "_meta": {
+      "title": "image_input_1"
+    }
+  },
+  "117": {
+    "inputs": {
+      "images": [
+        "116",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "118": {
+    "inputs": {
+      "image": "./klimt, gustav.jpg"
+    },
+    "class_type": "LoadImageFromPath",
+    "_meta": {
+      "title": "image_input_2"
+    }
+  },
+  "119": {
+    "inputs": {
+      "images": [
+        "118",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "120": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "latent_image"
+    }
+  },
+  "121": {
+    "inputs": {
+      "amount": 1,
+      "samples": [
+        "120",
+        0
+      ]
+    },
+    "class_type": "RepeatLatentBatch",
+    "_meta": {
+      "title": "latent_batch"
+    }
+  }
+}
