@@ -26,54 +26,13 @@
           "slot_index": 0
         }
       ],
+      "title": "latent_image",
       "properties": {
         "Node name for S&R": "EmptyLatentImage"
       },
       "widgets_values": [
         1024,
         1024,
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 25,
-      "type": "RepeatLatentBatch",
-      "pos": [
-        1040,
-        680
-      ],
-      "size": {
-        "0": 210,
-        "1": 110
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 44,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            55
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "RepeatLatentBatch"
-      },
-      "widgets_values": [
         1
       ],
       "color": "#323",
@@ -165,46 +124,6 @@
       "bgcolor": "#ff9600"
     },
     {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": [
-        820,
-        450
-      ],
-      "size": {
-        "0": 430,
-        "1": 180
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 5
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            77
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "hand"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": [
@@ -235,6 +154,7 @@
           "slot_index": 0
         }
       ],
+      "title": "prompt_positive",
       "properties": {
         "Node name for S&R": "CLIPTextEncode"
       },
@@ -347,62 +267,6 @@
       ]
     },
     {
-      "id": 20,
-      "type": "IPAdapterUnifiedLoaderFaceID",
-      "pos": [
-        1880,
-        70
-      ],
-      "size": {
-        "0": 315,
-        "1": 126
-      },
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 91
-        },
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            35
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "links": [
-            34,
-            38
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "IPAdapterUnifiedLoaderFaceID"
-      },
-      "widgets_values": [
-        "FACEID PLUS V2",
-        0.7000000000000001,
-        "CPU"
-      ]
-    },
-    {
       "id": 18,
       "type": "IPAdapterFaceID",
       "pos": [
@@ -471,7 +335,7 @@
           "shape": 3
         }
       ],
-      "title": "ipadapter_faceid",
+      "title": "faceid",
       "properties": {
         "Node name for S&R": "IPAdapterFaceID"
       },
@@ -1072,68 +936,16 @@
       }
     },
     {
-      "id": 22,
-      "type": "IPAdapterUnifiedLoader",
-      "pos": [
-        2270,
-        60
-      ],
-      "size": {
-        "0": 315,
-        "1": 78
-      },
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 43
-        },
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "link": 38
-        }
-      ],
-      "outputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            40
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "links": [
-            37
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "IPAdapterUnifiedLoader"
-      },
-      "widgets_values": [
-        "STANDARD (medium strength)"
-      ]
-    },
-    {
       "id": 50,
       "type": "PreviewImage",
       "pos": [
         1880,
         640
       ],
-      "size": [
-        320,
-        320
-      ],
+      "size": {
+        "0": 320,
+        "1": 320
+      },
       "flags": {},
       "order": 23,
       "mode": 0,
@@ -1155,10 +967,10 @@
         1340,
         190
       ],
-      "size": [
-        460,
-        150
-      ],
+      "size": {
+        "0": 460,
+        "1": 150
+      },
       "flags": {},
       "order": 19,
       "mode": 0,
@@ -1240,6 +1052,7 @@
           "slot_index": 2
         }
       ],
+      "title": "checkpoint_model",
       "properties": {
         "Node name for S&R": "CheckpointLoaderSimple"
       },
@@ -1297,6 +1110,7 @@
           "shape": 3
         }
       ],
+      "title": "ipadapter",
       "properties": {
         "Node name for S&R": "IPAdapter"
       },
@@ -1314,10 +1128,10 @@
         2280,
         460
       ],
-      "size": [
-        310,
-        260
-      ],
+      "size": {
+        "0": 310,
+        "1": 262
+      },
       "flags": {},
       "order": 31,
       "mode": 0,
@@ -1358,7 +1172,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        789028769441749,
+        698912003712066,
         "randomize",
         25,
         4,
@@ -1366,6 +1180,204 @@
         "karras",
         1
       ]
+    },
+    {
+      "id": 20,
+      "type": "IPAdapterUnifiedLoaderFaceID",
+      "pos": [
+        1880,
+        70
+      ],
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 91
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            35
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "links": [
+            34,
+            38
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "faceid_model",
+      "properties": {
+        "Node name for S&R": "IPAdapterUnifiedLoaderFaceID"
+      },
+      "widgets_values": [
+        "FACEID PLUS V2",
+        0.7000000000000001,
+        "CPU"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        820,
+        450
+      ],
+      "size": {
+        "0": 430,
+        "1": 180
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            77
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 22,
+      "type": "IPAdapterUnifiedLoader",
+      "pos": [
+        2270,
+        60
+      ],
+      "size": {
+        "0": 315,
+        "1": 78
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 43
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": 38
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            40
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "links": [
+            37
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "ipadapter_model",
+      "properties": {
+        "Node name for S&R": "IPAdapterUnifiedLoader"
+      },
+      "widgets_values": [
+        "STANDARD (medium strength)"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 25,
+      "type": "RepeatLatentBatch",
+      "pos": [
+        1040,
+        680
+      ],
+      "size": {
+        "0": 210,
+        "1": 110
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 44,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            55
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "latent_batch",
+      "properties": {
+        "Node name for S&R": "RepeatLatentBatch"
+      },
+      "widgets_values": [
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 9,
@@ -1393,7 +1405,7 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IFI-CN_LDM_SDXL_CSD_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IFI+CN_LDM_SDXL_CSD_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
@@ -1416,7 +1428,7 @@
         "text": ""
       },
       "widgets_values": [
-        "faceswap-ipadapter faceid cn-ldm-sdxl-csd\n========================================================================\nLDM  : Latent Diffusion Model\nSDLT : SD XL\nCSD  : Clip Standard\nID   : FSW-IFI-CN_LDM_SDXL_CSD"
+        "faceswap-ipadapter faceid+cn-ldm-sdxl-csd\n========================================================================\nLDM  : Latent Diffusion Model\nSDLT : SD XL\nCSD  : Clip Standard\nID   : FSW-IFI+CN_LDM_SDXL_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1748,10 +1760,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.46650738020973365,
+      "scale": 0.4665073802097336,
       "offset": [
-        26.99434769183759,
-        381.9499770236601
+        54.65295477778296,
+        276.0040584807554
       ]
     }
   },
