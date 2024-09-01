@@ -26,6 +26,7 @@
           "slot_index": 0
         }
       ],
+      "title": "latent_image",
       "properties": {
         "Node name for S&R": "EmptyLatentImage"
       },
@@ -68,6 +69,7 @@
           "slot_index": 0
         }
       ],
+      "title": "prompt_positive",
       "properties": {
         "Node name for S&R": "CLIPTextEncode"
       },
@@ -108,6 +110,7 @@
           "slot_index": 0
         }
       ],
+      "title": "prompt_negative",
       "properties": {
         "Node name for S&R": "CLIPTextEncode"
       },
@@ -150,6 +153,7 @@
           "shape": 3
         }
       ],
+      "title": "latent_batch",
       "properties": {
         "Node name for S&R": "RepeatLatentBatch"
       },
@@ -531,6 +535,7 @@
           "shape": 3
         }
       ],
+      "title": "ipadapter",
       "properties": {
         "Node name for S&R": "IPAdapter"
       },
@@ -622,6 +627,7 @@
           "shape": 3
         }
       ],
+      "title": "ipadapter_loader",
       "properties": {
         "Node name for S&R": "IPAdapterUnifiedLoader"
       },
@@ -742,7 +748,7 @@
           "shape": 3
         }
       ],
-      "title": "image_control",
+      "title": "image_input_2",
       "properties": {
         "Node name for S&R": "LoadImage"
       },
@@ -830,6 +836,7 @@
           "slot_index": 2
         }
       ],
+      "title": "checkpoint_model",
       "properties": {
         "Node name for S&R": "CheckpointLoaderSimple"
       },
@@ -908,6 +915,7 @@
           "shape": 3
         }
       ],
+      "title": "ipadapter_faceid",
       "properties": {
         "Node name for S&R": "IPAdapterFaceID"
       },
@@ -968,6 +976,7 @@
           "shape": 3
         }
       ],
+      "title": "ipadapter_faceid_loader",
       "properties": {
         "Node name for S&R": "IPAdapterUnifiedLoaderFaceID"
       },
@@ -1059,7 +1068,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        938481909728680,
+        498508591565806,
         "randomize",
         8,
         1,
@@ -1099,7 +1108,7 @@
           "shape": 3
         }
       ],
-      "title": "image_input",
+      "title": "image_input_1",
       "properties": {
         "Node name for S&R": "LoadImage"
       },
@@ -1388,10 +1397,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5644739300537776,
+      "scale": 0.5644739300537777,
       "offset": [
-        21.824393398867613,
-        302.0175019151756
+        37.22356446643062,
+        224.7959366929744
       ]
     }
   },
