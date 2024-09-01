@@ -1,0 +1,3341 @@
+{
+  "last_node_id": 90,
+  "last_link_id": 95,
+  "nodes": [
+    {
+      "id": 8,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        560,
+        410
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_lin_2",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "lineart_coarse",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        1190,
+        410
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_lin_3",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "lineart_anime",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "Reroute",
+      "pos": [
+        450,
+        320
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            9,
+            11
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 14,
+      "type": "Reroute",
+      "pos": [
+        1080,
+        320
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            12,
+            14
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 17,
+      "type": "Reroute",
+      "pos": [
+        1710,
+        320
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            15
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 15,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        1820,
+        410
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 56,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            13
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_lin_4",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "lineart_manga",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        -80,
+        790
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 33
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            16
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_scr_1",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "scribble",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        560,
+        790
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            18
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_scr_2",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "scribble_hed",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 36,
+      "type": "Reroute",
+      "pos": [
+        1730,
+        700
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 30
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            28
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 33,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        1840,
+        790
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 57,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            29
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_hed_2",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "hed_safe",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "SaveImage",
+      "pos": [
+        2240,
+        790
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 67,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 29
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_hed_2.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 20,
+      "type": "SaveImage",
+      "pos": [
+        330,
+        790
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 16
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_scr_1.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 22,
+      "type": "SaveImage",
+      "pos": [
+        960,
+        790
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 18
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_scr_2.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        960,
+        410
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 6
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_lin_2.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 13,
+      "type": "SaveImage",
+      "pos": [
+        1590,
+        410
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 55,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 10
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_lin_3.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 16,
+      "type": "SaveImage",
+      "pos": [
+        2220,
+        410
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 66,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 13
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_lin_4.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 23,
+      "type": "Reroute",
+      "pos": [
+        -70,
+        700
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 31
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            19,
+            33
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 35,
+      "type": "Reroute",
+      "pos": [
+        1210,
+        700
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 41
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            30,
+            34
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 10,
+      "type": "Reroute",
+      "pos": [
+        -70,
+        320
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            8,
+            35
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 32,
+      "type": "SaveImage",
+      "pos": [
+        1610,
+        790
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 58,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 27
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_hed_1.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 38,
+      "type": "SaveImage",
+      "pos": [
+        340,
+        1170
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 37
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_pid_1.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 40,
+      "type": "SaveImage",
+      "pos": [
+        970,
+        1170
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 39
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_pid_2.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 31,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        1200,
+        790
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 34
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            27
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_hed_1",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "hed",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "Reroute",
+      "pos": [
+        450,
+        700
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            17,
+            41
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 41,
+      "type": "Reroute",
+      "pos": [
+        -60,
+        1080
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 42
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            36,
+            40
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 37,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        -60,
+        1170
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 36
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            37
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_pid_1",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "pidi",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "SaveImage",
+      "pos": [
+        330,
+        410
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 4
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_lin_1.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 6,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        -80,
+        410
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 35
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_lin_1",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "lineart",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "Note",
+      "pos": [
+        2610,
+        -10
+      ],
+      "size": {
+        "0": 380,
+        "1": 110
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "cn-preprocessor\n==============================================================\nID   : CN %controlnet_preprocessor.preprocessor%"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 39,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        570,
+        1170
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 38
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            39
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_pid_2",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "pidi_safe",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 47,
+      "type": "Reroute",
+      "pos": [
+        -70,
+        1460
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 55
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            43,
+            47
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 48,
+      "type": "Reroute",
+      "pos": [
+        450,
+        1460
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 47
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            45,
+            52
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 53,
+      "type": "Reroute",
+      "pos": [
+        1210,
+        1460
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 52
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            48,
+            53
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 54,
+      "type": "Reroute",
+      "pos": [
+        1730,
+        1460
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 49,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 53
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            50
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 46,
+      "type": "SaveImage",
+      "pos": [
+        960,
+        1550
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 47,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 46
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_pos_1.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 50,
+      "type": "SaveImage",
+      "pos": [
+        1610,
+        1550
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 61,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 49
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_pos_2.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 52,
+      "type": "SaveImage",
+      "pos": [
+        2240,
+        1550
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 69,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 51
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_pos_3.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 44,
+      "type": "SaveImage",
+      "pos": [
+        330,
+        1550
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 44
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_mls_1.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 45,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        560,
+        1550
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 45
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            46
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_pos_1",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "openpose",
+        "sdxl",
+        512,
+        "None"
+      ]
+    },
+    {
+      "id": 49,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        1200,
+        1550
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 48,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 48
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            49
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_pos_2",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "pose",
+        "sdxl",
+        512,
+        "None"
+      ]
+    },
+    {
+      "id": 51,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        1840,
+        1550
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 62,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 50
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            51
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_pos_3",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "dwpose",
+        "sdxl",
+        512,
+        "None"
+      ]
+    },
+    {
+      "id": 43,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        -80,
+        1550
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 43
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            44
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_mls_1",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "mlsd",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 67,
+      "type": "Reroute",
+      "pos": [
+        580,
+        1840
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 78
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            61,
+            66
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 68,
+      "type": "Reroute",
+      "pos": [
+        1100,
+        1840
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 66
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            63,
+            69
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 71,
+      "type": "Reroute",
+      "pos": [
+        1750,
+        1840
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 52,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 69
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            70
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 57,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        1210,
+        1160
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 72
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            57
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_nor_1",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "normalmap_bae",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "Reroute",
+      "pos": [
+        460,
+        1080
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 40
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            38,
+            71
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 69,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        1840,
+        1920
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 64,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 70
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            68
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_dep_3",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "depth_zoe",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 65,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        1210,
+        1930
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 51,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 63
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            64
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_dep_2",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "depth",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 66,
+      "type": "SaveImage",
+      "pos": [
+        1610,
+        1930
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 63,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 64
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_dep_2.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 72,
+      "type": "Reroute",
+      "pos": [
+        1100,
+        1080
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 71
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            72,
+            74
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 73,
+      "type": "Reroute",
+      "pos": [
+        1750,
+        1080
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 46,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 74
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            75
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 58,
+      "type": "SaveImage",
+      "pos": [
+        1620,
+        1160
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 59,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 57
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_nor_1.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 60,
+      "type": "SaveImage",
+      "pos": [
+        2260,
+        1160
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 68,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 59
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_nor_2.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 59,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        1860,
+        1160
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 60,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 75
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            59
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_nor_2",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "normalmap_midas",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 64,
+      "type": "SaveImage",
+      "pos": [
+        980,
+        1930
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 50,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 62
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_dep_1.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 63,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        570,
+        1930
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 61
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            62
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_dep_1",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "depth_midas",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "SaveImage",
+      "pos": [
+        310,
+        1920
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 3
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_can_1.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 1,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        -100,
+        1920
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 79
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_can_1",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "canny",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 74,
+      "type": "Reroute",
+      "pos": [
+        -100,
+        1840
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 77
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            78,
+            79
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 85,
+      "type": "Reroute",
+      "pos": [
+        580,
+        2220
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 89
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            85,
+            90
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 86,
+      "type": "Reroute",
+      "pos": [
+        1100,
+        2220
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 90
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            87
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 90,
+      "type": "Reroute",
+      "pos": [
+        -100,
+        2220
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 94
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            80,
+            89
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 70,
+      "type": "SaveImage",
+      "pos": [
+        2250,
+        1920
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 70,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 68
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_dep_3.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 75,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        -100,
+        2300
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 80
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            81
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_seg_1",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "seg_ofcoco",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 81,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        570,
+        2310
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 85
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            86
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_seg_2",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "seg_ofade20k",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 83,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": [
+        1210,
+        2310
+      ],
+      "size": {
+        "0": 380,
+        "1": 150
+      },
+      "flags": {},
+      "order": 54,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 87
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            88
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "cnp_seg_3",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "seg_ofcoco",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 76,
+      "type": "SaveImage",
+      "pos": [
+        310,
+        2300
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 81
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_seg_1.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 82,
+      "type": "SaveImage",
+      "pos": [
+        980,
+        2310
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 53,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 86
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_seg_2.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 84,
+      "type": "SaveImage",
+      "pos": [
+        1610,
+        2310
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 65,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 88
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_CN %cnp_seg_3.preprocessor%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        -790,
+        1840
+      ],
+      "size": {
+        "0": 370,
+        "1": 470
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7,
+            31,
+            42,
+            55,
+            77,
+            94
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "image_input",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "02_0.jpg",
+        "image"
+      ],
+      "color": "#ffa014",
+      "bgcolor": "#ff8c00"
+    }
+  ],
+  "links": [
+    [
+      3,
+      1,
+      0,
+      4,
+      0,
+      "IMAGE"
+    ],
+    [
+      4,
+      6,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      6,
+      8,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      7,
+      2,
+      0,
+      10,
+      0,
+      "*"
+    ],
+    [
+      8,
+      10,
+      0,
+      11,
+      0,
+      "*"
+    ],
+    [
+      9,
+      11,
+      0,
+      8,
+      0,
+      "IMAGE"
+    ],
+    [
+      10,
+      12,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      11,
+      11,
+      0,
+      14,
+      0,
+      "*"
+    ],
+    [
+      12,
+      14,
+      0,
+      12,
+      0,
+      "IMAGE"
+    ],
+    [
+      13,
+      15,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ],
+    [
+      14,
+      14,
+      0,
+      17,
+      0,
+      "*"
+    ],
+    [
+      15,
+      17,
+      0,
+      15,
+      0,
+      "IMAGE"
+    ],
+    [
+      16,
+      19,
+      0,
+      20,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      24,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      21,
+      0,
+      22,
+      0,
+      "IMAGE"
+    ],
+    [
+      19,
+      23,
+      0,
+      24,
+      0,
+      "*"
+    ],
+    [
+      27,
+      31,
+      0,
+      32,
+      0,
+      "IMAGE"
+    ],
+    [
+      28,
+      36,
+      0,
+      33,
+      0,
+      "IMAGE"
+    ],
+    [
+      29,
+      33,
+      0,
+      34,
+      0,
+      "IMAGE"
+    ],
+    [
+      30,
+      35,
+      0,
+      36,
+      0,
+      "*"
+    ],
+    [
+      31,
+      2,
+      0,
+      23,
+      0,
+      "*"
+    ],
+    [
+      33,
+      23,
+      0,
+      19,
+      0,
+      "IMAGE"
+    ],
+    [
+      34,
+      35,
+      0,
+      31,
+      0,
+      "IMAGE"
+    ],
+    [
+      35,
+      10,
+      0,
+      6,
+      0,
+      "IMAGE"
+    ],
+    [
+      36,
+      41,
+      0,
+      37,
+      0,
+      "IMAGE"
+    ],
+    [
+      37,
+      37,
+      0,
+      38,
+      0,
+      "IMAGE"
+    ],
+    [
+      38,
+      42,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      39,
+      39,
+      0,
+      40,
+      0,
+      "IMAGE"
+    ],
+    [
+      40,
+      41,
+      0,
+      42,
+      0,
+      "*"
+    ],
+    [
+      41,
+      24,
+      0,
+      35,
+      0,
+      "*"
+    ],
+    [
+      42,
+      2,
+      0,
+      41,
+      0,
+      "*"
+    ],
+    [
+      43,
+      47,
+      0,
+      43,
+      0,
+      "IMAGE"
+    ],
+    [
+      44,
+      43,
+      0,
+      44,
+      0,
+      "IMAGE"
+    ],
+    [
+      45,
+      48,
+      0,
+      45,
+      0,
+      "IMAGE"
+    ],
+    [
+      46,
+      45,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      47,
+      47,
+      0,
+      48,
+      0,
+      "*"
+    ],
+    [
+      48,
+      53,
+      0,
+      49,
+      0,
+      "IMAGE"
+    ],
+    [
+      49,
+      49,
+      0,
+      50,
+      0,
+      "IMAGE"
+    ],
+    [
+      50,
+      54,
+      0,
+      51,
+      0,
+      "IMAGE"
+    ],
+    [
+      51,
+      51,
+      0,
+      52,
+      0,
+      "IMAGE"
+    ],
+    [
+      52,
+      48,
+      0,
+      53,
+      0,
+      "*"
+    ],
+    [
+      53,
+      53,
+      0,
+      54,
+      0,
+      "*"
+    ],
+    [
+      55,
+      2,
+      0,
+      47,
+      0,
+      "*"
+    ],
+    [
+      57,
+      57,
+      0,
+      58,
+      0,
+      "IMAGE"
+    ],
+    [
+      59,
+      59,
+      0,
+      60,
+      0,
+      "IMAGE"
+    ],
+    [
+      61,
+      67,
+      0,
+      63,
+      0,
+      "IMAGE"
+    ],
+    [
+      62,
+      63,
+      0,
+      64,
+      0,
+      "IMAGE"
+    ],
+    [
+      63,
+      68,
+      0,
+      65,
+      0,
+      "IMAGE"
+    ],
+    [
+      64,
+      65,
+      0,
+      66,
+      0,
+      "IMAGE"
+    ],
+    [
+      66,
+      67,
+      0,
+      68,
+      0,
+      "*"
+    ],
+    [
+      68,
+      69,
+      0,
+      70,
+      0,
+      "IMAGE"
+    ],
+    [
+      69,
+      68,
+      0,
+      71,
+      0,
+      "*"
+    ],
+    [
+      70,
+      71,
+      0,
+      69,
+      0,
+      "IMAGE"
+    ],
+    [
+      71,
+      42,
+      0,
+      72,
+      0,
+      "*"
+    ],
+    [
+      72,
+      72,
+      0,
+      57,
+      0,
+      "IMAGE"
+    ],
+    [
+      74,
+      72,
+      0,
+      73,
+      0,
+      "*"
+    ],
+    [
+      75,
+      73,
+      0,
+      59,
+      0,
+      "IMAGE"
+    ],
+    [
+      77,
+      2,
+      0,
+      74,
+      0,
+      "*"
+    ],
+    [
+      78,
+      74,
+      0,
+      67,
+      0,
+      "*"
+    ],
+    [
+      79,
+      74,
+      0,
+      1,
+      0,
+      "IMAGE"
+    ],
+    [
+      80,
+      90,
+      0,
+      75,
+      0,
+      "IMAGE"
+    ],
+    [
+      81,
+      75,
+      0,
+      76,
+      0,
+      "IMAGE"
+    ],
+    [
+      85,
+      85,
+      0,
+      81,
+      0,
+      "IMAGE"
+    ],
+    [
+      86,
+      81,
+      0,
+      82,
+      0,
+      "IMAGE"
+    ],
+    [
+      87,
+      86,
+      0,
+      83,
+      0,
+      "IMAGE"
+    ],
+    [
+      88,
+      83,
+      0,
+      84,
+      0,
+      "IMAGE"
+    ],
+    [
+      89,
+      90,
+      0,
+      85,
+      0,
+      "*"
+    ],
+    [
+      90,
+      85,
+      0,
+      86,
+      0,
+      "*"
+    ],
+    [
+      94,
+      2,
+      0,
+      90,
+      0,
+      "*"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.26333125430607984,
+      "offset": [
+        1993.8836153870811,
+        -236.58787010930575
+      ]
+    }
+  },
+  "version": 0.4
+}
