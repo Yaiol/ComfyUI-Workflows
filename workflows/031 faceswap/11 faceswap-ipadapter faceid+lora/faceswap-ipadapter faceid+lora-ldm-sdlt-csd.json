@@ -945,10 +945,10 @@
         -40,
         590
       ],
-      "size": [
-        430,
-        130
-      ],
+      "size": {
+        "0": 430,
+        "1": 130
+      },
       "flags": {},
       "order": 8,
       "mode": 0,
@@ -1045,7 +1045,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        739990241611821,
+        905635576852820,
         "randomize",
         8,
         1,
@@ -1053,37 +1053,6 @@
         "simple",
         1
       ]
-    },
-    {
-      "id": 9,
-      "type": "SaveImage",
-      "pos": [
-        1240,
-        440
-      ],
-      "size": {
-        "0": 440,
-        "1": 490
-      },
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 9
-        }
-      ],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IFI-LORA_LDM_SDLT_CSD_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 7,
@@ -1166,6 +1135,37 @@
       "bgcolor": "#353"
     },
     {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        1240,
+        440
+      ],
+      "size": {
+        "0": 440,
+        "1": 490
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IFI+LORA_LDM_SDLT_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 41,
       "type": "Note",
       "pos": [
@@ -1183,7 +1183,7 @@
         "text": ""
       },
       "widgets_values": [
-        "faceswap-ipadapter faceid lora-ldm-sdlt-csd\n========================================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : FSW-IFI-LORA_LDM_SDLT_CSD"
+        "faceswap-ipadapter faceid+lora-ldm-sdlt-csd\n========================================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : FSW-IFI+LORA_LDM_SDLT_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1459,10 +1459,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5131581182307067,
+      "scale": 0.46650738020973337,
       "offset": [
-        1005.5506604697605,
-        -186.58198784994354
+        986.409888882557,
+        -126.36669108903868
       ]
     }
   },
