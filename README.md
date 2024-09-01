@@ -30,14 +30,14 @@ Num | Catagory | Workflow | Output File ID | Description |
 00201 | Image to Image | img2img-cn | I2I-CN | Create an image using constraint from another image|
 00210 | Image to Image | img2img-wdtagger | I2I-WDT | Create an image using auto tag from another |
 00300 | Image Inpaint | img2img-inpaint | INP | Change part of image using mask and prompt |
-03000 | Face to Image | face2img-instantid | F2I-IID |  Create an image using a face |
-03010 | Face to Image | face2img-ipadapter faceid | F2I-IFI| Create an image using a face |
-03011 | Face to Image | face2img-ipadapter faceid+lora | F2I-IFI-LORA | Create an image using a face and a LoRA |
+03000 | Face to Image | face2img-instantid | F2I-IID |  Create an image with a face using InstantID |
+03010 | Face to Image | face2img-ipadapter faceid | F2I-IFI| Create an image with a face using IPAdapter FaceID |
+03011 | Face to Image | face2img-ipadapter faceid+lora | F2I-IFI+LORA | Create an image with a face combining IPAdapter FaceID and a LoRA |
 03012 | Face to Image | face2img-ipadapter merge | F2I-IPA-MRG | Create an image by merging two faces |
 03100 | Face Swap | faceswap-instantid  | FSW-IID |  Create an image by swaping faces using InstantID |
-03101 | Face Swap | faceswap-instantid+cn | FSW-IID-CN | Create an image by swaping faces combining InstantID & Controlnet |
-03110 | Face Swap | faceswap-ipadapter faceid  | FSW-IID |  Create an image by swaping faces using IPAdapter FaceID |
-03111 | Face Swap | faceswap-ipadapter faceid+cn | FSW-IID |  Create an image by swaping faces combining IPAdapter FaceID & Controlnet |
+03101 | Face Swap | faceswap-instantid+cn | FSW-IID+CN | Create an image by swaping faces combining InstantID & Controlnet |
+03110 | Face Swap | faceswap-ipadapter faceid  | FSW-IFI |  Create an image by swaping faces using IPAdapter FaceID |
+03111 | Face Swap | faceswap-ipadapter faceid+cn | FSW-IFI+CN |  Create an image by swaping faces combining IPAdapter FaceID & Controlnet |
 03200 | Couple | couple-basic-lcm-sdxl-csd | CPL | Create a couple image |
 
 ## Architecture
