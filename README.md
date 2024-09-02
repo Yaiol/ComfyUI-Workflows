@@ -13,32 +13,32 @@ Each output image is named using following convention: <br>
 ## Categories
 Num | ID | Name | Output File ID |
 --- | --- | --- | --- |
-001 | txt2img | Text to Image | T2I |
-002 | img2img | Image to Image | I2I |
-003 | inpaint | Image Inpaint | IIP |
-004 | outpaint | Image Outpaint | IOP |
-011 | upscale | Image Upscale | IUS |
-030 | face2img | Face to Image | F2I |
-031 | faceswap | Face swap | FSW |
-032 | couple | Couple Face | CPL |
+01 | txt2img | Text to Image | T2I |
+02 | img2img | Image to Image | I2I |
+03 | inpaint | Image Inpaint | IIP |
+04 | outpaint | Image Outpaint | IOP |
+11 | upscale | Image Upscale | IUS |
+30 | face2img | Face to Image | F2I |
+31 | faceswap | Face swap | FSW |
+32 | couple | Couple Face | CPL |
 
 ## Workflows
 Num | Catagory | Workflow | Output File ID | Description |
 --- | --- | --- |  --- |   --- |
-00100 | Text to Image | txt2img | T2I | Create an image using prompts |
-00200 | Image to Image | img2img-basic | I2I | Create an image using another image |
-00201 | Image to Image | img2img-cn | I2I-CN | Create an image using constraint from another image|
-00210 | Image to Image | img2img-wdtagger | I2I-WDT | Create an image using auto tag from another |
-00300 | Image Inpaint | img2img-inpaint | INP | Change part of image using mask and prompt |
-03000 | Face to Image | face2img-instantid | F2I-IID |  Create an image with a face using InstantID |
-03010 | Face to Image | face2img-ipadapter faceid | F2I-IFI| Create an image with a face using IPAdapter FaceID |
-03011 | Face to Image | face2img-ipadapter faceid+lora | F2I-IFI+LORA | Create an image with a face combining IPAdapter FaceID and a LoRA |
-03012 | Face to Image | face2img-ipadapter merge | F2I-IPA-MRG | Create an image by merging two faces |
-03100 | Face Swap | faceswap-instantid  | FSW-IID |  Create an image by swaping faces using InstantID |
-03101 | Face Swap | faceswap-instantid+cn | FSW-IID+CN | Create an image by swaping faces combining InstantID & Controlnet |
-03110 | Face Swap | faceswap-ipadapter faceid  | FSW-IFI |  Create an image by swaping faces using IPAdapter FaceID |
-03111 | Face Swap | faceswap-ipadapter faceid+cn | FSW-IFI+CN |  Create an image by swaping faces combining IPAdapter FaceID & Controlnet |
-03200 | Couple | couple-basic-lcm-sdxl-csd | CPL | Create a couple image |
+0100 | Text to Image | txt2img | T2I | Create an image using prompts |
+0200 | Image to Image | img2img-basic | I2I | Create an image using another image |
+0201 | Image to Image | img2img-cn | I2I-CN | Create an image using constraint from another image|
+0210 | Image to Image | img2img-wdtagger | I2I-WDT | Create an image using auto tag from another |
+0300 | Image Inpaint | img2img-inpaint | INP | Change part of image using mask and prompt |
+3000 | Face to Image | face2img-instantid | F2I-IID |  Create an image with a face using InstantID |
+3010 | Face to Image | face2img-ipadapter faceid | F2I-IFI| Create an image with a face using IPAdapter FaceID |
+3011 | Face to Image | face2img-ipadapter faceid+lora | F2I-IFI+LORA | Create an image with a face combining IPAdapter FaceID and a LoRA |
+3012 | Face to Image | face2img-ipadapter merge | F2I-IPA-MRG | Create an image by merging two faces |
+3100 | Face Swap | faceswap-instantid  | FSW-IID |  Create an image by swaping faces using InstantID |
+3101 | Face Swap | faceswap-instantid+cn | FSW-IID+CN | Create an image by swaping faces combining InstantID & Controlnet |
+3110 | Face Swap | faceswap-ipadapter faceid  | FSW-IFI |  Create an image by swaping faces using IPAdapter FaceID |
+3111 | Face Swap | faceswap-ipadapter faceid+cn | FSW-IFI+CN |  Create an image by swaping faces combining IPAdapter FaceID & Controlnet |
+3200 | Couple | couple-basic-lcm-sdxl-csd | CPL | Create a couple image |
 
 ## Architecture
 Each workflow can use one or several architecture according to the model used
