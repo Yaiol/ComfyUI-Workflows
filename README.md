@@ -17,7 +17,7 @@ Num | ID | Name | Output File ID |
 02 | img2img | Image to Image | I2I |
 03 | inpaint | Image Inpaint | IIP |
 04 | outpaint | Image Outpaint | IOP |
-11 | upscale | Image Upscale | IUS |
+05 | upscale | Image Upscale | IUS |
 30 | face2img | Face to Image | F2I |
 31 | faceswap | Face swap | FSW |
 32 | couple | Couple Face | CPL |
@@ -30,6 +30,9 @@ Num | Catagory | Workflow | Output File ID | Description |
 0201 | Image to Image | img2img-cn | I2I-CN | Create an image using constraint from another image|
 0210 | Image to Image | img2img-wdtagger | I2I-WDT | Create an image using auto tag from another |
 0300 | Image Inpaint | img2img-inpaint | INP | Change part of image using mask and prompt |
+0500 | Image Upscale | upscale-latent | IUS-LATENT | Upscale image using latent upscale |
+0501 | Image Upscale | upscale-latent+cn | IUS-LATENT | Upscale image using latent upscale combined with ControlNet |
+0502 | Image Upscale | upscale-cn tiled | IUS-CN TILED | Upscale image using ControlNet Tiled |
 3000 | Face to Image | face2img-instantid | F2I-IID |  Create an image with a face using InstantID |
 3010 | Face to Image | face2img-ipadapter faceid | F2I-IFI| Create an image with a face using IPAdapter FaceID |
 3011 | Face to Image | face2img-ipadapter faceid+lora | F2I-IFI+LORA | Create an image with a face combining IPAdapter FaceID and a LoRA |
