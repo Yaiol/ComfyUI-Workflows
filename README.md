@@ -34,10 +34,10 @@ Num | Catagory | Workflow | Output File ID | Description |
 3010 | Face to Image | face2img-ipadapter faceid | F2I-IFI| Create an image with a face using IPAdapter FaceID |
 3011 | Face to Image | face2img-ipadapter faceid+lora | F2I-IFI+LORA | Create an image with a face combining IPAdapter FaceID and a LoRA |
 3012 | Face to Image | face2img-ipadapter merge | F2I-IPA-MRG | Create an image by merging two faces |
-3100 | Face Swap | faceswap-instantid  | FSW-IID |  Create an image by swaping faces using InstantID |
-3101 | Face Swap | faceswap-instantid+cn | FSW-IID+CN | Create an image by swaping faces combining InstantID & Controlnet |
-3110 | Face Swap | faceswap-ipadapter faceid  | FSW-IFI |  Create an image by swaping faces using IPAdapter FaceID |
-3111 | Face Swap | faceswap-ipadapter faceid+cn | FSW-IFI+CN |  Create an image by swaping faces combining IPAdapter FaceID & Controlnet |
+3100 | Face Swap | faceswap-instantid  | FSW-IID |  Create an image by swapping faces using InstantID |
+3101 | Face Swap | faceswap-instantid+cn | FSW-IID+CN | Create an image by swapping faces combining InstantID & Controlnet |
+3110 | Face Swap | faceswap-ipadapter faceid  | FSW-IFI |  Create an image by swapping faces using IPAdapter FaceID |
+3111 | Face Swap | faceswap-ipadapter faceid+cn | FSW-IFI+CN |  Create an image by swapping faces combining IPAdapter FaceID & Controlnet |
 3200 | Couple | couple-basic-lcm-sdxl-csd | CPL | Create a couple image |
 
 ## Architecture
