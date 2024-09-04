@@ -868,7 +868,7 @@
           "shape": 3
         }
       ],
-      "title": "image_control",
+      "title": "image_input_2",
       "properties": {
         "Node name for S&R": "LoadImage"
       },
@@ -1369,7 +1369,7 @@
           "shape": 3
         }
       ],
-      "title": "image_input",
+      "title": "image_input_1",
       "properties": {
         "Node name for S&R": "LoadImage"
       },
@@ -1531,7 +1531,7 @@
       },
       "widgets_values": [
         2001,
-        "fixed",
+        "randomize",
         25,
         4,
         "dpmpp_2m_sde",
@@ -1867,10 +1867,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4665073802097333,
+      "scale": 0.46650738020973354,
       "offset": [
-        839.7920168884598,
-        -211.28375335886545
+        859.450840590018,
+        -198.22254941692913
       ]
     }
   },
