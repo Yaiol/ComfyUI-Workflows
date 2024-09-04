@@ -1,10 +1,10 @@
 69 different workflows 
 
 ## Files
-Each worklow is named using following convention :<br>
+Each workflow is named using following convention :<br>
 \[Category\]-\[Workflow\]-\[Method\]-\[Model\]-\[Clip\]
 
-For each workfflow you will find the .json, .png and api file
+For each workflow you will find the .json, .png and api file
 .api file are compatible with comfyui batch project that will be soon released
 
 Each output image is named using following convention: <br>
