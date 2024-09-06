@@ -333,12 +333,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_huzjv_00017_.png&type=temp&subfolder=&rand=0.024808528063537727"
+            "url": "/api/view?filename=rgthree.compare._temp_huzjv_00033_.png&type=temp&subfolder=&rand=0.8095502056972723"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_huzjv_00018_.png&type=temp&subfolder=&rand=0.5391779643517545"
+            "url": "/api/view?filename=rgthree.compare._temp_huzjv_00034_.png&type=temp&subfolder=&rand=0.5225435267211309"
           }
         ]
       ]
@@ -1292,39 +1292,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 34,
-      "type": "Note",
-      "pos": {
-        "0": 2030,
-        "1": 700,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 370,
-        "1": 100
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "face2img-ipa faceid-lcml-sdlt-csd\n=============================================================\nLCML : Latent Consistency Model + LoRA\nSDXL : SD Lightning\nCSD  : Clip Standard\nID   : F2I-IFI_LCML_SDLT_CSD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 3,
       "type": "KSampler",
       "pos": {
@@ -1384,13 +1351,46 @@
       },
       "widgets_values": [
         2001,
-        "randomize",
+        "fixed",
         25,
         1,
         "euler",
         "sgm_uniform",
         1
       ]
+    },
+    {
+      "id": 34,
+      "type": "Note",
+      "pos": {
+        "0": 2030,
+        "1": 700,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 370,
+        "1": 100
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "face2img-ipa faceid-lcml-sdlt-csd\n=============================================================\nLCML : Latent Consistency Model + LoRA\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : F2I-IFI_LCML_SDLT_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1655,10 +1655,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5131581182307069,
+      "scale": 0.46650738020973337,
       "offset": [
-        171.1595082957316,
-        11.6415959242415
+        368.26207605221185,
+        157.17968058082096
       ]
     }
   },
