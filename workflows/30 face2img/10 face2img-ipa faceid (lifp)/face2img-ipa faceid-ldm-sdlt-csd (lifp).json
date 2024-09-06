@@ -333,12 +333,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_spuan_00513_.png&type=temp&subfolder=&rand=0.17485365008903875"
+            "url": "/api/view?filename=rgthree.compare._temp_huzjv_00023_.png&type=temp&subfolder=&rand=0.7760103305597612"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_spuan_00514_.png&type=temp&subfolder=&rand=0.005933728812943739"
+            "url": "/api/view?filename=rgthree.compare._temp_huzjv_00024_.png&type=temp&subfolder=&rand=0.04755303377972453"
           }
         ]
       ]
@@ -1252,7 +1252,7 @@
         "Node name for S&R": "IPAdapterFaceID"
       },
       "widgets_values": [
-        0.8,
+        1,
         3,
         "linear",
         "concat",
@@ -1260,39 +1260,6 @@
         1,
         "V only"
       ]
-    },
-    {
-      "id": 34,
-      "type": "Note",
-      "pos": {
-        "0": 2030,
-        "1": 700,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 370,
-        "1": 100
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "face2img-ipadapter faceid-ldm-sdlt-csd (lifp)\n=============================================================\nLDM  : Latent Diffusion Model\nSDXL : SD Lightning\nCSD  : Clip Standard\nID   : F2I-IFI_LDM_SDLT_CSD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     },
     {
       "id": 3,
@@ -1361,6 +1328,39 @@
         "sgm_uniform",
         1
       ]
+    },
+    {
+      "id": 34,
+      "type": "Note",
+      "pos": {
+        "0": 2030,
+        "1": 700,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 370,
+        "1": 100
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "face2img-ipa faceid-ldm-sdlt-csd (lifp)\n=============================================================\nLDM  : Latent Diffusion Model\nSDXL : SD Lightning\nCSD  : Clip Standard\nID   : F2I-IFI_LDM_SDLT_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1617,10 +1617,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5131581182307072,
+      "scale": 0.46650738020973337,
       "offset": [
-        262.2596122776601,
-        46.78554953777492
+        459.4254540059155,
+        180.57538166766088
       ]
     }
   },

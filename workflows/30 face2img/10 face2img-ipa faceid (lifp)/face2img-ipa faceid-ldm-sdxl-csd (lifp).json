@@ -333,14 +333,108 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_spuan_00519_.png&type=temp&subfolder=&rand=0.7515885972576359"
+            "url": "/api/view?filename=rgthree.compare._temp_huzjv_00019_.png&type=temp&subfolder=&rand=0.3167178688400043"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_spuan_00520_.png&type=temp&subfolder=&rand=0.24917067788797564"
+            "url": "/api/view?filename=rgthree.compare._temp_huzjv_00020_.png&type=temp&subfolder=&rand=0.07302175199573768"
           }
         ]
+      ]
+    },
+    {
+      "id": 18,
+      "type": "IPAdapterFaceID",
+      "pos": {
+        "0": 860,
+        "1": 420,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 350,
+        "1": 322
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 35
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": 34,
+          "slot_index": 1
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 130
+        },
+        {
+          "name": "image_negative",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "attn_mask",
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "clip_vision",
+          "type": "CLIP_VISION",
+          "link": null
+        },
+        {
+          "name": "insightface",
+          "type": "INSIGHTFACE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            134
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "face_image",
+          "type": "IMAGE",
+          "links": [
+            133
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "ipadapter_faceid",
+      "properties": {
+        "Node name for S&R": "IPAdapterFaceID"
+      },
+      "widgets_values": [
+        1,
+        3,
+        "linear",
+        "concat",
+        0,
+        1,
+        "V only"
       ]
     },
     {
@@ -1168,11 +1262,11 @@
       "bgcolor": "#fa9600"
     },
     {
-      "id": 18,
-      "type": "IPAdapterFaceID",
+      "id": 34,
+      "type": "Note",
       "pos": {
-        "0": 860,
-        "1": 420,
+        "0": 2030,
+        "1": 700,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1183,83 +1277,22 @@
         "9": 0
       },
       "size": {
-        "0": 350,
-        "1": 322
+        "0": 370,
+        "1": 100
       },
       "flags": {},
-      "order": 22,
+      "order": 3,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 35
-        },
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "link": 34,
-          "slot_index": 1
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 130
-        },
-        {
-          "name": "image_negative",
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "attn_mask",
-          "type": "MASK",
-          "link": null
-        },
-        {
-          "name": "clip_vision",
-          "type": "CLIP_VISION",
-          "link": null
-        },
-        {
-          "name": "insightface",
-          "type": "INSIGHTFACE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            134
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "face_image",
-          "type": "IMAGE",
-          "links": [
-            133
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "ipadapter_faceid",
+      "inputs": [],
+      "outputs": [],
       "properties": {
-        "Node name for S&R": "IPAdapterFaceID"
+        "text": ""
       },
       "widgets_values": [
-        0.8,
-        3,
-        "linear",
-        "concat",
-        0,
-        1,
-        "V only"
-      ]
+        "face2img-ipa faceid-ldm-sdxl-csd (lifp)\n=============================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : F2I-IFI_LDM_SDXL_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     },
     {
       "id": 3,
@@ -1328,39 +1361,6 @@
         "karras",
         1
       ]
-    },
-    {
-      "id": 34,
-      "type": "Note",
-      "pos": {
-        "0": 2030,
-        "1": 700,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 370,
-        "1": 100
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "face2img-ipadapter faceid-ldm-sdxl-csd (lfip)\n=============================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : F2I-IFI_LDM_SDXL_CSD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1617,10 +1617,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5131581182307067,
+      "scale": 0.7513148009015785,
       "offset": [
-        419.79579628594365,
-        191.7483603429173
+        -591.7090940261018,
+        -91.80691513815425
       ]
     }
   },
