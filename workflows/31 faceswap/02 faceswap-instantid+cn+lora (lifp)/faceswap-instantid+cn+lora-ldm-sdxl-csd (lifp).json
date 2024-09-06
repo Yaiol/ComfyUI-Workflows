@@ -6,8 +6,8 @@
       "id": 5,
       "type": "EmptyLatentImage",
       "pos": {
-        "0": 350,
-        "1": 1070,
+        "0": 450,
+        "1": 670,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -51,8 +51,8 @@
       "id": 83,
       "type": "Reroute",
       "pos": {
-        "0": 350,
-        "1": 560,
+        "0": 450,
+        "1": 160,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -67,7 +67,7 @@
         26
       ],
       "flags": {},
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -95,8 +95,8 @@
       "id": 85,
       "type": "Reroute",
       "pos": {
-        "0": 770,
-        "1": 530,
+        "0": 870,
+        "1": 130,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -139,8 +139,8 @@
       "id": 86,
       "type": "Reroute",
       "pos": {
-        "0": 1400,
-        "1": 530,
+        "0": 1500,
+        "1": 130,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -183,8 +183,8 @@
       "id": 84,
       "type": "Reroute",
       "pos": {
-        "0": 1780,
-        "1": 560,
+        "0": 1880,
+        "1": 160,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -199,7 +199,7 @@
         26
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -227,8 +227,8 @@
       "id": 8,
       "type": "VAEDecode",
       "pos": {
-        "0": 1900,
-        "1": 590,
+        "0": 2000,
+        "1": 190,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -280,8 +280,8 @@
       "id": 79,
       "type": "Reroute",
       "pos": {
-        "0": 1010,
-        "1": 440,
+        "0": 1110,
+        "1": 40,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -296,7 +296,7 @@
         26
       ],
       "flags": {},
-      "order": 21,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -324,8 +324,8 @@
       "id": 87,
       "type": "Reroute",
       "pos": {
-        "0": 1010,
-        "1": 470,
+        "0": 1110,
+        "1": 70,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -368,8 +368,8 @@
       "id": 120,
       "type": "Reroute",
       "pos": {
-        "0": 1010,
-        "1": 500,
+        "0": 1110,
+        "1": 100,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -412,8 +412,8 @@
       "id": 118,
       "type": "Reroute",
       "pos": {
-        "0": -400,
-        "1": 440,
+        "0": -300,
+        "1": 40,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -428,7 +428,7 @@
         26
       ],
       "flags": {},
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -456,8 +456,8 @@
       "id": 117,
       "type": "Reroute",
       "pos": {
-        "0": -40,
-        "1": 470,
+        "0": 60,
+        "1": 70,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -500,8 +500,8 @@
       "id": 121,
       "type": "Reroute",
       "pos": {
-        "0": 350,
-        "1": 500,
+        "0": 450,
+        "1": 100,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -516,7 +516,7 @@
         26
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -544,8 +544,8 @@
       "id": 114,
       "type": "ControlNetLoader",
       "pos": {
-        "0": 750,
-        "1": 630,
+        "0": 850,
+        "1": 230,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -588,8 +588,8 @@
       "id": 81,
       "type": "Reroute",
       "pos": {
-        "0": 600,
-        "1": 470,
+        "0": 700,
+        "1": 70,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -633,8 +633,8 @@
       "id": 90,
       "type": "SaveImage",
       "pos": {
-        "0": 1900,
-        "1": 630,
+        "0": 2000,
+        "1": 230,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -671,70 +671,11 @@
       "bgcolor": "#535"
     },
     {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": -50,
-        "1": 630,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            365
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            364
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            286
-          ],
-          "slot_index": 2
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "01 base\\sdxl-sai-base-v10-vae0.9.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 72,
       "type": "ControlNetApplyAdvanced",
       "pos": {
-        "0": 750,
-        "1": 940,
+        "0": 850,
+        "1": 540,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -808,8 +749,8 @@
       "id": 125,
       "type": "LoraLoader",
       "pos": {
-        "0": -50,
-        "1": 790,
+        "0": 50,
+        "1": 390,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -824,7 +765,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 10,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -873,8 +814,8 @@
       "id": 91,
       "type": "PreviewImage",
       "pos": {
-        "0": 1560,
-        "1": 950,
+        "0": 1660,
+        "1": 550,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -908,8 +849,8 @@
       "id": 115,
       "type": "AV_ControlNetPreprocessor",
       "pos": {
-        "0": 750,
-        "1": 730,
+        "0": 850,
+        "1": 330,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -967,8 +908,8 @@
       "id": 126,
       "type": "Reroute",
       "pos": {
-        "0": 1160,
-        "1": 500,
+        "0": 1260,
+        "1": 100,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1011,8 +952,8 @@
       "id": 127,
       "type": "Reroute",
       "pos": {
-        "0": 1400,
-        "1": 500,
+        "0": 1500,
+        "1": 100,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1055,8 +996,8 @@
       "id": 11,
       "type": "InstantIDModelLoader",
       "pos": {
-        "0": 1150,
-        "1": 630,
+        "0": 1250,
+        "1": 230,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1071,7 +1012,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1099,8 +1040,8 @@
       "id": 38,
       "type": "InstantIDFaceAnalysis",
       "pos": {
-        "0": 1150,
-        "1": 750,
+        "0": 1250,
+        "1": 350,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1115,7 +1056,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1143,8 +1084,8 @@
       "id": 16,
       "type": "ControlNetLoader",
       "pos": {
-        "0": 1150,
-        "1": 870,
+        "0": 1250,
+        "1": 470,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1159,7 +1100,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1187,8 +1128,8 @@
       "id": 60,
       "type": "ApplyInstantID",
       "pos": {
-        "0": 1150,
-        "1": 990,
+        "0": 1250,
+        "1": 590,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1292,61 +1233,11 @@
       ]
     },
     {
-      "id": 39,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 350,
-        "1": 630,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 361
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            348
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "Gabriel Pacheco Style, painting of a woman, wavy short black hair, blue sky in background"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 129,
       "type": "PreviewImage",
       "pos": {
-        "0": -780,
-        "1": 750,
+        "0": -680,
+        "1": 350,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1361,7 +1252,7 @@
         "1": 370
       },
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1381,8 +1272,8 @@
       "id": 131,
       "type": "PreviewImage",
       "pos": {
-        "0": -420,
-        "1": 750,
+        "0": -320,
+        "1": 350,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1417,8 +1308,8 @@
       "id": 128,
       "type": "LoadImageFromPath",
       "pos": {
-        "0": -780,
-        "1": 630,
+        "0": -680,
+        "1": 230,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1433,7 +1324,7 @@
         "1": 80
       },
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1465,11 +1356,11 @@
       "bgcolor": "#fa9600"
     },
     {
-      "id": 130,
-      "type": "LoadImageFromPath",
+      "id": 40,
+      "type": "CLIPTextEncode",
       "pos": {
-        "0": -420,
-        "1": 630,
+        "0": 450,
+        "1": 460,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1481,46 +1372,154 @@
       },
       "size": {
         "0": 350,
-        "1": 80
+        "1": 150
       },
       "flags": {},
-      "order": 7,
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 362
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            350
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 50,
+        "1": 230,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "MODEL",
+          "type": "MODEL",
           "links": [
-            370,
-            372
+            365
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            364
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            286
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "01 base\\sdxl-sai-base-v10-vae0.9.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 39,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 230,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 361
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            348
           ],
           "slot_index": 0,
           "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
         }
       ],
-      "title": "image_input_2",
+      "title": "prompt_positive",
       "properties": {
-        "Node name for S&R": "LoadImageFromPath"
+        "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "./character-woman-dreaming-fixed.jpg"
+        "Gabriel Pacheco Style, painting of a woman, wavy short black hair, blue sky in background"
       ],
-      "color": "#8cd2ff",
-      "bgcolor": "#78beff"
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 3,
       "type": "KSampler",
       "pos": {
-        "0": 1550,
-        "1": 630,
+        "0": 1650,
+        "1": 230,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1574,7 +1573,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        2001,
+        7716231474909,
         "randomize",
         20,
         4,
@@ -1584,11 +1583,11 @@
       ]
     },
     {
-      "id": 40,
-      "type": "CLIPTextEncode",
+      "id": 130,
+      "type": "LoadImageFromPath",
       "pos": {
-        "0": 350,
-        "1": 860,
+        "0": -320,
+        "1": 230,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1600,45 +1599,46 @@
       },
       "size": {
         "0": 350,
-        "1": 150
+        "1": 80
       },
       "flags": {},
-      "order": 19,
+      "order": 7,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 362
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            350
+            370,
+            372
           ],
           "slot_index": 0,
           "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
         }
       ],
-      "title": "prompt_negative",
+      "title": "image_input_2",
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "LoadImageFromPath"
       },
       "widgets_values": [
-        ""
+        "./character-woman-dreaming-fixed.jpg"
       ],
-      "color": "#322",
-      "bgcolor": "#533"
+      "color": "#8cd2ff",
+      "bgcolor": "#78beff"
     },
     {
       "id": 111,
       "type": "Note",
       "pos": {
-        "0": 1910,
-        "1": 1100,
+        "0": 2010,
+        "1": 700,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1993,10 +1993,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.42409761837248505,
+      "scale": 1,
       "offset": [
-        874.4726046535536,
-        -161.54602989310624
+        -1205.2623530210699,
+        -401.94437846144604
       ]
     }
   },
