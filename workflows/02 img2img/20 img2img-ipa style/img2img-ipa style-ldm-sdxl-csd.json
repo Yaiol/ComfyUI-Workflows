@@ -225,46 +225,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 40,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2050,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 360,
-        "1": 410
-      },
-      "flags": {},
-      "order": 28,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 62
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-IST_LDM_SDXL_CSD_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 11,
       "type": "Reroute",
       "pos": {
@@ -1247,6 +1207,97 @@
       "bgcolor": "#353"
     },
     {
+      "id": 26,
+      "type": "LoadImage",
+      "pos": {
+        "0": -330,
+        "1": 230,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 350,
+        "1": 450
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            68
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "image_input_2",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "style-davinci.jpg",
+        "image"
+      ],
+      "color": "#a0ffff",
+      "bgcolor": "#8cf0f0"
+    },
+    {
+      "id": 40,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2050,
+        "1": 230,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 360,
+        "1": 410
+      },
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 62
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-IAS_LDM_SDXL_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 39,
       "type": "IPAdapterAdvanced",
       "pos": {
@@ -1325,57 +1376,6 @@
       ]
     },
     {
-      "id": 26,
-      "type": "LoadImage",
-      "pos": {
-        "0": -330,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 450
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            68
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "image_input_2",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "style-davinci.jpg",
-        "image"
-      ],
-      "color": "#a0ffff",
-      "bgcolor": "#8cf0f0"
-    },
-    {
       "id": 21,
       "type": "Note",
       "pos": {
@@ -1403,7 +1403,7 @@
         "text": ""
       },
       "widgets_values": [
-        "img2img-ipadapter style-ldm-sdxl-csd\n============================================================\nLDM  : Latent Diffusion Model\nSDLT : SD XL\nCSD  : Clip Standard\nID   : I2I-IST_LDM_SDXL_CSD"
+        "img2img-ipa style-ldm-sdxl-csd\n============================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : I2I-IAS_LDM_SDXL_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1739,10 +1739,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.38554328942953164,
+      "scale": 0.38554328942953203,
       "offset": [
-        888.5289732931444,
-        214.71005057844806
+        972.368662777741,
+        303.1222738213971
       ]
     }
   },
