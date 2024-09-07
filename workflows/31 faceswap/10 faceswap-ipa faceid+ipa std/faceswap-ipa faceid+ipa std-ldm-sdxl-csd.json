@@ -1169,46 +1169,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 9,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2020,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 300,
-        "1": 360
-      },
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 9
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IFI+ISD_LDM_SDXL_CSD_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 4,
       "type": "CheckpointLoaderSimple",
       "pos": {
@@ -1269,6 +1229,46 @@
       "bgcolor": "#335"
     },
     {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2020,
+        "1": 230,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 300,
+        "1": 360
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IAF+IAS_LDM_SDXL_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 3,
       "type": "KSampler",
       "pos": {
@@ -1283,10 +1283,10 @@
         "8": 0,
         "9": 0
       },
-      "size": [
-        350,
-        270
-      ],
+      "size": {
+        "0": 350,
+        "1": 270
+      },
       "flags": {},
       "order": 24,
       "mode": 0,
@@ -1364,7 +1364,7 @@
         "text": ""
       },
       "widgets_values": [
-        "faceswap-ipa faceid+ipa std-ldm-sdxl-csd\n=================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IAF+ISD_LDM_SDXL_CSD"
+        "faceswap-ipa faceid+ipa std-ldm-sdxl-csd\n=================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IAF+IAS_LDM_SDXL_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1624,10 +1624,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4240976183724851,
+      "scale": 0.42409761837248516,
       "offset": [
-        820.4920697932694,
-        347.23392769882565
+        805.0588198078308,
+        286.5992486741825
       ]
     }
   },
