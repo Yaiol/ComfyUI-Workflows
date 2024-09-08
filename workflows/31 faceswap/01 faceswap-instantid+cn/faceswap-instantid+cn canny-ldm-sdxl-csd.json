@@ -1,6 +1,6 @@
 {
   "last_node_id": 135,
-  "last_link_id": 375,
+  "last_link_id": 377,
   "nodes": [
     {
       "id": 5,
@@ -245,7 +245,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 30,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -643,129 +643,6 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
-    },
-    {
-      "id": 91,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 1560,
-        "1": 940,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 200,
-        "1": 250
-      },
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 364,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
-      "id": 128,
-      "type": "Reroute",
-      "pos": {
-        "0": 1160,
-        "1": 500,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 372
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            363
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 129,
-      "type": "Reroute",
-      "pos": {
-        "0": 1400,
-        "1": 500,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 363
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            364
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
     },
     {
       "id": 120,
@@ -1190,7 +1067,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 31,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -1346,7 +1223,7 @@
           "type": "IMAGE",
           "links": [
             366,
-            372
+            377
           ],
           "slot_index": 0,
           "shape": 3
@@ -1464,11 +1341,11 @@
       "bgcolor": "#ff9600"
     },
     {
-      "id": 111,
-      "type": "Note",
+      "id": 91,
+      "type": "PreviewImage",
       "pos": {
-        "0": 1910,
-        "1": 1100,
+        "0": 750,
+        "1": 1130,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1478,23 +1355,26 @@
         "8": 0,
         "9": 0
       },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "faceswap-instantid+cn canny-ldm-sdxl-csd\n==================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID-CANNY_LDM_SDXL_CSD"
+      "size": [
+        350,
+        390
       ],
-      "color": "#432",
-      "bgcolor": "#653"
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 377,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [],
+      "title": "image_preview",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
     },
     {
       "id": 3,
@@ -1516,7 +1396,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -1563,6 +1443,39 @@
         "karras",
         1
       ]
+    },
+    {
+      "id": 111,
+      "type": "Note",
+      "pos": {
+        "0": 1900,
+        "1": 1090,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        370,
+        100
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "faceswap-instantid+cn canny-ldm-sdxl-csd\n==============================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID-CANNY_LDM_SDXL_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1767,22 +1680,6 @@
       "MODEL"
     ],
     [
-      363,
-      128,
-      0,
-      129,
-      0,
-      "*"
-    ],
-    [
-      364,
-      129,
-      0,
-      91,
-      0,
-      "IMAGE"
-    ],
-    [
       365,
       132,
       0,
@@ -1839,14 +1736,6 @@
       "CONDITIONING"
     ],
     [
-      372,
-      133,
-      0,
-      128,
-      0,
-      "*"
-    ],
-    [
       374,
       134,
       0,
@@ -1861,16 +1750,24 @@
       117,
       0,
       "*"
+    ],
+    [
+      377,
+      133,
+      0,
+      91,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4240976183724853,
+      "scale": 0.42409761837248516,
       "offset": [
-        824.0193949360212,
-        -127.58767168906465
+        825.8047322097697,
+        -161.06988330066187
       ]
     }
   },
