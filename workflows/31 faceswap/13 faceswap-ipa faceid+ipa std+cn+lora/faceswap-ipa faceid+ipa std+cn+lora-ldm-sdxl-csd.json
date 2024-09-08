@@ -1,6 +1,6 @@
 {
-  "last_node_id": 49,
-  "last_link_id": 93,
+  "last_node_id": 50,
+  "last_link_id": 94,
   "nodes": [
     {
       "id": 18,
@@ -22,7 +22,7 @@
         "1": 322
       },
       "flags": {},
-      "order": 26,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -113,7 +113,7 @@
         "1": 80
       },
       "flags": {},
-      "order": 29,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -176,7 +176,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 30,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -574,7 +574,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -643,7 +643,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 32,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -738,7 +738,7 @@
         26
       ],
       "flags": {},
-      "order": 28,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -826,7 +826,7 @@
         26
       ],
       "flags": {},
-      "order": 27,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -895,64 +895,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 45,
-      "type": "AV_ControlNetPreprocessor",
-      "pos": {
-        "0": 850,
-        "1": 350,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 150
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 88
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            76
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CNET_NAME",
-          "type": "STRING",
-          "links": null,
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_preprocessor",
-      "properties": {
-        "Node name for S&R": "AV_ControlNetPreprocessor"
-      },
-      "widgets_values": [
-        "depth_zoe",
-        "sdxl",
-        1024,
-        "None"
-      ]
-    },
-    {
       "id": 28,
       "type": "Reroute",
       "pos": {
@@ -972,7 +914,7 @@
         26
       ],
       "flags": {},
-      "order": 24,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -1016,7 +958,7 @@
         26
       ],
       "flags": {},
-      "order": 25,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -1449,7 +1391,7 @@
         "1": 360
       },
       "flags": {},
-      "order": 33,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -1543,10 +1485,10 @@
         "8": 0,
         "9": 0
       },
-      "size": [
-        350,
-        130
-      ],
+      "size": {
+        "0": 350,
+        "1": 130
+      },
       "flags": {},
       "order": 9,
       "mode": 0,
@@ -1645,6 +1587,100 @@
       "bgcolor": "#353"
     },
     {
+      "id": 45,
+      "type": "AV_ControlNetPreprocessor",
+      "pos": {
+        "0": 850,
+        "1": 350,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 350,
+        "1": 150
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 88
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            76,
+            94
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CNET_NAME",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet_preprocessor",
+      "properties": {
+        "Node name for S&R": "AV_ControlNetPreprocessor"
+      },
+      "widgets_values": [
+        "depth_zoe",
+        "sdxl",
+        1024,
+        "None"
+      ]
+    },
+    {
+      "id": 50,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 850,
+        "1": 790,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        340,
+        370
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 94
+        }
+      ],
+      "outputs": [],
+      "title": "image_preview",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
       "id": 41,
       "type": "Note",
       "pos": {
@@ -1697,7 +1733,7 @@
         "1": 270
       },
       "flags": {},
-      "order": 31,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -2074,16 +2110,24 @@
       6,
       0,
       "CLIP"
+    ],
+    [
+      94,
+      45,
+      0,
+      50,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.38554328942953164,
+      "scale": 0.35049389948139287,
       "offset": [
-        709.5252658367061,
-        298.53933767222253
+        935.7319911837585,
+        328.36883009615383
       ]
     }
   },
