@@ -1,6 +1,6 @@
 {
   "last_node_id": 127,
-  "last_link_id": 368,
+  "last_link_id": 370,
   "nodes": [
     {
       "id": 5,
@@ -245,7 +245,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 30,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -751,7 +751,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 31,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -964,41 +964,6 @@
       "bgcolor": "#ff9600"
     },
     {
-      "id": 91,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 1660,
-        "1": 520,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 240,
-        "1": 250
-      },
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 368,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
       "id": 115,
       "type": "AV_ControlNetPreprocessor",
       "pos": {
@@ -1033,7 +998,7 @@
           "type": "IMAGE",
           "links": [
             330,
-            366
+            370
           ],
           "slot_index": 0,
           "shape": 3
@@ -1056,94 +1021,6 @@
         1024,
         "None"
       ]
-    },
-    {
-      "id": 126,
-      "type": "Reroute",
-      "pos": {
-        "0": 1260,
-        "1": 70,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 366
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            367
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 127,
-      "type": "Reroute",
-      "pos": {
-        "0": 1500,
-        "1": 70,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 367
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            368
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
     },
     {
       "id": 11,
@@ -1495,11 +1372,11 @@
       "bgcolor": "#335"
     },
     {
-      "id": 111,
-      "type": "Note",
+      "id": 91,
+      "type": "PreviewImage",
       "pos": {
-        "0": 2010,
-        "1": 670,
+        "0": 850,
+        "1": 730,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -1510,7 +1387,43 @@
         "9": 0
       },
       "size": {
-        "0": 340,
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 370,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [],
+      "title": "image_preview",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 111,
+      "type": "Note",
+      "pos": {
+        "0": 2000,
+        "1": 660,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 350,
         "1": 100
       },
       "flags": {},
@@ -1522,7 +1435,7 @@
         "text": ""
       },
       "widgets_values": [
-        "faceswap-instantid+cn+lora-ldm-sdxl-csd\n==================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID-CN (cn)+LORA_LDM_SDXL_CSD"
+        "faceswap-instantid+cn+lora-ldm-sdxl-csd\n===========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID-CN (cn)+LORA_LDM_SDXL_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1547,7 +1460,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -1878,24 +1791,8 @@
       "MODEL"
     ],
     [
-      366,
+      370,
       115,
-      0,
-      126,
-      0,
-      "*"
-    ],
-    [
-      367,
-      126,
-      0,
-      127,
-      0,
-      "*"
-    ],
-    [
-      368,
-      127,
       0,
       91,
       0,
@@ -1906,10 +1803,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.38554328942953164,
+      "scale": 0.42409761837248483,
       "offset": [
-        824.7628682531986,
-        443.5793704865138
+        758.8286475421362,
+        213.11432816518055
       ]
     }
   },
