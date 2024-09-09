@@ -1,27 +1,100 @@
 {
-  "last_node_id": 22,
-  "last_link_id": 29,
+  "last_node_id": 327,
+  "last_link_id": 687,
   "nodes": [
     {
-      "id": 2,
-      "type": "LoadImage",
-      "pos": [
-        370,
-        -370
+      "id": 262,
+      "type": "Reroute",
+      "pos": {
+        "0": -350,
+        "1": 150
+      },
+      "size": [
+        75,
+        26
       ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 672
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            673
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 295,
+      "type": "Reroute",
+      "pos": {
+        "0": 50,
+        "1": 150
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 668
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            687
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 270,
+      "type": "LoadImage",
+      "pos": {
+        "0": -720,
+        "1": 230
+      },
       "size": {
-        "0": 352.1821594238281,
-        "1": 437.82684326171875
+        "0": 360,
+        "1": 450
       },
       "flags": {},
       "order": 0,
       "mode": 0,
+      "inputs": [],
       "outputs": [
         {
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            1
+            672
           ],
           "shape": 3
         },
@@ -32,38 +105,75 @@
           "shape": 3
         }
       ],
-      "title": "image_input",
+      "title": "image_input_1",
       "properties": {
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "woman-real.jpg",
+        "character-arwyenn-real.jpg",
         "image"
       ],
       "color": "#ffa014",
       "bgcolor": "#ff8c00"
     },
     {
-      "id": 3,
-      "type": "LoadImage",
-      "pos": [
-        740,
-        -370
+      "id": 320,
+      "type": "Reroute",
+      "pos": {
+        "0": 720,
+        "1": 150
+      },
+      "size": [
+        75,
+        26
       ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 686
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            671
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 271,
+      "type": "LoadImage",
+      "pos": {
+        "0": -340,
+        "1": 230
+      },
       "size": {
-        "0": 350,
-        "1": 440
+        "0": 360,
+        "1": 450
       },
       "flags": {},
       "order": 1,
       "mode": 0,
+      "inputs": [],
       "outputs": [
         {
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            2,
-            28
+            668,
+            675
           ],
           "slot_index": 0,
           "shape": 3
@@ -75,43 +185,77 @@
           "shape": 3
         }
       ],
-      "title": "image_input",
+      "title": "image_input_2",
       "properties": {
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "woman-cowboy.jpg",
+        "character-woman-cowboy.jpg",
         "image"
       ],
-      "color": "#8cd2ff",
-      "bgcolor": "#78beff"
+      "color": "#a0ffff",
+      "bgcolor": "#8cf0f0"
     },
     {
-      "id": 1,
-      "type": "ReActorFaceSwap",
-      "pos": [
-        750,
-        140
-      ],
-      "size": {
-        "0": 315,
-        "1": 358
+      "id": 327,
+      "type": "Reroute",
+      "pos": {
+        "0": 450,
+        "1": 150
       },
+      "size": [
+        75,
+        26
+      ],
       "flags": {},
-      "order": 3,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
-          "name": "source_image",
+          "name": "",
+          "type": "*",
+          "link": 685
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
           "type": "IMAGE",
-          "link": 1,
+          "links": [
+            686
+          ],
           "slot_index": 0
-        },
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 257,
+      "type": "ReActorFaceSwap",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 360
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
         {
           "name": "input_image",
           "type": "IMAGE",
-          "link": 2,
-          "slot_index": 1
+          "link": 675
+        },
+        {
+          "name": "source_image",
+          "type": "IMAGE",
+          "link": 674
         },
         {
           "name": "face_model",
@@ -129,8 +273,8 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            27,
-            29
+            681,
+            685
           ],
           "slot_index": 0,
           "shape": 3
@@ -142,6 +286,7 @@
           "shape": 3
         }
       ],
+      "title": "reactor_faceswap",
       "properties": {
         "Node name for S&R": "ReActorFaceSwap"
       },
@@ -150,8 +295,8 @@
         "inswapper_128.onnx",
         "retinaface_resnet50",
         "GPEN-BFR-1024.onnx",
-        0.7000000000000001,
-        0.5,
+        1,
+        1,
         "no",
         "no",
         "0",
@@ -162,42 +307,139 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 22,
-      "type": "Image Comparer (rgthree)",
+      "id": 324,
+      "type": "Reroute",
       "pos": {
-        "0": 1110,
-        "1": -340,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": -60,
+        "1": 150
       },
       "size": [
-        370,
-        410
+        75,
+        26
       ],
       "flags": {},
       "order": 5,
       "mode": 0,
       "inputs": [
         {
+          "name": "",
+          "type": "*",
+          "link": 673
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            674
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 308,
+      "type": "Reroute",
+      "pos": {
+        "0": 320,
+        "1": 150
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 687
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            683
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 318,
+      "type": "SaveImage",
+      "pos": {
+        "0": 850,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 671
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-RFS+RMH"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 311,
+      "type": "Image Comparer (rgthree)",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
           "name": "image_a",
           "type": "IMAGE",
-          "link": 28,
+          "link": 681,
           "dir": 3
         },
         {
           "name": "image_b",
           "type": "IMAGE",
-          "link": 29,
+          "link": 683,
           "dir": 3
         }
       ],
       "outputs": [],
+      "title": "image_comparer",
       "properties": {
         "comparer_mode": "Slide"
       },
@@ -206,66 +448,37 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_qtfkv_00001_.png&type=temp&subfolder=&rand=0.8088523245389074"
+            "url": "/api/view?filename=rgthree.compare._temp_kpkya_00009_.png&type=temp&subfolder=&rand=0.39996184530595724"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_qtfkv_00002_.png&type=temp&subfolder=&rand=0.4468134721213244"
+            "url": "/api/view?filename=rgthree.compare._temp_kpkya_00010_.png&type=temp&subfolder=&rand=0.7403117858162327"
           }
         ]
       ]
     },
     {
-      "id": 17,
-      "type": "SaveImage",
-      "pos": [
-        1490,
-        -340
-      ],
-      "size": [
-        360,
-        410
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 27
-        }
-      ],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-REA"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 21,
+      "id": 296,
       "type": "Note",
-      "pos": [
-        1120,
-        120
-      ],
+      "pos": {
+        "0": 850,
+        "1": 700
+      },
       "size": {
-        "0": 330,
+        "0": 350,
         "1": 100
       },
       "flags": {},
       "order": 2,
       "mode": 0,
+      "inputs": [],
+      "outputs": [],
       "properties": {
         "text": ""
       },
       "widgets_values": [
-        "faceswap-reactor\n=======================================================\nID   : FSW-REA"
+        "faceswap-reactor\n=======================================================\nID   : FSW-RFS"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -273,56 +486,109 @@
   ],
   "links": [
     [
-      1,
-      2,
+      668,
+      271,
       0,
-      1,
+      295,
+      0,
+      "*"
+    ],
+    [
+      671,
+      320,
+      0,
+      318,
       0,
       "IMAGE"
     ],
     [
-      2,
-      3,
+      672,
+      270,
       0,
-      1,
+      262,
+      0,
+      "*"
+    ],
+    [
+      673,
+      262,
+      0,
+      324,
+      0,
+      "*"
+    ],
+    [
+      674,
+      324,
+      0,
+      257,
       1,
       "IMAGE"
     ],
     [
-      27,
-      1,
+      675,
+      271,
       0,
-      17,
-      0,
-      "IMAGE"
-    ],
-    [
-      28,
-      3,
-      0,
-      22,
+      257,
       0,
       "IMAGE"
     ],
     [
-      29,
-      1,
+      681,
+      257,
       0,
-      22,
+      311,
+      0,
+      "IMAGE"
+    ],
+    [
+      683,
+      308,
+      0,
+      311,
       1,
       "IMAGE"
+    ],
+    [
+      685,
+      257,
+      0,
+      327,
+      0,
+      "*"
+    ],
+    [
+      686,
+      327,
+      0,
+      320,
+      0,
+      "*"
+    ],
+    [
+      687,
+      295,
+      0,
+      308,
+      0,
+      "*"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7513148009015778,
+      "scale": 0.5644739300537776,
       "offset": [
-        -9.743967601859609,
-        386.0498583747903
+        976.7835521622449,
+        79.0043572543402
       ]
-    }
+    },
+    "0246.VERSION": [
+      0,
+      0,
+      4
+    ]
   },
   "version": 0.4
 }
