@@ -92,66 +92,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 3,
-      "type": "KSampler",
-      "pos": {
-        "0": 850,
-        "1": -10
-      },
-      "size": [
-        350,
-        270
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 91
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 4
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 6
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 58
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            80
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "ksampler",
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        2001,
-        "fixed",
-        7,
-        4,
-        "dpmpp_sde",
-        "karras",
-        1
-      ]
-    },
-    {
       "id": 44,
       "type": "Image Comparer (rgthree)",
       "pos": {
@@ -785,6 +725,66 @@
       "bgcolor": "#535"
     },
     {
+      "id": 3,
+      "type": "KSampler",
+      "pos": {
+        "0": 850,
+        "1": -10
+      },
+      "size": [
+        350,
+        270
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 91
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 4
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 6
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 58
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            80
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        2001,
+        "randomize",
+        7,
+        4,
+        "dpmpp_sde",
+        "karras",
+        1
+      ]
+    },
+    {
       "id": 33,
       "type": "Note",
       "pos": {
@@ -1010,8 +1010,8 @@
     "ds": {
       "scale": 0.5209868481924439,
       "offset": [
-        556.268767315986,
-        501.7483307705197
+        557.0904931048663,
+        533.3019618545629
       ]
     }
   },
