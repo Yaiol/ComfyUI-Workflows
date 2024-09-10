@@ -1,6 +1,6 @@
 {
-  "last_node_id": 41,
-  "last_link_id": 77,
+  "last_node_id": 44,
+  "last_link_id": 82,
   "nodes": [
     {
       "id": 39,
@@ -14,7 +14,7 @@
         "1": 50
       },
       "flags": {},
-      "order": 9,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -58,7 +58,7 @@
         "1": 390
       },
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -84,126 +84,90 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_lysgm_00017_.png&type=temp&subfolder=&rand=0.8645088620570258"
+            "url": "/api/view?filename=rgthree.compare._temp_cczvc_00023_.png&type=temp&subfolder=&rand=0.6929007074829734"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_lysgm_00018_.png&type=temp&subfolder=&rand=0.9808105308387915"
+            "url": "/api/view?filename=rgthree.compare._temp_cczvc_00024_.png&type=temp&subfolder=&rand=0.15706155129136667"
           }
         ]
       ]
     },
     {
-      "id": 6,
-      "type": "CLIPTextEncode",
+      "id": 27,
+      "type": "VAEDecode",
       "pos": {
-        "0": 450,
-        "1": -10
+        "0": 1250,
+        "1": -220
       },
-      "size": [
-        350,
-        160
-      ],
-      "flags": {},
-      "order": 4,
+      "size": {
+        "0": 140,
+        "1": 50
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 3
+          "name": "samples",
+          "type": "LATENT",
+          "link": 76
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 48
         }
       ],
       "outputs": [
         {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            4
+            74,
+            78
           ],
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
-      "title": "prompt_positive",
+      "title": "vae_decode",
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "VAEDecode"
       },
-      "widgets_values": [
-        "painting of a woman, by Pablo Picasso, highly detailed"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 210
-      },
-      "size": [
-        350,
-        150
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 5
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            6
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_negative",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "blurry, illustration, horror"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 30,
+      "id": 42,
       "type": "Reroute",
       "pos": {
-        "0": 850,
-        "1": -240
+        "0": 1520,
+        "1": -250
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 6,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 70,
-          "slot_index": 0
+          "link": 78
         }
       ],
       "outputs": [
         {
           "name": "",
-          "type": "VAE",
+          "type": "IMAGE",
           "links": [
-            50
+            79
           ],
           "slot_index": 0
         }
@@ -218,14 +182,14 @@
       "type": "Reroute",
       "pos": {
         "0": 1130,
-        "1": -240
+        "1": -250
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -251,79 +215,33 @@
       }
     },
     {
-      "id": 27,
-      "type": "VAEDecode",
-      "pos": {
-        "0": 1250,
-        "1": -210
-      },
-      "size": {
-        "0": 140,
-        "1": 50
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 76
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 48
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            46,
-            74
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "vae_decode",
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 41,
+      "id": 30,
       "type": "Reroute",
       "pos": {
-        "0": 1130,
-        "1": -270
+        "0": 450,
+        "1": -250
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 10,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 77
+          "link": 70,
+          "slot_index": 0
         }
       ],
       "outputs": [
         {
           "name": "",
-          "type": "IMAGE",
+          "type": "VAE",
           "links": [
-            73
+            50
           ],
           "slot_index": 0
         }
@@ -334,24 +252,96 @@
       }
     },
     {
-      "id": 34,
+      "id": 43,
       "type": "Reroute",
       "pos": {
         "0": 450,
-        "1": -270
+        "1": -280
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 3,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 66
+          "link": 80
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            81
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 44,
+      "type": "Reroute",
+      "pos": {
+        "0": 710,
+        "1": -280
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 81
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            82
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 35,
+      "type": "Reroute",
+      "pos": {
+        "0": 710,
+        "1": -310
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 60
         }
       ],
       "outputs": [
@@ -359,7 +349,8 @@
           "name": "",
           "type": "IMAGE",
           "links": [
-            60
+            68,
+            77
           ],
           "slot_index": 0
         }
@@ -373,8 +364,8 @@
       "id": 31,
       "type": "LoadImage",
       "pos": {
-        "0": 20,
-        "1": -180
+        "0": -380,
+        "1": -170
       },
       "size": {
         "0": 380,
@@ -414,24 +405,24 @@
       "bgcolor": "#ff9600"
     },
     {
-      "id": 35,
+      "id": 34,
       "type": "Reroute",
       "pos": {
-        "0": 700,
-        "1": -270
+        "0": 50,
+        "1": -310
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 7,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 60
+          "link": 66
         }
       ],
       "outputs": [
@@ -439,8 +430,7 @@
           "name": "",
           "type": "IMAGE",
           "links": [
-            68,
-            77
+            60
           ],
           "slot_index": 0
         }
@@ -451,10 +441,128 @@
       }
     },
     {
+      "id": 41,
+      "type": "Reroute",
+      "pos": {
+        "0": 1130,
+        "1": -310
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 77
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            73
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": -170
+      },
+      "size": {
+        "0": 350,
+        "1": 160
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            4
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "painting of a woman, by Pablo Picasso, highly detailed"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 50
+      },
+      "size": {
+        "0": 350,
+        "1": 150
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            6
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "text"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
       "id": 4,
       "type": "CheckpointLoaderSimple",
       "pos": {
-        "0": 450,
+        "0": 50,
         "1": -170
       },
       "size": {
@@ -470,7 +578,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            1
+            80
           ],
           "slot_index": 0
         },
@@ -515,13 +623,13 @@
         "1": 390
       },
       "flags": {},
-      "order": 13,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 46
+          "link": 79
         }
       ],
       "outputs": [],
@@ -536,6 +644,31 @@
       "bgcolor": "#535"
     },
     {
+      "id": 33,
+      "type": "Note",
+      "pos": {
+        "0": 1650,
+        "1": 280
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "img2img-basic-ldm-sdlt-csd\n============================+==============================\nLDM  : Large Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : I2I_LDM_SDLT_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 3,
       "type": "KSampler",
       "pos": {
@@ -547,13 +680,13 @@
         "1": 262
       },
       "flags": {},
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 1
+          "link": 82
         },
         {
           "name": "positive",
@@ -587,49 +720,16 @@
       },
       "widgets_values": [
         2001,
-        "fixed",
+        "randomize",
         8,
         1,
         "euler",
         "sgm_uniform",
-        0.9
+        0.85
       ]
-    },
-    {
-      "id": 33,
-      "type": "Note",
-      "pos": {
-        "0": 1250,
-        "1": 280
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "img2img-basic-ldm-sdlt-csd\n==========================================================\nLDM  : Large Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : I2I_LDM_SDLT_CSD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
-    [
-      1,
-      4,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
     [
       3,
       4,
@@ -661,14 +761,6 @@
       3,
       2,
       "CONDITIONING"
-    ],
-    [
-      46,
-      27,
-      0,
-      9,
-      0,
-      "IMAGE"
     ],
     [
       48,
@@ -765,16 +857,56 @@
       41,
       0,
       "*"
+    ],
+    [
+      78,
+      27,
+      0,
+      42,
+      0,
+      "*"
+    ],
+    [
+      79,
+      42,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      80,
+      4,
+      0,
+      43,
+      0,
+      "*"
+    ],
+    [
+      81,
+      43,
+      0,
+      44,
+      0,
+      "*"
+    ],
+    [
+      82,
+      44,
+      0,
+      3,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6209213230591552,
+      "scale": 0.5131581182307067,
       "offset": [
-        163.11828905721288,
-        409.8975914771933
+        478.28038699702813,
+        512.7356902391865
       ]
     }
   },
