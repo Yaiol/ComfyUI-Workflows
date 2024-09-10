@@ -56,66 +56,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 3,
-      "type": "KSampler",
-      "pos": {
-        "0": 450,
-        "1": 190
-      },
-      "size": {
-        "0": 350,
-        "1": 262
-      },
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 98
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 4
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 6
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 72
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            42
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "ksampler",
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        2001,
-        "fixed",
-        20,
-        4,
-        "dpmpp_2m_sde",
-        "karras",
-        1
-      ]
-    },
-    {
       "id": 29,
       "type": "CheckpointLoaderSimple",
       "pos": {
@@ -497,12 +437,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ljcvg_00003_.png&type=temp&subfolder=&rand=0.6845082678155332"
+            "url": "/api/view?filename=rgthree.compare._temp_iqype_00019_.png&type=temp&subfolder=&rand=0.7123281617205508"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ljcvg_00004_.png&type=temp&subfolder=&rand=0.9843655139770344"
+            "url": "/api/view?filename=rgthree.compare._temp_iqype_00020_.png&type=temp&subfolder=&rand=0.5102230023319436"
           }
         ]
       ]
@@ -781,6 +721,66 @@
       "bgcolor": "#533"
     },
     {
+      "id": 3,
+      "type": "KSampler",
+      "pos": {
+        "0": 450,
+        "1": 190
+      },
+      "size": {
+        "0": 350,
+        "1": 262
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 98
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 4
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 6
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 72
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            42
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        2001,
+        "randomize",
+        20,
+        4,
+        "dpmpp_2m_sde",
+        "karras",
+        1
+      ]
+    },
+    {
       "id": 36,
       "type": "Note",
       "pos": {
@@ -996,10 +996,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.573085533011686,
+      "scale": 0.5131581182307067,
       "offset": [
-        777.5200401368121,
-        330.37827719390197
+        922.7306904783203,
+        339.83656537393216
       ]
     }
   },
