@@ -1,21 +1,13 @@
 {
-  "last_node_id": 132,
-  "last_link_id": 370,
+  "last_node_id": 133,
+  "last_link_id": 373,
   "nodes": [
     {
       "id": 83,
       "type": "Reroute",
       "pos": {
         "0": 450,
-        "1": 160,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 160
       },
       "size": [
         75,
@@ -51,15 +43,7 @@
       "type": "Reroute",
       "pos": {
         "0": 1500,
-        "1": 130,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 130
       },
       "size": [
         75,
@@ -95,15 +79,7 @@
       "type": "Reroute",
       "pos": {
         "0": 1880,
-        "1": 160,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 160
       },
       "size": [
         75,
@@ -135,72 +111,11 @@
       }
     },
     {
-      "id": 8,
-      "type": "VAEDecode",
-      "pos": {
-        "0": 2000,
-        "1": 190,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 7
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 251
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            262
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "vae_decode",
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 90,
       "type": "SaveImage",
       "pos": {
         "0": 2000,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 230
       },
       "size": {
         "0": 370,
@@ -233,15 +148,7 @@
       "type": "CLIPTextEncode",
       "pos": {
         "0": 450,
-        "1": 460,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 460
       },
       "size": {
         "0": 350,
@@ -283,15 +190,7 @@
       "type": "Reroute",
       "pos": {
         "0": 680,
-        "1": 40,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 40
       },
       "size": [
         75,
@@ -323,64 +222,11 @@
       }
     },
     {
-      "id": 81,
-      "type": "Reroute",
-      "pos": {
-        "0": 680,
-        "1": 70,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 337
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            354,
-            356
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 121,
       "type": "Reroute",
       "pos": {
         "0": 450,
-        "1": 100,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 100
       },
       "size": [
         75,
@@ -416,15 +262,7 @@
       "type": "Reroute",
       "pos": {
         "0": -300,
-        "1": 40,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 40
       },
       "size": [
         75,
@@ -460,15 +298,7 @@
       "type": "Reroute",
       "pos": {
         "0": 60,
-        "1": 70,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 70
       },
       "size": [
         75,
@@ -504,15 +334,7 @@
       "type": "ControlNetLoader",
       "pos": {
         "0": 850,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 230
       },
       "size": {
         "0": 350,
@@ -544,94 +366,11 @@
       "bgcolor": "#335"
     },
     {
-      "id": 72,
-      "type": "ControlNetApplyAdvanced",
-      "pos": {
-        "0": 850,
-        "1": 560,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 352
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 353
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 328,
-          "slot_index": 2
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 330
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            350
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            351
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet",
-      "properties": {
-        "Node name for S&R": "ControlNetApplyAdvanced"
-      },
-      "widgets_values": [
-        0.65,
-        0,
-        0.7000000000000001
-      ]
-    },
-    {
       "id": 11,
       "type": "InstantIDModelLoader",
       "pos": {
         "0": 1260,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 230
       },
       "size": {
         "0": 350,
@@ -667,15 +406,7 @@
       "type": "InstantIDFaceAnalysis",
       "pos": {
         "0": 1260,
-        "1": 350,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 350
       },
       "size": {
         "0": 350,
@@ -711,15 +442,7 @@
       "type": "ControlNetLoader",
       "pos": {
         "0": 1260,
-        "1": 470,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 470
       },
       "size": {
         "0": 350,
@@ -751,78 +474,11 @@
       "bgcolor": "#335"
     },
     {
-      "id": 115,
-      "type": "AV_ControlNetPreprocessor",
-      "pos": {
-        "0": 850,
-        "1": 350,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 150
-      },
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 354
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            330,
-            370
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CNET_NAME",
-          "type": "STRING",
-          "links": null,
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_preprocessor",
-      "properties": {
-        "Node name for S&R": "AV_ControlNetPreprocessor"
-      },
-      "widgets_values": [
-        "depth_zoe",
-        "sdxl",
-        1024,
-        "None"
-      ]
-    },
-    {
       "id": 120,
       "type": "Reroute",
       "pos": {
         "0": 1100,
-        "1": 100,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 100
       },
       "size": [
         75,
@@ -858,22 +514,14 @@
       "type": "Reroute",
       "pos": {
         "0": 1100,
-        "1": 70,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 70
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -902,15 +550,7 @@
       "type": "Reroute",
       "pos": {
         "0": 1100,
-        "1": 40,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 40
       },
       "size": [
         75,
@@ -946,15 +586,7 @@
       "type": "LoadImage",
       "pos": {
         "0": -680,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 230
       },
       "size": {
         "0": 350,
@@ -997,15 +629,7 @@
       "type": "EmptyLatentImage",
       "pos": {
         "0": 450,
-        "1": 670,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 670
       },
       "size": {
         "0": 350,
@@ -1042,15 +666,7 @@
       "type": "Reroute",
       "pos": {
         "0": 870,
-        "1": 130,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 130
       },
       "size": [
         75,
@@ -1086,15 +702,7 @@
       "type": "RepeatLatentBatch",
       "pos": {
         "0": 450,
-        "1": 830,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 830
       },
       "size": {
         "0": 350,
@@ -1139,15 +747,7 @@
       "type": "ApplyInstantID",
       "pos": {
         "0": 1260,
-        "1": 590,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 590
       },
       "size": {
         "0": 350,
@@ -1247,15 +847,7 @@
       "type": "CheckpointLoaderSimple",
       "pos": {
         "0": 50,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 230
       },
       "size": {
         "0": 350,
@@ -1303,55 +895,11 @@
       "bgcolor": "#335"
     },
     {
-      "id": 91,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 850,
-        "1": 790,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        350,
-        370
-      ],
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 370,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [],
-      "title": "image_preview",
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
       "id": 131,
       "type": "LoadImage",
       "pos": {
         "0": -320,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 230
       },
       "size": {
         "0": 350,
@@ -1395,15 +943,7 @@
       "type": "CLIPTextEncode",
       "pos": {
         "0": 450,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 230
       },
       "size": {
         "0": 350,
@@ -1441,19 +981,230 @@
       "bgcolor": "#353"
     },
     {
+      "id": 81,
+      "type": "Reroute",
+      "pos": {
+        "0": 680,
+        "1": 70
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 337
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            356,
+            371
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 72,
+      "type": "ControlNetApplyAdvanced",
+      "pos": {
+        "0": 850,
+        "1": 500
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 352
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 353
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 328,
+          "slot_index": 2
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 372
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            350
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            351
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet",
+      "properties": {
+        "Node name for S&R": "ControlNetApplyAdvanced"
+      },
+      "widgets_values": [
+        0.65,
+        0,
+        0.7000000000000001
+      ]
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 2000,
+        "1": 190
+      },
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 251
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            262
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 91,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 850,
+        "1": 730
+      },
+      "size": [
+        350,
+        370
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 373,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [],
+      "title": "image_preview",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 133,
+      "type": "AIO_Preprocessor",
+      "pos": {
+        "0": 850,
+        "1": 350
+      },
+      "size": [
+        350,
+        80
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 371
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            372,
+            373
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "controlnet_preprocessor",
+      "properties": {
+        "Node name for S&R": "AIO_Preprocessor"
+      },
+      "widgets_values": [
+        "Zoe-DepthMapPreprocessor",
+        1024
+      ]
+    },
+    {
       "id": 3,
       "type": "KSampler",
       "pos": {
         "0": 1650,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 230
       },
       "size": {
         "0": 310,
@@ -1513,20 +1264,12 @@
       "type": "Note",
       "pos": {
         "0": 2000,
-        "1": 690,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 690
       },
-      "size": [
-        370,
-        100
-      ],
+      "size": {
+        "0": 370,
+        "1": 100
+      },
       "flags": {},
       "order": 8,
       "mode": 0,
@@ -1648,14 +1391,6 @@
       "CONTROL_NET"
     ],
     [
-      330,
-      115,
-      0,
-      72,
-      3,
-      "IMAGE"
-    ],
-    [
       337,
       117,
       0,
@@ -1744,14 +1479,6 @@
       "CONDITIONING"
     ],
     [
-      354,
-      81,
-      0,
-      115,
-      0,
-      "IMAGE"
-    ],
-    [
       356,
       81,
       0,
@@ -1824,8 +1551,24 @@
       "*"
     ],
     [
-      370,
-      115,
+      371,
+      81,
+      0,
+      133,
+      0,
+      "IMAGE"
+    ],
+    [
+      372,
+      133,
+      0,
+      72,
+      3,
+      "IMAGE"
+    ],
+    [
+      373,
+      133,
       0,
       91,
       0,
@@ -1836,10 +1579,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.424097618372485,
+      "scale": 0.4240976183724851,
       "offset": [
-        765.1660507234931,
-        122.78297613574401
+        779.2722931731505,
+        256.782028304711
       ]
     }
   },

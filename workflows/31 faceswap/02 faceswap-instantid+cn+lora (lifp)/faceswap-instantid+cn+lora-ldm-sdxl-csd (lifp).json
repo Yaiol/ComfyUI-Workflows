@@ -1,21 +1,13 @@
 {
-  "last_node_id": 131,
-  "last_link_id": 372,
+  "last_node_id": 132,
+  "last_link_id": 377,
   "nodes": [
     {
       "id": 5,
       "type": "EmptyLatentImage",
       "pos": {
         "0": 450,
-        "1": 670,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 640
       },
       "size": {
         "0": 350,
@@ -52,22 +44,14 @@
       "type": "Reroute",
       "pos": {
         "0": 450,
-        "1": 160,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 130
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -96,15 +80,7 @@
       "type": "Reroute",
       "pos": {
         "0": 870,
-        "1": 130,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 100
       },
       "size": [
         75,
@@ -140,15 +116,7 @@
       "type": "Reroute",
       "pos": {
         "0": 1500,
-        "1": 130,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 100
       },
       "size": [
         75,
@@ -184,22 +152,14 @@
       "type": "Reroute",
       "pos": {
         "0": 1880,
-        "1": 160,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 130
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -228,15 +188,7 @@
       "type": "VAEDecode",
       "pos": {
         "0": 2000,
-        "1": 190,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 160
       },
       "size": {
         "0": 210,
@@ -245,7 +197,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 32,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -277,26 +229,60 @@
       "bgcolor": "#535"
     },
     {
+      "id": 40,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 430
+      },
+      "size": {
+        "0": 350,
+        "1": 150
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 362
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            350
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
       "id": 79,
       "type": "Reroute",
       "pos": {
         "0": 1110,
-        "1": 40,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 10
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 17,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -325,15 +311,7 @@
       "type": "Reroute",
       "pos": {
         "0": 1110,
-        "1": 70,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 40
       },
       "size": [
         75,
@@ -369,15 +347,7 @@
       "type": "Reroute",
       "pos": {
         "0": 1110,
-        "1": 100,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 70
       },
       "size": [
         75,
@@ -413,28 +383,20 @@
       "type": "Reroute",
       "pos": {
         "0": -300,
-        "1": 40,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 10
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 371
+          "link": 376
         }
       ],
       "outputs": [
@@ -457,15 +419,7 @@
       "type": "Reroute",
       "pos": {
         "0": 60,
-        "1": 70,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 40
       },
       "size": [
         75,
@@ -478,7 +432,7 @@
         {
           "name": "",
           "type": "*",
-          "link": 372
+          "link": 377
         }
       ],
       "outputs": [
@@ -501,22 +455,14 @@
       "type": "Reroute",
       "pos": {
         "0": 450,
-        "1": 100,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 70
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -545,15 +491,7 @@
       "type": "ControlNetLoader",
       "pos": {
         "0": 850,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 200
       },
       "size": {
         "0": 350,
@@ -585,71 +523,18 @@
       "bgcolor": "#335"
     },
     {
-      "id": 81,
-      "type": "Reroute",
-      "pos": {
-        "0": 700,
-        "1": 70,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 337
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            323,
-            357
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 90,
       "type": "SaveImage",
       "pos": {
         "0": 2000,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 200
       },
       "size": {
         "0": 350,
         "1": 400
       },
       "flags": {},
-      "order": 33,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -671,341 +556,11 @@
       "bgcolor": "#535"
     },
     {
-      "id": 72,
-      "type": "ControlNetApplyAdvanced",
-      "pos": {
-        "0": 850,
-        "1": 540,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 348
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 350
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 328,
-          "slot_index": 2
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 330
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            351
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            352
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet",
-      "properties": {
-        "Node name for S&R": "ControlNetApplyAdvanced"
-      },
-      "widgets_values": [
-        0.3,
-        0,
-        0.5
-      ]
-    },
-    {
-      "id": 125,
-      "type": "LoraLoader",
-      "pos": {
-        "0": 50,
-        "1": 390,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 365
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 364
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            363
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            361,
-            362
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "lora_model",
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "lyco\\14 paint 20th\\sdxl-kappaneuro-PachecoGl.safetensors",
-        1,
-        1
-      ]
-    },
-    {
-      "id": 91,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 1660,
-        "1": 550,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 240,
-        "1": 250
-      },
-      "flags": {},
-      "order": 31,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 368,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
-      "id": 115,
-      "type": "AV_ControlNetPreprocessor",
-      "pos": {
-        "0": 850,
-        "1": 330,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 150
-      },
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 357
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            330,
-            366
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CNET_NAME",
-          "type": "STRING",
-          "links": null,
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_preprocessor",
-      "properties": {
-        "Node name for S&R": "AV_ControlNetPreprocessor"
-      },
-      "widgets_values": [
-        "depth_midas",
-        "sdxl",
-        1024,
-        "None"
-      ]
-    },
-    {
-      "id": 126,
-      "type": "Reroute",
-      "pos": {
-        "0": 1260,
-        "1": 100,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 366
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            367
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 127,
-      "type": "Reroute",
-      "pos": {
-        "0": 1500,
-        "1": 100,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 367
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            368
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 11,
       "type": "InstantIDModelLoader",
       "pos": {
         "0": 1250,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 200
       },
       "size": {
         "0": 350,
@@ -1041,15 +596,7 @@
       "type": "InstantIDFaceAnalysis",
       "pos": {
         "0": 1250,
-        "1": 350,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 320
       },
       "size": {
         "0": 350,
@@ -1085,15 +632,7 @@
       "type": "ControlNetLoader",
       "pos": {
         "0": 1250,
-        "1": 470,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 440
       },
       "size": {
         "0": 350,
@@ -1129,15 +668,7 @@
       "type": "ApplyInstantID",
       "pos": {
         "0": 1250,
-        "1": 590,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 560
       },
       "size": {
         "0": 350,
@@ -1233,155 +764,24 @@
       ]
     },
     {
-      "id": 129,
-      "type": "PreviewImage",
-      "pos": {
-        "0": -680,
-        "1": 350,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 370
-      },
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 369
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "color": "#ffaa14",
-      "bgcolor": "#fa9600"
-    },
-    {
-      "id": 131,
-      "type": "PreviewImage",
-      "pos": {
-        "0": -320,
-        "1": 350,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 370
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 370
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "color": "#8cd2ff",
-      "bgcolor": "#78beff"
-    },
-    {
-      "id": 128,
-      "type": "LoadImageFromPath",
-      "pos": {
-        "0": -680,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 80
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            369,
-            371
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "image_input_1",
-      "properties": {
-        "Node name for S&R": "LoadImageFromPath"
-      },
-      "widgets_values": [
-        "./character-avatar-cg.jpg"
-      ],
-      "color": "#ffaa14",
-      "bgcolor": "#fa9600"
-    },
-    {
-      "id": 40,
+      "id": 39,
       "type": "CLIPTextEncode",
       "pos": {
         "0": 450,
-        "1": 460,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 200
       },
       "size": {
         "0": 350,
-        "1": 150
+        "1": 170
       },
       "flags": {},
-      "order": 20,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 362
+          "link": 361
         }
       ],
       "outputs": [
@@ -1389,43 +789,35 @@
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
-            350
+            348
           ],
           "slot_index": 0,
           "shape": 3
         }
       ],
-      "title": "prompt_negative",
+      "title": "prompt_positive",
       "properties": {
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        ""
+        "Gabriel Pacheco Style, painting of a woman, wavy short black hair, blue sky in background"
       ],
-      "color": "#322",
-      "bgcolor": "#533"
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 4,
       "type": "CheckpointLoaderSimple",
       "pos": {
         "0": 50,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 200
       },
       "size": {
         "0": 350,
         "1": 100
       },
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1465,76 +857,391 @@
       "bgcolor": "#335"
     },
     {
-      "id": 39,
-      "type": "CLIPTextEncode",
+      "id": 81,
+      "type": "Reroute",
       "pos": {
-        "0": 450,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 700,
+        "1": 40
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 337
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            323,
+            371
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 128,
+      "type": "AIO_Preprocessor",
+      "pos": {
+        "0": 850,
+        "1": 320
+      },
+      "size": {
+        "0": 350,
+        "1": 82
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 371
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            372,
+            373
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet_preprocessor",
+      "properties": {
+        "Node name for S&R": "AIO_Preprocessor"
+      },
+      "widgets_values": [
+        "Zoe-DepthMapPreprocessor",
+        1024
+      ]
+    },
+    {
+      "id": 72,
+      "type": "ControlNetApplyAdvanced",
+      "pos": {
+        "0": 850,
+        "1": 460
       },
       "size": {
         "0": 350,
         "1": 170
       },
       "flags": {},
-      "order": 19,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 361
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 348
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 350
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 328,
+          "slot_index": 2
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 372
         }
       ],
       "outputs": [
         {
-          "name": "CONDITIONING",
+          "name": "positive",
           "type": "CONDITIONING",
           "links": [
-            348
+            351
           ],
           "slot_index": 0,
           "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            352
+          ],
+          "slot_index": 1,
+          "shape": 3
         }
       ],
-      "title": "prompt_positive",
+      "title": "controlnet",
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "ControlNetApplyAdvanced"
       },
       "widgets_values": [
-        "Gabriel Pacheco Style, painting of a woman, wavy short black hair, blue sky in background"
+        0.3,
+        0,
+        0.5
+      ]
+    },
+    {
+      "id": 91,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 850,
+        "1": 690
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 373,
+          "slot_index": 0
+        }
       ],
-      "color": "#232",
-      "bgcolor": "#353"
+      "outputs": [],
+      "title": "image_preview",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 125,
+      "type": "LoraLoader",
+      "pos": {
+        "0": 50,
+        "1": 360
+      },
+      "size": {
+        "0": 350,
+        "1": 130
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 365
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 364
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            363
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            361,
+            362
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "lora_model",
+      "properties": {
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "lyco\\14 paint 20th\\sdxl-kappaneuro-PachecoGl.safetensors",
+        1,
+        1
+      ]
+    },
+    {
+      "id": 129,
+      "type": "LoadImageFromPath",
+      "pos": {
+        "0": -710,
+        "1": 200
+      },
+      "size": {
+        "0": 350,
+        "1": 80
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            374,
+            376
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "image_input_1",
+      "properties": {
+        "Node name for S&R": "LoadImageFromPath"
+      },
+      "widgets_values": [
+        "./character-avatar-cg.jpg"
+      ],
+      "color": "#ffaa14",
+      "bgcolor": "#fa9600"
+    },
+    {
+      "id": 130,
+      "type": "PreviewImage",
+      "pos": {
+        "0": -710,
+        "1": 320
+      },
+      "size": {
+        "0": 350,
+        "1": 370
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 374
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#ffaa14",
+      "bgcolor": "#fa9600"
+    },
+    {
+      "id": 132,
+      "type": "PreviewImage",
+      "pos": {
+        "0": -350,
+        "1": 320
+      },
+      "size": {
+        "0": 350,
+        "1": 370
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 375
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#8cd2ff",
+      "bgcolor": "#78beff"
+    },
+    {
+      "id": 131,
+      "type": "LoadImageFromPath",
+      "pos": {
+        "0": -350,
+        "1": 200
+      },
+      "size": {
+        "0": 350,
+        "1": 80
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            375,
+            377
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "image_input_2",
+      "properties": {
+        "Node name for S&R": "LoadImageFromPath"
+      },
+      "widgets_values": [
+        "./character-woman-dreaming-fixed.jpg"
+      ],
+      "color": "#8cd2ff",
+      "bgcolor": "#78beff"
     },
     {
       "id": 3,
       "type": "KSampler",
       "pos": {
         "0": 1650,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "1": 200
       },
       "size": {
         "0": 310,
         "1": 262
       },
       "flags": {},
-      "order": 30,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -1573,8 +1280,8 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        7716231474909,
-        "randomize",
+        2001,
+        "fixed",
         20,
         4,
         "dpmpp_2m_sde",
@@ -1583,73 +1290,14 @@
       ]
     },
     {
-      "id": 130,
-      "type": "LoadImageFromPath",
-      "pos": {
-        "0": -320,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 80
-      },
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            370,
-            372
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "image_input_2",
-      "properties": {
-        "Node name for S&R": "LoadImageFromPath"
-      },
-      "widgets_values": [
-        "./character-woman-dreaming-fixed.jpg"
-      ],
-      "color": "#8cd2ff",
-      "bgcolor": "#78beff"
-    },
-    {
       "id": 111,
       "type": "Note",
       "pos": {
-        "0": 2010,
-        "1": 700,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 2000,
+        "1": 660
       },
       "size": {
-        "0": 340,
+        "0": 350,
         "1": 100
       },
       "flags": {},
@@ -1661,7 +1309,7 @@
         "text": ""
       },
       "widgets_values": [
-        "faceswap-instantid+cn+lora-ldm-sdxl-csd (lifp)\n==================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID-CN (cn)+LORA_LDM_SDXL_CSD"
+        "faceswap-instantid+cn+lora-ldm-sdxl-csd (lifp)\n===========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID-CN (cn)+LORA_LDM_SDXL_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1781,14 +1429,6 @@
       "CONTROL_NET"
     ],
     [
-      330,
-      115,
-      0,
-      72,
-      3,
-      "IMAGE"
-    ],
-    [
       337,
       117,
       0,
@@ -1869,14 +1509,6 @@
       "CONDITIONING"
     ],
     [
-      357,
-      81,
-      0,
-      115,
-      0,
-      "IMAGE"
-    ],
-    [
       358,
       87,
       0,
@@ -1933,56 +1565,56 @@
       "MODEL"
     ],
     [
-      366,
-      115,
+      371,
+      81,
       0,
-      126,
+      128,
       0,
-      "*"
+      "IMAGE"
     ],
     [
-      367,
-      126,
+      372,
+      128,
       0,
-      127,
-      0,
-      "*"
+      72,
+      3,
+      "IMAGE"
     ],
     [
-      368,
-      127,
+      373,
+      128,
       0,
       91,
       0,
       "IMAGE"
     ],
     [
-      369,
-      128,
-      0,
+      374,
       129,
       0,
-      "IMAGE"
-    ],
-    [
-      370,
       130,
       0,
+      "IMAGE"
+    ],
+    [
+      375,
       131,
+      0,
+      132,
       0,
       "IMAGE"
     ],
     [
-      371,
-      128,
+      376,
+      129,
       0,
       118,
       0,
       "*"
     ],
     [
-      372,
-      130,
+      377,
+      131,
       0,
       117,
       0,
@@ -1993,10 +1625,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1,
+      "scale": 0.42409761837248505,
       "offset": [
-        -1205.2623530210699,
-        -401.94437846144604
+        778.9878657441348,
+        293.5780514955156
       ]
     }
   },
