@@ -1,21 +1,13 @@
 {
-  "last_node_id": 53,
-  "last_link_id": 111,
+  "last_node_id": 54,
+  "last_link_id": 114,
   "nodes": [
     {
       "id": 41,
       "type": "ControlNetLoader",
       "pos": {
-        "0": 450,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 853.1957397460938,
+        "1": 233.6273956298828
       },
       "size": {
         "0": 350,
@@ -49,23 +41,15 @@
       "id": 42,
       "type": "Zoe-DepthMapPreprocessor",
       "pos": {
-        "0": 450,
-        "1": 350,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 853.1957397460938,
+        "1": 353.6272888183594
       },
       "size": {
         "0": 350,
         "1": 60
       },
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -94,70 +78,18 @@
       ]
     },
     {
-      "id": 44,
-      "type": "Reroute",
-      "pos": {
-        "0": 460,
-        "1": 120,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 80
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "MODEL",
-          "links": [
-            81
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 45,
       "type": "Reroute",
       "pos": {
-        "0": 710,
-        "1": 120,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 1113.1954345703125,
+        "1": 123.62741088867188
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -182,174 +114,11 @@
       }
     },
     {
-      "id": 34,
-      "type": "Reroute",
-      "pos": {
-        "0": 50,
-        "1": 90,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 86
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            97
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 46,
-      "type": "Image Comparer (rgthree)",
-      "pos": {
-        "0": 1250,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 380,
-        "1": 430
-      },
-      "flags": {},
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image_a",
-          "type": "IMAGE",
-          "link": 96,
-          "dir": 3
-        },
-        {
-          "name": "image_b",
-          "type": "IMAGE",
-          "link": 95,
-          "dir": 3
-        }
-      ],
-      "outputs": [],
-      "title": "image_compare",
-      "properties": {
-        "comparer_mode": "Slide"
-      },
-      "widgets_values": [
-        [
-          {
-            "name": "A",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_rkzun_00015_.png&type=temp&subfolder=&rand=0.26914811352968915"
-          },
-          {
-            "name": "B",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_rkzun_00016_.png&type=temp&subfolder=&rand=0.4293002145361571"
-          }
-        ]
-      ]
-    },
-    {
-      "id": 27,
-      "type": "VAEDecode",
-      "pos": {
-        "0": 1250,
-        "1": 180,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 140,
-        "1": 50
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 94
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 48
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            46,
-            95
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "vae_decode",
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 39,
       "type": "VAEEncode",
       "pos": {
-        "0": 850,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 1253.1954345703125,
+        "1": 233.6273956298828
       },
       "size": {
         "0": 350,
@@ -392,23 +161,15 @@
       "id": 35,
       "type": "Reroute",
       "pos": {
-        "0": 300,
-        "1": 90,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 703.1957397460938,
+        "1": 93.62741088867188
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -437,23 +198,15 @@
       "id": 48,
       "type": "Reroute",
       "pos": {
-        "0": 710,
-        "1": 90,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 1113.1954345703125,
+        "1": 93.62741088867188
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -479,71 +232,18 @@
       }
     },
     {
-      "id": 30,
-      "type": "Reroute",
-      "pos": {
-        "0": 460,
-        "1": 150,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 70,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "VAE",
-          "links": [
-            101
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 49,
       "type": "Reroute",
       "pos": {
-        "0": 710,
-        "1": 150,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 1113.1954345703125,
+        "1": 153.6273956298828
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -572,16 +272,8 @@
       "id": 43,
       "type": "PreviewImage",
       "pos": {
-        "0": 860,
-        "1": 670,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 1263.1954345703125,
+        "1": 673.6278686523438
       },
       "size": {
         "0": 340,
@@ -603,78 +295,18 @@
       }
     },
     {
-      "id": 31,
-      "type": "LoadImage",
-      "pos": {
-        "0": -370,
-        "1": 240,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 380,
-        "1": 480
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            86
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "image_input",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "character-woman-dreaming-fixed.jpg",
-        "image"
-      ],
-      "color": "#ffaa14",
-      "bgcolor": "#ff9600"
-    },
-    {
       "id": 29,
       "type": "Reroute",
       "pos": {
-        "0": 1120,
-        "1": 150,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 1523.1954345703125,
+        "1": 153.6273956298828
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 16,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -703,16 +335,8 @@
       "id": 47,
       "type": "Reroute",
       "pos": {
-        "0": 1120,
-        "1": 90,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 1523.1954345703125,
+        "1": 93.62741088867188
       },
       "size": [
         75,
@@ -744,108 +368,68 @@
       }
     },
     {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
+      "id": 50,
+      "type": "CLIPTextEncodeSDXL",
       "pos": {
-        "0": 50,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 623.1957397460938,
+        "1": 433.6272888183594
       },
       "size": {
-        "0": 350,
-        "1": 100
+        "0": 222.0416717529297,
+        "1": 218
       },
-      "flags": {},
-      "order": 2,
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
       "mode": 0,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            80
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
+          "name": "clip",
           "type": "CLIP",
-          "links": [
-            110,
-            111
-          ],
-          "slot_index": 1
+          "link": 110
         },
         {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            70
-          ],
-          "slot_index": 2
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "01 base\\sdxl-sai-base-v10-vae0.9.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 51,
-      "type": "PrimitiveNode",
-      "pos": {
-        "0": 50,
-        "1": 390,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        350,
-        150
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
+          "name": "text_g",
           "type": "STRING",
-          "links": [
-            104,
-            105
-          ],
-          "slot_index": 0,
+          "link": 104,
+          "slot_index": 1,
           "widget": {
             "name": "text_g"
           }
+        },
+        {
+          "name": "text_l",
+          "type": "STRING",
+          "link": 105,
+          "widget": {
+            "name": "text_l"
+          }
         }
       ],
-      "title": "prompt_positive",
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            108
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
       "properties": {
-        "Run widget replace on values": false
+        "Node name for S&R": "CLIPTextEncodeSDXL"
       },
       "widgets_values": [
-        "painting of a woman, by Pablo Picasso, highly detailed"
+        4096,
+        4096,
+        0,
+        0,
+        4096,
+        4096,
+        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4",
+        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -854,23 +438,15 @@
       "id": 52,
       "type": "PrimitiveNode",
       "pos": {
-        "0": 50,
-        "1": 620,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 453.1961975097656,
+        "1": 483.6272888183594
       },
-      "size": [
-        350,
-        140
-      ],
+      "size": {
+        "0": 350,
+        "1": 140
+      },
       "flags": {},
-      "order": 4,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -901,16 +477,8 @@
       "id": 53,
       "type": "CLIPTextEncodeSDXL",
       "pos": {
-        "0": 220,
-        "1": 800,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 613.1957397460938,
+        "1": 673.6278686523438
       },
       "size": {
         "0": 212.3033447265625,
@@ -919,7 +487,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -973,177 +541,183 @@
       "bgcolor": "#533"
     },
     {
-      "id": 50,
-      "type": "CLIPTextEncodeSDXL",
+      "id": 34,
+      "type": "Reroute",
       "pos": {
-        "0": 220,
-        "1": 580,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 53.19633865356445,
+        "1": 93.62741088867188
       },
-      "size": {
-        "0": 222.0416717529297,
-        "1": 218
-      },
-      "flags": {
-        "collapsed": true
-      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
       "order": 9,
       "mode": 0,
       "inputs": [
         {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 110
-        },
-        {
-          "name": "text_g",
-          "type": "STRING",
-          "link": 104,
-          "slot_index": 1,
-          "widget": {
-            "name": "text_g"
-          }
-        },
-        {
-          "name": "text_l",
-          "type": "STRING",
-          "link": 105,
-          "widget": {
-            "name": "text_l"
-          }
+          "name": "",
+          "type": "*",
+          "link": 86
         }
       ],
       "outputs": [
         {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
+          "name": "",
+          "type": "IMAGE",
           "links": [
-            108
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncodeSDXL"
-      },
-      "widgets_values": [
-        4096,
-        4096,
-        0,
-        0,
-        4096,
-        4096,
-        "painting of a woman, by Pablo Picasso, highly detailed",
-        "painting of a woman, by Pablo Picasso, highly detailed"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 3,
-      "type": "KSampler",
-      "pos": {
-        "0": 850,
-        "1": 350,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 350,
-        "1": 262
-      },
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 82
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 76
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 77
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 69
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            94
+            97
           ],
           "slot_index": 0
         }
       ],
-      "title": "ksampler",
       "properties": {
-        "Node name for S&R": "KSampler"
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 30,
+      "type": "Reroute",
+      "pos": {
+        "0": 453.1961975097656,
+        "1": 153.6273956298828
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 70,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "VAE",
+          "links": [
+            101
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 44,
+      "type": "Reroute",
+      "pos": {
+        "0": 453.1961975097656,
+        "1": 123.62741088867188
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 80
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            81
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 46,
+      "type": "Image Comparer (rgthree)",
+      "pos": {
+        "0": 1653.1954345703125,
+        "1": 233.6273956298828
+      },
+      "size": {
+        "0": 350,
+        "1": 420
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_a",
+          "type": "IMAGE",
+          "link": 96,
+          "dir": 3
+        },
+        {
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": 95,
+          "dir": 3
+        }
+      ],
+      "outputs": [],
+      "title": "image_compare",
+      "properties": {
+        "comparer_mode": "Slide"
       },
       "widgets_values": [
-        2001,
-        "fixed",
-        25,
-        4,
-        "dpmpp_2m_sde",
-        "karras",
-        0.9
+        [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_kbjzp_00025_.png&type=temp&subfolder=&rand=0.7023484299949336"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_kbjzp_00026_.png&type=temp&subfolder=&rand=0.5708932686971802"
+          }
+        ]
       ]
     },
     {
       "id": 9,
       "type": "SaveImage",
       "pos": {
-        "0": 1640,
-        "1": 230,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 2053.1953125,
+        "1": 233.6273956298828
       },
       "size": {
-        "0": 380,
-        "1": 430
+        "0": 350,
+        "1": 420
       },
       "flags": {
         "collapsed": false
       },
-      "order": 23,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 46
+          "link": 114
         }
       ],
       "outputs": [],
@@ -1158,19 +732,94 @@
       "bgcolor": "#535"
     },
     {
+      "id": 54,
+      "type": "Reroute",
+      "pos": {
+        "0": 1923.1954345703125,
+        "1": 153.6273956298828
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 112
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            114
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 27,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 1653.1954345703125,
+        "1": 183.6273956298828
+      },
+      "size": {
+        "0": 140,
+        "1": 50
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 113
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 48
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            95,
+            112
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 40,
       "type": "ControlNetApplyAdvanced",
       "pos": {
-        "0": 450,
-        "1": 470,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 853.1957397460938,
+        "1": 473.6272888183594
       },
       "size": {
         "0": 350,
@@ -1229,27 +878,214 @@
       "widgets_values": [
         1,
         0,
-        0.3
+        0.5
+      ]
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            80
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            110,
+            111
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            70
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "01 base\\sdxl-sai-base-v10-vae0.9.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 31,
+      "type": "LoadImage",
+      "pos": {
+        "0": -380,
+        "1": 230
+      },
+      "size": {
+        "0": 380,
+        "1": 480
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            86
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "image_input",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-woman-pirate.jpg",
+        "image"
+      ],
+      "color": "#ffaa14",
+      "bgcolor": "#ff9600"
+    },
+    {
+      "id": 51,
+      "type": "PrimitiveNode",
+      "pos": {
+        "0": 453.1961975097656,
+        "1": 233.6273956298828
+      },
+      "size": {
+        "0": 350,
+        "1": 150
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            104,
+            105
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_g"
+          }
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": {
+        "0": 1253.1954345703125,
+        "1": 353.6272888183594
+      },
+      "size": {
+        "0": 350,
+        "1": 262
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 82
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 76
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 77
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 69
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            113
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        2001,
+        "randomize",
+        25,
+        4,
+        "dpmpp_2m_sde",
+        "karras",
+        1
       ]
     },
     {
       "id": 33,
       "type": "Note",
       "pos": {
-        "0": 1260,
-        "1": 710,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "0": 2053.1953125,
+        "1": 713.6278686523438
       },
       "size": {
-        "0": 370,
-        "1": 110
+        "0": 350,
+        "1": 100
       },
       "flags": {},
       "order": 5,
@@ -1260,21 +1096,13 @@
         "text": ""
       },
       "widgets_values": [
-        "img2img-cn depth-ldm-sdxl-cxl\n==============================================================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip XL\nID   : I2I-CN-DEPTH_LDM-SDXL-CXL"
+        "img2img-cn depth-ldm-sdxl-cxl\n===========================================================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip XL\nID   : I2I-CN-DEPTH_LDM-SDXL-CXL"
       ],
       "color": "#432",
       "bgcolor": "#653"
     }
   ],
   "links": [
-    [
-      46,
-      27,
-      0,
-      9,
-      0,
-      "IMAGE"
-    ],
     [
       48,
       29,
@@ -1378,14 +1206,6 @@
       34,
       0,
       "*"
-    ],
-    [
-      94,
-      3,
-      0,
-      27,
-      0,
-      "LATENT"
     ],
     [
       95,
@@ -1522,16 +1342,40 @@
       53,
       0,
       "CLIP"
+    ],
+    [
+      112,
+      27,
+      0,
+      54,
+      0,
+      "*"
+    ],
+    [
+      113,
+      3,
+      0,
+      27,
+      0,
+      "LATENT"
+    ],
+    [
+      114,
+      54,
+      0,
+      9,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5131581182307068,
+      "scale": 0.46650738020973337,
       "offset": [
-        579.3183427050855,
-        36.63589199331048
+        426.7058263479203,
+        107.77838935102663
       ]
     }
   },
