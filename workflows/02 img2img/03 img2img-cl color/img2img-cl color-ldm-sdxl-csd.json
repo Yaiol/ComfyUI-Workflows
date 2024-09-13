@@ -384,6 +384,7 @@
           "shape": 3
         }
       ],
+      "title": "vae_decode",
       "properties": {
         "Node name for S&R": "VAEDecode"
       },
@@ -419,6 +420,7 @@
         }
       ],
       "outputs": [],
+      "title": "image_compare",
       "properties": {
         "comparer_mode": "Slide"
       },
@@ -427,72 +429,14 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_aqyva_00035_.png&type=temp&subfolder=&rand=0.6201241697355491"
+            "url": "/api/view?filename=rgthree.compare._temp_ktsst_00027_.png&type=temp&subfolder=&rand=0.8784516524753334"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_aqyva_00036_.png&type=temp&subfolder=&rand=0.25683884042529104"
+            "url": "/api/view?filename=rgthree.compare._temp_ktsst_00028_.png&type=temp&subfolder=&rand=0.378474859964415"
           }
         ]
-      ]
-    },
-    {
-      "id": 191,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2050,
-        "1": 530
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 566
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I+CN COLOR_LDM_SDXL_CSD_%ksampler.seed%"
-      ]
-    },
-    {
-      "id": 193,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2450,
-        "1": 530
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 569
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I+CN COLOR+ADJ_LDM_SDXL_CSD_%ksampler.seed%"
       ]
     },
     {
@@ -1090,12 +1034,72 @@
       },
       "widgets_values": [
         2001,
-        "randomize",
+        "fixed",
         8,
         2,
         "euler",
         "sgm_uniform",
         1
+      ]
+    },
+    {
+      "id": 193,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2450,
+        "1": 530
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 569
+        }
+      ],
+      "outputs": [],
+      "title": "image_output_2",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I+CL COLOR+ADJ_LDM_SDXL_CSD_%ksampler.seed%"
+      ]
+    },
+    {
+      "id": 191,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2050,
+        "1": 530
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 566
+        }
+      ],
+      "outputs": [],
+      "title": "image_output_1",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I+CL COLOR_LDM_SDXL_CSD_%ksampler.seed%"
       ]
     },
     {
@@ -1118,7 +1122,7 @@
         "text": ""
       },
       "widgets_values": [
-        "img2img-cn color-ldm-sdxl-csd\n============================+==============================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : I2I+CN COLOR_LDM_SDXL_CSD"
+        "img2img-cl color-ldm-sdxl-csd\n============================+==============================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : I2I+CL COLOR_LDM_SDXL_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1394,10 +1398,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4240976183724855,
+      "scale": 0.38554328942953164,
       "offset": [
-        388.5890727389175,
-        158.18715036486498
+        523.0647576527768,
+        262.9355116490676
       ]
     }
   },
