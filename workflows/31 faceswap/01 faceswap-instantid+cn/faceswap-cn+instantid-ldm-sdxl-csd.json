@@ -1,6 +1,6 @@
 {
   "last_node_id": 133,
-  "last_link_id": 382,
+  "last_link_id": 373,
   "nodes": [
     {
       "id": 83,
@@ -111,6 +111,84 @@
       }
     },
     {
+      "id": 40,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 460
+      },
+      "size": {
+        "0": 350,
+        "1": 150
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 312
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            353
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 79,
+      "type": "Reroute",
+      "pos": {
+        "0": 680,
+        "1": 40
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 339
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            358
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
       "id": 121,
       "type": "Reroute",
       "pos": {
@@ -183,11 +261,11 @@
       }
     },
     {
-      "id": 38,
-      "type": "InstantIDFaceAnalysis",
+      "id": 114,
+      "type": "ControlNetLoader",
       "pos": {
         "0": 850,
-        "1": 350
+        "1": 230
       },
       "size": {
         "0": 350,
@@ -195,6 +273,78 @@
       },
       "flags": {},
       "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            328
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet_model",
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "sdxl-xinsir\\sdxl-xinsir-union-v20.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 11,
+      "type": "InstantIDModelLoader",
+      "pos": {
+        "0": 1260,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INSTANTID",
+          "type": "INSTANTID",
+          "links": [
+            276
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "instantid_model",
+      "properties": {
+        "Node name for S&R": "InstantIDModelLoader"
+      },
+      "widgets_values": [
+        "sdxl-instantx-istantid.bin"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 38,
+      "type": "InstantIDFaceAnalysis",
+      "pos": {
+        "0": 1260,
+        "1": 350
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -222,7 +372,7 @@
       "id": 16,
       "type": "ControlNetLoader",
       "pos": {
-        "0": 850,
+        "0": 1260,
         "1": 470
       },
       "size": {
@@ -230,7 +380,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 1,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -291,6 +441,78 @@
       }
     },
     {
+      "id": 126,
+      "type": "Reroute",
+      "pos": {
+        "0": 1100,
+        "1": 70
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 356
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            357
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 127,
+      "type": "Reroute",
+      "pos": {
+        "0": 1100,
+        "1": 40
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 358
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            359
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
       "id": 5,
       "type": "EmptyLatentImage",
       "pos": {
@@ -302,7 +524,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 2,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -409,6 +631,106 @@
       "bgcolor": "#535"
     },
     {
+      "id": 60,
+      "type": "ApplyInstantID",
+      "pos": {
+        "0": 1260,
+        "1": 590
+      },
+      "size": {
+        "0": 350,
+        "1": 270
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "instantid",
+          "type": "INSTANTID",
+          "link": 276
+        },
+        {
+          "name": "insightface",
+          "type": "FACEANALYSIS",
+          "link": 198
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 199
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 359
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 343
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 350
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 351
+        },
+        {
+          "name": "image_kps",
+          "type": "IMAGE",
+          "link": 357
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            361
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "POSITIVE",
+          "type": "CONDITIONING",
+          "links": [
+            348
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "NEGATIVE",
+          "type": "CONDITIONING",
+          "links": [
+            349
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "title": "instantid",
+      "properties": {
+        "Node name for S&R": "ApplyInstantID"
+      },
+      "widgets_values": [
+        1,
+        0.5,
+        1
+      ]
+    },
+    {
       "id": 4,
       "type": "CheckpointLoaderSimple",
       "pos": {
@@ -420,7 +742,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 3,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -461,6 +783,152 @@
       "bgcolor": "#335"
     },
     {
+      "id": 39,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 311
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            352
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "photo of female cowboy, wavy short black hair, wearing cowboy hat, outdoor, shot on sony a1, 85mm F/1.4 ISO 100, medium format, 45 megapixel, diffuse light, high quality, perfect, detailed"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 81,
+      "type": "Reroute",
+      "pos": {
+        "0": 680,
+        "1": 70
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 337
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            356,
+            371
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 72,
+      "type": "ControlNetApplyAdvanced",
+      "pos": {
+        "0": 850,
+        "1": 500
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 352
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 353
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 328,
+          "slot_index": 2
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 372
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            350
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            351
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet",
+      "properties": {
+        "Node name for S&R": "ControlNetApplyAdvanced"
+      },
+      "widgets_values": [
+        0.65,
+        0,
+        0.7000000000000001
+      ]
+    },
+    {
       "id": 8,
       "type": "VAEDecode",
       "pos": {
@@ -474,7 +942,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -506,124 +974,10 @@
       "bgcolor": "#535"
     },
     {
-      "id": 11,
-      "type": "InstantIDModelLoader",
-      "pos": {
-        "0": 850,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "INSTANTID",
-          "type": "INSTANTID",
-          "links": [
-            276
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "instantid_model",
-      "properties": {
-        "Node name for S&R": "InstantIDModelLoader"
-      },
-      "widgets_values": [
-        "sdxl-instantx-istantid.bin"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 114,
-      "type": "ControlNetLoader",
-      "pos": {
-        "0": 1250,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            328
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_model",
-      "properties": {
-        "Node name for S&R": "ControlNetLoader"
-      },
-      "widgets_values": [
-        "sdxl-xinsir\\sdxl-xinsir-union-v20.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 133,
-      "type": "AIO_Preprocessor",
-      "pos": {
-        "0": 1250,
-        "1": 350
-      },
-      "size": {
-        "0": 350,
-        "1": 82
-      },
-      "flags": {},
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 380
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            372,
-            373
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_preprocessor",
-      "properties": {
-        "Node name for S&R": "AIO_Preprocessor"
-      },
-      "widgets_values": [
-        "Zoe-DepthMapPreprocessor",
-        1024
-      ]
-    },
-    {
       "id": 91,
       "type": "PreviewImage",
       "pos": {
-        "0": 1250,
+        "0": 850,
         "1": 730
       },
       "size": {
@@ -648,397 +1002,46 @@
       }
     },
     {
-      "id": 72,
-      "type": "ControlNetApplyAdvanced",
-      "pos": {
-        "0": 1250,
-        "1": 500
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 378
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 379
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 328,
-          "slot_index": 2
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 372
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            374
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            375
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet",
-      "properties": {
-        "Node name for S&R": "ControlNetApplyAdvanced"
-      },
-      "widgets_values": [
-        0.65,
-        0,
-        0.7000000000000001
-      ]
-    },
-    {
-      "id": 40,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 460
-      },
-      "size": {
-        "0": 350,
-        "1": 150
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 312
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            376
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "prompt_negative",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        ""
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 39,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 311
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            377
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "photo of female cowboy, wavy short black hair, wearing cowboy hat, outdoor, shot on sony a1, 85mm F/1.4 ISO 100, medium format, 45 megapixel, diffuse light, high quality, perfect, detailed"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 60,
-      "type": "ApplyInstantID",
+      "id": 133,
+      "type": "AIO_Preprocessor",
       "pos": {
         "0": 850,
-        "1": 590
+        "1": 350
       },
       "size": {
         "0": 350,
-        "1": 270
+        "1": 82
       },
       "flags": {},
       "order": 23,
       "mode": 0,
       "inputs": [
         {
-          "name": "instantid",
-          "type": "INSTANTID",
-          "link": 276
-        },
-        {
-          "name": "insightface",
-          "type": "FACEANALYSIS",
-          "link": 198
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 199
-        },
-        {
           "name": "image",
           "type": "IMAGE",
-          "link": 381
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 343
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 377
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 376
-        },
-        {
-          "name": "image_kps",
-          "type": "IMAGE",
-          "link": 382
-        },
-        {
-          "name": "mask",
-          "type": "MASK",
-          "link": null
+          "link": 371
         }
       ],
       "outputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            361
+            372,
+            373
           ],
           "slot_index": 0,
           "shape": 3
-        },
-        {
-          "name": "POSITIVE",
-          "type": "CONDITIONING",
-          "links": [
-            378
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "NEGATIVE",
-          "type": "CONDITIONING",
-          "links": [
-            379
-          ],
-          "slot_index": 2,
-          "shape": 3
         }
       ],
-      "title": "instantid",
+      "title": "controlnet_preprocessor",
       "properties": {
-        "Node name for S&R": "ApplyInstantID"
+        "Node name for S&R": "AIO_Preprocessor"
       },
       "widgets_values": [
-        1,
-        0.5,
-        1
+        "Zoe-DepthMapPreprocessor",
+        1024
       ]
-    },
-    {
-      "id": 79,
-      "type": "Reroute",
-      "pos": {
-        "0": 680,
-        "1": 40
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 339
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            381
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 81,
-      "type": "Reroute",
-      "pos": {
-        "0": 680,
-        "1": 70
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 337
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            356,
-            382
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 126,
-      "type": "Reroute",
-      "pos": {
-        "0": 1100,
-        "1": 70
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 356
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            380
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 90,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2000,
-        "1": 230
-      },
-      "size": {
-        "0": 370,
-        "1": 400
-      },
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 262,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-FSW-IID+CN (%controlnet_preprocessor.preprocessor%)_LDM_SDXL_CSD_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 131,
@@ -1131,7 +1134,7 @@
       "id": 118,
       "type": "Reroute",
       "pos": {
-        "0": -350,
+        "0": -340,
         "1": 40
       },
       "size": [
@@ -1175,7 +1178,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 27,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -1186,12 +1189,12 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 374
+          "link": 348
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 375
+          "link": 349
         },
         {
           "name": "latent_image",
@@ -1224,6 +1227,39 @@
       ]
     },
     {
+      "id": 90,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2000,
+        "1": 230
+      },
+      "size": {
+        "0": 370,
+        "1": 400
+      },
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 262,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-FSW-CN (%controlnet_preprocessor.preprocessor%)+IID_LDM_SDXL_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 111,
       "type": "Note",
       "pos": {
@@ -1243,7 +1279,7 @@
         "text": ""
       },
       "widgets_values": [
-        "faceswap-instantid+cn-ldm-sdxl-csd\n==============================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID+CN (cn)_LDM_SDXL_CSD"
+        "faceswap-cn+instantid-ldm-sdxl-csd\n==============================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-CN (cn)+IID_LDM_SDXL_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1395,12 +1431,84 @@
       "MODEL"
     ],
     [
+      348,
+      60,
+      1,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      349,
+      60,
+      2,
+      3,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      350,
+      72,
+      0,
+      60,
+      5,
+      "CONDITIONING"
+    ],
+    [
+      351,
+      72,
+      1,
+      60,
+      6,
+      "CONDITIONING"
+    ],
+    [
+      352,
+      39,
+      0,
+      72,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      353,
+      40,
+      0,
+      72,
+      1,
+      "CONDITIONING"
+    ],
+    [
       356,
       81,
       0,
       126,
       0,
       "*"
+    ],
+    [
+      357,
+      126,
+      0,
+      60,
+      7,
+      "IMAGE"
+    ],
+    [
+      358,
+      79,
+      0,
+      127,
+      0,
+      "*"
+    ],
+    [
+      359,
+      127,
+      0,
+      60,
+      3,
+      "IMAGE"
     ],
     [
       361,
@@ -1443,6 +1551,14 @@
       "*"
     ],
     [
+      371,
+      81,
+      0,
+      133,
+      0,
+      "IMAGE"
+    ],
+    [
       372,
       133,
       0,
@@ -1457,88 +1573,16 @@
       91,
       0,
       "IMAGE"
-    ],
-    [
-      374,
-      72,
-      0,
-      3,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      375,
-      72,
-      1,
-      3,
-      2,
-      "CONDITIONING"
-    ],
-    [
-      376,
-      40,
-      0,
-      60,
-      6,
-      "CONDITIONING"
-    ],
-    [
-      377,
-      39,
-      0,
-      60,
-      5,
-      "CONDITIONING"
-    ],
-    [
-      378,
-      60,
-      1,
-      72,
-      0,
-      "CONDITIONING"
-    ],
-    [
-      379,
-      60,
-      2,
-      72,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      380,
-      126,
-      0,
-      133,
-      0,
-      "IMAGE"
-    ],
-    [
-      381,
-      79,
-      0,
-      60,
-      3,
-      "IMAGE"
-    ],
-    [
-      382,
-      81,
-      0,
-      60,
-      7,
-      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.42409761837248483,
+      "scale": 0.424097618372485,
       "offset": [
-        849.1098888139613,
-        232.50058501317054
+        765.8539790413322,
+        208.2821924793162
       ]
     }
   },
