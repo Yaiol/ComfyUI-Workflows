@@ -1138,57 +1138,15 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_xrkjm_00025_.png&type=temp&subfolder=&rand=0.6032148463742728"
+            "url": "/api/view?filename=rgthree.compare._temp_xrkjm_00027_.png&type=temp&subfolder=&rand=0.7659980609444714"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_xrkjm_00026_.png&type=temp&subfolder=&rand=0.266248127237521"
+            "url": "/api/view?filename=rgthree.compare._temp_xrkjm_00028_.png&type=temp&subfolder=&rand=0.6954202541074843"
           }
         ]
       ]
-    },
-    {
-      "id": 18,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 1650,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 27
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            647
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "photography of a heron into street, lights, foggy atmosphere"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 139,
@@ -1297,6 +1255,105 @@
       "bgcolor": "#ff8c00"
     },
     {
+      "id": 226,
+      "type": "SaveImage",
+      "pos": {
+        "0": 3250,
+        "1": 430
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 907
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_OUP-F_LDM_SDXL_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 18,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 1650,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 27
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            647
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 227,
+      "type": "Note",
+      "pos": {
+        "0": 3250,
+        "1": 890
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "outpaint-fooocus-ldm-sdxl-csd\n==========================================================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : OUP-F_LDM_SDXL_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 16,
       "type": "KSampler",
       "pos": {
@@ -1357,63 +1414,6 @@
         "karras",
         1
       ]
-    },
-    {
-      "id": 226,
-      "type": "SaveImage",
-      "pos": {
-        "0": 3250,
-        "1": 430
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 34,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 907
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_OUP-F_LDM_SDXL_CSD_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 227,
-      "type": "Note",
-      "pos": {
-        "0": 3250,
-        "1": 890
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "outpaint-fooocus-ldm-sdxl-csd\n==========================================================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : OUP-F_LDM_SDXL_CSD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1790,10 +1790,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.46650738020973365,
+      "scale": 0.9090909090909091,
       "offset": [
-        -868.5143689327911,
-        384.4908024717693
+        -2096.0142026782933,
+        -382.6985555113102
       ]
     }
   },
