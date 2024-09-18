@@ -1253,38 +1253,6 @@
       ]
     },
     {
-      "id": 226,
-      "type": "SaveImage",
-      "pos": {
-        "0": 3250,
-        "1": 430
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 34,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 907
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_ID_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 4,
       "type": "LoadImage",
       "pos": {
@@ -1327,31 +1295,6 @@
       ],
       "color": "#ffa014",
       "bgcolor": "#ff8c00"
-    },
-    {
-      "id": 227,
-      "type": "Note",
-      "pos": {
-        "0": 3250,
-        "1": 890
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "outpaint-fooocus-ldm-sdxl-csd\n==========================================================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : OUP-FOOOCUS_LDM_SDXL_CSD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     },
     {
       "id": 16,
@@ -1414,6 +1357,63 @@
         "karras",
         1
       ]
+    },
+    {
+      "id": 226,
+      "type": "SaveImage",
+      "pos": {
+        "0": 3250,
+        "1": 430
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 907
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_OUP-F_LDM_SDXL_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 227,
+      "type": "Note",
+      "pos": {
+        "0": 3250,
+        "1": 890
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "outpaint-fooocus-ldm-sdxl-csd\n==========================================================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : OUP-F_LDM_SDXL_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1790,10 +1790,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6830134553650705,
+      "scale": 0.46650738020973365,
       "offset": [
-        -1529.689124150482,
-        -149.38999477181852
+        -868.5143689327911,
+        384.4908024717693
       ]
     }
   },
