@@ -1,6 +1,6 @@
 {
   "last_node_id": 59,
-  "last_link_id": 135,
+  "last_link_id": 136,
   "nodes": [
     {
       "id": 19,
@@ -120,78 +120,6 @@
           "type": "MASK",
           "links": [
             113
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 44,
-      "type": "Reroute",
-      "pos": {
-        "0": 730,
-        "1": 50
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 109
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            110
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 43,
-      "type": "Reroute",
-      "pos": {
-        "0": 50,
-        "1": 50
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 108
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            109
           ],
           "slot_index": 0
         }
@@ -411,48 +339,6 @@
       }
     },
     {
-      "id": 9,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 440,
-        "1": 230
-      },
-      "size": {
-        "0": 360,
-        "1": 190
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 103
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            131
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "photo of a bear standing in the street"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 55,
       "type": "Reroute",
       "pos": {
@@ -597,161 +483,6 @@
       }
     },
     {
-      "id": 48,
-      "type": "Reroute",
-      "pos": {
-        "0": 730,
-        "1": 80
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 115
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "VAE",
-          "links": [
-            116,
-            134
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 57,
-      "type": "Reroute",
-      "pos": {
-        "0": 1530,
-        "1": 80
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 134
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "VAE",
-          "links": [
-            133
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 33,
-      "type": "LoadImage",
-      "pos": {
-        "0": -350,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 450
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            108
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            111
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "image_input",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "clipspace/clipspace-mask-802893.599999994.png [input]",
-        "image"
-      ],
-      "color": "#ffa014",
-      "bgcolor": "#ff8c00"
-    },
-    {
-      "id": 47,
-      "type": "Reroute",
-      "pos": {
-        "0": 430,
-        "1": 80
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 114
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "VAE",
-          "links": [
-            115
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 14,
       "type": "VAEDecode",
       "pos": {
@@ -799,48 +530,285 @@
       "bgcolor": "#535"
     },
     {
-      "id": 59,
-      "type": "SaveImage",
+      "id": 33,
+      "type": "LoadImage",
       "pos": {
-        "0": 1650,
+        "0": -350,
         "1": 230
       },
+      "size": {
+        "0": 350,
+        "1": 450
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            136
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            111
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "image_input",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "clipspace/clipspace-mask-802893.599999994.png [input]",
+        "image"
+      ],
+      "color": "#ffa014",
+      "bgcolor": "#ff8c00"
+    },
+    {
+      "id": 44,
+      "type": "Reroute",
+      "pos": {
+        "0": 730,
+        "1": 80
+      },
       "size": [
-        350,
-        400
+        75,
+        26
       ],
       "flags": {},
-      "order": 23,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 135
+          "name": "",
+          "type": "*",
+          "link": 109
         }
       ],
-      "outputs": [],
-      "title": "output_image",
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            110
+          ],
+          "slot_index": 0
+        }
+      ],
       "properties": {
-        "Node name for S&R": "SaveImage"
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 48,
+      "type": "Reroute",
+      "pos": {
+        "0": 730,
+        "1": 50
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 115
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "VAE",
+          "links": [
+            116,
+            134
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 47,
+      "type": "Reroute",
+      "pos": {
+        "0": 420,
+        "1": 50
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 114
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "VAE",
+          "links": [
+            115
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 43,
+      "type": "Reroute",
+      "pos": {
+        "0": 50,
+        "1": 80
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 136
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            109
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 57,
+      "type": "Reroute",
+      "pos": {
+        "0": 1520,
+        "1": 50
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 134
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "VAE",
+          "links": [
+            133
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 9,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 440,
+        "1": 230
+      },
+      "size": [
+        360,
+        170
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 103
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            131
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_INP-FS_LDM_SDLT_CSD_%ksampler.seed%"
+        "photo of a bear standing in the street"
       ],
-      "color": "#323",
-      "bgcolor": "#535"
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 10,
       "type": "CLIPTextEncode",
       "pos": {
         "0": 440,
-        "1": 480
+        "1": 460
       },
-      "size": {
-        "0": 360,
-        "1": 160
-      },
+      "size": [
+        360,
+        170
+      ],
       "flags": {},
       "order": 6,
       "mode": 0,
@@ -873,6 +841,38 @@
       "bgcolor": "#533"
     },
     {
+      "id": 59,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1650,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 135
+        }
+      ],
+      "outputs": [],
+      "title": "output_image",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_INP-FB_LDM_SDLT_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 58,
       "type": "Note",
       "pos": {
@@ -892,7 +892,7 @@
         "text": ""
       },
       "widgets_values": [
-        "inpaint-fooocus simple-ldm-sdlt-csd\n===========================================================\nLDM  : Large Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : INP-FS_LDM_SDLT_CSD"
+        "inpaint-fooocus basic-ldm-sdlt-csd\n===========================================================\nLDM  : Large Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : INP-FB_LDM_SDLT_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1008,14 +1008,6 @@
       40,
       3,
       "LATENT"
-    ],
-    [
-      108,
-      33,
-      0,
-      43,
-      0,
-      "*"
     ],
     [
       109,
@@ -1184,16 +1176,24 @@
       59,
       0,
       "IMAGE"
+    ],
+    [
+      136,
+      33,
+      0,
+      43,
+      0,
+      "*"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.513158118230707,
+      "scale": 0.5131581182307069,
       "offset": [
-        478.55541251496504,
-        132.39707995228858
+        497.0853580736572,
+        128.501081002416
       ]
     }
   },
