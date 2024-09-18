@@ -1142,12 +1142,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_iqmtk_00005_.png&type=temp&subfolder=&rand=0.5893541797538033"
+            "url": "/api/view?filename=rgthree.compare._temp_gbkzb_00013_.png&type=temp&subfolder=&rand=0.33636660151126807"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_iqmtk_00006_.png&type=temp&subfolder=&rand=0.37099671030901904"
+            "url": "/api/view?filename=rgthree.compare._temp_gbkzb_00014_.png&type=temp&subfolder=&rand=0.9893113502781001"
           }
         ]
       ]
@@ -1231,10 +1231,10 @@
         "0": 850,
         "1": 230
       },
-      "size": [
-        350,
-        80
-      ],
+      "size": {
+        "0": 350,
+        "1": 80
+      },
       "flags": {},
       "order": 28,
       "mode": 0,
@@ -1596,10 +1596,10 @@
         "0": -750,
         "1": 60
       },
-      "size": [
-        350,
-        110
-      ],
+      "size": {
+        "0": 350,
+        "1": 110
+      },
       "flags": {},
       "order": 8,
       "mode": 4,
@@ -1617,8 +1617,8 @@
           "links": [
             203
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "title": "clipvision_prep",
@@ -1638,10 +1638,10 @@
         "0": -350,
         "1": 60
       },
-      "size": [
-        350,
-        110
-      ],
+      "size": {
+        "0": 350,
+        "1": 110
+      },
       "flags": {},
       "order": 7,
       "mode": 4,
@@ -1659,8 +1659,8 @@
           "links": [
             205
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "title": "clipvision_prep",
@@ -1763,10 +1763,10 @@
         "0": 850,
         "1": 370
       },
-      "size": [
-        350,
-        320
-      ],
+      "size": {
+        "0": 350,
+        "1": 322
+      },
       "flags": {},
       "order": 34,
       "mode": 0,
@@ -1814,8 +1814,8 @@
           "links": [
             199
           ],
-          "shape": 3,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
@@ -1830,6 +1830,31 @@
         1,
         "K+V"
       ]
+    },
+    {
+      "id": 34,
+      "type": "Note",
+      "pos": {
+        "0": 2850,
+        "1": 690
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "img2img-ipa style+composition-ldm-sdlt-csd\n========================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : I2I-IASC_LDM_SDLT_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     },
     {
       "id": 3,
@@ -1882,7 +1907,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        2001,
+        25191512,
         "randomize",
         8,
         1,
@@ -1890,31 +1915,6 @@
         "sgm_uniform",
         1
       ]
-    },
-    {
-      "id": 34,
-      "type": "Note",
-      "pos": {
-        "0": 2850,
-        "1": 690
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "img2img-ipa style+composition-ldm-sdlt-csd\n========================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : I2I-IASC_LDM_SDLT_CSD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -2371,10 +2371,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.3186308177103567,
+      "scale": 0.31863081771035684,
       "offset": [
-        923.3306786604629,
-        479.9877103543625
+        926.9624327019553,
+        488.44994462479076
       ]
     }
   },

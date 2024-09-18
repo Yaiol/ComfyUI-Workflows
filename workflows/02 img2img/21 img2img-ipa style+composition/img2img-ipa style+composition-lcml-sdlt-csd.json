@@ -1025,12 +1025,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_iqmtk_00011_.png&type=temp&subfolder=&rand=0.8811170838725686"
+            "url": "/api/view?filename=rgthree.compare._temp_gbkzb_00011_.png&type=temp&subfolder=&rand=0.7256007223028869"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_iqmtk_00012_.png&type=temp&subfolder=&rand=0.2337446178170477"
+            "url": "/api/view?filename=rgthree.compare._temp_gbkzb_00012_.png&type=temp&subfolder=&rand=0.002547937446842452"
           }
         ]
       ]
@@ -1940,7 +1940,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        2001,
+        25191512,
         "randomize",
         8,
         1,
@@ -2445,10 +2445,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.31863081771035684,
+      "scale": 0.31863081771035695,
       "offset": [
-        919.8087559233973,
-        474.7401405824955
+        924.0288548002186,
+        511.70328543068626
       ]
     }
   },
