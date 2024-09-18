@@ -3,151 +3,6 @@
   "last_link_id": 907,
   "nodes": [
     {
-      "id": 173,
-      "type": "INPAINT_MaskedFill",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 102
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 637,
-          "slot_index": 0
-        },
-        {
-          "name": "mask",
-          "type": "MASK",
-          "link": 770
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            716,
-            809
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "INPAINT_MaskedFill"
-      },
-      "widgets_values": [
-        "telea",
-        0
-      ]
-    },
-    {
-      "id": 186,
-      "type": "INPAINT_MaskedBlur",
-      "pos": {
-        "0": 850,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 102
-      },
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 809
-        },
-        {
-          "name": "mask",
-          "type": "MASK",
-          "link": 857
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            719,
-            884
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "INPAINT_MaskedBlur"
-      },
-      "widgets_values": [
-        64,
-        0
-      ]
-    },
-    {
-      "id": 185,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 850,
-        "1": 470
-      },
-      "size": {
-        "0": 350,
-        "1": 380
-      },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 716
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
-      "id": 187,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 1250,
-        "1": 470
-      },
-      "size": {
-        "0": 350,
-        "1": 380
-      },
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 719
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
       "id": 19,
       "type": "CLIPTextEncode",
       "pos": {
@@ -237,7 +92,7 @@
         26
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -273,7 +128,7 @@
         26
       ],
       "flags": {},
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -310,7 +165,7 @@
         26
       ],
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -347,7 +202,7 @@
         26
       ],
       "flags": {},
-      "order": 25,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -420,7 +275,7 @@
         26
       ],
       "flags": {},
-      "order": 23,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -456,7 +311,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 26,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -577,7 +432,7 @@
         "1": 30
       },
       "flags": {},
-      "order": 29,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -614,7 +469,7 @@
         "1": 70
       },
       "flags": {},
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -661,7 +516,7 @@
         26
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -694,7 +549,7 @@
         26
       ],
       "flags": {},
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -749,58 +604,6 @@
       "properties": {
         "showOutputText": false,
         "horizontal": false
-      }
-    },
-    {
-      "id": 223,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 50,
-        "1": 470
-      },
-      "size": {
-        "0": 350,
-        "1": 380
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 891
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
-      "id": 140,
-      "type": "MaskPreview+",
-      "pos": {
-        "0": 460,
-        "1": 470
-      },
-      "size": {
-        "0": 350,
-        "1": 380
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "mask",
-          "type": "MASK",
-          "link": 769
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "MaskPreview+"
       }
     },
     {
@@ -942,7 +745,7 @@
         26
       ],
       "flags": {},
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -978,7 +781,7 @@
         26
       ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1015,7 +818,7 @@
         "1": 146
       },
       "flags": {},
-      "order": 32,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -1070,7 +873,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 31,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -1112,7 +915,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 33,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -1138,12 +941,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_xrkjm_00027_.png&type=temp&subfolder=&rand=0.7659980609444714"
+            "url": "/api/view?filename=rgthree.compare._temp_zzenh_00001_.png&type=temp&subfolder=&rand=0.02152545662126526"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_xrkjm_00028_.png&type=temp&subfolder=&rand=0.6954202541074843"
+            "url": "/api/view?filename=rgthree.compare._temp_zzenh_00002_.png&type=temp&subfolder=&rand=0.9002641856110565"
           }
         ]
       ]
@@ -1180,8 +983,7 @@
           "type": "IMAGE",
           "links": [
             637,
-            890,
-            891
+            890
           ],
           "slot_index": 0,
           "shape": 3
@@ -1198,7 +1000,6 @@
           "shape": 3
         }
       ],
-      "title": "image_pad_outpaint",
       "properties": {
         "Node name for S&R": "ImagePadForOutpaintMasked"
       },
@@ -1266,7 +1067,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 34,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -1329,29 +1130,178 @@
       "bgcolor": "#353"
     },
     {
-      "id": 227,
-      "type": "Note",
+      "id": 140,
+      "type": "MaskPreview+",
       "pos": {
-        "0": 3250,
-        "1": 890
+        "0": 50,
+        "1": 470
       },
       "size": {
         "0": 350,
-        "1": 100
+        "1": 380
       },
       "flags": {},
-      "order": 3,
+      "order": 12,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 769
+        }
+      ],
       "outputs": [],
+      "title": "mask_preview",
       "properties": {
-        "text": ""
+        "Node name for S&R": "MaskPreview+"
+      }
+    },
+    {
+      "id": 185,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 450,
+        "1": 470
+      },
+      "size": {
+        "0": 350,
+        "1": 380
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 716
+        }
+      ],
+      "outputs": [],
+      "title": "image_preview",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 187,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 850,
+        "1": 470
+      },
+      "size": {
+        "0": 350,
+        "1": 380
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 719
+        }
+      ],
+      "outputs": [],
+      "title": "image_preview",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 173,
+      "type": "INPAINT_MaskedFill",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 102
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 637,
+          "slot_index": 0
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 770
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            716,
+            809
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "INPAINT_MaskedFill"
       },
       "widgets_values": [
-        "outpaint-fooocus-ldm-sdxl-csd\n==========================================================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : OUP-F_LDM_SDXL_CSD"
+        "navier-stokes",
+        0
+      ]
+    },
+    {
+      "id": 186,
+      "type": "INPAINT_MaskedBlur",
+      "pos": {
+        "0": 850,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 102
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 809
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 857
+        }
       ],
-      "color": "#432",
-      "bgcolor": "#653"
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            719,
+            884
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "INPAINT_MaskedBlur"
+      },
+      "widgets_values": [
+        20,
+        0
+      ]
     },
     {
       "id": 16,
@@ -1365,7 +1315,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 30,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -1414,6 +1364,31 @@
         "karras",
         1
       ]
+    },
+    {
+      "id": 227,
+      "type": "Note",
+      "pos": {
+        "0": 3250,
+        "1": 890
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "outpaint-fooocus-ldm-sdxl-csd\n==========================================================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : OUP-F_LDM_SDXL_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1722,14 +1697,6 @@
       "*"
     ],
     [
-      891,
-      139,
-      0,
-      223,
-      0,
-      "IMAGE"
-    ],
-    [
       897,
       16,
       0,
@@ -1790,10 +1757,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9090909090909091,
+      "scale": 0.31863081771035706,
       "offset": [
-        -2096.0142026782933,
-        -382.6985555113102
+        491.31302669063297,
+        501.7541261243208
       ]
     }
   },
