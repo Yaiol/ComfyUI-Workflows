@@ -1,6 +1,6 @@
 {
-  "last_node_id": 78,
-  "last_link_id": 183,
+  "last_node_id": 82,
+  "last_link_id": 188,
   "nodes": [
     {
       "id": 20,
@@ -14,7 +14,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 26,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -108,7 +108,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -151,7 +151,7 @@
         26
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -224,7 +224,7 @@
         26
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -332,7 +332,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 4,
       "inputs": [
         {
@@ -390,7 +390,7 @@
         "1": 150
       },
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -431,7 +431,7 @@
         26
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -467,7 +467,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 4,
       "inputs": [
         {
@@ -563,7 +563,7 @@
         26
       ],
       "flags": {},
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -599,7 +599,7 @@
         26
       ],
       "flags": {},
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -635,7 +635,7 @@
         26
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -671,7 +671,7 @@
         26
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -696,42 +696,6 @@
       }
     },
     {
-      "id": 75,
-      "type": "Reroute",
-      "pos": {
-        "0": 1920,
-        "1": 90
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 34,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 173
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "MODEL",
-          "links": [
-            174
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 74,
       "type": "Reroute",
       "pos": {
@@ -743,7 +707,7 @@
         26
       ],
       "flags": {},
-      "order": 32,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -779,7 +743,7 @@
         26
       ],
       "flags": {},
-      "order": 14,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -816,7 +780,7 @@
         26
       ],
       "flags": {},
-      "order": 19,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -853,7 +817,7 @@
         26
       ],
       "flags": {},
-      "order": 10,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -890,7 +854,7 @@
         26
       ],
       "flags": {},
-      "order": 24,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -926,13 +890,13 @@
         26
       ],
       "flags": {},
-      "order": 6,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 144
+          "link": 186
         }
       ],
       "outputs": [
@@ -970,7 +934,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            144
+            185
           ],
           "slot_index": 0,
           "shape": 3
@@ -1005,7 +969,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 18,
+      "order": 23,
       "mode": 4,
       "inputs": [
         {
@@ -1047,7 +1011,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 31,
+      "order": 32,
       "mode": 4,
       "inputs": [
         {
@@ -1114,7 +1078,7 @@
         "1": 370
       },
       "flags": {},
-      "order": 23,
+      "order": 28,
       "mode": 4,
       "inputs": [
         {
@@ -1142,7 +1106,7 @@
         "1": 370
       },
       "flags": {},
-      "order": 29,
+      "order": 33,
       "mode": 4,
       "inputs": [
         {
@@ -1170,7 +1134,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 33,
+      "order": 36,
       "mode": 4,
       "inputs": [
         {
@@ -1237,7 +1201,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 25,
+      "order": 30,
       "mode": 4,
       "inputs": [
         {
@@ -1268,126 +1232,6 @@
       ]
     },
     {
-      "id": 18,
-      "type": "IPAdapterFaceID",
-      "pos": {
-        "0": 860,
-        "1": 420
-      },
-      "size": {
-        "0": 350,
-        "1": 322
-      },
-      "flags": {},
-      "order": 30,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 35
-        },
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "link": 34,
-          "slot_index": 1
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 130
-        },
-        {
-          "name": "image_negative",
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "attn_mask",
-          "type": "MASK",
-          "link": null
-        },
-        {
-          "name": "clip_vision",
-          "type": "CLIP_VISION",
-          "link": null
-        },
-        {
-          "name": "insightface",
-          "type": "INSIGHTFACE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            172
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "face_image",
-          "type": "IMAGE",
-          "links": [],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "ipadapter_faceid",
-      "properties": {
-        "Node name for S&R": "IPAdapterFaceID"
-      },
-      "widgets_values": [
-        1,
-        4,
-        "linear",
-        "concat",
-        0,
-        1,
-        "V only"
-      ]
-    },
-    {
-      "id": 78,
-      "type": "Reroute",
-      "pos": {
-        "0": 2750,
-        "1": 150
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 38,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 180
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            183
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 8,
       "type": "VAEDecode",
       "pos": {
@@ -1401,7 +1245,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 36,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -1496,7 +1340,7 @@
         "1": 160
       },
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1532,12 +1376,12 @@
         "0": 2450,
         "1": 230
       },
-      "size": [
-        350,
-        400
-      ],
+      "size": {
+        "0": 350,
+        "1": 400
+      },
       "flags": {},
-      "order": 37,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -1563,12 +1407,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_eongk_00005_.png&type=temp&subfolder=&rand=0.2991017630665791"
+            "url": "/api/view?filename=rgthree.compare._temp_yzfxr_00009_.png&type=temp&subfolder=&rand=0.3033770346397964"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_eongk_00006_.png&type=temp&subfolder=&rand=0.7349030449014866"
+            "url": "/api/view?filename=rgthree.compare._temp_yzfxr_00010_.png&type=temp&subfolder=&rand=0.3942020830790913"
           }
         ]
       ]
@@ -1580,12 +1424,12 @@
         "0": 2850,
         "1": 230
       },
-      "size": [
-        350,
-        400
-      ],
+      "size": {
+        "0": 350,
+        "1": 400
+      },
       "flags": {},
-      "order": 39,
+      "order": 43,
       "mode": 0,
       "inputs": [
         {
@@ -1606,49 +1450,297 @@
       "bgcolor": "#535"
     },
     {
-      "id": 34,
-      "type": "Note",
+      "id": 18,
+      "type": "IPAdapterFaceID",
       "pos": {
-        "0": 2850,
-        "1": 680
+        "0": 860,
+        "1": 420
+      },
+      "size": {
+        "0": 350,
+        "1": 322
+      },
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 35
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": 34,
+          "slot_index": 1
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 130
+        },
+        {
+          "name": "image_negative",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "attn_mask",
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "clip_vision",
+          "type": "CLIP_VISION",
+          "link": null
+        },
+        {
+          "name": "insightface",
+          "type": "INSIGHTFACE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            172
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "face_image",
+          "type": "IMAGE",
+          "links": [
+            184
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "ipadapter_faceid",
+      "properties": {
+        "Node name for S&R": "IPAdapterFaceID"
+      },
+      "widgets_values": [
+        1,
+        4,
+        "linear",
+        "concat",
+        0,
+        1,
+        "V only"
+      ]
+    },
+    {
+      "id": 78,
+      "type": "Reroute",
+      "pos": {
+        "0": 2730,
+        "1": 150
       },
       "size": [
-        340,
-        100
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 180
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            183
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 75,
+      "type": "Reroute",
+      "pos": {
+        "0": 1920,
+        "1": 90
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 173
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            187
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 82,
+      "type": "Reroute",
+      "pos": {
+        "0": -350,
+        "1": -130
+      },
+      "size": [
+        75,
+        26
       ],
       "flags": {},
       "order": 4,
       "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "face2img-ipa faceid+(cn+lora)-ldm-sdxl-csd\n========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : F2I-IAF_LDM_SDXL_CSD"
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": null
+        }
       ],
-      "color": "#432",
-      "bgcolor": "#653"
+      "outputs": [
+        {
+          "name": "",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
     },
     {
-      "id": 3,
-      "type": "KSampler",
+      "id": 80,
+      "type": "PrepImageForClipVision",
+      "pos": {
+        "0": -350,
+        "1": 60
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 185
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            186
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "clipvision_prep",
+      "properties": {
+        "Node name for S&R": "PrepImageForClipVision"
+      },
+      "widgets_values": [
+        "LANCZOS",
+        "top",
+        1
+      ]
+    },
+    {
+      "id": 81,
+      "type": "RescaleCFG",
       "pos": {
         "0": 2050,
         "1": 230
       },
       "size": {
         "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 38,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 187
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            188
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "cfg_rescale",
+      "properties": {
+        "Node name for S&R": "RescaleCFG"
+      },
+      "widgets_values": [
+        0.7
+      ]
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": {
+        "0": 2050,
+        "1": 350
+      },
+      "size": {
+        "0": 350,
         "1": 262
       },
       "flags": {},
-      "order": 35,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 174
+          "link": 188
         },
         {
           "name": "positive",
@@ -1681,14 +1773,65 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        2001,
+        25191512,
         "randomize",
         25,
         4,
-        "dpmpp_2m_sde",
+        "dpmpp_2m_sde_gpu",
         "karras",
         1
       ]
+    },
+    {
+      "id": 79,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 860,
+        "1": 800
+      },
+      "size": [
+        350,
+        340
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 184
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 34,
+      "type": "Note",
+      "pos": {
+        "0": 2850,
+        "1": 680
+      },
+      "size": {
+        "0": 340,
+        "1": 100
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "face2img-ipa faceid-ldm-sdxl-csd\n========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : F2I-IAF_LDM_SDXL_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1825,14 +1968,6 @@
       48,
       0,
       59,
-      0,
-      "*"
-    ],
-    [
-      144,
-      52,
-      0,
-      48,
       0,
       "*"
     ],
@@ -2021,14 +2156,6 @@
       "*"
     ],
     [
-      174,
-      75,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
-    [
       175,
       59,
       0,
@@ -2091,16 +2218,69 @@
       9,
       0,
       "IMAGE"
+    ],
+    [
+      184,
+      18,
+      1,
+      79,
+      0,
+      "IMAGE"
+    ],
+    [
+      185,
+      52,
+      0,
+      80,
+      0,
+      "IMAGE"
+    ],
+    [
+      186,
+      80,
+      0,
+      48,
+      0,
+      "*"
+    ],
+    [
+      187,
+      75,
+      0,
+      81,
+      0,
+      "MODEL"
+    ],
+    [
+      188,
+      81,
+      0,
+      3,
+      0,
+      "MODEL"
     ]
   ],
-  "groups": [],
+  "groups": [
+    {
+      "title": " Face2Img IPAdapter+ FaceID v2",
+      "bounding": [
+        -350,
+        -100,
+        10,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
+      "flags": {}
+    }
+  ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.38554328942953214,
+      "scale": 0.3504938994813927,
       "offset": [
-        279.9052371874943,
-        304.04905212871165
+        491.395014457884,
+        351.4268962774146
       ]
     }
   },
