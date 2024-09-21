@@ -713,73 +713,6 @@
       ]
     },
     {
-      "id": 72,
-      "type": "ControlNetApplyAdvanced",
-      "pos": {
-        "0": 1230,
-        "1": 490
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 37,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 392
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 393
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 328,
-          "slot_index": 2
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 372
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            378
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            379
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_1",
-      "properties": {
-        "Node name for S&R": "ControlNetApplyAdvanced"
-      },
-      "widgets_values": [
-        1,
-        0,
-        1
-      ]
-    },
-    {
       "id": 91,
       "type": "PreviewImage",
       "pos": {
@@ -847,73 +780,6 @@
       "widgets_values": [
         "none",
         1024
-      ]
-    },
-    {
-      "id": 134,
-      "type": "ControlNetApplyAdvanced",
-      "pos": {
-        "0": 1650,
-        "1": 490
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 39,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 378
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 379
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 377,
-          "slot_index": 2
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 375
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            390
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            391
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_2",
-      "properties": {
-        "Node name for S&R": "ControlNetApplyAdvanced"
-      },
-      "widgets_values": [
-        1,
-        0,
-        1
       ]
     },
     {
@@ -1669,6 +1535,39 @@
       ]
     },
     {
+      "id": 90,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 390
+      },
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 420,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IID [iiw=%instantid.weight%, iis=%instantid.start_at%, iie=%instantid.end_at%]_LCML_SDLT_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 154,
       "type": "CheckpointLoaderSimple",
       "pos": {
@@ -1720,37 +1619,138 @@
       "bgcolor": "#335"
     },
     {
-      "id": 90,
-      "type": "SaveImage",
+      "id": 72,
+      "type": "ControlNetApplyAdvanced",
       "pos": {
-        "0": 2450,
-        "1": 230
+        "0": 1230,
+        "1": 490
       },
       "size": {
         "0": 350,
-        "1": 390
+        "1": 170
       },
       "flags": {},
-      "order": 42,
-      "mode": 0,
+      "order": 37,
+      "mode": 4,
       "inputs": [
         {
-          "name": "images",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 392
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 393
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 328,
+          "slot_index": 2
+        },
+        {
+          "name": "image",
           "type": "IMAGE",
-          "link": 420,
-          "slot_index": 0
+          "link": 372
         }
       ],
-      "outputs": [],
-      "title": "image_output",
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            378
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            379
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet_1",
       "properties": {
-        "Node name for S&R": "SaveImage"
+        "Node name for S&R": "ControlNetApplyAdvanced"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IID [iiw=%instantid.weight%, iis=%instantid.start_at%, iie=%instantid.end_at%]_LCML_SDLT_CSD_%ksampler.seed%"
+        0.7000000000000001,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 134,
+      "type": "ControlNetApplyAdvanced",
+      "pos": {
+        "0": 1650,
+        "1": 490
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 39,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 378
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 379
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 377,
+          "slot_index": 2
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 375
+        }
       ],
-      "color": "#323",
-      "bgcolor": "#535"
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            390
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            391
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet_2",
+      "properties": {
+        "Node name for S&R": "ControlNetApplyAdvanced"
+      },
+      "widgets_values": [
+        0.7000000000000001,
+        0,
+        1
+      ]
     },
     {
       "id": 3,
@@ -2266,6 +2266,18 @@
   ],
   "groups": [
     {
+      "title": " LCML SDLT",
+      "bounding": [
+        -150,
+        -60,
+        190,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
+    },
+    {
       "title": " Faceswap InstandID",
       "bounding": [
         -750,
@@ -2281,10 +2293,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.3504938994813925,
+      "scale": 0.31863081771035723,
       "offset": [
-        898.9241635857784,
-        442.33563234779893
+        861.1944241525313,
+        367.5766659245721
       ]
     }
   },

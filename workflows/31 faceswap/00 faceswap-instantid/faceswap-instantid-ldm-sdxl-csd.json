@@ -985,73 +985,6 @@
       ]
     },
     {
-      "id": 72,
-      "type": "ControlNetApplyAdvanced",
-      "pos": {
-        "0": 1230,
-        "1": 490
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 34,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 392
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 393
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 328,
-          "slot_index": 2
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 372
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            378
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            379
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_1",
-      "properties": {
-        "Node name for S&R": "ControlNetApplyAdvanced"
-      },
-      "widgets_values": [
-        1,
-        0,
-        1
-      ]
-    },
-    {
       "id": 91,
       "type": "PreviewImage",
       "pos": {
@@ -1119,73 +1052,6 @@
       "widgets_values": [
         "none",
         1024
-      ]
-    },
-    {
-      "id": 134,
-      "type": "ControlNetApplyAdvanced",
-      "pos": {
-        "0": 1650,
-        "1": 490
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 37,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 378
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 379
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 377,
-          "slot_index": 2
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 375
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            390
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            391
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_2",
-      "properties": {
-        "Node name for S&R": "ControlNetApplyAdvanced"
-      },
-      "widgets_values": [
-        1,
-        0,
-        1
       ]
     },
     {
@@ -1492,10 +1358,10 @@
         "0": 2450,
         "1": 230
       },
-      "size": [
-        350,
-        390
-      ],
+      "size": {
+        "0": 350,
+        "1": 390
+      },
       "flags": {},
       "order": 41,
       "mode": 0,
@@ -1689,16 +1555,175 @@
       ]
     },
     {
+      "id": 72,
+      "type": "ControlNetApplyAdvanced",
+      "pos": {
+        "0": 1230,
+        "1": 490
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 392
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 393
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 328,
+          "slot_index": 2
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 372
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            378
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            379
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet_1",
+      "properties": {
+        "Node name for S&R": "ControlNetApplyAdvanced"
+      },
+      "widgets_values": [
+        0.7000000000000001,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 134,
+      "type": "ControlNetApplyAdvanced",
+      "pos": {
+        "0": 1650,
+        "1": 490
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 37,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 378
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 379
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 377,
+          "slot_index": 2
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 375
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            390
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            391
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet_2",
+      "properties": {
+        "Node name for S&R": "ControlNetApplyAdvanced"
+      },
+      "widgets_values": [
+        0.7000000000000001,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 111,
+      "type": "Note",
+      "pos": {
+        "0": 2450,
+        "1": 680
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "faceswap-instantid-ldm-sdxl-csd\n==========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID_LDM_SDXL_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 3,
       "type": "KSampler",
       "pos": {
         "0": 2050,
         "1": 340
       },
-      "size": [
-        350,
-        270
-      ],
+      "size": {
+        "0": 350,
+        "1": 270
+      },
       "flags": {},
       "order": 39,
       "mode": 0,
@@ -1747,31 +1772,6 @@
         "karras",
         1
       ]
-    },
-    {
-      "id": 111,
-      "type": "Note",
-      "pos": {
-        "0": 2450,
-        "1": 680
-      },
-      "size": [
-        350,
-        100
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "faceswap-instantid-ldm-sdxl-csd\n==========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID_LDM_SDXL_CSD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -2186,6 +2186,18 @@
   ],
   "groups": [
     {
+      "title": " LDM SDXL",
+      "bounding": [
+        -150,
+        -60,
+        170,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
+    },
+    {
       "title": " Faceswap InstandID",
       "bounding": [
         -750,
@@ -2201,10 +2213,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.35049389948139287,
+      "scale": 0.31863081771035695,
       "offset": [
-        864.4449226995023,
-        351.7343919403343
+        825.8570220903513,
+        314.6983323858503
       ]
     }
   },
