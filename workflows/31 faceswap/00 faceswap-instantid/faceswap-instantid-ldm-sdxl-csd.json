@@ -1,6 +1,6 @@
 {
-  "last_node_id": 146,
-  "last_link_id": 418,
+  "last_node_id": 152,
+  "last_link_id": 430,
   "nodes": [
     {
       "id": 83,
@@ -86,13 +86,13 @@
         26
       ],
       "flags": {},
-      "order": 14,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 339
+          "link": 427
         }
       ],
       "outputs": [
@@ -122,7 +122,7 @@
         26
       ],
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -147,42 +147,6 @@
       }
     },
     {
-      "id": 118,
-      "type": "Reroute",
-      "pos": {
-        "0": -300,
-        "1": 40
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 365
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            339
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 117,
       "type": "Reroute",
       "pos": {
@@ -194,13 +158,13 @@
         26
       ],
       "flags": {},
-      "order": 12,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 366
+          "link": 429
         }
       ],
       "outputs": [
@@ -230,7 +194,7 @@
         26
       ],
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -268,7 +232,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -298,42 +262,6 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
-    },
-    {
-      "id": 138,
-      "type": "Reroute",
-      "pos": {
-        "0": 2280,
-        "1": 160
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 36,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 386
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            383
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
     },
     {
       "id": 86,
@@ -372,51 +300,6 @@
       }
     },
     {
-      "id": 8,
-      "type": "VAEDecode",
-      "pos": {
-        "0": 2040,
-        "1": 190
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 35,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 7
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 251
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            386
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "vae_decode",
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 40,
       "type": "CLIPTextEncode",
       "pos": {
@@ -428,7 +311,7 @@
         "1": 150
       },
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -615,7 +498,7 @@
         26
       ],
       "flags": {},
-      "order": 24,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -641,42 +524,6 @@
       }
     },
     {
-      "id": 142,
-      "type": "Reroute",
-      "pos": {
-        "0": 1880,
-        "1": 100
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 28,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 404
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "MODEL",
-          "links": [
-            405
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 139,
       "type": "Reroute",
       "pos": {
@@ -688,7 +535,7 @@
         26
       ],
       "flags": {},
-      "order": 22,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -725,7 +572,7 @@
         26
       ],
       "flags": {},
-      "order": 26,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -750,49 +597,6 @@
       }
     },
     {
-      "id": 130,
-      "type": "LoadImage",
-      "pos": {
-        "0": -750,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 450
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            365
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "image_input_1",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "character-avatar-cg.jpg",
-        "image"
-      ],
-      "color": "#ffaa14",
-      "bgcolor": "#ff9600"
-    },
-    {
       "id": 4,
       "type": "CheckpointLoaderSimple",
       "pos": {
@@ -804,7 +608,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -855,7 +659,7 @@
         26
       ],
       "flags": {},
-      "order": 17,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -881,92 +685,6 @@
       }
     },
     {
-      "id": 131,
-      "type": "LoadImage",
-      "pos": {
-        "0": -350,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 450
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            366
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "image_input_2",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "character-woman-pirate.jpg",
-        "image"
-      ],
-      "color": "#8cd2ff",
-      "bgcolor": "#78beff"
-    },
-    {
-      "id": 39,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 412
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            398
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 5,
       "type": "EmptyLatentImage",
       "pos": {
@@ -978,7 +696,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1004,39 +722,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 90,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2390,
-        "1": 230
-      },
-      "size": {
-        "0": 370,
-        "1": 400
-      },
-      "flags": {},
-      "order": 37,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 383,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IID+(CN+LORA) [iiw=%instantid.weight%, iis=%instantid.start_at%, iie=%instantid.end_at%]_LDM_SDXL_CSD_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 60,
       "type": "ApplyInstantID",
       "pos": {
@@ -1048,7 +733,7 @@
         "1": 270
       },
       "flags": {},
-      "order": 27,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -1269,7 +954,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 25,
+      "order": 31,
       "mode": 4,
       "inputs": [
         {
@@ -1311,7 +996,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 31,
+      "order": 34,
       "mode": 4,
       "inputs": [
         {
@@ -1378,7 +1063,7 @@
         "1": 370
       },
       "flags": {},
-      "order": 29,
+      "order": 35,
       "mode": 4,
       "inputs": [
         {
@@ -1406,7 +1091,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 30,
+      "order": 36,
       "mode": 4,
       "inputs": [
         {
@@ -1448,7 +1133,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 33,
+      "order": 37,
       "mode": 4,
       "inputs": [
         {
@@ -1515,7 +1200,7 @@
         "1": 370
       },
       "flags": {},
-      "order": 32,
+      "order": 38,
       "mode": 4,
       "inputs": [
         {
@@ -1532,24 +1217,496 @@
       }
     },
     {
-      "id": 3,
-      "type": "KSampler",
+      "id": 142,
+      "type": "Reroute",
       "pos": {
-        "0": 2040,
+        "0": 1880,
+        "1": 100
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 404
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            421
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 147,
+      "type": "RescaleCFG",
+      "pos": {
+        "0": 2050,
+        "1": 240
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 33,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 421
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            422
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "cfg_rescale",
+      "properties": {
+        "Node name for S&R": "RescaleCFG"
+      },
+      "widgets_values": [
+        0.7
+      ]
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 2450,
+        "1": 190
+      },
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 251
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            420
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 151,
+      "type": "Reroute",
+      "pos": {
+        "0": 60,
+        "1": 40
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 430
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            427
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 130,
+      "type": "LoadImage",
+      "pos": {
+        "0": -750,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 450
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            423
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "image_input_1",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-avatar-cg.jpg",
+        "image"
+      ],
+      "color": "#ffaa14",
+      "bgcolor": "#ff9600"
+    },
+    {
+      "id": 118,
+      "type": "Reroute",
+      "pos": {
+        "0": -350,
+        "1": 40
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 424
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            430
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 152,
+      "type": "Reroute",
+      "pos": {
+        "0": -750,
+        "1": -130
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 90,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2450,
+        "1": 230
+      },
+      "size": [
+        350,
+        390
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 420,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IID [iiw=%instantid.weight%, iis=%instantid.start_at%, iie=%instantid.end_at%]_LDM_SDXL_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 131,
+      "type": "LoadImage",
+      "pos": {
+        "0": -350,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 450
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            428
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "image_input_2",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-woman-cowboy.jpg",
+        "image"
+      ],
+      "color": "#8cd2ff",
+      "bgcolor": "#78beff"
+    },
+    {
+      "id": 39,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
         "1": 230
       },
       "size": {
-        "0": 310,
-        "1": 262
+        "0": 350,
+        "1": 170
       },
       "flags": {},
-      "order": 34,
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 412
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            398
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "photo of woman cowboy, shot on sony a1, 85mm F/1.4 ISO 100, dark light, medium format, high quality, realistic, perfect, detailed"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 148,
+      "type": "PrepImageForClipVision",
+      "pos": {
+        "0": -750,
+        "1": 120
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 423
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            424
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "clipvision_prep_1",
+      "properties": {
+        "Node name for S&R": "PrepImageForClipVision"
+      },
+      "widgets_values": [
+        "LANCZOS",
+        "top",
+        0.05
+      ]
+    },
+    {
+      "id": 149,
+      "type": "PrepImageForClipVision",
+      "pos": {
+        "0": -350,
+        "1": 120
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 428
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            429
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "clipvision_prep_2",
+      "properties": {
+        "Node name for S&R": "PrepImageForClipVision"
+      },
+      "widgets_values": [
+        "LANCZOS",
+        "top",
+        0.05
+      ]
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": {
+        "0": 2050,
+        "1": 340
+      },
+      "size": [
+        350,
+        270
+      ],
+      "flags": {},
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 405
+          "link": 422
         },
         {
           "name": "positive",
@@ -1582,7 +1739,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        2001,
+        25191512,
         "randomize",
         25,
         4,
@@ -1595,15 +1752,15 @@
       "id": 111,
       "type": "Note",
       "pos": {
-        "0": 2390,
-        "1": 690
+        "0": 2450,
+        "1": 680
       },
-      "size": {
-        "0": 370,
-        "1": 100
-      },
+      "size": [
+        350,
+        100
+      ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1611,7 +1768,7 @@
         "text": ""
       },
       "widgets_values": [
-        "faceswap-instantid+(cn+lora)-ldm-sdxl-csd\n==============================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID+(CN+LORA)_LDM_SDXL_CSD"
+        "faceswap-instantid-ldm-sdxl-csd\n==========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID_LDM_SDXL_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1707,14 +1864,6 @@
       "*"
     ],
     [
-      339,
-      118,
-      0,
-      79,
-      0,
-      "*"
-    ],
-    [
       342,
       121,
       0,
@@ -1729,22 +1878,6 @@
       60,
       4,
       "MODEL"
-    ],
-    [
-      365,
-      130,
-      0,
-      118,
-      0,
-      "*"
-    ],
-    [
-      366,
-      131,
-      0,
-      117,
-      0,
-      "*"
     ],
     [
       367,
@@ -1817,22 +1950,6 @@
       134,
       1,
       "CONDITIONING"
-    ],
-    [
-      383,
-      138,
-      0,
-      90,
-      0,
-      "IMAGE"
-    ],
-    [
-      386,
-      8,
-      0,
-      138,
-      0,
-      "*"
     ],
     [
       390,
@@ -1915,14 +2032,6 @@
       "*"
     ],
     [
-      405,
-      142,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
-    [
       407,
       143,
       0,
@@ -2001,16 +2110,101 @@
       139,
       0,
       "*"
+    ],
+    [
+      420,
+      8,
+      0,
+      90,
+      0,
+      "IMAGE"
+    ],
+    [
+      421,
+      142,
+      0,
+      147,
+      0,
+      "MODEL"
+    ],
+    [
+      422,
+      147,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      423,
+      130,
+      0,
+      148,
+      0,
+      "IMAGE"
+    ],
+    [
+      424,
+      148,
+      0,
+      118,
+      0,
+      "*"
+    ],
+    [
+      427,
+      151,
+      0,
+      79,
+      0,
+      "*"
+    ],
+    [
+      428,
+      131,
+      0,
+      149,
+      0,
+      "IMAGE"
+    ],
+    [
+      429,
+      149,
+      0,
+      117,
+      0,
+      "*"
+    ],
+    [
+      430,
+      118,
+      0,
+      151,
+      0,
+      "*"
     ]
   ],
-  "groups": [],
+  "groups": [
+    {
+      "title": " Faceswap InstandID",
+      "bounding": [
+        -750,
+        -100,
+        590,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
+      "flags": {}
+    }
+  ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.355841027383677,
+      "scale": 0.35049389948139287,
       "offset": [
-        921.7914545912116,
-        274.7258930811221
+        864.4449226995023,
+        351.7343919403343
       ]
     }
   },
