@@ -1235,12 +1235,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_grocx_00003_.png&type=temp&subfolder=&rand=0.0348450113578902"
+            "url": "/api/view?filename=rgthree.compare._temp_grocx_00007_.png&type=temp&subfolder=&rand=0.25179557989245693"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_grocx_00004_.png&type=temp&subfolder=&rand=0.33441823366504964"
+            "url": "/api/view?filename=rgthree.compare._temp_grocx_00008_.png&type=temp&subfolder=&rand=0.3735065396486519"
           }
         ]
       ]
@@ -1472,57 +1472,6 @@
       ]
     },
     {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            379
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            380
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            321
-          ],
-          "slot_index": 2
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "03 gen\\sdxl-epinikion-journey-v10-p.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 40,
       "type": "CLIPTextEncode",
       "pos": {
@@ -1576,7 +1525,7 @@
         26
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1722,6 +1671,57 @@
       ]
     },
     {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            379
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            380
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            321
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "01 base\\sdlt-bd-8s.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 90,
       "type": "SaveImage",
       "pos": {
@@ -1749,7 +1749,7 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_F2I-PID_LDM_SDXL_CSD_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_F2I-PID_LDM_SDLT_CSD_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
@@ -1774,7 +1774,7 @@
         "text": ""
       },
       "widgets_values": [
-        "face2img-pulid-ldm-sdxl-csd\n===========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : F2I-PID_LDM_SDXL_CSD"
+        "face2img-pulid-ldm-sdlt-csd\n===========================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : F2I-PID_LDM_SDLT_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1832,10 +1832,10 @@
       "widgets_values": [
         25191512,
         "randomize",
-        25,
-        4,
-        "dpmpp_2m_sde_gpu",
-        "karras",
+        8,
+        1,
+        "euler",
+        "sgm_uniform",
         1
       ]
     }
@@ -2268,7 +2268,7 @@
   ],
   "groups": [
     {
-      "title": " LDM SDXL",
+      "title": " LDM SDLT",
       "bounding": [
         140,
         -60,
@@ -2295,10 +2295,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.2896643797366885,
+      "scale": 0.3186308177103572,
       "offset": [
-        583.1476125945371,
-        407.8735953119356
+        456.10087066580445,
+        413.5447455512679
       ]
     }
   },
