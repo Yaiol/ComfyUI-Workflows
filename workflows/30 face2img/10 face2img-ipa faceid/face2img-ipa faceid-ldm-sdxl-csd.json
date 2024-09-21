@@ -379,47 +379,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 450
-      },
-      "size": {
-        "0": 350,
-        "1": 150
-      },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 158
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            123
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "clip_negative",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "logo, watermark, makeup, jewelry"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 61,
       "type": "Reroute",
       "pos": {
@@ -1278,6 +1237,184 @@
       "bgcolor": "#535"
     },
     {
+      "id": 50,
+      "type": "Image Comparer (rgthree)",
+      "pos": {
+        "0": 2450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_a",
+          "type": "IMAGE",
+          "link": 136,
+          "dir": 3
+        },
+        {
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": 137,
+          "dir": 3
+        }
+      ],
+      "outputs": [],
+      "title": "image_compare",
+      "properties": {
+        "comparer_mode": "Slide"
+      },
+      "widgets_values": [
+        [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_hhplp_00001_.png&type=temp&subfolder=&rand=0.754343618833833"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_hhplp_00002_.png&type=temp&subfolder=&rand=0.6306269961313733"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2850,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 183
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_F2I-IFA_LDM_SDXL_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 78,
+      "type": "Reroute",
+      "pos": {
+        "0": 2730,
+        "1": 150
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 180
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            183
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 75,
+      "type": "Reroute",
+      "pos": {
+        "0": 1920,
+        "1": 90
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 173
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            187
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 79,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 860,
+        "1": 800
+      },
+      "size": {
+        "0": 350,
+        "1": 340
+      },
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 184
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
       "id": 4,
       "type": "CheckpointLoaderSimple",
       "pos": {
@@ -1323,30 +1460,30 @@
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "05 real\\sdxl-epinikion-realism-v80-p.safetensors"
+        "03 gen\\sdxl-epinikion-journey-v10-p.safetensors"
       ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
-      "id": 6,
+      "id": 7,
       "type": "CLIPTextEncode",
       "pos": {
         "0": 450,
-        "1": 230
+        "1": 450
       },
       "size": {
         "0": 350,
-        "1": 160
+        "1": 150
       },
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 157
+          "link": 158
         }
       ],
       "outputs": [
@@ -1354,100 +1491,20 @@
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
-            126
+            123
           ],
           "slot_index": 0
         }
       ],
-      "title": "clip_positive",
+      "title": "clip_negative",
       "properties": {
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "photography of a woman, wavy short black hair, light brown eyes, light grey background, studio light, medium format photo, detailed, high quality"
+        "logo, watermark, naked"
       ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 50,
-      "type": "Image Comparer (rgthree)",
-      "pos": {
-        "0": 2450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 41,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image_a",
-          "type": "IMAGE",
-          "link": 136,
-          "dir": 3
-        },
-        {
-          "name": "image_b",
-          "type": "IMAGE",
-          "link": 137,
-          "dir": 3
-        }
-      ],
-      "outputs": [],
-      "title": "image_compare",
-      "properties": {
-        "comparer_mode": "Slide"
-      },
-      "widgets_values": [
-        [
-          {
-            "name": "A",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_yzfxr_00009_.png&type=temp&subfolder=&rand=0.3033770346397964"
-          },
-          {
-            "name": "B",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_yzfxr_00010_.png&type=temp&subfolder=&rand=0.3942020830790913"
-          }
-        ]
-      ]
-    },
-    {
-      "id": 9,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2850,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 43,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 183
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_F2I-IFA_LDM_SDXL_CSD_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
+      "color": "#322",
+      "bgcolor": "#533"
     },
     {
       "id": 18,
@@ -1526,86 +1583,14 @@
         "Node name for S&R": "IPAdapterFaceID"
       },
       "widgets_values": [
-        1,
-        4,
+        0.8,
+        3,
         "linear",
         "concat",
         0,
         1,
         "V only"
       ]
-    },
-    {
-      "id": 78,
-      "type": "Reroute",
-      "pos": {
-        "0": 2730,
-        "1": 150
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 42,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 180
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            183
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 75,
-      "type": "Reroute",
-      "pos": {
-        "0": 1920,
-        "1": 90
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 37,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 173
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "MODEL",
-          "links": [
-            187
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
     },
     {
       "id": 82,
@@ -1641,46 +1626,45 @@
       }
     },
     {
-      "id": 80,
-      "type": "PrepImageForClipVision",
+      "id": 6,
+      "type": "CLIPTextEncode",
       "pos": {
-        "0": -350,
-        "1": 60
+        "0": 450,
+        "1": 230
       },
       "size": {
         "0": 350,
-        "1": 110
+        "1": 160
       },
       "flags": {},
-      "order": 7,
-      "mode": 4,
+      "order": 17,
+      "mode": 0,
       "inputs": [
         {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 185
+          "name": "clip",
+          "type": "CLIP",
+          "link": 157
         }
       ],
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
           "links": [
-            186
+            126
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
-      "title": "clipvision_prep",
+      "title": "clip_positive",
       "properties": {
-        "Node name for S&R": "PrepImageForClipVision"
+        "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "LANCZOS",
-        "top",
-        1
-      ]
+        "photography of a woman, wavy short black hair, light brown eyes, light grey background, studio light, medium format photo, detailed, high quality"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 81,
@@ -1720,6 +1704,48 @@
       },
       "widgets_values": [
         0.7
+      ]
+    },
+    {
+      "id": 80,
+      "type": "PrepImageForClipVision",
+      "pos": {
+        "0": -350,
+        "1": 60
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 185
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            186
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "clipvision_prep",
+      "properties": {
+        "Node name for S&R": "PrepImageForClipVision"
+      },
+      "widgets_values": [
+        "LANCZOS",
+        "top",
+        0.05
       ]
     },
     {
@@ -1783,42 +1809,16 @@
       ]
     },
     {
-      "id": 79,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 860,
-        "1": 800
-      },
-      "size": [
-        350,
-        340
-      ],
-      "flags": {},
-      "order": 35,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 184
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
       "id": 34,
       "type": "Note",
       "pos": {
         "0": 2850,
         "1": 680
       },
-      "size": {
-        "0": 340,
-        "1": 100
-      },
+      "size": [
+        350,
+        100
+      ],
       "flags": {},
       "order": 5,
       "mode": 0,
@@ -1828,7 +1828,7 @@
         "text": ""
       },
       "widgets_values": [
-        "face2img-ipa faceid-ldm-sdxl-csd\n========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : F2I-IAF_LDM_SDXL_CSD"
+        "face2img-ipa faceid-ldm-sdxl-csd\n===========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : F2I-IAF_LDM_SDXL_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -2266,7 +2266,7 @@
       "bounding": [
         -350,
         -100,
-        10,
+        910,
         80
       ],
       "color": "#ffffff",
@@ -2277,10 +2277,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.3504938994813927,
+      "scale": 0.35049389948139237,
       "offset": [
-        491.395014457884,
-        351.4268962774146
+        496.72907871402356,
+        442.83757232272757
       ]
     }
   },
