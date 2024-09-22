@@ -1,6 +1,6 @@
 {
-  "last_node_id": 75,
-  "last_link_id": 151,
+  "last_node_id": 77,
+  "last_link_id": 157,
   "nodes": [
     {
       "id": 25,
@@ -94,7 +94,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 31,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -153,7 +153,7 @@
         "1": 150
       },
       "flags": {},
-      "order": 22,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -194,7 +194,7 @@
         "1": 160
       },
       "flags": {},
-      "order": 23,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -235,7 +235,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 41,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -320,131 +320,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 67,
-      "type": "Load Lora",
-      "pos": {
-        "0": 50,
-        "1": 390
-      },
-      "size": {
-        "0": 350,
-        "1": 150
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 135
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 131
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            136
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            132
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "NAME_STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "lora_model_1",
-      "properties": {
-        "Node name for S&R": "Load Lora"
-      },
-      "widgets_values": [
-        "None",
-        1,
-        1
-      ]
-    },
-    {
-      "id": 68,
-      "type": "Load Lora",
-      "pos": {
-        "0": 50,
-        "1": 600
-      },
-      "size": {
-        "0": 350,
-        "1": 150
-      },
-      "flags": {},
-      "order": 16,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 136
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 132
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            137
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            133,
-            134
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "NAME_STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "lora_model_2",
-      "properties": {
-        "Node name for S&R": "Load Lora"
-      },
-      "widgets_values": [
-        "None",
-        1,
-        1
-      ]
-    },
-    {
       "id": 50,
       "type": "AIO_Preprocessor",
       "pos": {
@@ -456,7 +331,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 29,
+      "order": 27,
       "mode": 4,
       "inputs": [
         {
@@ -498,7 +373,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 37,
+      "order": 39,
       "mode": 4,
       "inputs": [
         {
@@ -565,7 +440,7 @@
         "1": 380
       },
       "flags": {},
-      "order": 34,
+      "order": 32,
       "mode": 4,
       "inputs": [
         {
@@ -592,7 +467,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 35,
+      "order": 33,
       "mode": 4,
       "inputs": [
         {
@@ -634,7 +509,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 40,
+      "order": 41,
       "mode": 4,
       "inputs": [
         {
@@ -701,7 +576,7 @@
         "1": 380
       },
       "flags": {},
-      "order": 38,
+      "order": 37,
       "mode": 4,
       "inputs": [
         {
@@ -728,7 +603,7 @@
         "1": 80
       },
       "flags": {},
-      "order": 39,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -783,7 +658,7 @@
         "1": 322
       },
       "flags": {},
-      "order": 36,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -866,7 +741,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 44,
+      "order": 45,
       "mode": 4,
       "inputs": [
         {
@@ -1170,7 +1045,39 @@
       }
     },
     {
-      "id": 4,
+      "id": 9,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2850,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 410
+      },
+      "flags": {},
+      "order": 48,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IAF+IAS (iafw=%ipadapter_faceid.weight%, iafs=%ipadapter_faceid.start_at%, iie=%ipadapter_faceid.end_at%)_LCML_SDLT_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 76,
       "type": "CheckpointLoaderSimple",
       "pos": {
         "0": 50,
@@ -1189,7 +1096,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            135
+            151
           ],
           "slot_index": 0
         },
@@ -1197,7 +1104,7 @@
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            131
+            152
           ],
           "slot_index": 1
         },
@@ -1205,7 +1112,7 @@
           "name": "VAE",
           "type": "VAE",
           "links": [
-            46
+            156
           ],
           "slot_index": 2
         }
@@ -1215,42 +1122,199 @@
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "01 base\\sdlt-bd-8s.safetensors"
+        "01 base\\sdxl-sai-base-v10-vae0.9.safetensors"
       ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
-      "id": 9,
-      "type": "SaveImage",
+      "id": 77,
+      "type": "Load Lora",
       "pos": {
-        "0": 2850,
-        "1": 230
+        "0": 50,
+        "1": 390
       },
       "size": {
         "0": 350,
-        "1": 410
+        "1": 150
       },
       "flags": {},
-      "order": 47,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 9
+          "name": "model",
+          "type": "MODEL",
+          "link": 151
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 152
         }
       ],
-      "outputs": [],
-      "title": "image_output",
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            154
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            157
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "NAME_STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "lora_model_lcml",
       "properties": {
-        "Node name for S&R": "SaveImage"
+        "Node name for S&R": "Load Lora"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IAF+IAS (iafw=%ipadapter_faceid.weight%, iafs=%ipadapter_faceid.start_at%, iie=%ipadapter_faceid.end_at%)_LDM_SDLT_CSD_%ksampler.seed%"
+        "lora\\01 base\\sdlt-bd-lora-8s.safetensors",
+        1,
+        1
       ],
-      "color": "#323",
-      "bgcolor": "#535"
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 67,
+      "type": "Load Lora",
+      "pos": {
+        "0": 50,
+        "1": 600
+      },
+      "size": {
+        "0": 350,
+        "1": 150
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 154
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 157
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            136
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            132
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "NAME_STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "lora_model_1",
+      "properties": {
+        "Node name for S&R": "Load Lora"
+      },
+      "widgets_values": [
+        "None",
+        1,
+        1
+      ]
+    },
+    {
+      "id": 68,
+      "type": "Load Lora",
+      "pos": {
+        "0": 50,
+        "1": 820
+      },
+      "size": {
+        "0": 350,
+        "1": 150
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 136
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 132
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            155
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            133,
+            134
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "NAME_STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "lora_model_2",
+      "properties": {
+        "Node name for S&R": "Load Lora"
+      },
+      "widgets_values": [
+        "None",
+        1,
+        1
+      ]
     },
     {
       "id": 8,
@@ -1266,7 +1330,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 46,
+      "order": 47,
       "mode": 0,
       "inputs": [
         {
@@ -1332,222 +1396,6 @@
       }
     },
     {
-      "id": 46,
-      "type": "Reroute",
-      "pos": {
-        "0": 450,
-        "1": 110
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 137
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "MODEL",
-          "links": [
-            82
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 26,
-      "type": "Reroute",
-      "pos": {
-        "0": 450,
-        "1": 140
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 46
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "VAE",
-          "links": [
-            47
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 47,
-      "type": "Reroute",
-      "pos": {
-        "0": 720,
-        "1": 110
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 82
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "MODEL",
-          "links": [
-            84
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 54,
-      "type": "Reroute",
-      "pos": {
-        "0": 880,
-        "1": 80
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 28,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 113
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "CONDITIONING",
-          "links": [
-            151
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 52,
-      "type": "Reroute",
-      "pos": {
-        "0": 880,
-        "1": 50
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 130
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "CONDITIONING",
-          "links": [
-            97
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 66,
-      "type": "Reroute",
-      "pos": {
-        "0": 1920,
-        "1": 20
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 30,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 128
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            129
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 33,
       "type": "Reroute",
       "pos": {
@@ -1595,7 +1443,7 @@
         26
       ],
       "flags": {},
-      "order": 43,
+      "order": 44,
       "mode": 0,
       "inputs": [
         {
@@ -1610,6 +1458,260 @@
           "type": "MODEL",
           "links": [
             138
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 56,
+      "type": "Reroute",
+      "pos": {
+        "0": 1650,
+        "1": 80
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 105
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            106
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 55,
+      "type": "Reroute",
+      "pos": {
+        "0": 1510,
+        "1": 80
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 102
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "CONDITIONING",
+          "links": [
+            101
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 53,
+      "type": "Reroute",
+      "pos": {
+        "0": 1510,
+        "1": 50
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 97
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "CONDITIONING",
+          "links": [
+            98
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 38,
+      "type": "Reroute",
+      "pos": {
+        "0": 1510,
+        "1": 20
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 94
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            104,
+            128
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 51,
+      "type": "Reroute",
+      "pos": {
+        "0": 1110,
+        "1": 20
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 148
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            94,
+            103
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 52,
+      "type": "Reroute",
+      "pos": {
+        "0": 880,
+        "1": 50
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 130
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "CONDITIONING",
+          "links": [
+            97
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 54,
+      "type": "Reroute",
+      "pos": {
+        "0": 880,
+        "1": 80
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 113
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "CONDITIONING",
+          "links": [
+            102
           ],
           "slot_index": 0
         }
@@ -1656,133 +1758,24 @@
       }
     },
     {
-      "id": 55,
+      "id": 47,
       "type": "Reroute",
       "pos": {
-        "0": 1510,
-        "1": 80
+        "0": 720,
+        "1": 110
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 33,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 151
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "CONDITIONING",
-          "links": [
-            101
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 53,
-      "type": "Reroute",
-      "pos": {
-        "0": 1510,
-        "1": 50
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 32,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 97
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "CONDITIONING",
-          "links": [
-            98
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 38,
-      "type": "Reroute",
-      "pos": {
-        "0": 1510,
-        "1": 20
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 94
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            104,
-            128
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 56,
-      "type": "Reroute",
-      "pos": {
-        "0": 1650,
-        "1": 80
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 42,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 105
+          "link": 82
         }
       ],
       "outputs": [
@@ -1790,7 +1783,7 @@
           "name": "",
           "type": "MODEL",
           "links": [
-            106
+            84
           ],
           "slot_index": 0
         }
@@ -1801,24 +1794,96 @@
       }
     },
     {
-      "id": 51,
+      "id": 46,
       "type": "Reroute",
       "pos": {
-        "0": 1110,
-        "1": 20
+        "0": 450,
+        "1": 110
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 20,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 148
+          "link": 155
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            82
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 26,
+      "type": "Reroute",
+      "pos": {
+        "0": 450,
+        "1": 140
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 156
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "VAE",
+          "links": [
+            47
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 35,
+      "type": "Reroute",
+      "pos": {
+        "0": 710,
+        "1": -10
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 147
         }
       ],
       "outputs": [
@@ -1826,8 +1891,7 @@
           "name": "",
           "type": "IMAGE",
           "links": [
-            94,
-            103
+            63
           ],
           "slot_index": 0
         }
@@ -1910,24 +1974,24 @@
       }
     },
     {
-      "id": 35,
+      "id": 66,
       "type": "Reroute",
       "pos": {
-        "0": 710,
-        "1": -10
+        "0": 1920,
+        "1": 20
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 24,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 147
+          "link": 128
         }
       ],
       "outputs": [
@@ -1935,7 +1999,7 @@
           "name": "",
           "type": "IMAGE",
           "links": [
-            63
+            129
           ],
           "slot_index": 0
         }
@@ -1944,6 +2008,31 @@
         "showOutputText": false,
         "horizontal": false
       }
+    },
+    {
+      "id": 41,
+      "type": "Note",
+      "pos": {
+        "0": 2850,
+        "1": 700
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "faceswap-ipa faceid+ipa std-lcml-sdlt-csd\n=================================================\nLCML : Latent Consistency Model + LoRA\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : FSW-IAF+IAS_LCLM_SDLT_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     },
     {
       "id": 3,
@@ -1957,7 +2046,7 @@
         "1": 270
       },
       "flags": {},
-      "order": 45,
+      "order": 46,
       "mode": 0,
       "inputs": [
         {
@@ -2004,31 +2093,6 @@
         "sgm_uniform",
         1
       ]
-    },
-    {
-      "id": 41,
-      "type": "Note",
-      "pos": {
-        "0": 2850,
-        "1": 700
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "faceswap-ipa faceid+ipa std-ldm-sdlt-csd\n=================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : FSW-IAF+IAS_LDM_SDLT_CSD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -2103,14 +2167,6 @@
       25,
       0,
       "LATENT"
-    ],
-    [
-      46,
-      4,
-      2,
-      26,
-      0,
-      "*"
     ],
     [
       47,
@@ -2223,6 +2279,14 @@
       43,
       1,
       "CONDITIONING"
+    ],
+    [
+      102,
+      54,
+      0,
+      55,
+      0,
+      "*"
     ],
     [
       103,
@@ -2353,14 +2417,6 @@
       "*"
     ],
     [
-      131,
-      4,
-      1,
-      67,
-      1,
-      "CLIP"
-    ],
-    [
       132,
       67,
       1,
@@ -2385,28 +2441,12 @@
       "CLIP"
     ],
     [
-      135,
-      4,
-      0,
-      67,
-      0,
-      "MODEL"
-    ],
-    [
       136,
       67,
       0,
       68,
       0,
       "MODEL"
-    ],
-    [
-      137,
-      68,
-      0,
-      46,
-      0,
-      "*"
     ],
     [
       138,
@@ -2490,14 +2530,66 @@
     ],
     [
       151,
-      54,
+      76,
       0,
-      55,
+      77,
+      0,
+      "MODEL"
+    ],
+    [
+      152,
+      76,
+      1,
+      77,
+      1,
+      "CLIP"
+    ],
+    [
+      154,
+      77,
+      0,
+      67,
+      0,
+      "MODEL"
+    ],
+    [
+      155,
+      68,
+      0,
+      46,
       0,
       "*"
+    ],
+    [
+      156,
+      76,
+      2,
+      26,
+      0,
+      "*"
+    ],
+    [
+      157,
+      77,
+      1,
+      67,
+      1,
+      "CLIP"
     ]
   ],
   "groups": [
+    {
+      "title": " LCML SDLT",
+      "bounding": [
+        160,
+        -160,
+        190,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
+    },
     {
       "title": " Faceswap IpAdapter+ FaceId v2",
       "bounding": [
@@ -2509,27 +2601,15 @@
       "color": "#ffffff",
       "font_size": 60,
       "flags": {}
-    },
-    {
-      "title": " LDM SDLT",
-      "bounding": [
-        160,
-        -160,
-        170,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.289664379736688,
+      "scale": 0.2896643797366882,
       "offset": [
-        820.4453786555459,
-        543.3633415207811
+        809.5325022122571,
+        485.10325079139335
       ]
     }
   },
