@@ -385,7 +385,7 @@
         "Node name for S&R": "INPAINT_InpaintWithModel"
       },
       "widgets_values": [
-        693898746303254,
+        202468676710747,
         "randomize"
       ]
     },
@@ -1772,7 +1772,7 @@
         6,
         "dpmpp_2m_sde",
         "karras",
-        1
+        0.7000000000000001
       ]
     }
   ],
@@ -2212,18 +2212,6 @@
   ],
   "groups": [
     {
-      "title": " Inpaint Fooocus Promptless",
-      "bounding": [
-        -2500,
-        460,
-        780,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
-    {
       "title": " LDM SDXL",
       "bounding": [
         -1710,
@@ -2234,15 +2222,27 @@
       "color": "#00ffff",
       "font_size": 30,
       "flags": {}
+    },
+    {
+      "title": " Inpaint Fooocus Promptless",
+      "bounding": [
+        -2500,
+        460,
+        780,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
+      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.2896643797366882,
+      "scale": 0.289664379736688,
       "offset": [
-        2704.0154987937262,
-        -270.7127188563153
+        2653.205637469991,
+        -290.1093812648571
       ]
     }
   },
