@@ -1,5 +1,5 @@
 {
-  "last_node_id": 59,
+  "last_node_id": 60,
   "last_link_id": 136,
   "nodes": [
     {
@@ -69,7 +69,7 @@
         26
       ],
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -105,7 +105,7 @@
         26
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -141,7 +141,7 @@
         26
       ],
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -177,7 +177,7 @@
         26
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -213,7 +213,7 @@
         26
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -249,7 +249,7 @@
         26
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -285,7 +285,7 @@
         26
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -321,7 +321,7 @@
         26
       ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -359,7 +359,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -450,7 +450,7 @@
         26
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -486,7 +486,7 @@
         26
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -523,7 +523,7 @@
         26
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -559,7 +559,7 @@
         26
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -595,7 +595,7 @@
         26
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -631,7 +631,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -673,7 +673,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -752,7 +752,7 @@
         "1": 70
       },
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -799,7 +799,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -850,7 +850,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -907,7 +907,7 @@
         "1": 270
       },
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -956,6 +956,39 @@
         "karras",
         1
       ]
+    },
+    {
+      "id": 60,
+      "type": "Reroute",
+      "pos": {
+        "0": -350,
+        "1": -130
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
     }
   ],
   "links": [
@@ -1213,10 +1246,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4665073802097334,
+      "scale": 0.4665073802097337,
       "offset": [
-        472.2705119776291,
-        256.498422176528
+        415.0523661889911,
+        285.59860336667964
       ]
     }
   },
