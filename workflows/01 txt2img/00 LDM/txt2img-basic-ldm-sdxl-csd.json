@@ -383,6 +383,61 @@
       "bgcolor": "#353"
     },
     {
+      "id": 20,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            88
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            38,
+            39
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            85
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "01 base\\sdxl-sai-base-v10-vae0.9.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 7,
       "type": "CLIPTextEncode",
       "pos": {
@@ -437,7 +492,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -486,61 +541,6 @@
       }
     },
     {
-      "id": 20,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            88
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            38,
-            39
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            85
-          ],
-          "slot_index": 2,
-          "shape": 3
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "01 base\\sdlt-bd-8s.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 27,
       "type": "SaveImage",
       "pos": {
@@ -567,7 +567,7 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I_LDM_SDLT_CSD_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I_LDM_SDXL_CSD_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
@@ -627,10 +627,10 @@
       "widgets_values": [
         25191512,
         "randomize",
-        8,
-        1,
-        "euler",
-        "sgm_uniform",
+        25,
+        4,
+        "dpmpp_2m_sde",
+        "karras",
         1
       ]
     },
@@ -654,7 +654,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-ldm-sdlt-csd\n==========================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCXL  : Clip Standard\nID   : T2I_LDM_SDLT_CSD"
+        "txt2img-basic-ldm-sdxl-csd\n==========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCXL  : Clip Standard\nID   : T2I_LDM_SDXL_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -788,7 +788,7 @@
       "flags": {}
     },
     {
-      "title": " LDM SDLT",
+      "title": " LDM SDXL",
       "bounding": [
         310,
         0,
