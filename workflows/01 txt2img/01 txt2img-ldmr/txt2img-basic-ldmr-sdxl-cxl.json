@@ -945,87 +945,6 @@
       "shape": 1
     },
     {
-      "id": 36,
-      "type": "KSamplerAdvanced",
-      "pos": {
-        "0": 850,
-        "1": 350
-      },
-      "size": {
-        "0": 350,
-        "1": 330
-      },
-      "flags": {},
-      "order": 39,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 151
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 118
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 55
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 54
-        },
-        {
-          "name": "steps",
-          "type": "INT",
-          "link": 73,
-          "slot_index": 5,
-          "widget": {
-            "name": "steps"
-          }
-        },
-        {
-          "name": "end_at_step",
-          "type": "INT",
-          "link": 75,
-          "widget": {
-            "name": "end_at_step"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            109
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "ksampler_base",
-      "properties": {
-        "Node name for S&R": "KSamplerAdvanced"
-      },
-      "widgets_values": [
-        "enable",
-        25191512,
-        "fixed",
-        25,
-        4,
-        "dpmpp_2m_sde",
-        "karras",
-        0,
-        20,
-        "enable"
-      ]
-    },
-    {
       "id": 50,
       "type": "Reroute",
       "pos": {
@@ -1462,87 +1381,6 @@
         "showOutputText": false,
         "horizontal": false
       }
-    },
-    {
-      "id": 38,
-      "type": "KSamplerAdvanced",
-      "pos": {
-        "0": 1660,
-        "1": 350
-      },
-      "size": {
-        "0": 340,
-        "1": 330
-      },
-      "flags": {},
-      "order": 42,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 149
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 67
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 68
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 101
-        },
-        {
-          "name": "steps",
-          "type": "INT",
-          "link": 93,
-          "widget": {
-            "name": "steps"
-          }
-        },
-        {
-          "name": "start_at_step",
-          "type": "INT",
-          "link": 97,
-          "slot_index": 5,
-          "widget": {
-            "name": "start_at_step"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            121
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "ksampler_refiner",
-      "properties": {
-        "Node name for S&R": "KSamplerAdvanced"
-      },
-      "widgets_values": [
-        "disable",
-        25191512,
-        "fixed",
-        25,
-        4,
-        "dpmpp_2m_sde",
-        "karras",
-        20,
-        10000,
-        "disable"
-      ]
     },
     {
       "id": 70,
@@ -1984,31 +1822,6 @@
       ]
     },
     {
-      "id": 72,
-      "type": "Note",
-      "pos": {
-        "0": 2450,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-ldmr-sdxl-cxl\n===========================================================\nLCM  : Latent Consistency Model\nSDLT : SD XL\nCXL  : Clip XL\nID   : T2I_LDMR_SDXL_CXL"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 83,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -2022,7 +1835,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -2033,6 +1846,193 @@
         0.4
       ],
       "shape": 1
+    },
+    {
+      "id": 36,
+      "type": "KSamplerAdvanced",
+      "pos": {
+        "0": 850,
+        "1": 350
+      },
+      "size": {
+        "0": 350,
+        "1": 330
+      },
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 151
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 118
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 55
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 54
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 73,
+          "slot_index": 5,
+          "widget": {
+            "name": "steps"
+          }
+        },
+        {
+          "name": "end_at_step",
+          "type": "INT",
+          "link": 75,
+          "widget": {
+            "name": "end_at_step"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            109
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "ksampler_base",
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced"
+      },
+      "widgets_values": [
+        "enable",
+        25191512,
+        "randomize",
+        25,
+        4,
+        "dpmpp_2m_sde",
+        "karras",
+        0,
+        20,
+        "enable"
+      ]
+    },
+    {
+      "id": 38,
+      "type": "KSamplerAdvanced",
+      "pos": {
+        "0": 1660,
+        "1": 350
+      },
+      "size": {
+        "0": 340,
+        "1": 330
+      },
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 149
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 67
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 68
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 101
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 93,
+          "widget": {
+            "name": "steps"
+          }
+        },
+        {
+          "name": "start_at_step",
+          "type": "INT",
+          "link": 97,
+          "slot_index": 5,
+          "widget": {
+            "name": "start_at_step"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            121
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "ksampler_refiner",
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced"
+      },
+      "widgets_values": [
+        "disable",
+        25191512,
+        "randomize",
+        25,
+        4,
+        "dpmpp_2m_sde",
+        "karras",
+        20,
+        10000,
+        "disable"
+      ]
+    },
+    {
+      "id": 72,
+      "type": "Note",
+      "pos": {
+        "0": 2450,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-ldmr-sdxl-cxl\n===========================================================\nLCM  : Latent Consistency Model\nSDLT : SD XL\nCXL  : Clip XL\nID   : T2I_LDMR_SDXL_CXL"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
