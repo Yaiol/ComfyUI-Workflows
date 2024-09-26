@@ -1,6 +1,6 @@
 {
-  "last_node_id": 46,
-  "last_link_id": 88,
+  "last_node_id": 49,
+  "last_link_id": 97,
   "nodes": [
     {
       "id": 5,
@@ -93,7 +93,7 @@
         26
       ],
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -118,42 +118,6 @@
       }
     },
     {
-      "id": 40,
-      "type": "Reroute",
-      "pos": {
-        "0": 730,
-        "1": 80
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 86
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "MODEL",
-          "links": [
-            87
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 29,
       "type": "Reroute",
       "pos": {
@@ -165,7 +129,7 @@
         26
       ],
       "flags": {},
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -230,7 +194,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -352,13 +316,13 @@
         "1": 160
       },
       "flags": {},
-      "order": 10,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 38,
+          "link": 93,
           "slot_index": 0
         }
       ],
@@ -394,13 +358,13 @@
         "1": 190
       },
       "flags": {},
-      "order": 11,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 39
+          "link": 94
         }
       ],
       "outputs": [
@@ -424,32 +388,6 @@
       "bgcolor": "#533"
     },
     {
-      "id": 41,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -60
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖workflow",
-      "properties": {},
-      "widgets_values": [
-        "0",
-        0.4
-      ],
-      "shape": 1
-    },
-    {
       "id": 39,
       "type": "Reroute",
       "pos": {
@@ -461,13 +399,13 @@
         26
       ],
       "flags": {},
-      "order": 9,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 88
+          "link": 95
         }
       ],
       "outputs": [
@@ -486,6 +424,94 @@
       }
     },
     {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1250,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I_LDM_SDLT_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 47,
+      "type": "LoraLoader",
+      "pos": {
+        "0": 50,
+        "1": 390
+      },
+      "size": {
+        "0": 350,
+        "1": 130
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 91
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 92
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            89
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            90
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "lora_model_1",
+      "properties": {
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "lora\\00 tosort\\2000Comicsv20.safetensors",
+        2,
+        0.5
+      ]
+    },
+    {
       "id": 20,
       "type": "CheckpointLoaderSimple",
       "pos": {
@@ -497,7 +523,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -505,7 +531,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            88
+            91
           ],
           "slot_index": 0,
           "shape": 3
@@ -514,8 +540,7 @@
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            38,
-            39
+            92
           ],
           "slot_index": 1,
           "shape": 3
@@ -541,56 +566,208 @@
       "bgcolor": "#335"
     },
     {
-      "id": 27,
-      "type": "SaveImage",
+      "id": 48,
+      "type": "LoraLoader",
       "pos": {
-        "0": 1250,
-        "1": 290
+        "0": 50,
+        "1": 580
       },
       "size": {
         "0": 350,
-        "1": 400
+        "1": 130
       },
       "flags": {},
-      "order": 17,
+      "order": 11,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 89
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 90
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            95
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            93,
+            94
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "lora_model_2",
+      "properties": {
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "lora\\00 tosort\\2000Comicsv20.safetensors",
+        1,
+        1
+      ]
+    },
+    {
+      "id": 40,
+      "type": "Reroute",
+      "pos": {
+        "0": 730,
+        "1": 80
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 54
+          "name": "",
+          "type": "*",
+          "link": 86
         }
       ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I_LDM_SDLT_CSD_%ksampler.seed%"
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            96
+          ],
+          "slot_index": 0
+        }
       ],
-      "color": "#323",
-      "bgcolor": "#535"
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
     },
     {
-      "id": 33,
-      "type": "KSampler",
+      "id": 49,
+      "type": "PerturbedAttentionGuidance",
       "pos": {
         "0": 850,
         "1": 230
       },
       "size": {
         "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 96
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            97
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "pag",
+      "properties": {
+        "Node name for S&R": "PerturbedAttentionGuidance"
+      },
+      "widgets_values": [
+        3
+      ]
+    },
+    {
+      "id": 41,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 0,
+        "1": -60
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.5
+      ],
+      "shape": 1
+    },
+    {
+      "id": 35,
+      "type": "Note",
+      "pos": {
+        "0": 1250,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-ldm-sdlt-csd\n==========================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCXL  : Clip Standard\nID   : T2I_LDM_SDLT_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 33,
+      "type": "KSampler",
+      "pos": {
+        "0": 850,
+        "1": 350
+      },
+      "size": {
+        "0": 350,
         "1": 262
       },
       "flags": {},
-      "order": 15,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 87
+          "link": 97
         },
         {
           "name": "positive",
@@ -633,50 +810,9 @@
         "sgm_uniform",
         1
       ]
-    },
-    {
-      "id": 35,
-      "type": "Note",
-      "pos": {
-        "0": 1250,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-ldm-sdlt-csd\n==========================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCXL  : Clip Standard\nID   : T2I_LDM_SDLT_CSD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
-    [
-      38,
-      20,
-      1,
-      6,
-      0,
-      "CLIP"
-    ],
-    [
-      39,
-      20,
-      1,
-      7,
-      0,
-      "CLIP"
-    ],
     [
       54,
       8,
@@ -758,20 +894,76 @@
       "*"
     ],
     [
-      87,
-      40,
+      89,
+      47,
       0,
-      33,
+      48,
       0,
       "MODEL"
     ],
     [
-      88,
+      90,
+      47,
+      1,
+      48,
+      1,
+      "CLIP"
+    ],
+    [
+      91,
       20,
+      0,
+      47,
+      0,
+      "MODEL"
+    ],
+    [
+      92,
+      20,
+      1,
+      47,
+      1,
+      "CLIP"
+    ],
+    [
+      93,
+      48,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      94,
+      48,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      95,
+      48,
       0,
       39,
       0,
       "*"
+    ],
+    [
+      96,
+      40,
+      0,
+      49,
+      0,
+      "MODEL"
+    ],
+    [
+      97,
+      49,
+      0,
+      33,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
@@ -803,7 +995,7 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4,
+      "scale": 0.5,
       "offset": [
         16,
         100
