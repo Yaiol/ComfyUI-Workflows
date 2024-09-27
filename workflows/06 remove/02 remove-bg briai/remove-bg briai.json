@@ -745,7 +745,7 @@
         "text": ""
       },
       "widgets_values": [
-        "rembg-briai\n========================================================\nID   : REM-BG BRIAI"
+        "remove-bg briai\n========================================================\nID   : REM-BG BRIAI"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -883,18 +883,6 @@
   ],
   "groups": [
     {
-      "title": " BRIAI",
-      "bounding": [
-        660,
-        -30,
-        80,
-        30
-      ],
-      "color": "#00ffff",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
       "title": " Remove Background",
       "bounding": [
         50,
@@ -905,15 +893,27 @@
       "color": "#ffffff",
       "font_size": 60,
       "flags": {}
+    },
+    {
+      "title": " BRIAI",
+      "bounding": [
+        660,
+        -30,
+        80,
+        30
+      ],
+      "color": "#00ffff",
+      "font_size": 24,
+      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5,
+      "scale": 0.413223140495868,
       "offset": [
-        16,
-        150
+        203.0610910469104,
+        269.50578754443495
       ]
     }
   },
