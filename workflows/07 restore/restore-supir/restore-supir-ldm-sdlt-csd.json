@@ -43,53 +43,6 @@
       ]
     },
     {
-      "id": 14,
-      "type": "ColorMatch",
-      "pos": {
-        "0": 2650,
-        "1": 230
-      },
-      "size": {
-        "0": 360,
-        "1": 110
-      },
-      "flags": {},
-      "order": 32,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image_ref",
-          "type": "IMAGE",
-          "link": 68,
-          "slot_index": 0
-        },
-        {
-          "name": "image_target",
-          "type": "IMAGE",
-          "link": 26
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            34,
-            78
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ColorMatch"
-      },
-      "widgets_values": [
-        "mkl",
-        1
-      ]
-    },
-    {
       "id": 20,
       "type": "Image Comparer (rgthree)",
       "pos": {
@@ -127,12 +80,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_bevqa_00023_.png&type=temp&subfolder=&rand=0.845742190240055"
+            "url": "/api/view?filename=rgthree.compare._temp_hhxiv_00001_.png&type=temp&subfolder=&rand=0.2866310106848937"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_bevqa_00024_.png&type=temp&subfolder=&rand=0.1242071108183247"
+            "url": "/api/view?filename=rgthree.compare._temp_hhxiv_00002_.png&type=temp&subfolder=&rand=0.39738032608766893"
           }
         ]
       ]
@@ -702,58 +655,6 @@
       ]
     },
     {
-      "id": 38,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": -350,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖checkpoint",
-      "properties": {},
-      "widgets_values": [
-        "1",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 39,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖checkpoint",
-      "properties": {},
-      "widgets_values": [
-        "2",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
       "id": 40,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -767,11 +668,11 @@
       "flags": {
         "collapsed": true
       },
-      "order": 4,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "🔖checkpoint",
+      "title": "🔖supir",
       "properties": {},
       "widgets_values": [
         "3",
@@ -793,7 +694,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -819,7 +720,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -845,7 +746,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -858,108 +759,170 @@
       "shape": 1
     },
     {
-      "id": 45,
-      "type": "Bookmark (rgthree)",
+      "id": 13,
+      "type": "ImageResize+",
       "pos": {
-        "0": 1850,
-        "1": 180
+        "0": 850,
+        "1": 230
       },
       "size": {
-        "0": 210,
-        "1": 62
+        "0": 250,
+        "1": 220
       },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 8,
+      "flags": {},
+      "order": 19,
       "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖sampler",
-      "properties": {},
-      "widgets_values": [
-        "7",
-        0.8
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 52
+        }
       ],
-      "shape": 1
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            25
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageResize+"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        "lanczos",
+        "stretch",
+        "always",
+        0
+      ]
     },
     {
-      "id": 46,
-      "type": "Bookmark (rgthree)",
+      "id": 21,
+      "type": "SUPIR_model_loader_v2",
       "pos": {
-        "0": 2250,
-        "1": 180
+        "0": 450,
+        "1": 230
       },
       "size": {
-        "0": 210,
-        "1": 62
+        "0": 350,
+        "1": 170
       },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 9,
+      "flags": {},
+      "order": 14,
       "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖checkpoint",
-      "properties": {},
-      "widgets_values": [
-        "8",
-        0.8
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 35,
+          "slot_index": 0
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 39
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 40
+        }
       ],
-      "shape": 1
+      "outputs": [
+        {
+          "name": "SUPIR_model",
+          "type": "SUPIRMODEL",
+          "links": [
+            59
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "SUPIR_VAE",
+          "type": "SUPIRVAE",
+          "links": [
+            75
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SUPIR_model_loader_v2"
+      },
+      "widgets_values": [
+        "09 tools\\sdxl-supir-v0Q.ckpt",
+        false,
+        "auto",
+        false
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
-      "id": 47,
-      "type": "Bookmark (rgthree)",
+      "id": 11,
+      "type": "SUPIR_encode",
       "pos": {
-        "0": 2660,
-        "1": 180
+        "0": 1150,
+        "1": 460
       },
       "size": {
-        "0": 210,
-        "1": 62
+        "0": 250,
+        "1": 130
       },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 10,
+      "flags": {},
+      "order": 26,
       "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖output",
-      "properties": {},
-      "widgets_values": [
-        "9",
-        0.8
+      "inputs": [
+        {
+          "name": "SUPIR_VAE",
+          "type": "SUPIRVAE",
+          "link": 15
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 16
+        }
       ],
-      "shape": 1
-    },
-    {
-      "id": 48,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": -400,
-        "1": -160
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖workflow",
-      "properties": {},
-      "widgets_values": [
-        "0",
-        0.34
+      "outputs": [
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            66
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
       ],
-      "shape": 1
+      "properties": {
+        "Node name for S&R": "SUPIR_encode"
+      },
+      "widgets_values": [
+        true,
+        512,
+        "auto"
+      ]
     },
     {
       "id": 9,
@@ -1023,62 +986,6 @@
         "high quality, detailed, photograph of an old man",
         "bad quality, blurry, messy",
         ""
-      ]
-    },
-    {
-      "id": 13,
-      "type": "ImageResize+",
-      "pos": {
-        "0": 850,
-        "1": 230
-      },
-      "size": {
-        "0": 250,
-        "1": 220
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 52
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            25
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImageResize+"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        "lanczos",
-        "stretch",
-        "always",
-        0
       ]
     },
     {
@@ -1148,139 +1055,51 @@
       ]
     },
     {
-      "id": 11,
-      "type": "SUPIR_encode",
+      "id": 14,
+      "type": "ColorMatch",
       "pos": {
-        "0": 1150,
-        "1": 460
-      },
-      "size": {
-        "0": 250,
-        "1": 130
-      },
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "SUPIR_VAE",
-          "type": "SUPIRVAE",
-          "link": 15
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 16
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            66
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SUPIR_encode"
-      },
-      "widgets_values": [
-        true,
-        512,
-        "auto"
-      ]
-    },
-    {
-      "id": 21,
-      "type": "SUPIR_model_loader_v2",
-      "pos": {
-        "0": 450,
+        "0": 2650,
         "1": 230
       },
       "size": {
-        "0": 350,
-        "1": 170
+        "0": 360,
+        "1": 110
       },
       "flags": {},
-      "order": 14,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
-          "name": "model",
-          "type": "MODEL",
-          "link": 35,
+          "name": "image_ref",
+          "type": "IMAGE",
+          "link": 68,
           "slot_index": 0
         },
         {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 39
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 40
+          "name": "image_target",
+          "type": "IMAGE",
+          "link": 26
         }
       ],
       "outputs": [
         {
-          "name": "SUPIR_model",
-          "type": "SUPIRMODEL",
+          "name": "image",
+          "type": "IMAGE",
           "links": [
-            59
+            34,
+            78
           ],
           "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "SUPIR_VAE",
-          "type": "SUPIRVAE",
-          "links": [
-            75
-          ],
-          "slot_index": 1,
           "shape": 3
         }
       ],
       "properties": {
-        "Node name for S&R": "SUPIR_model_loader_v2"
+        "Node name for S&R": "ColorMatch"
       },
       "widgets_values": [
-        "09 tools\\sdxl-supir-v0Q.ckpt",
-        false,
-        "auto",
-        false
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 37,
-      "type": "Note",
-      "pos": {
-        "0": 2650,
-        "1": 860
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "restore-supir-ldm-sdlt-csd\n==========================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : RES-SUPIR_LDM_SDLT_CSD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
+        "mkl",
+        1
+      ]
     },
     {
       "id": 7,
@@ -1336,7 +1155,7 @@
       },
       "widgets_values": [
         25191512,
-        "randomize",
+        "fixed",
         8,
         2,
         1.5,
@@ -1351,6 +1170,187 @@
         1024,
         512
       ]
+    },
+    {
+      "id": 39,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 50,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖checkpoint",
+      "properties": {},
+      "widgets_values": [
+        "2",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 38,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": -350,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖input",
+      "properties": {},
+      "widgets_values": [
+        "1",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 45,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1850,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖sampler",
+      "properties": {},
+      "widgets_values": [
+        "7",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 46,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 2250,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖checkpoint",
+      "properties": {},
+      "widgets_values": [
+        "8",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 47,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 2660,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖output",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 48,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": -400,
+        "1": -160
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.34
+      ],
+      "shape": 1
+    },
+    {
+      "id": 37,
+      "type": "Note",
+      "pos": {
+        "0": 2650,
+        "1": 860
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "restore-supir-ldm-sdlt-csd\n==========================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCSD  : Clip Standard\nID   : RES-SUPIR_LDM_SDLT_CSD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1621,18 +1621,6 @@
   ],
   "groups": [
     {
-      "title": " SIPUR",
-      "bounding": [
-        40,
-        -80,
-        120,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
-    {
       "title": " Img Restore",
       "bounding": [
         -340,
@@ -1642,6 +1630,18 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " SIPUR",
+      "bounding": [
+        40,
+        -90,
+        120,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
       "flags": {}
     }
   ],
