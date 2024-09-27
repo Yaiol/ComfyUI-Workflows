@@ -3,66 +3,6 @@
   "last_link_id": 67,
   "nodes": [
     {
-      "id": 8,
-      "type": "TiledDiffusion",
-      "pos": {
-        "0": 850,
-        "1": 410
-      },
-      "size": {
-        "0": 350,
-        "1": 150
-      },
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 47
-        },
-        {
-          "name": "tile_width",
-          "type": "INT",
-          "link": 18,
-          "widget": {
-            "name": "tile_width"
-          }
-        },
-        {
-          "name": "tile_height",
-          "type": "INT",
-          "link": 19,
-          "widget": {
-            "name": "tile_height"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            37
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "diffusion_tiled",
-      "properties": {
-        "Node name for S&R": "TiledDiffusion"
-      },
-      "widgets_values": [
-        "Mixture of Diffusers",
-        1024,
-        1024,
-        32,
-        8
-      ]
-    },
-    {
       "id": 5,
       "type": "ImageScale",
       "pos": {
@@ -1219,52 +1159,6 @@
       }
     },
     {
-      "id": 29,
-      "type": "ColorMatch",
-      "pos": {
-        "0": 2050,
-        "1": 260
-      },
-      "size": {
-        "0": 350,
-        "1": 102
-      },
-      "flags": {},
-      "order": 40,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image_ref",
-          "type": "IMAGE",
-          "link": 58
-        },
-        {
-          "name": "image_target",
-          "type": "IMAGE",
-          "link": 64
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            43,
-            44
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ColorMatch"
-      },
-      "widgets_values": [
-        "mkl",
-        1
-      ]
-    },
-    {
       "id": 22,
       "type": "Image Comparer (rgthree)",
       "pos": {
@@ -1304,12 +1198,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_nkpep_00017_.png&type=temp&subfolder=&rand=0.5289167165487128"
+            "url": "/api/view?filename=rgthree.compare._temp_nojfr_00003_.png&type=temp&subfolder=&rand=0.07862183825666613"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_nkpep_00018_.png&type=temp&subfolder=&rand=0.20706965334631566"
+            "url": "/api/view?filename=rgthree.compare._temp_nojfr_00004_.png&type=temp&subfolder=&rand=0.08217445437379034"
           }
         ]
       ]
@@ -1377,70 +1271,6 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
-    },
-    {
-      "id": 7,
-      "type": "KSamplerAdvanced",
-      "pos": {
-        "0": 1250,
-        "1": 640
-      },
-      "size": {
-        "0": 350,
-        "1": 340
-      },
-      "flags": {},
-      "order": 34,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 37
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 14
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 15
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 16
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            62
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "ksampler_adv",
-      "properties": {
-        "Node name for S&R": "KSamplerAdvanced"
-      },
-      "widgets_values": [
-        "enable",
-        25191512,
-        "randomize",
-        25,
-        4,
-        "euler",
-        "sgm_uniform",
-        0,
-        50,
-        "disable"
-      ]
     },
     {
       "id": 46,
@@ -1623,6 +1453,176 @@
         0.35
       ],
       "shape": 1
+    },
+    {
+      "id": 8,
+      "type": "TiledDiffusion",
+      "pos": {
+        "0": 850,
+        "1": 410
+      },
+      "size": {
+        "0": 350,
+        "1": 150
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 47
+        },
+        {
+          "name": "tile_width",
+          "type": "INT",
+          "link": 18,
+          "widget": {
+            "name": "tile_width"
+          }
+        },
+        {
+          "name": "tile_height",
+          "type": "INT",
+          "link": 19,
+          "widget": {
+            "name": "tile_height"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            37
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "diffusion_tiled",
+      "properties": {
+        "Node name for S&R": "TiledDiffusion"
+      },
+      "widgets_values": [
+        "Mixture of Diffusers",
+        1024,
+        1024,
+        32,
+        8
+      ]
+    },
+    {
+      "id": 29,
+      "type": "ColorMatch",
+      "pos": {
+        "0": 2050,
+        "1": 260
+      },
+      "size": {
+        "0": 350,
+        "1": 102
+      },
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_ref",
+          "type": "IMAGE",
+          "link": 58
+        },
+        {
+          "name": "image_target",
+          "type": "IMAGE",
+          "link": 64
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            43,
+            44
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ColorMatch"
+      },
+      "widgets_values": [
+        "hm-mvgd-hm",
+        1
+      ]
+    },
+    {
+      "id": 7,
+      "type": "KSamplerAdvanced",
+      "pos": {
+        "0": 1250,
+        "1": 640
+      },
+      "size": {
+        "0": 350,
+        "1": 340
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 37
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 14
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 15
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            62
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "ksampler_adv",
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced"
+      },
+      "widgets_values": [
+        "enable",
+        25191512,
+        "randomize",
+        25,
+        4,
+        "euler",
+        "sgm_uniform",
+        0,
+        50,
+        "disable"
+      ]
     },
     {
       "id": 28,
