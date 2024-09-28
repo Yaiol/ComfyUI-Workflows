@@ -34,6 +34,11 @@ Num | Catagory | Workflow | Output File ID | Description |
 0230 | Image to Image | img2img-revision mixed zero | I2I-REVMZ | Revision with two Images and Zero Prompt |
 0230 | Image to Image | img2img-revision mixed prompt | I2I-REVMP | Revision with two Images and Prompt  |
 0300 | Image Inpaint | img2img-inpaint | INP | Change part of image using mask and prompt |
+0310 | Image Inpaint | inpaint-fooocus basic | INP-F-B | Change part of image using Fooocus Inpaint mask and prompt |
+0311 | Image Inpaint | inpaint-fooocus refine | INP-F-R | Change part of image using Fooocus Inpaint mask and prompt |
+0312 | Image Inpaint | inpaint-fooocus preprocess | INP-F-PP | Change part of image using Fooocus Inpaint mask, preprocess and prompt |
+0313 | Image Inpaint | inpaint-fooocus promptless | INP-F-PL | Change part of image using Fooocus Inpaint mask without prompt |
+0314 | Image Inpaint | inpaint-fooocus background | INP-F-BG | Change background of image using BRIAI BGRM and Fooocus Inpaint mask, preprocess and prompt |
 0500 | Image Upscale | upscale-latent | IUS-LATENT | Upscale image using latent upscale |
 0501 | Image Upscale | upscale-latent+cn | IUS-LATENT | Upscale image using latent upscale combined with ControlNet |
 3000 | Face to Image | face2img-instantid | F2I-IID |  Create an image with a face using InstantID (2 Controlnet & 2 LoRAs as option) |
