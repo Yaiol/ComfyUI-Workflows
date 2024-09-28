@@ -1,6 +1,6 @@
 {
   "last_node_id": 126,
-  "last_link_id": 304,
+  "last_link_id": 306,
   "nodes": [
     {
       "id": 35,
@@ -985,32 +985,6 @@
       ]
     },
     {
-      "id": 124,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": -160,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖3 select",
-      "properties": {},
-      "widgets_values": [
-        "3",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
       "id": 118,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -1024,7 +998,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1085,7 +1059,7 @@
         "1": 450
       },
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1130,7 +1104,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1268,7 +1242,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1292,7 +1266,7 @@
         30
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1393,7 +1367,7 @@
         100
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1439,7 +1413,7 @@
         60
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1642,146 +1616,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 67,
-      "type": "Reroute",
-      "pos": {
-        "0": 40,
-        "1": 80
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 34,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 292
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            181
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 104,
-      "type": "Reroute",
-      "pos": {
-        "0": -160,
-        "1": 200
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 33,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 242
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 108,
-      "type": "Reroute",
-      "pos": {
-        "0": -160,
-        "1": 300
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 36,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 288
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 105,
-      "type": "Reroute",
-      "pos": {
-        "0": -160,
-        "1": 250
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 243
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            292
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 40,
       "type": "KSampler",
       "pos": {
@@ -1841,6 +1675,178 @@
         "karras",
         0.8
       ]
+    },
+    {
+      "id": 108,
+      "type": "Reroute",
+      "pos": {
+        "0": -160,
+        "1": 300
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 288,
+          "label": "fill"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 104,
+      "type": "Reroute",
+      "pos": {
+        "0": -160,
+        "1": 200
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 242,
+          "label": "neutral"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 105,
+      "type": "Reroute",
+      "pos": {
+        "0": -160,
+        "1": 250
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 243,
+          "label": "blur"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            294
+          ],
+          "slot_index": 0,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 124,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": -160,
+        "1": 70
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖3 mask",
+      "properties": {},
+      "widgets_values": [
+        "3",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 67,
+      "type": "Reroute",
+      "pos": {
+        "0": 50,
+        "1": 80
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 294
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            181
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
     },
     {
       "id": 78,
@@ -2190,7 +2196,7 @@
       "*"
     ],
     [
-      292,
+      294,
       105,
       0,
       67,
@@ -2198,7 +2204,7 @@
       "*"
     ],
     [
-      293,
+      295,
       94,
       0,
       44,
@@ -2206,7 +2212,7 @@
       "MASK"
     ],
     [
-      294,
+      296,
       94,
       0,
       99,
@@ -2214,7 +2220,7 @@
       "MASK"
     ],
     [
-      295,
+      297,
       83,
       0,
       111,
@@ -2222,7 +2228,7 @@
       "IMAGE"
     ],
     [
-      296,
+      298,
       94,
       0,
       111,
@@ -2230,26 +2236,10 @@
       "MASK"
     ],
     [
-      297,
-      83,
-      0,
-      80,
-      1,
-      "IMAGE"
-    ],
-    [
-      298,
-      83,
-      0,
-      92,
-      0,
-      "IMAGE"
-    ],
-    [
       299,
       83,
       0,
-      92,
+      80,
       1,
       "IMAGE"
     ],
@@ -2258,11 +2248,27 @@
       83,
       0,
       92,
-      2,
+      0,
       "IMAGE"
     ],
     [
       301,
+      83,
+      0,
+      92,
+      1,
+      "IMAGE"
+    ],
+    [
+      302,
+      83,
+      0,
+      92,
+      2,
+      "IMAGE"
+    ],
+    [
+      303,
       94,
       0,
       95,
@@ -2270,7 +2276,7 @@
       "MASK"
     ],
     [
-      302,
+      304,
       83,
       0,
       101,
@@ -2278,7 +2284,7 @@
       "IMAGE"
     ],
     [
-      303,
+      305,
       94,
       0,
       101,
@@ -2286,7 +2292,7 @@
       "MASK"
     ],
     [
-      304,
+      306,
       94,
       0,
       65,
@@ -2295,18 +2301,6 @@
     ]
   ],
   "groups": [
-    {
-      "title": " LDM SDXL",
-      "bounding": [
-        -620,
-        -290,
-        170,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Inpaint Fooocus Background",
       "bounding": [
@@ -2317,6 +2311,18 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " LDM SDXL",
+      "bounding": [
+        -620,
+        -290,
+        170,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
       "flags": {}
     }
   ],
