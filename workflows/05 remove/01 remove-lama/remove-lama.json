@@ -1,6 +1,6 @@
 {
-  "last_node_id": 9,
-  "last_link_id": 9,
+  "last_node_id": 13,
+  "last_link_id": 15,
   "nodes": [
     {
       "id": 6,
@@ -48,6 +48,34 @@
       "bgcolor": "#535"
     },
     {
+      "id": 9,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 0,
+        "1": -100
+      },
+      "size": [
+        330,
+        70
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.5
+      ],
+      "color": "#323",
+      "bgcolor": "#535",
+      "shape": 1
+    },
+    {
       "id": 1,
       "type": "LamaRemover",
       "pos": {
@@ -78,7 +106,7 @@
           "name": "images",
           "type": "IMAGE",
           "links": [
-            9
+            15
           ],
           "slot_index": 0,
           "shape": 3
@@ -113,7 +141,7 @@
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 9,
+          "link": 15,
           "slot_index": 0
         }
       ],
@@ -122,36 +150,8 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:hhmmss%_REM-BIG LAMA"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_REM-LAMA"
       ]
-    },
-    {
-      "id": 9,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -100
-      },
-      "size": {
-        "0": 350,
-        "1": 440
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖workflow",
-      "properties": {},
-      "widgets_values": [
-        "0",
-        0.5
-      ],
-      "color": "#323",
-      "bgcolor": "#535",
-      "shape": 1
     },
     {
       "id": 8,
@@ -173,7 +173,7 @@
         "text": ""
       },
       "widgets_values": [
-        "remove-big lama\n==========================================================\nID   : REM_BIG LAMA"
+        "remove-lama\n==========================================================\nID   : REM_LAMA"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -197,7 +197,7 @@
       "MASK"
     ],
     [
-      9,
+      15,
       1,
       0,
       7,
@@ -207,11 +207,11 @@
   ],
   "groups": [
     {
-      "title": " BIG LAMA",
+      "title": " LaMa",
       "bounding": [
         340,
         -40,
-        170,
+        110,
         40
       ],
       "color": "#00ffff",
