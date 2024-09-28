@@ -3,110 +3,6 @@
   "last_link_id": 116,
   "nodes": [
     {
-      "id": 45,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1550,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖ouput",
-      "properties": {},
-      "widgets_values": [
-        "9",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 42,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖checkpoint",
-      "properties": {},
-      "widgets_values": [
-        "1",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 44,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1150,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖sampler",
-      "properties": {},
-      "widgets_values": [
-        "3",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 41,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -60
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖workflow",
-      "properties": {},
-      "widgets_values": [
-        "0",
-        0.5
-      ],
-      "shape": 1
-    },
-    {
       "id": 20,
       "type": "CheckpointLoaderSimple",
       "pos": {
@@ -118,7 +14,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 4,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -216,7 +112,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 5,
+      "order": 1,
       "mode": 4,
       "inputs": [
         {
@@ -478,7 +374,7 @@
         170
       ],
       "flags": {},
-      "order": 6,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -506,32 +402,6 @@
       ],
       "color": "#322",
       "bgcolor": "#533"
-    },
-    {
-      "id": 43,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 750,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖prompt",
-      "properties": {},
-      "widgets_values": [
-        "2",
-        0.8
-      ],
-      "shape": 1
     },
     {
       "id": 32,
@@ -587,7 +457,7 @@
         110
       ],
       "flags": {},
-      "order": 8,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -624,7 +494,7 @@
         170
       ],
       "flags": {},
-      "order": 9,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -666,7 +536,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 10,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -855,6 +725,136 @@
         "karras",
         1
       ]
+    },
+    {
+      "id": 41,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 0,
+        "1": -60
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.5
+      ],
+      "shape": 1
+    },
+    {
+      "id": 42,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 50,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖1 checkpoint",
+      "properties": {},
+      "widgets_values": [
+        "1",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 43,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 750,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖2 prompt",
+      "properties": {},
+      "widgets_values": [
+        "2",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 45,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1550,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 ouput",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 44,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1150,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖3 sampler",
+      "properties": {},
+      "widgets_values": [
+        "3",
+        0.8
+      ],
+      "shape": 1
     },
     {
       "id": 35,
@@ -1089,10 +1089,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5,
+      "scale": 0.5000000000000001,
       "offset": [
-        16,
-        100
+        172.52610922110497,
+        186.24307879212188
       ]
     }
   },
