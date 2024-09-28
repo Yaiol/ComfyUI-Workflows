@@ -676,68 +676,6 @@
       }
     },
     {
-      "id": 33,
-      "type": "KSampler",
-      "pos": {
-        "0": 1150,
-        "1": 470
-      },
-      "size": {
-        "0": 350,
-        "1": 262
-      },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 97
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 113
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 63
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": null,
-          "slot_index": 3
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            104
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "ksampler",
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        25191512,
-        "fixed",
-        25,
-        4,
-        "dpmpp_2m_sde",
-        "karras",
-        1
-      ]
-    },
-    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": {
@@ -877,6 +815,68 @@
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 33,
+      "type": "KSampler",
+      "pos": {
+        "0": 1150,
+        "1": 470
+      },
+      "size": {
+        "0": 350,
+        "1": 262
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 97
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 113
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 63
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null,
+          "slot_index": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            104
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        25191512,
+        "randomize",
+        25,
+        4,
+        "dpmpp_2m_sde",
+        "karras",
+        1
+      ]
     }
   ],
   "links": [
@@ -1027,34 +1027,34 @@
     [
       116,
       20,
-      0,
-      33,
-      0,
-      "MODEL"
-    ],
-    [
-      117,
-      32,
-      0,
-      33,
-      3,
-      "LATENT"
-    ],
-    [
-      118,
-      20,
       1,
       6,
       0,
       "CLIP"
     ],
     [
-      119,
+      117,
       20,
       1,
       54,
       0,
       "CLIP"
+    ],
+    [
+      118,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      119,
+      32,
+      0,
+      33,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
