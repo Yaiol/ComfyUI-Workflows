@@ -1830,7 +1830,8 @@
         {
           "name": "",
           "type": "*",
-          "link": 294
+          "link": 294,
+          "label": "input"
         }
       ],
       "outputs": [
