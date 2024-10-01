@@ -61,6 +61,7 @@ ADD | Adversarial Diffusion Distillation | [Adversarial Diffusion Distillation](
 WSN | Würstchen | [Würstchen: An Efficient Architecture for Large-Scale Text-to-Image Diffusion Models](https://openreview.net/forum?id=gU58d5QeGv) | SDCA |
 TCD | Trajectory Consistency Distillation | [Trajectory Consistency Distillation: Improved Latent Consistency Distillation by Semi-Linear Consistency Function with Trajectory Mapping](https://arxiv.org/abs/2402.19159)| SDHY |
 MDT | Multimodal Diffusion Transformer | [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2403.03206) <br> [Fast High-Resolution Image Synthesis with Latent Adversarial Diffusion Distillation](https://arxiv.org/abs/2403.12015)| SD30 |
+MPDT | Multimodal Parallel Diffusion Transformer | [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2403.03206) <br> [Scaling Vision Transformers to 22 Billion Parameters](https://arxiv.org/abs/2302.05442) <br> [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748) <br> [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747)| FX10 |
 
 ## Model
 Each workflow is made for a special model class listed below
@@ -69,8 +70,10 @@ ID | Link |
 --- | --- |
 SD15 | [Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) |
 SDXL | [Stable Diffusion XL](https://stability.ai/news/stability-ai-sdxl-turbo) |
+SDLT | [Stable Diffusion Lightning]() |
 SD30 | [Stable Diffusion 3.0](https://stability.ai/news/stable-diffusion-3-medium)|
 SDCA | [Stable Diffusion Cascade](https://github.com/Stability-AI/StableCascade) |
+FX10 | [Flux 1.0](https://blackforestlabs.ai/announcing-black-forest-labs/) |
 
 ## Clip
 ID | Name |
