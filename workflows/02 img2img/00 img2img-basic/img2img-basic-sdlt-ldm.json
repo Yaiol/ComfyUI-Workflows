@@ -1,12 +1,249 @@
 {
-  "last_node_id": 68,
-  "last_link_id": 155,
+  "last_node_id": 69,
+  "last_link_id": 169,
   "nodes": [
+    {
+      "id": 43,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 860,
+        "1": 740
+      },
+      "size": {
+        "0": 350,
+        "1": 370
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 118
+        }
+      ],
+      "outputs": [],
+      "title": "image_preview_1",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 55,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 1260,
+        "1": 740
+      },
+      "size": {
+        "0": 350,
+        "1": 370
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 119
+        }
+      ],
+      "outputs": [],
+      "title": "image_preview_2",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 61,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": -350,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖1 input",
+      "properties": {},
+      "widgets_values": [
+        "1",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 31,
+      "type": "LoadImage",
+      "pos": {
+        "0": -350,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 450
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            144
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "image_input",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-woman-pirate.jpg",
+        "image"
+      ],
+      "color": "#ffaa14",
+      "bgcolor": "#ff9600"
+    },
+    {
+      "id": 64,
+      "type": "Anything Everywhere",
+      "pos": {
+        "0": -90,
+        "1": 740
+      },
+      "size": {
+        "0": 140,
+        "1": 30
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "IMAGE",
+          "type": "*",
+          "link": 144,
+          "color_on": "#64B5F6"
+        }
+      ],
+      "outputs": [],
+      "title": "image",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 460,
+        "1": 440
+      },
+      "size": {
+        "0": 350,
+        "1": 140
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            109
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "blurry"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 51,
+      "type": "ControlNetLoader",
+      "pos": {
+        "0": 860,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            104,
+            125
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet_model",
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "sdxl-xinsir\\sdxl-xinsir-union-v20.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
     {
       "id": 54,
       "type": "AIO_Preprocessor",
       "pos": {
-        "0": 850,
+        "0": 860,
         "1": 350
       },
       "size": {
@@ -14,7 +251,7 @@
         "1": 90
       },
       "flags": {},
-      "order": 0,
+      "order": 4,
       "mode": 4,
       "inputs": [
         {
@@ -45,66 +282,10 @@
       ]
     },
     {
-      "id": 43,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 850,
-        "1": 730
-      },
-      "size": {
-        "0": 350,
-        "1": 370
-      },
-      "flags": {},
-      "order": 15,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 118
-        }
-      ],
-      "outputs": [],
-      "title": "image_preview_1",
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 55,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 1250,
-        "1": 730
-      },
-      "size": {
-        "0": 350,
-        "1": 370
-      },
-      "flags": {},
-      "order": 16,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 119
-        }
-      ],
-      "outputs": [],
-      "title": "image_preview_2",
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
-    },
-    {
       "id": 50,
       "type": "ControlNetApplyAdvanced",
       "pos": {
-        "0": 850,
+        "0": 860,
         "1": 500
       },
       "size": {
@@ -173,10 +354,53 @@
       ]
     },
     {
+      "id": 57,
+      "type": "AIO_Preprocessor",
+      "pos": {
+        "0": 1260,
+        "1": 350
+      },
+      "size": {
+        "0": 350,
+        "1": 90
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            119,
+            120,
+            128
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet_preprocessor_2",
+      "properties": {
+        "Node name for S&R": "AIO_Preprocessor"
+      },
+      "widgets_values": [
+        "Zoe-DepthMapPreprocessor",
+        1024
+      ]
+    },
+    {
       "id": 56,
       "type": "ControlNetApplyAdvanced",
       "pos": {
-        "0": 1250,
+        "0": 1260,
         "1": 500
       },
       "size": {
@@ -245,180 +469,10 @@
       ]
     },
     {
-      "id": 57,
-      "type": "AIO_Preprocessor",
-      "pos": {
-        "0": 1250,
-        "1": 350
-      },
-      "size": {
-        "0": 350,
-        "1": 90
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            119,
-            120,
-            128
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_preprocessor_2",
-      "properties": {
-        "Node name for S&R": "AIO_Preprocessor"
-      },
-      "widgets_values": [
-        "Zoe-DepthMapPreprocessor",
-        1024
-      ]
-    },
-    {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 150
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            108
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 440
-      },
-      "size": {
-        "0": 350,
-        "1": 140
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            109
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_negative",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "blurry"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 39,
-      "type": "VAEEncode",
-      "pos": {
-        "0": 1650,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 50
-      },
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "pixels",
-          "type": "IMAGE",
-          "link": 128
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            69
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "vae_encode",
-      "properties": {
-        "Node name for S&R": "VAEEncode"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 61,
+      "id": 65,
       "type": "Bookmark (rgthree)",
       "pos": {
-        "0": -350,
+        "0": 860,
         "1": 170
       },
       "size": {
@@ -428,93 +482,49 @@
       "flags": {
         "collapsed": true
       },
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖1 input",
-      "properties": {},
-      "widgets_values": [
-        "1",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 62,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖2 checkpoint",
-      "properties": {},
-      "widgets_values": [
-        "2",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 31,
-      "type": "LoadImage",
-      "pos": {
-        "0": -350,
-        "1": 230
-      },
-      "size": [
-        350,
-        450
-      ],
-      "flags": {},
       "order": 6,
       "mode": 0,
       "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            144
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "image_input",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
+      "outputs": [],
+      "title": "🔖5 controlnet",
+      "properties": {},
       "widgets_values": [
-        "character-woman-pirate.jpg",
-        "image"
+        "5",
+        0.8
       ],
-      "color": "#ffaa14",
-      "bgcolor": "#ff9600"
+      "shape": 1
+    },
+    {
+      "id": 63,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 460,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖4 prompt",
+      "properties": {},
+      "widgets_values": [
+        "4",
+        0.8
+      ],
+      "shape": 1
     },
     {
       "id": 60,
       "type": "Anything Everywhere3",
       "pos": {
-        "0": 450,
+        "0": 460,
         "1": 130
       },
       "size": {
@@ -556,10 +566,10 @@
       "widgets_values": []
     },
     {
-      "id": 65,
+      "id": 62,
       "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 850,
+        "0": 50,
         "1": 170
       },
       "size": {
@@ -569,14 +579,87 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "🔖4 controlnet",
+      "title": "🔖2 checkpoint",
       "properties": {},
       "widgets_values": [
-        "4",
+        "2",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 39,
+      "type": "VAEEncode",
+      "pos": {
+        "0": 1660,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 50
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 128
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            69
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "vae_encode",
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      },
+      "widgets_values": [],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 66,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1660,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖6 sampler",
+      "properties": {},
+      "widgets_values": [
+        "6",
         0.8
       ],
       "shape": 1
@@ -585,7 +668,7 @@
       "id": 27,
       "type": "VAEDecode",
       "pos": {
-        "0": 2050,
+        "0": 2060,
         "1": 230
       },
       "size": {
@@ -630,132 +713,11 @@
       "bgcolor": "#535"
     },
     {
-      "id": 53,
-      "type": "Reroute",
-      "pos": {
-        "0": 2330,
-        "1": 200
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 113
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            114
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 64,
-      "type": "Anything Everywhere",
-      "pos": {
-        "0": -90,
-        "1": 740
-      },
-      "size": [
-        140,
-        30
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "IMAGE",
-          "type": "*",
-          "link": 144,
-          "color_on": "#64B5F6"
-        }
-      ],
-      "outputs": [],
-      "title": "image",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 66,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1650,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖5 sampler",
-      "properties": {},
-      "widgets_values": [
-        "5",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
       "id": 68,
       "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 2050,
+        "0": 2060,
         "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖9 output",
-      "properties": {},
-      "widgets_values": [
-        "9",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 67,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": -400,
-        "1": -100
       },
       "size": {
         "0": 210,
@@ -768,11 +730,11 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "🔖workflow",
+      "title": "🔖9 output",
       "properties": {},
       "widgets_values": [
-        "0",
-        0.45
+        "9",
+        0.8
       ],
       "shape": 1
     },
@@ -780,7 +742,7 @@
       "id": 46,
       "type": "Image Comparer (rgthree)",
       "pos": {
-        "0": 2050,
+        "0": 2060,
         "1": 290
       },
       "size": {
@@ -822,6 +784,98 @@
             "url": "/api/view?filename=rgthree.compare._temp_tzodp_00006_.png&type=temp&subfolder=&rand=0.6937219815639393"
           }
         ]
+      ]
+    },
+    {
+      "id": 53,
+      "type": "Reroute",
+      "pos": {
+        "0": 2340,
+        "1": 200
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 113
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            114
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 59,
+      "type": "LoraLoader",
+      "pos": {
+        "0": 50,
+        "1": 580
+      },
+      "size": {
+        "0": 350,
+        "1": 130
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 134
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 130
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            138
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            137
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "lora_model_1",
+      "properties": {
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "lora\\00 tosort\\2000Comicsv20.safetensors",
+        1,
+        1
       ]
     },
     {
@@ -881,104 +935,52 @@
       ]
     },
     {
-      "id": 59,
-      "type": "LoraLoader",
+      "id": 6,
+      "type": "CLIPTextEncode",
       "pos": {
-        "0": 50,
-        "1": 580
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
-      "flags": {},
-      "order": 22,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 134
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 130
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            138
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            137
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "lora_model_1",
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "lora\\00 tosort\\2000Comicsv20.safetensors",
-        1,
-        1
-      ]
-    },
-    {
-      "id": 51,
-      "type": "ControlNetLoader",
-      "pos": {
-        "0": 850,
+        "0": 460,
         "1": 230
       },
       "size": {
         "0": 350,
-        "1": 60
+        "1": 150
       },
       "flags": {},
       "order": 11,
       "mode": 0,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            104,
-            125
-          ],
-          "slot_index": 0,
-          "shape": 3
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
         }
       ],
-      "title": "controlnet_model",
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            108
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_positive",
       "properties": {
-        "Node name for S&R": "ControlNetLoader"
+        "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "sdxl-xinsir\\sdxl-xinsir-union-v20.safetensors"
+        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4"
       ],
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
-      "id": 63,
+      "id": 67,
       "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 450,
-        "1": 170
+        "0": -400,
+        "1": -100
       },
       "size": {
         "0": 210,
@@ -991,11 +993,11 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "🔖3 prompt",
+      "title": "🔖workflow",
       "properties": {},
       "widgets_values": [
-        "3",
-        0.8
+        "0",
+        0.45
       ],
       "shape": 1
     },
@@ -1045,7 +1047,7 @@
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "05 real\\sdxl-epinikion-realism-v80-p.safetensors"
+        "01 base\\sdlt-bd-8s.safetensors"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -1054,8 +1056,8 @@
       "id": 3,
       "type": "KSampler",
       "pos": {
-        "0": 1650,
-        "1": 340
+        "0": 1660,
+        "1": 290
       },
       "size": {
         "0": 350,
@@ -1103,10 +1105,10 @@
       "widgets_values": [
         722845239651246,
         "randomize",
-        25,
-        4,
-        "dpmpp_sde",
-        "karras",
+        8,
+        1,
+        "euler",
+        "simple",
         0.55
       ]
     },
@@ -1114,7 +1116,7 @@
       "id": 9,
       "type": "SaveImage",
       "pos": {
-        "0": 2450,
+        "0": 2460,
         "1": 290
       },
       "size": {
@@ -1139,7 +1141,7 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BASIC_LDM_SDXL_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BASIC_SDLT_LDM_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
@@ -1148,13 +1150,13 @@
       "id": 33,
       "type": "Note",
       "pos": {
-        "0": 2450,
+        "0": 2460,
         "1": 750
       },
-      "size": [
-        350,
-        100
-      ],
+      "size": {
+        "0": 350,
+        "1": 100
+      },
       "flags": {},
       "order": 14,
       "mode": 0,
@@ -1164,7 +1166,7 @@
         "text": ""
       },
       "widgets_values": [
-        "img2img-basic-ldm-sdxl\n==========================================================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : I2I-BASIC_LDM_SDXL"
+        "img2img-basic-sdlt-ldm\n==========================================================\nSDLT : SD Lightning\nLDM  : Large Diffusion Model\nCSD  : Clip Standard\nID   : I2I-BASIC_SDLT_LDM"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1434,9 +1436,133 @@
       3,
       0,
       "MODEL"
+    ],
+    [
+      156,
+      4,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      157,
+      31,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      158,
+      4,
+      2,
+      39,
+      1,
+      "VAE"
+    ],
+    [
+      159,
+      4,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      160,
+      4,
+      2,
+      27,
+      1,
+      "VAE"
+    ],
+    [
+      161,
+      31,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      162,
+      4,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      163,
+      4,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      164,
+      31,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      165,
+      4,
+      2,
+      39,
+      1,
+      "VAE"
+    ],
+    [
+      166,
+      4,
+      2,
+      27,
+      1,
+      "VAE"
+    ],
+    [
+      167,
+      31,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      168,
+      4,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      169,
+      4,
+      0,
+      3,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
+    {
+      "title": " SDLT LDM",
+      "bounding": [
+        -70,
+        -40,
+        170,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
+    },
     {
       "title": " Img2Img",
       "bounding": [
@@ -1447,18 +1573,6 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
-      "flags": {}
-    },
-    {
-      "title": " LDM SDXL",
-      "bounding": [
-        -70,
-        -40,
-        170,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
       "flags": {}
     }
   ],
