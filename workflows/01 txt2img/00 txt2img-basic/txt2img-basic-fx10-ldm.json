@@ -1,6 +1,6 @@
 {
   "last_node_id": 54,
-  "last_link_id": 122,
+  "last_link_id": 126,
   "nodes": [
     {
       "id": 5,
@@ -184,7 +184,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "🔖ouput",
+      "title": "🔖9 ouput",
       "properties": {},
       "widgets_values": [
         "9",
@@ -702,7 +702,7 @@
       },
       "widgets_values": [
         25191512,
-        "fixed",
+        "randomize",
         4,
         1,
         "euler",
@@ -939,6 +939,38 @@
     ],
     [
       122,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      123,
+      20,
+      2,
+      51,
+      1,
+      "VAE"
+    ],
+    [
+      124,
+      20,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      125,
+      20,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      126,
       20,
       0,
       33,

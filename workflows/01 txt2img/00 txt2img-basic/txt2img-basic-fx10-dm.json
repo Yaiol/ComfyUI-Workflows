@@ -1,6 +1,6 @@
 {
   "last_node_id": 39,
-  "last_link_id": 68,
+  "last_link_id": 73,
   "nodes": [
     {
       "id": 35,
@@ -97,10 +97,10 @@
         "0": 710,
         "1": 730
       },
-      "size": [
-        140,
-        30
-      ],
+      "size": {
+        "0": 140,
+        "1": 30
+      },
       "flags": {
         "collapsed": true
       },
@@ -130,10 +130,10 @@
         "0": 850,
         "1": 230
       },
-      "size": [
-        350,
-        50
-      ],
+      "size": {
+        "0": 350,
+        "1": 50
+      },
       "flags": {},
       "order": 17,
       "mode": 0,
@@ -170,54 +170,18 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 25,
-      "type": "RandomNoise",
-      "pos": {
-        "0": 850,
-        "1": 330
-      },
-      "size": [
-        350,
-        80
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "NOISE",
-          "type": "NOISE",
-          "links": [
-            37
-          ],
-          "shape": 3
-        }
-      ],
-      "title": "noise",
-      "properties": {
-        "Node name for S&R": "RandomNoise"
-      },
-      "widgets_values": [
-        25191512,
-        "fixed"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
       "id": 16,
       "type": "KSamplerSelect",
       "pos": {
         "0": 850,
         "1": 470
       },
-      "size": [
-        350,
-        60
-      ],
+      "size": {
+        "0": 350,
+        "1": 60
+      },
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -247,12 +211,12 @@
         "0": 850,
         "1": 590
       },
-      "size": [
-        350,
-        110
-      ],
+      "size": {
+        "0": 350,
+        "1": 110
+      },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -414,7 +378,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -440,7 +404,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -466,7 +430,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -490,7 +454,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -585,7 +549,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -654,7 +618,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -690,7 +654,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -759,7 +723,7 @@
         "1": 270
       },
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -842,6 +806,42 @@
         1,
         1
       ]
+    },
+    {
+      "id": 25,
+      "type": "RandomNoise",
+      "pos": {
+        "0": 850,
+        "1": 330
+      },
+      "size": {
+        "0": 350,
+        "1": 82
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "NOISE",
+          "type": "NOISE",
+          "links": [
+            37
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "noise",
+      "properties": {
+        "Node name for S&R": "RandomNoise"
+      },
+      "widgets_values": [
+        25191512,
+        "randomize"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
     },
     {
       "id": 26,
@@ -1109,21 +1109,49 @@
       6,
       0,
       "CLIP"
+    ],
+    [
+      69,
+      12,
+      0,
+      22,
+      0,
+      "MODEL"
+    ],
+    [
+      70,
+      12,
+      0,
+      17,
+      0,
+      "MODEL"
+    ],
+    [
+      71,
+      5,
+      0,
+      13,
+      4,
+      "LATENT"
+    ],
+    [
+      72,
+      10,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      73,
+      11,
+      0,
+      6,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
-    {
-      "title": " Txt2Img",
-      "bounding": [
-        50,
-        -80,
-        270,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
     {
       "title": " FX10 DM",
       "bounding": [
@@ -1134,6 +1162,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Txt2Img",
+      "bounding": [
+        50,
+        -80,
+        270,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],
