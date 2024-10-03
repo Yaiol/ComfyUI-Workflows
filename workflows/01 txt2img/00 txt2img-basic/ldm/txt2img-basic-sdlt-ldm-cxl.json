@@ -1,12 +1,12 @@
 {
-  "last_node_id": 63,
-  "last_link_id": 129,
+  "last_node_id": 64,
+  "last_link_id": 135,
   "nodes": [
     {
       "id": 51,
       "type": "PrimitiveNode",
       "pos": {
-        "0": 750,
+        "0": 450,
         "1": 460
       },
       "size": {
@@ -53,7 +53,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 4,
       "inputs": [
         {
@@ -109,7 +109,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 4,
       "inputs": [
         {
@@ -211,7 +211,7 @@
       "id": 48,
       "type": "CLIPTextEncodeSDXL",
       "pos": {
-        "0": 1150,
+        "0": 850,
         "1": 510
       },
       "size": {
@@ -219,7 +219,7 @@
         "1": 220
       },
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -277,7 +277,7 @@
       "id": 47,
       "type": "CLIPTextEncodeSDXL",
       "pos": {
-        "0": 1150,
+        "0": 850,
         "1": 230
       },
       "size": {
@@ -285,7 +285,7 @@
         "1": 220
       },
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -343,7 +343,7 @@
       "id": 59,
       "type": "PerturbedAttentionGuidance",
       "pos": {
-        "0": 1450,
+        "0": 1150,
         "1": 230
       },
       "size": {
@@ -393,7 +393,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -425,122 +425,10 @@
       "widgets_values": []
     },
     {
-      "id": 5,
-      "type": "EmptyLatentImage",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 250,
-        "1": 110
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            61
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "latent_image",
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 32,
-      "type": "RepeatLatentBatch",
-      "pos": {
-        "0": 450,
-        "1": 400
-      },
-      "size": {
-        "0": 250,
-        "1": 60
-      },
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 61
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            119
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "latent_batch",
-      "properties": {
-        "Node name for S&R": "RepeatLatentBatch"
-      },
-      "widgets_values": [
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 61,
-      "type": "Anything Everywhere",
-      "pos": {
-        "0": 610,
-        "1": 520
-      },
-      "size": {
-        "0": 140,
-        "1": 30
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "LATENT",
-          "type": "*",
-          "link": 119,
-          "color_on": "#FF9CF9"
-        }
-      ],
-      "outputs": [],
-      "title": "latent",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
       "id": 33,
       "type": "KSampler",
       "pos": {
-        "0": 1450,
+        "0": 1150,
         "1": 350
       },
       "size": {
@@ -548,7 +436,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 19,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -599,149 +487,6 @@
       ]
     },
     {
-      "id": 49,
-      "type": "PrimitiveNode",
-      "pos": {
-        "0": 750,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            91,
-            92
-          ],
-          "slot_index": 0,
-          "widget": {
-            "name": "text_g"
-          }
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "portrait of a woman by John Kenn Mortensen"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 44,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1450,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖5 sampler",
-      "properties": {},
-      "widgets_values": [
-        "5",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 56,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1150,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖4 clip",
-      "properties": {},
-      "widgets_values": [
-        "4",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 63,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 450,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖2 latent",
-      "properties": {},
-      "widgets_values": [
-        "2",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 42,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖1 checkpoint",
-      "properties": {},
-      "widgets_values": [
-        "1",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
       "id": 41,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -755,7 +500,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -771,7 +516,7 @@
       "id": 43,
       "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 750,
+        "0": 450,
         "1": 170
       },
       "size": {
@@ -781,7 +526,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -797,7 +542,7 @@
       "id": 8,
       "type": "VAEDecode",
       "pos": {
-        "0": 1850,
+        "0": 1550,
         "1": 230
       },
       "size": {
@@ -807,7 +552,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -841,10 +586,119 @@
       "bgcolor": "#535"
     },
     {
-      "id": 45,
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 450,
+        "1": 690
+      },
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            130
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "latent_image",
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 61,
+      "type": "Anything Everywhere",
+      "pos": {
+        "0": 710,
+        "1": 860
+      },
+      "size": [
+        140,
+        30
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "LATENT",
+          "type": "*",
+          "link": 130,
+          "color_on": "#FF9CF9"
+        }
+      ],
+      "outputs": [],
+      "title": "latent",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 49,
+      "type": "PrimitiveNode",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            91,
+            92
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_g"
+          }
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "portrait of a woman by John Kenn Mortensen"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 42,
       "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 1850,
+        "0": 50,
         "1": 170
       },
       "size": {
@@ -854,7 +708,59 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖2 checkpoint",
+      "properties": {},
+      "widgets_values": [
+        "2",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 44,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1150,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖4 sampler",
+      "properties": {},
+      "widgets_values": [
+        "4",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 45,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1550,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -870,7 +776,7 @@
       "id": 27,
       "type": "SaveImage",
       "pos": {
-        "0": 1850,
+        "0": 1550,
         "1": 290
       },
       "size": {
@@ -878,7 +784,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 22,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -893,16 +799,42 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I_LDM_SDLT-XL_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BASIC_SDLT_LDM-CXL_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
     },
     {
+      "id": 64,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1550,
+        "1": 750
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
       "id": 35,
       "type": "Note",
       "pos": {
-        "0": 1850,
+        "0": 1550,
         "1": 750
       },
       "size": {
@@ -910,7 +842,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -918,7 +850,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-ldm-sdlt-cxl\n==========================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nCXL  : Clip XL\nID   : T2I_LDM_SDLT-CXL"
+        "txt2img-basic-sdlt-ldm-cxl\n==========================================================\nSDLT : SD Lightning\nLDM  : Latent Diffusion Model\nCXL  : Clip XL\nID   : T2I-BASIC_SDLT_LDM-CXL"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -932,14 +864,6 @@
       27,
       0,
       "IMAGE"
-    ],
-    [
-      61,
-      5,
-      0,
-      32,
-      0,
-      "LATENT"
     ],
     [
       89,
@@ -1062,14 +986,6 @@
       "VAE"
     ],
     [
-      119,
-      32,
-      0,
-      61,
-      0,
-      "LATENT"
-    ],
-    [
       120,
       20,
       1,
@@ -1148,11 +1064,59 @@
       8,
       1,
       "VAE"
+    ],
+    [
+      130,
+      5,
+      0,
+      61,
+      0,
+      "LATENT"
+    ],
+    [
+      131,
+      20,
+      1,
+      48,
+      0,
+      "CLIP"
+    ],
+    [
+      132,
+      20,
+      1,
+      47,
+      0,
+      "CLIP"
+    ],
+    [
+      133,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      134,
+      5,
+      0,
+      33,
+      3,
+      "LATENT"
+    ],
+    [
+      135,
+      20,
+      2,
+      8,
+      1,
+      "VAE"
     ]
   ],
   "groups": [
     {
-      "title": " LDM SDLT CXL",
+      "title": " SDLT LDM-CXL",
       "bounding": [
         310,
         -40,

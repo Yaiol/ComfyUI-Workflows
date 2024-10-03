@@ -1,33 +1,7 @@
 {
-  "last_node_id": 52,
-  "last_link_id": 119,
+  "last_node_id": 54,
+  "last_link_id": 128,
   "nodes": [
-    {
-      "id": 42,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖1 checkpoint",
-      "properties": {},
-      "widgets_values": [
-        "1",
-        0.8
-      ],
-      "shape": 1
-    },
     {
       "id": 47,
       "type": "LoraLoader",
@@ -40,7 +14,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 4,
       "inputs": [
         {
@@ -144,7 +118,7 @@
       "id": 49,
       "type": "PerturbedAttentionGuidance",
       "pos": {
-        "0": 1150,
+        "0": 840,
         "1": 230
       },
       "size": {
@@ -152,7 +126,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 4,
       "inputs": [
         {
@@ -184,7 +158,7 @@
       "id": 8,
       "type": "VAEDecode",
       "pos": {
-        "0": 1550,
+        "0": 1240,
         "1": 230
       },
       "size": {
@@ -194,7 +168,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -228,6 +202,32 @@
       "bgcolor": "#535"
     },
     {
+      "id": 41,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 0,
+        "1": -110
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.6
+      ],
+      "shape": 1
+    },
+    {
       "id": 50,
       "type": "Anything Everywhere3",
       "pos": {
@@ -241,7 +241,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -273,36 +273,52 @@
       "widgets_values": []
     },
     {
-      "id": 43,
-      "type": "Bookmark (rgthree)",
+      "id": 6,
+      "type": "CLIPTextEncode",
       "pos": {
         "0": 450,
-        "1": 170
+        "1": 230
       },
       "size": {
-        "0": 210,
-        "1": 62
+        "0": 350,
+        "1": 170
       },
-      "flags": {
-        "collapsed": true
-      },
+      "flags": {},
       "order": 2,
       "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖2 latent",
-      "properties": {},
-      "widgets_values": [
-        "2",
-        0.8
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null,
+          "slot_index": 0
+        }
       ],
-      "shape": 1
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            64
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "portrait of a woman by John Kenn Mortensen"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 45,
       "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 1550,
+        "0": 1240,
         "1": 170
       },
       "size": {
@@ -325,10 +341,10 @@
       "shape": 1
     },
     {
-      "id": 44,
+      "id": 42,
       "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 1150,
+        "0": 50,
         "1": 170
       },
       "size": {
@@ -342,10 +358,10 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "🔖4 sampler",
+      "title": "🔖2 checkpoint",
       "properties": {},
       "widgets_values": [
-        "4",
+        "2",
         0.8
       ],
       "shape": 1
@@ -354,7 +370,7 @@
       "id": 52,
       "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 750,
+        "0": 450,
         "1": 170
       },
       "size": {
@@ -377,30 +393,114 @@
       "shape": 1
     },
     {
-      "id": 41,
-      "type": "Bookmark (rgthree)",
+      "id": 27,
+      "type": "SaveImage",
       "pos": {
-        "0": 0,
-        "1": -110
+        "0": 1240,
+        "1": 290
       },
       "size": {
-        "0": 210,
-        "1": 62
+        "0": 350,
+        "1": 400
       },
-      "flags": {
-        "collapsed": true
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
       },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BASIC_LDM_SDLT_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 460
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
       "order": 6,
       "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖workflow",
-      "properties": {},
-      "widgets_values": [
-        "0",
-        0.6
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
       ],
-      "shape": 1
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            63
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "text, watermark"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 450,
+        "1": 690
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            120
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "latent_image",
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 20,
@@ -414,7 +514,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -457,42 +557,10 @@
       "bgcolor": "#335"
     },
     {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1550,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 54
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I_LDM_SDXL_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 33,
       "type": "KSampler",
       "pos": {
-        "0": 1150,
+        "0": 840,
         "1": 350
       },
       "size": {
@@ -500,7 +568,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -521,7 +589,7 @@
         {
           "name": "latent_image",
           "type": "LATENT",
-          "link": null,
+          "link": 120,
           "slot_index": 3
         }
       ],
@@ -545,211 +613,68 @@
         "randomize",
         25,
         4,
-        "dpmpp_2m_sde",
+        "dpmpp_sde",
         "karras",
         1
       ]
     },
     {
-      "id": 6,
-      "type": "CLIPTextEncode",
+      "id": 54,
+      "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 750,
-        "1": 230
-      },
-      "size": [
-        350,
-        170
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            64
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "portrait of a woman by John Kenn Mortensen"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 750,
-        "1": 460
-      },
-      "size": [
-        350,
-        170
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            63
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_negative",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "text, watermark"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 5,
-      "type": "EmptyLatentImage",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": [
-        250,
-        110
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            61
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "latent_image",
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 32,
-      "type": "RepeatLatentBatch",
-      "pos": {
-        "0": 450,
-        "1": 400
+        "0": 1240,
+        "1": 750
       },
       "size": {
-        "0": 250,
-        "1": 60
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 61
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            104
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "latent_batch",
-      "properties": {
-        "Node name for S&R": "RepeatLatentBatch"
-      },
-      "widgets_values": [
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 51,
-      "type": "Anything Everywhere",
-      "pos": {
-        "0": 610,
-        "1": 520
-      },
-      "size": {
-        "0": 140,
-        "1": 30
+        "0": 210,
+        "1": 62
       },
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 9,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "LATENT",
-          "type": "*",
-          "link": 104,
-          "color_on": "#FF9CF9"
-        }
-      ],
+      "inputs": [],
       "outputs": [],
-      "title": "latent",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere",
-        "group_restricted": 0,
-        "color_restricted": 0
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
+      "id": 44,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 840,
+        "1": 170
       },
-      "widgets_values": []
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖4 sampler",
+      "properties": {},
+      "widgets_values": [
+        "4",
+        0.8
+      ],
+      "shape": 1
     },
     {
       "id": 35,
       "type": "Note",
       "pos": {
-        "0": 1550,
+        "0": 1240,
         "1": 750
       },
       "size": {
@@ -765,7 +690,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-ldm-sdxl\n==========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nID   : T2I_LDM_SDXL"
+        "txt2img-basic-sdxl-ldm\n==========================================================\nSDXL : SD XL\nLDM  : Latent Diffusion Model\nCSD  : Clip Standard\nID   : T2I_LDM_SDLT"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -779,14 +704,6 @@
       27,
       0,
       "IMAGE"
-    ],
-    [
-      61,
-      5,
-      0,
-      32,
-      0,
-      "LATENT"
     ],
     [
       63,
@@ -877,14 +794,6 @@
       "VAE"
     ],
     [
-      104,
-      32,
-      0,
-      51,
-      0,
-      "LATENT"
-    ],
-    [
       105,
       20,
       2,
@@ -935,34 +844,34 @@
     [
       111,
       20,
-      1,
-      6,
-      0,
-      "CLIP"
-    ],
-    [
-      112,
-      20,
-      1,
-      7,
-      0,
-      "CLIP"
-    ],
-    [
-      113,
-      20,
       0,
       33,
       0,
       "MODEL"
     ],
     [
-      114,
+      112,
       32,
       0,
       33,
       3,
       "LATENT"
+    ],
+    [
+      113,
+      20,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      114,
+      20,
+      1,
+      7,
+      0,
+      "CLIP"
     ],
     [
       115,
@@ -1003,21 +912,81 @@
       7,
       0,
       "CLIP"
+    ],
+    [
+      120,
+      5,
+      0,
+      33,
+      3,
+      "LATENT"
+    ],
+    [
+      121,
+      20,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      122,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      123,
+      20,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      124,
+      20,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      125,
+      20,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      126,
+      20,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      127,
+      20,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      128,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
-    {
-      "title": " LDM SDXL",
-      "bounding": [
-        310,
-        -40,
-        170,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Txt2Img",
       "bounding": [
@@ -1028,6 +997,18 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " SDXL LDM",
+      "bounding": [
+        310,
+        -40,
+        180,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
       "flags": {}
     }
   ],

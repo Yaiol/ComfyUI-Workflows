@@ -1,33 +1,7 @@
 {
-  "last_node_id": 52,
-  "last_link_id": 119,
+  "last_node_id": 54,
+  "last_link_id": 124,
   "nodes": [
-    {
-      "id": 42,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖1 checkpoint",
-      "properties": {},
-      "widgets_values": [
-        "1",
-        0.8
-      ],
-      "shape": 1
-    },
     {
       "id": 47,
       "type": "LoraLoader",
@@ -96,7 +70,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 4,
       "inputs": [
         {
@@ -152,7 +126,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -198,7 +172,7 @@
       "id": 49,
       "type": "PerturbedAttentionGuidance",
       "pos": {
-        "0": 1150,
+        "0": 840,
         "1": 230
       },
       "size": {
@@ -206,7 +180,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 4,
       "inputs": [
         {
@@ -238,7 +212,7 @@
       "id": 8,
       "type": "VAEDecode",
       "pos": {
-        "0": 1550,
+        "0": 1240,
         "1": 230
       },
       "size": {
@@ -248,7 +222,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -282,6 +256,94 @@
       "bgcolor": "#535"
     },
     {
+      "id": 33,
+      "type": "KSampler",
+      "pos": {
+        "0": 840,
+        "1": 350
+      },
+      "size": {
+        "0": 350,
+        "1": 262
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 97
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 64
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 63
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 120,
+          "slot_index": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            66
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        25191512,
+        "randomize",
+        8,
+        1,
+        "euler",
+        "sgm_uniform",
+        1
+      ]
+    },
+    {
+      "id": 41,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 0,
+        "1": -110
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.6
+      ],
+      "shape": 1
+    },
+    {
       "id": 50,
       "type": "Anything Everywhere3",
       "pos": {
@@ -295,7 +357,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -327,354 +389,18 @@
       "widgets_values": []
     },
     {
-      "id": 33,
-      "type": "KSampler",
-      "pos": {
-        "0": 1150,
-        "1": 350
-      },
-      "size": {
-        "0": 350,
-        "1": 262
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 97
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 64
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 63
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": null,
-          "slot_index": 3
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            66
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "ksampler",
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        25191512,
-        "randomize",
-        8,
-        1,
-        "euler",
-        "sgm_uniform",
-        1
-      ]
-    },
-    {
-      "id": 43,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 450,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖2 latent",
-      "properties": {},
-      "widgets_values": [
-        "2",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 45,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1550,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖9 ouput",
-      "properties": {},
-      "widgets_values": [
-        "9",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 44,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1150,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖4 sampler",
-      "properties": {},
-      "widgets_values": [
-        "4",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 52,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 750,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖3 prompt",
-      "properties": {},
-      "widgets_values": [
-        "3",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 41,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -110
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖workflow",
-      "properties": {},
-      "widgets_values": [
-        "0",
-        0.6
-      ],
-      "shape": 1
-    },
-    {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1550,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 54
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I_LDM_SDLT_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 5,
-      "type": "EmptyLatentImage",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 250,
-        "1": 110
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            61
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "latent_image",
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 32,
-      "type": "RepeatLatentBatch",
-      "pos": {
-        "0": 450,
-        "1": 400
-      },
-      "size": {
-        "0": 250,
-        "1": 60
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 61
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            104
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "latent_batch",
-      "properties": {
-        "Node name for S&R": "RepeatLatentBatch"
-      },
-      "widgets_values": [
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 51,
-      "type": "Anything Everywhere",
-      "pos": {
-        "0": 610,
-        "1": 520
-      },
-      "size": {
-        "0": 140,
-        "1": 30
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "LATENT",
-          "type": "*",
-          "link": 104,
-          "color_on": "#FF9CF9"
-        }
-      ],
-      "outputs": [],
-      "title": "latent",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": {
-        "0": 750,
+        "0": 450,
         "1": 230
       },
-      "size": [
-        350,
-        170
-      ],
+      "size": {
+        "0": 350,
+        "1": 170
+      },
       "flags": {},
-      "order": 9,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -705,18 +431,102 @@
       "bgcolor": "#353"
     },
     {
+      "id": 42,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 50,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖2 checkpoint",
+      "properties": {},
+      "widgets_values": [
+        "2",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 52,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 450,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖3 prompt",
+      "properties": {},
+      "widgets_values": [
+        "3",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1240,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BASIC_LDM_SDLT_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 7,
       "type": "CLIPTextEncode",
       "pos": {
-        "0": 750,
+        "0": 450,
         "1": 460
       },
-      "size": [
-        350,
-        170
-      ],
+      "size": {
+        "0": 350,
+        "1": 170
+      },
       "flags": {},
-      "order": 10,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -746,10 +556,125 @@
       "bgcolor": "#533"
     },
     {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 450,
+        "1": 690
+      },
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            120
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "latent_image",
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 45,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1240,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 ouput",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 44,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 840,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖4 sampler",
+      "properties": {},
+      "widgets_values": [
+        "4",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 54,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1240,
+        "1": 750
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
       "id": 35,
       "type": "Note",
       "pos": {
-        "0": 1550,
+        "0": 1240,
         "1": 750
       },
       "size": {
@@ -765,7 +690,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-ldm-sdlt\n==========================================================\nLDM  : Latent Diffusion Model\nSDLT : SD Lightning\nID   : T2I_LDM_SDLT"
+        "txt2img-basic-sdlt-ldm\n==========================================================\nSDLT : SD Lightning\nLDM  : Latent Diffusion Model\nCSD  : Clip XL\nID   : T2I-BASIC_LDM_SDLT"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -779,14 +704,6 @@
       27,
       0,
       "IMAGE"
-    ],
-    [
-      61,
-      5,
-      0,
-      32,
-      0,
-      "LATENT"
     ],
     [
       63,
@@ -875,14 +792,6 @@
       50,
       2,
       "VAE"
-    ],
-    [
-      104,
-      32,
-      0,
-      51,
-      0,
-      "LATENT"
     ],
     [
       105,
@@ -1003,6 +912,46 @@
       7,
       0,
       "CLIP"
+    ],
+    [
+      120,
+      5,
+      0,
+      33,
+      3,
+      "LATENT"
+    ],
+    [
+      121,
+      20,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      122,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      123,
+      20,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      124,
+      20,
+      1,
+      7,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
@@ -1019,7 +968,7 @@
       "flags": {}
     },
     {
-      "title": " LDM SDLT",
+      "title": " SDLT LDM",
       "bounding": [
         310,
         -40,
