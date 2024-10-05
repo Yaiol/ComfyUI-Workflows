@@ -9,10 +9,10 @@
         "0": 450,
         "1": 660
       },
-      "size": [
-        350,
-        180
-      ],
+      "size": {
+        "0": 350,
+        "1": 180
+      },
       "flags": {},
       "order": 0,
       "mode": 0,
@@ -52,10 +52,10 @@
         "0": 450,
         "1": 900
       },
-      "size": [
-        350,
-        110
-      ],
+      "size": {
+        "0": 350,
+        "1": 110
+      },
       "flags": {},
       "order": 1,
       "mode": 0,
@@ -90,10 +90,10 @@
         "0": 850,
         "1": 230
       },
-      "size": [
-        250,
-        60
-      ],
+      "size": {
+        "0": 250,
+        "1": 60
+      },
       "flags": {
         "collapsed": false
       },
@@ -131,10 +131,10 @@
         "0": 850,
         "1": 350
       },
-      "size": [
-        250,
-        30
-      ],
+      "size": {
+        "0": 250,
+        "1": 30
+      },
       "flags": {},
       "order": 14,
       "mode": 0,
@@ -168,10 +168,10 @@
         "0": 850,
         "1": 440
       },
-      "size": [
-        250,
-        80
-      ],
+      "size": {
+        "0": 250,
+        "1": 82
+      },
       "flags": {},
       "order": 18,
       "mode": 0,
@@ -208,10 +208,10 @@
         "0": 850,
         "1": 580
       },
-      "size": [
-        250,
-        80
-      ],
+      "size": {
+        "0": 250,
+        "1": 82
+      },
       "flags": {},
       "order": 13,
       "mode": 0,
@@ -249,10 +249,10 @@
         "0": 850,
         "1": 720
       },
-      "size": [
-        250,
-        50
-      ],
+      "size": {
+        "0": 250,
+        "1": 50
+      },
       "flags": {},
       "order": 21,
       "mode": 0,
@@ -542,10 +542,10 @@
         "0": 450,
         "1": 240
       },
-      "size": [
-        350,
-        370
-      ],
+      "size": {
+        "0": 350,
+        "1": 370
+      },
       "flags": {},
       "order": 7,
       "mode": 0,
@@ -632,77 +632,16 @@
       "shape": 1
     },
     {
-      "id": 273,
-      "type": "KSampler",
-      "pos": {
-        "0": 1150,
-        "1": 230
-      },
-      "size": [
-        350,
-        260
-      ],
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 602
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 608
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 603
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            605
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "ksampler",
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        25191512,
-        "randomize",
-        25,
-        7,
-        "euler",
-        "sgm_uniform",
-        1
-      ]
-    },
-    {
       "id": 252,
       "type": "CheckpointLoaderSimple",
       "pos": {
         "0": 50,
         "1": 230
       },
-      "size": [
-        350,
-        100
-      ],
+      "size": {
+        "0": 350,
+        "1": 100
+      },
       "flags": {},
       "order": 10,
       "mode": 0,
@@ -751,10 +690,10 @@
         "0": 50,
         "1": 390
       },
-      "size": [
-        350,
-        110
-      ],
+      "size": {
+        "0": 350,
+        "1": 110
+      },
       "flags": {},
       "order": 11,
       "mode": 0,
@@ -780,51 +719,6 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
-    },
-    {
-      "id": 287,
-      "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 110
-      },
-      "size": [
-        140,
-        70
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 637,
-          "color_on": "#B39DDB"
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 638,
-          "color_on": "#FFD500"
-        },
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 626,
-          "color_on": "#FF6E6E"
-        }
-      ],
-      "outputs": [],
-      "title": "mcv",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
     },
     {
       "id": 295,
@@ -939,16 +833,61 @@
       ]
     },
     {
+      "id": 287,
+      "type": "Anything Everywhere3",
+      "pos": {
+        "0": 450,
+        "1": 110
+      },
+      "size": {
+        "0": 140,
+        "1": 70
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 637,
+          "color_on": "#B39DDB"
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 638,
+          "color_on": "#FFD500"
+        },
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 626,
+          "color_on": "#FF6E6E"
+        }
+      ],
+      "outputs": [],
+      "title": "mcv",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
       "id": 283,
       "type": "SaveImage",
       "pos": {
         "0": 1550,
         "1": 290
       },
-      "size": [
-        350,
-        400
-      ],
+      "size": {
+        "0": 350,
+        "1": 400
+      },
       "flags": {},
       "order": 25,
       "mode": 0,
@@ -965,7 +904,7 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BASIC_SD30_MDT-C30_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SD30_MDT-C30_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
@@ -977,10 +916,10 @@
         "0": 1550,
         "1": 750
       },
-      "size": [
-        350,
-        100
-      ],
+      "size": {
+        "0": 350,
+        "1": 100
+      },
       "flags": {},
       "order": 12,
       "mode": 0,
@@ -990,10 +929,71 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-sd30-mdt-c30\n==========================================================\nMDT  : Multimodal Diffusion Transformer\nSD30 : SD 3\nC30  : Clip SD 3\nID   : T2I-BASIC_SD30_MDT-C30\n"
+        "txt2img-basic-sd30-mdt-c30\n==========================================================\nMDT  : Multimodal Diffusion Transformer\nSD30 : SD 3\nC30  : Clip SD 3\nID   : T2I-BAS_SD30_MDT-C30\n"
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 273,
+      "type": "KSampler",
+      "pos": {
+        "0": 1150,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 262
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 602
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 608
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 603
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            605
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        25191512,
+        "randomize",
+        25,
+        7,
+        "euler",
+        "sgm_uniform",
+        1
+      ]
     }
   ],
   "links": [

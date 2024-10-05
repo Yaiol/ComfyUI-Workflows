@@ -1,6 +1,6 @@
 {
   "last_node_id": 63,
-  "last_link_id": 137,
+  "last_link_id": 147,
   "nodes": [
     {
       "id": 49,
@@ -56,7 +56,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -120,14 +120,14 @@
         "0": 710,
         "1": 870
       },
-      "size": [
-        140,
-        30
-      ],
+      "size": {
+        "0": 140,
+        "1": 30
+      },
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -147,60 +147,6 @@
       "widgets_values": []
     },
     {
-      "id": 20,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            129
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            130
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            116
-          ],
-          "slot_index": 2,
-          "shape": 3
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "ponyDiffusionV6XL_v6StartWithThisOne.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 61,
       "type": "LoraLoader",
       "pos": {
@@ -212,7 +158,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 12,
+      "order": 14,
       "mode": 4,
       "inputs": [
         {
@@ -268,7 +214,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 4,
       "inputs": [
         {
@@ -324,7 +270,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -359,12 +305,12 @@
         "0": 450,
         "1": 230
       },
-      "size": [
-        350,
-        170
-      ],
+      "size": {
+        "0": 350,
+        "1": 170
+      },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -401,12 +347,12 @@
         "0": 450,
         "1": 460
       },
-      "size": [
-        350,
-        170
-      ],
+      "size": {
+        "0": 350,
+        "1": 170
+      },
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -442,12 +388,12 @@
         "0": 450,
         "1": 690
       },
-      "size": [
-        350,
-        110
-      ],
+      "size": {
+        "0": 350,
+        "1": 110
+      },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -531,7 +477,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -557,7 +503,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -583,7 +529,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -609,7 +555,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -620,6 +566,118 @@
         0.8
       ],
       "shape": 1
+    },
+    {
+      "id": 63,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1250,
+        "1": 750
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
+      "id": 20,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            129
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            130
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            116
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "03 gen\\pyxl-oppkllll-gor-v60.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1250,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 110
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_PYXL_LDM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 33,
@@ -633,7 +691,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -684,32 +742,6 @@
       ]
     },
     {
-      "id": 63,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1250,
-        "1": 750
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖note",
-      "properties": {},
-      "widgets_values": [
-        ".",
-        2
-      ],
-      "shape": 1
-    },
-    {
       "id": 35,
       "type": "Note",
       "pos": {
@@ -729,42 +761,10 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-pyxl-ldm\n==========================================================\nPYXL : Pony XL\nLDM  : Latent Diffusion Model\nCXL  : Clip Standard\nID   : T2I_PYXL_LDM"
+        "txt2img-basic-pyxl-ldm\n==========================================================\nPYXL : Pony XL\nLDM  : Latent Diffusion Model\nCXL  : Clip Standard\nID   : T2I-BAS_PYXL_LDM"
       ],
       "color": "#432",
       "bgcolor": "#653"
-    },
-    {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1250,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 110
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BASIC_PYXL_LDM_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
     }
   ],
   "links": [
@@ -959,21 +959,89 @@
       33,
       3,
       "LATENT"
+    ],
+    [
+      138,
+      20,
+      2,
+      57,
+      1,
+      "VAE"
+    ],
+    [
+      139,
+      50,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      140,
+      50,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      141,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      142,
+      5,
+      0,
+      33,
+      3,
+      "LATENT"
+    ],
+    [
+      143,
+      20,
+      2,
+      57,
+      1,
+      "VAE"
+    ],
+    [
+      144,
+      50,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      145,
+      50,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      146,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      147,
+      5,
+      0,
+      33,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
-    {
-      "title": " PYXL LDM",
-      "bounding": [
-        310,
-        -40,
-        170,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Txt2Img",
       "bounding": [
@@ -984,6 +1052,18 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " PYXL LDM",
+      "bounding": [
+        310,
+        -40,
+        170,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
       "flags": {}
     }
   ],

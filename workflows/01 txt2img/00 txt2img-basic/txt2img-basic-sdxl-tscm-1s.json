@@ -1,6 +1,6 @@
 {
-  "last_node_id": 56,
-  "last_link_id": 137,
+  "last_node_id": 59,
+  "last_link_id": 148,
   "nodes": [
     {
       "id": 49,
@@ -27,9 +27,7 @@
         {
           "name": "MODEL",
           "type": "MODEL",
-          "links": [
-            97
-          ],
+          "links": [],
           "slot_index": 0,
           "shape": 3
         }
@@ -41,53 +39,6 @@
       "widgets_values": [
         3
       ]
-    },
-    {
-      "id": 8,
-      "type": "VAEDecode",
-      "pos": {
-        "0": 1240,
-        "1": 230
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 66
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null,
-          "slot_index": 1
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            54
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "vae_decode",
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 41,
@@ -116,6 +67,32 @@
       "shape": 1
     },
     {
+      "id": 45,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1240,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 ouput",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
       "id": 42,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -129,7 +106,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 2,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -155,7 +132,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 3,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -163,136 +140,6 @@
       "properties": {},
       "widgets_values": [
         "3",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 460
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            63
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_negative",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "text, watermark"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 5,
-      "type": "EmptyLatentImage",
-      "pos": {
-        "0": 450,
-        "1": 690
-      },
-      "size": {
-        "0": 350,
-        "1": 110
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            120
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "latent_image",
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 45,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1240,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖9 ouput",
-      "properties": {},
-      "widgets_values": [
-        "9",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 44,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 840,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖4 sampler",
-      "properties": {},
-      "widgets_values": [
-        "4",
         0.8
       ],
       "shape": 1
@@ -311,7 +158,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -324,46 +171,30 @@
       "shape": 1
     },
     {
-      "id": 6,
-      "type": "CLIPTextEncode",
+      "id": 44,
+      "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
+        "0": 840,
         "1": 170
       },
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            64
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+      "size": {
+        "0": 210,
+        "1": 62
       },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖4 sampler",
+      "properties": {},
       "widgets_values": [
-        "portrait of a woman, John Kenn Mortensen style"
+        "4",
+        0.8
       ],
-      "color": "#232",
-      "bgcolor": "#353"
+      "shape": 1
     },
     {
       "id": 55,
@@ -377,7 +208,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 10,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -385,7 +216,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            125
+            129
           ],
           "slot_index": 0
         },
@@ -393,7 +224,7 @@
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            126
+            131
           ],
           "slot_index": 1
         },
@@ -401,7 +232,7 @@
           "name": "VAE",
           "type": "VAE",
           "links": [
-            129
+            132
           ],
           "slot_index": 2
         }
@@ -417,69 +248,11 @@
       "bgcolor": "#335"
     },
     {
-      "id": 56,
-      "type": "LoraLoader",
-      "pos": {
-        "0": 50,
-        "1": 390
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 125
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 126
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            127
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            128
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "lcml_model",
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "lora\\01 base\\sdlt-bd-lora-8s.safetensors",
-        1,
-        1
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 47,
       "type": "LoraLoader",
       "pos": {
         "0": 50,
-        "1": 580
+        "1": 530
       },
       "size": {
         "0": 350,
@@ -492,12 +265,12 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 127
+          "link": 130
         },
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 128
+          "link": 131
         }
       ],
       "outputs": [
@@ -525,9 +298,9 @@
         "Node name for S&R": "LoraLoader"
       },
       "widgets_values": [
-        "",
-        1,
-        1
+        "lora\\00 tosort\\2000Comicsv20.safetensors",
+        2,
+        0.5
       ]
     },
     {
@@ -535,7 +308,7 @@
       "type": "LoraLoader",
       "pos": {
         "0": 50,
-        "1": 770
+        "1": 720
       },
       "size": {
         "0": 350,
@@ -581,7 +354,7 @@
         "Node name for S&R": "LoraLoader"
       },
       "widgets_values": [
-        "",
+        "lora\\00 tosort\\2000Comicsv20.safetensors",
         1,
         1
       ]
@@ -600,7 +373,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -618,7 +391,7 @@
         {
           "name": "VAE",
           "type": "*",
-          "link": 129,
+          "link": 132,
           "color_on": "#FF6E6E"
         }
       ],
@@ -632,6 +405,276 @@
       "widgets_values": []
     },
     {
+      "id": 56,
+      "type": "LoraLoaderModelOnly",
+      "pos": {
+        "0": 50,
+        "1": 390
+      },
+      "size": {
+        "0": 350,
+        "1": 82
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 129
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            130
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "hyper_lora_model",
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "lora\\01 base\\sdxl-hyper-bd-lora-1s.safetensors",
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            138
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "portrait of a woman, John Kenn Mortensen style"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 460
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            139
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "text, watermark"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 450,
+        "1": 690
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            140
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "latent_image",
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 1240,
+        "1": 230
+      },
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 144
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            54
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": [],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 58,
+      "type": "TCDModelSamplingDiscrete",
+      "pos": {
+        "0": 840,
+        "1": 350
+      },
+      "size": {
+        "0": 360,
+        "1": 170
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            141
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            142
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "SIGMAS",
+          "type": "SIGMAS",
+          "links": [
+            143
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TCDModelSamplingDiscrete"
+      },
+      "widgets_values": [
+        4,
+        "sgm_uniform",
+        1,
+        0.8
+      ]
+    },
+    {
       "id": 27,
       "type": "SaveImage",
       "pos": {
@@ -643,7 +686,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 16,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -658,70 +701,82 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDLT_LCML_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL-TSCM-1S_%sampler.noise_seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
     },
     {
-      "id": 33,
-      "type": "KSampler",
+      "id": 59,
+      "type": "SamplerCustom",
       "pos": {
         "0": 840,
-        "1": 350
+        "1": 580
       },
       "size": {
-        "0": 350,
-        "1": 262
+        "0": 360,
+        "1": 230
       },
       "flags": {},
-      "order": 12,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 97
+          "link": 141
         },
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 64
+          "link": 138
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 63
+          "link": 139
+        },
+        {
+          "name": "sampler",
+          "type": "SAMPLER",
+          "link": 142
+        },
+        {
+          "name": "sigmas",
+          "type": "SIGMAS",
+          "link": 143
         },
         {
           "name": "latent_image",
           "type": "LATENT",
-          "link": 120,
-          "slot_index": 3
+          "link": 140
         }
       ],
       "outputs": [
         {
-          "name": "LATENT",
+          "name": "output",
           "type": "LATENT",
           "links": [
-            66
+            144
           ],
           "slot_index": 0,
           "shape": 3
+        },
+        {
+          "name": "denoised_output",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
         }
       ],
-      "title": "ksampler",
+      "title": "sampler",
       "properties": {
-        "Node name for S&R": "KSampler"
+        "Node name for S&R": "SamplerCustom"
       },
       "widgets_values": [
+        true,
         25191512,
         "randomize",
-        8,
-        1,
-        "euler",
-        "sgm_uniform",
         1
       ]
     },
@@ -737,7 +792,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -745,7 +800,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-sdlt-lcml\n==========================================================\nSDLT : SD Lightning\nLCML : Latent Consistency Model LoRA\nCSD  : Clip XL\nID   : T2I-BAS_SDLT_LCML"
+        "txt2img-basic-sdxl-tscm-1s\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCSD  : Clip Standard\nID   : T2I-BAS_SDXL-TSCM-1S"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -759,30 +814,6 @@
       27,
       0,
       "IMAGE"
-    ],
-    [
-      63,
-      7,
-      0,
-      33,
-      2,
-      "CONDITIONING"
-    ],
-    [
-      64,
-      6,
-      0,
-      33,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      66,
-      33,
-      0,
-      8,
-      0,
-      "LATENT"
     ],
     [
       89,
@@ -799,14 +830,6 @@
       48,
       1,
       "CLIP"
-    ],
-    [
-      97,
-      49,
-      0,
-      33,
-      0,
-      "MODEL"
     ],
     [
       98,
@@ -945,14 +968,6 @@
       "CLIP"
     ],
     [
-      120,
-      5,
-      0,
-      33,
-      3,
-      "LATENT"
-    ],
-    [
       121,
       20,
       2,
@@ -986,22 +1001,46 @@
     ],
     [
       125,
-      55,
-      0,
-      56,
-      0,
-      "MODEL"
+      20,
+      2,
+      8,
+      1,
+      "VAE"
     ],
     [
       126,
-      55,
+      20,
       1,
-      56,
-      1,
+      6,
+      0,
       "CLIP"
     ],
     [
       127,
+      20,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      128,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      129,
+      55,
+      0,
+      56,
+      0,
+      "MODEL"
+    ],
+    [
+      130,
       56,
       0,
       47,
@@ -1009,15 +1048,15 @@
       "MODEL"
     ],
     [
-      128,
-      56,
+      131,
+      55,
       1,
       47,
       1,
       "CLIP"
     ],
     [
-      129,
+      132,
       55,
       2,
       50,
@@ -1025,7 +1064,7 @@
       "VAE"
     ],
     [
-      130,
+      133,
       55,
       2,
       8,
@@ -1033,40 +1072,16 @@
       "VAE"
     ],
     [
-      131,
-      56,
-      1,
-      7,
-      0,
-      "CLIP"
-    ],
-    [
-      132,
-      56,
+      134,
+      55,
       1,
       6,
       0,
       "CLIP"
     ],
     [
-      133,
-      56,
-      0,
-      33,
-      0,
-      "MODEL"
-    ],
-    [
-      134,
-      55,
-      2,
-      8,
-      1,
-      "VAE"
-    ],
-    [
       135,
-      56,
+      55,
       1,
       7,
       0,
@@ -1075,27 +1090,107 @@
     [
       136,
       56,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      138,
+      6,
+      0,
+      59,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      139,
+      7,
+      0,
+      59,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      140,
+      5,
+      0,
+      59,
+      5,
+      "LATENT"
+    ],
+    [
+      141,
+      58,
+      0,
+      59,
+      0,
+      "MODEL"
+    ],
+    [
+      142,
+      58,
+      1,
+      59,
+      3,
+      "SAMPLER"
+    ],
+    [
+      143,
+      58,
+      2,
+      59,
+      4,
+      "SIGMAS"
+    ],
+    [
+      144,
+      59,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      145,
+      55,
       1,
       6,
       0,
       "CLIP"
     ],
     [
-      137,
+      146,
+      55,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      147,
+      55,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      148,
       56,
       0,
-      33,
+      58,
       0,
       "MODEL"
     ]
   ],
   "groups": [
     {
-      "title": " SDLT LCML",
+      "title": " SDXL TSCM 1S",
       "bounding": [
         310,
         -40,
-        190,
+        240,
         40
       ],
       "color": "#00ffff",
@@ -1118,10 +1213,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.0629366000000016,
+      "scale": 1,
       "offset": [
-        -217.74229309357955,
-        -257.4962467481166
+        -640.9442176733392,
+        -322.39351201507566
       ]
     }
   },

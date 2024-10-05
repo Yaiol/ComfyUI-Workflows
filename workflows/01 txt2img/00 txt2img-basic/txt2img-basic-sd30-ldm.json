@@ -1,6 +1,6 @@
 {
   "last_node_id": 54,
-  "last_link_id": 132,
+  "last_link_id": 136,
   "nodes": [
     {
       "id": 47,
@@ -577,38 +577,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1240,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 54
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BASIC_SD30-LDM_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 33,
       "type": "KSampler",
       "pos": {
@@ -661,7 +629,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        25191512,
+        364930868257907,
         "randomize",
         30,
         4,
@@ -669,6 +637,38 @@
         "sgm_uniform",
         1
       ]
+    },
+    {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1240,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SD30_LDM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 35,
@@ -690,7 +690,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-sd30-ldm\n==========================================================\nSD30 : SD 3.0\nLDM  : Latent Diffusion Model\nCSD  : Clip Standard\nID   : T2I-BASIC_SD30-LDM"
+        "txt2img-basic-sd30-ldm\n==========================================================\nSD30 : SD 3.0\nLDM  : Latent Diffusion Model\nCSD  : Clip Standard\nID   : T2I-BAS_SD30_LDM"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1016,21 +1016,41 @@
       33,
       0,
       "MODEL"
+    ],
+    [
+      133,
+      20,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      134,
+      20,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      135,
+      20,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      136,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
-    {
-      "title": " SD30 LDM",
-      "bounding": [
-        310,
-        -40,
-        180,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Txt2Img",
       "bounding": [
@@ -1041,6 +1061,18 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " SD30 LDM",
+      "bounding": [
+        310,
+        -40,
+        180,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
       "flags": {}
     }
   ],

@@ -1,6 +1,6 @@
 {
-  "last_node_id": 56,
-  "last_link_id": 137,
+  "last_node_id": 57,
+  "last_link_id": 136,
   "nodes": [
     {
       "id": 49,
@@ -56,7 +56,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -116,6 +116,32 @@
       "shape": 1
     },
     {
+      "id": 45,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1240,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 ouput",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
       "id": 42,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -129,7 +155,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 2,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -155,7 +181,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 3,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -166,47 +192,6 @@
         0.8
       ],
       "shape": 1
-    },
-    {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 460
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            63
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_negative",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "text, watermark"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
     },
     {
       "id": 5,
@@ -246,11 +231,11 @@
       "bgcolor": "#535"
     },
     {
-      "id": 45,
+      "id": 54,
       "type": "Bookmark (rgthree)",
       "pos": {
         "0": 1240,
-        "1": 170
+        "1": 750
       },
       "size": {
         "0": 210,
@@ -263,11 +248,11 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "🔖9 ouput",
+      "title": "🔖note",
       "properties": {},
       "widgets_values": [
-        "9",
-        0.8
+        ".",
+        2
       ],
       "shape": 1
     },
@@ -298,32 +283,6 @@
       "shape": 1
     },
     {
-      "id": 54,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1240,
-        "1": 750
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖note",
-      "properties": {},
-      "widgets_values": [
-        ".",
-        2
-      ],
-      "shape": 1
-    },
-    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": {
@@ -335,7 +294,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -377,7 +336,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -385,7 +344,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            125
+            129
           ],
           "slot_index": 0
         },
@@ -393,7 +352,7 @@
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            126
+            131
           ],
           "slot_index": 1
         },
@@ -401,7 +360,7 @@
           "name": "VAE",
           "type": "VAE",
           "links": [
-            129
+            132
           ],
           "slot_index": 2
         }
@@ -418,28 +377,23 @@
     },
     {
       "id": 56,
-      "type": "LoraLoader",
+      "type": "LoraLoaderModelOnly",
       "pos": {
         "0": 50,
         "1": 390
       },
       "size": {
         "0": 350,
-        "1": 130
+        "1": 82
       },
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 125
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 126
+          "link": 129
         }
       ],
       "outputs": [
@@ -447,28 +401,18 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            127
+            130
           ],
           "slot_index": 0,
           "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            128
-          ],
-          "slot_index": 1,
-          "shape": 3
         }
       ],
-      "title": "lcml_model",
+      "title": "hyper_lora_model",
       "properties": {
-        "Node name for S&R": "LoraLoader"
+        "Node name for S&R": "LoraLoaderModelOnly"
       },
       "widgets_values": [
-        "lora\\01 base\\sdlt-bd-lora-8s.safetensors",
-        1,
+        "lora\\01 base\\sdxl-hyper-bd-lora-8s.safetensors",
         1
       ],
       "color": "#223",
@@ -479,25 +423,25 @@
       "type": "LoraLoader",
       "pos": {
         "0": 50,
-        "1": 580
+        "1": 530
       },
       "size": {
         "0": 350,
         "1": 130
       },
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 4,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 127
+          "link": 130
         },
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 128
+          "link": 131
         }
       ],
       "outputs": [
@@ -525,9 +469,9 @@
         "Node name for S&R": "LoraLoader"
       },
       "widgets_values": [
-        "",
-        1,
-        1
+        "lora\\00 tosort\\2000Comicsv20.safetensors",
+        2,
+        0.5
       ]
     },
     {
@@ -535,14 +479,14 @@
       "type": "LoraLoader",
       "pos": {
         "0": 50,
-        "1": 770
+        "1": 720
       },
       "size": {
         "0": 350,
         "1": 130
       },
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 4,
       "inputs": [
         {
@@ -581,10 +525,51 @@
         "Node name for S&R": "LoraLoader"
       },
       "widgets_values": [
-        "",
+        "lora\\00 tosort\\2000Comicsv20.safetensors",
         1,
         1
       ]
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 460
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            63
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "text, watermark"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
     },
     {
       "id": 50,
@@ -618,7 +603,7 @@
         {
           "name": "VAE",
           "type": "*",
-          "link": 129,
+          "link": 132,
           "color_on": "#FF6E6E"
         }
       ],
@@ -643,7 +628,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -658,7 +643,7 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDLT_LCML_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL-TSCM_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
@@ -675,7 +660,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -720,7 +705,7 @@
         "randomize",
         8,
         1,
-        "euler",
+        "ddim",
         "sgm_uniform",
         1
       ]
@@ -745,7 +730,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-sdlt-lcml\n==========================================================\nSDLT : SD Lightning\nLCML : Latent Consistency Model LoRA\nCSD  : Clip XL\nID   : T2I-BAS_SDLT_LCML"
+        "txt2img-basic-sdxl-tscm\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCSD  : Clip Standard\nID   : T2I-BAS_SDXL-TSCM"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -986,22 +971,46 @@
     ],
     [
       125,
-      55,
-      0,
-      56,
-      0,
-      "MODEL"
+      20,
+      2,
+      8,
+      1,
+      "VAE"
     ],
     [
       126,
-      55,
+      20,
       1,
-      56,
-      1,
+      6,
+      0,
       "CLIP"
     ],
     [
       127,
+      20,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      128,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      129,
+      55,
+      0,
+      56,
+      0,
+      "MODEL"
+    ],
+    [
+      130,
       56,
       0,
       47,
@@ -1009,15 +1018,15 @@
       "MODEL"
     ],
     [
-      128,
-      56,
+      131,
+      55,
       1,
       47,
       1,
       "CLIP"
     ],
     [
-      129,
+      132,
       55,
       2,
       50,
@@ -1025,7 +1034,7 @@
       "VAE"
     ],
     [
-      130,
+      133,
       55,
       2,
       8,
@@ -1033,40 +1042,16 @@
       "VAE"
     ],
     [
-      131,
-      56,
-      1,
-      7,
-      0,
-      "CLIP"
-    ],
-    [
-      132,
-      56,
+      134,
+      55,
       1,
       6,
       0,
       "CLIP"
     ],
     [
-      133,
-      56,
-      0,
-      33,
-      0,
-      "MODEL"
-    ],
-    [
-      134,
-      55,
-      2,
-      8,
-      1,
-      "VAE"
-    ],
-    [
       135,
-      56,
+      55,
       1,
       7,
       0,
@@ -1074,14 +1059,6 @@
     ],
     [
       136,
-      56,
-      1,
-      6,
-      0,
-      "CLIP"
-    ],
-    [
-      137,
       56,
       0,
       33,
@@ -1091,11 +1068,11 @@
   ],
   "groups": [
     {
-      "title": " SDLT LCML",
+      "title": " SDXL TSCM",
       "bounding": [
         310,
         -40,
-        190,
+        200,
         40
       ],
       "color": "#00ffff",
@@ -1118,10 +1095,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.0629366000000016,
+      "scale": 0.6,
       "offset": [
-        -217.74229309357955,
-        -257.4962467481166
+        16,
+        150
       ]
     }
   },

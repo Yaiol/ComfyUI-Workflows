@@ -1,6 +1,6 @@
 {
   "last_node_id": 54,
-  "last_link_id": 126,
+  "last_link_id": 134,
   "nodes": [
     {
       "id": 5,
@@ -361,38 +361,6 @@
       "widgets_values": []
     },
     {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1250,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 102
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BASIC_FX10_LDM_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 42,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -702,13 +670,45 @@
       },
       "widgets_values": [
         25191512,
-        "randomize",
+        "fixed",
         4,
         1,
         "euler",
         "simple",
         1
       ]
+    },
+    {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1250,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 102
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_FX10_LDM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 35,
@@ -730,7 +730,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-fx10-ldm\n==========================================================\nFX10 : Flux.1\nLDM  : Latent Diffusion Model\nID   : T2I-BASIC_FX10_LDM"
+        "txt2img-basic-fx10-ldm\n==========================================================\nFX10 : Flux.1\nLDM  : Latent Diffusion Model\nID   : T2I-BAS_FX10_LDM"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -971,6 +971,70 @@
     ],
     [
       126,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      127,
+      20,
+      2,
+      51,
+      1,
+      "VAE"
+    ],
+    [
+      128,
+      20,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      129,
+      20,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      130,
+      20,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      131,
+      20,
+      2,
+      51,
+      1,
+      "VAE"
+    ],
+    [
+      132,
+      20,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      133,
+      20,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      134,
       20,
       0,
       33,

@@ -1,6 +1,6 @@
 {
   "last_node_id": 72,
-  "last_link_id": 115,
+  "last_link_id": 119,
   "nodes": [
     {
       "id": 54,
@@ -130,7 +130,7 @@
         26
       ],
       "flags": {},
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -347,7 +347,7 @@
         "1": 80
       },
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -678,97 +678,6 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 48,
-      "type": "VAELoader",
-      "pos": {
-        "0": -550,
-        "1": 390
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            88
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "vae_model",
-      "properties": {
-        "Node name for S&R": "VAELoader"
-      },
-      "widgets_values": [
-        "fx10-bfl-ae-v10.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 37,
-      "type": "CheckpointLoaderNF4",
-      "pos": {
-        "0": -550,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            110
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "MODEL"
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            111
-          ],
-          "slot_index": 1,
-          "shape": 3,
-          "label": "CLIP"
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [],
-          "slot_index": 2,
-          "shape": 3,
-          "label": "VAE"
-        }
-      ],
-      "title": "checkpoint_nf4_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderNF4"
-      },
-      "widgets_values": [
-        "01 base\\fx10-lllyasviel-flux dev-v20-bnb nf4.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 62,
       "type": "Anything Everywhere3",
       "pos": {
@@ -782,7 +691,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -825,7 +734,7 @@
         90
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -865,7 +774,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -995,16 +904,42 @@
       "bgcolor": "#535"
     },
     {
+      "id": 72,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1350,
+        "1": 750
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
       "id": 52,
       "type": "SaveImage",
       "pos": {
         "0": 1350,
         "1": 290
       },
-      "size": [
-        350,
-        400
-      ],
+      "size": {
+        "0": 350,
+        "1": 400
+      },
       "flags": {},
       "order": 28,
       "mode": 0,
@@ -1021,10 +956,126 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-T2I-BASIC-FX10-NF4_%noise.noise_seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_FX10_NF4_%noise.noise_seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 48,
+      "type": "VAELoader",
+      "pos": {
+        "0": -550,
+        "1": 390
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            88
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "fx10-bfl-ae-v10.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 37,
+      "type": "CheckpointLoaderNF4",
+      "pos": {
+        "0": -550,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            110
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "MODEL"
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            111
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "CLIP"
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "slot_index": 2,
+          "shape": 3,
+          "label": "VAE"
+        }
+      ],
+      "title": "checkpoint_nf4_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderNF4"
+      },
+      "widgets_values": [
+        "01 base\\fx10-lllyasviel-flux dev-v10-bnb nf4.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 51,
+      "type": "Note",
+      "pos": {
+        "0": 1350,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-fx10-nf4\n==========================================================\nFX10 : Flux 1\nNF4  : NF4\nCSD  : Clip Standard\nID   : T2I-BAS_FX10_NF4"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     },
     {
       "id": 42,
@@ -1038,7 +1089,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 12,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1061,57 +1112,6 @@
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159"
-    },
-    {
-      "id": 72,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1350,
-        "1": 750
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 13,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖note",
-      "properties": {},
-      "widgets_values": [
-        ".",
-        2
-      ],
-      "shape": 1
-    },
-    {
-      "id": 51,
-      "type": "Note",
-      "pos": {
-        "0": 1350,
-        "1": 750
-      },
-      "size": [
-        350,
-        100
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-fx10-nf4\n==========================================================\nFX10 : Flux 1\nNF4  : NF4\nCSD  : Clip Standard\nID   : T2I-BASIC-FX10-NF4"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1349,6 +1349,38 @@
     ],
     [
       115,
+      48,
+      0,
+      40,
+      1,
+      "VAE"
+    ],
+    [
+      116,
+      37,
+      0,
+      50,
+      0,
+      "MODEL"
+    ],
+    [
+      117,
+      37,
+      1,
+      47,
+      0,
+      "CLIP"
+    ],
+    [
+      118,
+      46,
+      0,
+      39,
+      4,
+      "LATENT"
+    ],
+    [
+      119,
       48,
       0,
       40,

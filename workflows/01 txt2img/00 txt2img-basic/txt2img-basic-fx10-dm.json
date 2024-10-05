@@ -1,6 +1,6 @@
 {
   "last_node_id": 39,
-  "last_link_id": 73,
+  "last_link_id": 83,
   "nodes": [
     {
       "id": 35,
@@ -680,38 +680,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 9,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1650,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 9
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-T2I-FX10-DM_%noise.noise_seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": {
@@ -808,6 +776,63 @@
       ]
     },
     {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1650,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_FX10_DM_%noise.noise_seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 26,
+      "type": "Note",
+      "pos": {
+        "0": 1650,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-fx10-dm\n==========================================================\nFX10 : Flux.1\nDM   : Diffusion Model\nCSD  : Clip Standard\nID   : T2I-BAS_FX10_DM"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 25,
       "type": "RandomNoise",
       "pos": {
@@ -819,7 +844,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -842,31 +867,6 @@
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159"
-    },
-    {
-      "id": 26,
-      "type": "Note",
-      "pos": {
-        "0": 1650,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-fx10-dm\n==========================================================\nFX10 : Flux.1\nDM   : Diffusion Model\nCSD  : Clip Standard\nID   : T2I-FX10-DM"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1144,6 +1144,86 @@
     ],
     [
       73,
+      11,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      74,
+      12,
+      0,
+      22,
+      0,
+      "MODEL"
+    ],
+    [
+      75,
+      12,
+      0,
+      17,
+      0,
+      "MODEL"
+    ],
+    [
+      76,
+      5,
+      0,
+      13,
+      4,
+      "LATENT"
+    ],
+    [
+      77,
+      10,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      78,
+      11,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      79,
+      12,
+      0,
+      22,
+      0,
+      "MODEL"
+    ],
+    [
+      80,
+      12,
+      0,
+      17,
+      0,
+      "MODEL"
+    ],
+    [
+      81,
+      5,
+      0,
+      13,
+      4,
+      "LATENT"
+    ],
+    [
+      82,
+      10,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      83,
       11,
       0,
       6,
