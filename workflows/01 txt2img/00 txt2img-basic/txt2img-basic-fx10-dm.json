@@ -1,33 +1,7 @@
 {
   "last_node_id": 39,
-  "last_link_id": 83,
+  "last_link_id": 93,
   "nodes": [
-    {
-      "id": 35,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -110
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖workflow",
-      "properties": {},
-      "widgets_values": [
-        "0",
-        0.5
-      ],
-      "shape": 1
-    },
     {
       "id": 31,
       "type": "Bookmark (rgthree)",
@@ -42,7 +16,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -66,7 +40,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -79,6 +53,7 @@
           "slot_index": 0
         }
       ],
+      "title": "latent",
       "properties": {
         "Node name for S&R": "EmptyLatentImage"
       },
@@ -135,7 +110,7 @@
         "1": 50
       },
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -162,12 +137,11 @@
           "shape": 3
         }
       ],
+      "title": "guider",
       "properties": {
         "Node name for S&R": "BasicGuider"
       },
-      "widgets_values": [],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
+      "widgets_values": []
     },
     {
       "id": 16,
@@ -181,7 +155,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -200,9 +174,7 @@
       },
       "widgets_values": [
         "euler"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
+      ]
     },
     {
       "id": 17,
@@ -216,7 +188,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -244,9 +216,7 @@
         "simple",
         20,
         1
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
+      ]
     },
     {
       "id": 13,
@@ -260,7 +230,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -311,12 +281,11 @@
           "shape": 3
         }
       ],
+      "title": "sampler",
       "properties": {
         "Node name for S&R": "SamplerCustomAdvanced"
       },
-      "widgets_values": [],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
+      "widgets_values": []
     },
     {
       "id": 8,
@@ -332,7 +301,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -365,32 +334,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 30,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖2 checkpoint",
-      "properties": {},
-      "widgets_values": [
-        "2",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
       "id": 32,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -404,7 +347,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -430,7 +373,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -454,7 +397,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -468,6 +411,7 @@
           "shape": 3
         }
       ],
+      "title": "dual_clip_model",
       "properties": {
         "Node name for S&R": "DualCLIPLoader"
       },
@@ -491,7 +435,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 4,
       "inputs": [
         {
@@ -549,7 +493,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -575,7 +519,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -618,7 +562,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -643,41 +587,88 @@
       "bgcolor": "#335"
     },
     {
-      "id": 12,
-      "type": "UNETLoader",
+      "id": 9,
+      "type": "SaveImage",
       "pos": {
-        "0": 50,
-        "1": 230
+        "0": 1650,
+        "1": 290
       },
       "size": {
         "0": 350,
-        "1": 82
+        "1": 400
       },
       "flags": {},
-      "order": 11,
+      "order": 22,
       "mode": 0,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            61
-          ],
-          "slot_index": 0,
-          "shape": 3
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
         }
       ],
-      "title": "diffusion_model",
+      "outputs": [],
+      "title": "image_output",
       "properties": {
-        "Node name for S&R": "UNETLoader"
+        "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "fx10-dm\\fx10-bfl-flux dev-dm.safetensors",
-        "fp8_e4m3fn"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_FX10_DM_%noise.noise_seed%"
       ],
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 30,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 50,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖2 checkpoint",
+      "properties": {},
+      "widgets_values": [
+        "2",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 35,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 0,
+        "1": -110
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.5
+      ],
+      "shape": 1
     },
     {
       "id": 6,
@@ -691,7 +682,7 @@
         "1": 270
       },
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -710,11 +701,12 @@
           "slot_index": 0
         }
       ],
+      "title": "positive_prompt",
       "properties": {
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "portrait of a woman, John Kenn Mortensen Style"
+        "portrait of a woman, John Kenn Mortensen style"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -731,7 +723,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 4,
       "inputs": [
         {
@@ -776,36 +768,41 @@
       ]
     },
     {
-      "id": 9,
-      "type": "SaveImage",
+      "id": 12,
+      "type": "UNETLoader",
       "pos": {
-        "0": 1650,
-        "1": 290
+        "0": 50,
+        "1": 230
       },
       "size": {
         "0": 350,
-        "1": 400
+        "1": 82
       },
       "flags": {},
-      "order": 22,
+      "order": 12,
       "mode": 0,
-      "inputs": [
+      "inputs": [],
+      "outputs": [
         {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 9
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            61
+          ],
+          "slot_index": 0,
+          "shape": 3
         }
       ],
-      "outputs": [],
-      "title": "image_output",
+      "title": "diffusion_model",
       "properties": {
-        "Node name for S&R": "SaveImage"
+        "Node name for S&R": "UNETLoader"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_FX10_DM_%noise.noise_seed%"
+        "fx10-dm\\fx10-bfl-flux dev-dm.safetensors",
+        "fp8_e4m3fn"
       ],
-      "color": "#323",
-      "bgcolor": "#535"
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 26,
@@ -864,9 +861,7 @@
       "widgets_values": [
         25191512,
         "randomize"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
+      ]
     }
   ],
   "links": [
@@ -1229,21 +1224,89 @@
       6,
       0,
       "CLIP"
+    ],
+    [
+      84,
+      12,
+      0,
+      22,
+      0,
+      "MODEL"
+    ],
+    [
+      85,
+      12,
+      0,
+      17,
+      0,
+      "MODEL"
+    ],
+    [
+      86,
+      5,
+      0,
+      13,
+      4,
+      "LATENT"
+    ],
+    [
+      87,
+      10,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      88,
+      11,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      89,
+      12,
+      0,
+      22,
+      0,
+      "MODEL"
+    ],
+    [
+      90,
+      12,
+      0,
+      17,
+      0,
+      "MODEL"
+    ],
+    [
+      91,
+      5,
+      0,
+      13,
+      4,
+      "LATENT"
+    ],
+    [
+      92,
+      10,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      93,
+      11,
+      0,
+      6,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
-    {
-      "title": " FX10 DM",
-      "bounding": [
-        330,
-        -40,
-        160,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Txt2Img",
       "bounding": [
@@ -1254,6 +1317,18 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " FX10 DM",
+      "bounding": [
+        330,
+        -40,
+        160,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
       "flags": {}
     }
   ],
