@@ -1,12 +1,12 @@
 ## Files
 Each workflow is named using following convention :<br>
-\[Category\]-\[Workflow\]-\[Method\]-\[Model\]-\[Clip\]
+\[Category\]-\[Workflow\]-\[Model\]-\[Method\]
 
 For each workflow you will find the .json, .png and api file
 .api file are compatible with comfyui batch project that will be soon released
 
 Each output image is named using following convention: <br>
-\[DateDir\]/\[DateTime\]\_\[ID\]\_\[Method\]\_\[Model\]\_\[Clip\]\_\[Seed\]
+\[DateDir\]/\[DateTime\]\_\[ID\]\_\[Model\]\_\[Method\]\_\[Clip\]\_\[Seed\]
 
 ## Categories
 Num | ID | Name | Output File ID |
@@ -15,7 +15,9 @@ Num | ID | Name | Output File ID |
 02 | img2img | Image to Image | I2I |
 03 | inpaint | Image Inpaint | IIP |
 04 | outpaint | Image Outpaint | IOP |
-05 | upscale | Image Upscale | IUS |
+05 | remove | Remove | REM |
+06 | upscale | Image Upscale | IUS |
+07 | restore | Restore | RES |
 30 | face2img | Face to Image | F2I |
 31 | faceswap | Face swap | FSW |
 32 | couple | Couple Face | CPL |
@@ -23,8 +25,8 @@ Num | ID | Name | Output File ID |
 ## Workflows
 Num | Catagory | Workflow | Output File ID | Description |
 --- | --- | --- |  --- |   --- |
-0100 | Text to Image | txt2img | T2I | Create an image using prompts |
-0200 | Image to Image | img2img+(cn+lora) | I2I | Create an image using another image (2 Controlnet & 2 LoRAs as option) |
+0100 | Text to Image | txt2img-basic | T2I-BASIC | Create an image using prompts |
+0200 | Image to Image | img2img+(cn+lora) | I2I-BASIC | Create an image using another image (2 Controlnet & 2 LoRAs as option) |
 0201 | Image to Image | img2img-cn+upscale | I2I-CN+UPS | Create an image using constraint from another image + Latent Upscale |
 0210 | Image to Image | img2img-wdtagger | I2I-WDT | Create an image using auto tag from another |
 0220 | Image to Image | img2img-ipa style | I2I-IAS | Create an image using IpAdapter Style Transfer |
@@ -49,6 +51,18 @@ Num | Catagory | Workflow | Output File ID | Description |
 3110 | Face Swap | faceswap-ipa faceid+ipa std+(cn+lora)  | FSW-IAF+IAS |  Create an image by swapping faces using IPAdapter FaceID & Standard (2 Controlnet & 2 LoRAs as option) |
 3200 | Couple | couple-basic-lcm-sdxl-csd | CPL | Create a couple image |
 
+## Model
+Each workflow is made for a special model class listed below
+
+ID | Link |
+--- | --- |
+SD15 | [Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) |
+SDXL | [Stable Diffusion XL](https://stability.ai/news/stability-ai-sdxl-turbo) |
+SDLT | [Stable Diffusion Lightning]() |
+SD30 | [Stable Diffusion 3.0](https://stability.ai/news/stable-diffusion-3-medium)|
+SDCA | [Stable Diffusion Cascade](https://github.com/Stability-AI/StableCascade) |
+FX10 | [Flux 1.0](https://blackforestlabs.ai/announcing-black-forest-labs/) |
+
 ## Architecture
 Each workflow can use one or several architecture according to the model used
 
@@ -62,18 +76,6 @@ WSN | Würstchen | [Würstchen: An Efficient Architecture for Large-Scale Text-t
 TCD | Trajectory Consistency Distillation | [Trajectory Consistency Distillation: Improved Latent Consistency Distillation by Semi-Linear Consistency Function with Trajectory Mapping](https://arxiv.org/abs/2402.19159)| SDHY |
 MDT | Multimodal Diffusion Transformer | [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2403.03206) <br> [Fast High-Resolution Image Synthesis with Latent Adversarial Diffusion Distillation](https://arxiv.org/abs/2403.12015)| SD30 |
 MPDT | Multimodal Parallel Diffusion Transformer | [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2403.03206) <br> [Scaling Vision Transformers to 22 Billion Parameters](https://arxiv.org/abs/2302.05442) <br> [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748) <br> [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747)| FX10 |
-
-## Model
-Each workflow is made for a special model class listed below
-
-ID | Link |
---- | --- |
-SD15 | [Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) |
-SDXL | [Stable Diffusion XL](https://stability.ai/news/stability-ai-sdxl-turbo) |
-SDLT | [Stable Diffusion Lightning]() |
-SD30 | [Stable Diffusion 3.0](https://stability.ai/news/stable-diffusion-3-medium)|
-SDCA | [Stable Diffusion Cascade](https://github.com/Stability-AI/StableCascade) |
-FX10 | [Flux 1.0](https://blackforestlabs.ai/announcing-black-forest-labs/) |
 
 ## Clip
 ID | Name |
