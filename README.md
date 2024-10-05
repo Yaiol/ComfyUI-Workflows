@@ -58,9 +58,11 @@ ID | Link |
 --- | --- |
 SD15 | [Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) |
 SDXL | [Stable Diffusion XL](https://stability.ai/news/stability-ai-sdxl-turbo) |
-SDLT | [Stable Diffusion Lightning]() |
-SD30 | [Stable Diffusion 3.0](https://stability.ai/news/stable-diffusion-3-medium)|
+SDLT | [Stable Diffusion XL Lightning]() |
+SDTR | [Stable Diffusion XL Turbo]() |
+SDHY | [Stable Diffusion XL Hyper]() |
 SDCA | [Stable Diffusion Cascade](https://github.com/Stability-AI/StableCascade) |
+SD30 | [Stable Diffusion 3.0](https://stability.ai/news/stable-diffusion-3-medium)|
 FX10 | [Flux 1.0](https://blackforestlabs.ai/announcing-black-forest-labs/) |
 
 ## Architecture
