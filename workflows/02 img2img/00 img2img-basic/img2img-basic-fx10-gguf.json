@@ -1,6 +1,6 @@
 {
-  "last_node_id": 74,
-  "last_link_id": 182,
+  "last_node_id": 75,
+  "last_link_id": 190,
   "nodes": [
     {
       "id": 54,
@@ -62,7 +62,7 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 108
+          "link": 183
         },
         {
           "name": "negative",
@@ -482,12 +482,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_qrnph_00009_.png&type=temp&subfolder=&rand=0.9652048157936999"
+            "url": "/api/view?filename=rgthree.compare._temp_lbpio_00003_.png&type=temp&subfolder=&rand=0.8818145652838572"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_qrnph_00010_.png&type=temp&subfolder=&rand=0.74878346958253"
+            "url": "/api/view?filename=rgthree.compare._temp_lbpio_00004_.png&type=temp&subfolder=&rand=0.9758798848366135"
           }
         ]
       ]
@@ -610,124 +610,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 9,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2450,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 32,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 114
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BASIC_SDXL_GGUF_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 270
-      },
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            108
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 650,
-        "1": 560
-      },
-      "size": {
-        "0": 350,
-        "1": 140
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            109
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_negative",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "blurry"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 69,
       "type": "UnetLoaderGGUF",
       "pos": {
@@ -739,7 +621,7 @@
         "1": 90
       },
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -822,7 +704,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1061,7 +943,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1098,7 +980,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1124,7 +1006,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1150,7 +1032,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1176,7 +1058,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1202,7 +1084,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1213,6 +1095,154 @@
         2
       ],
       "shape": 1
+    },
+    {
+      "id": 75,
+      "type": "CLIPTextEncodeFlux",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 470
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null,
+          "label": "clip"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            183
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CONDITIONING"
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeFlux"
+      },
+      "widgets_values": [
+        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4",
+        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4",
+        3.5
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 650,
+        "1": 760
+      },
+      "size": {
+        "0": 350,
+        "1": 140
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            109
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "blurry"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2450,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 114
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BAS_SDXL_GGUF_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 33,
+      "type": "Note",
+      "pos": {
+        "0": 2450,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "img2img-basic-fx10-gguf\n==========================================================\nFX10 : Flux.1\nGGUF : GPT-Generated Unified Format\nCSD  : Clip Standard\nID   : I2I-BAS_FX10_GGUF"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     },
     {
       "id": 3,
@@ -1273,31 +1303,6 @@
         "simple",
         0.55
       ]
-    },
-    {
-      "id": 33,
-      "type": "Note",
-      "pos": {
-        "0": 2450,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "img2img-basic-fx10-gguf\n==========================================================\nFX10 : Flux.1\nGGUF : GPT-Generated Unified Format\nCSD  : Clip Standard\nID   : I2I-BASIC_FX10_GGUF"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1324,14 +1329,6 @@
       50,
       2,
       "CONTROL_NET"
-    ],
-    [
-      108,
-      6,
-      0,
-      50,
-      0,
-      "CONDITIONING"
     ],
     [
       109,
@@ -1740,21 +1737,73 @@
       3,
       0,
       "MODEL"
+    ],
+    [
+      183,
+      75,
+      0,
+      50,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      184,
+      72,
+      0,
+      27,
+      1,
+      "VAE"
+    ],
+    [
+      185,
+      31,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      186,
+      31,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      187,
+      72,
+      0,
+      39,
+      1,
+      "VAE"
+    ],
+    [
+      188,
+      71,
+      0,
+      75,
+      0,
+      "CLIP"
+    ],
+    [
+      189,
+      71,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      190,
+      69,
+      0,
+      3,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
-    {
-      "title": " Img2Img",
-      "bounding": [
-        -350,
-        -80,
-        270,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
     {
       "title": " FX10 GGUF",
       "bounding": [
@@ -1766,15 +1815,27 @@
       "color": "#00ffff",
       "font_size": 30,
       "flags": {}
+    },
+    {
+      "title": " Img2Img",
+      "bounding": [
+        -350,
+        -80,
+        270,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
+      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.45,
+      "scale": 1.0152559799477083,
       "offset": [
-        416,
-        140
+        -1339.098406375527,
+        -217.31402539516176
       ]
     }
   },

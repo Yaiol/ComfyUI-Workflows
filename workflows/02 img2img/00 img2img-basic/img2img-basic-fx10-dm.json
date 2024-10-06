@@ -1,6 +1,6 @@
 {
-  "last_node_id": 77,
-  "last_link_id": 184,
+  "last_node_id": 78,
+  "last_link_id": 185,
   "nodes": [
     {
       "id": 54,
@@ -56,13 +56,13 @@
         "1": 186
       },
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 4,
       "inputs": [
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 108
+          "link": 178
         },
         {
           "name": "negative",
@@ -128,7 +128,7 @@
         "1": 186
       },
       "flags": {},
-      "order": 24,
+      "order": 25,
       "mode": 4,
       "inputs": [
         {
@@ -482,12 +482,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_qrnph_00011_.png&type=temp&subfolder=&rand=0.0008577011767574305"
+            "url": "/api/view?filename=rgthree.compare._temp_lbpio_00001_.png&type=temp&subfolder=&rand=0.4168315829155369"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_qrnph_00012_.png&type=temp&subfolder=&rand=0.8366541279800583"
+            "url": "/api/view?filename=rgthree.compare._temp_lbpio_00002_.png&type=temp&subfolder=&rand=0.5896687019214426"
           }
         ]
       ]
@@ -530,90 +530,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 270
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            108
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 650,
-        "1": 560
-      },
-      "size": {
-        "0": 350,
-        "1": 140
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            109
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_negative",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "blurry"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 60,
       "type": "Anything Everywhere3",
       "pos": {
@@ -627,7 +543,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -672,7 +588,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -801,7 +717,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -827,7 +743,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -853,7 +769,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -879,7 +795,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -888,32 +804,6 @@
       "widgets_values": [
         "3",
         0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 74,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 2450,
-        "1": 750
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 13,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖note",
-      "properties": {},
-      "widgets_values": [
-        ".",
-        2
       ],
       "shape": 1
     },
@@ -929,7 +819,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 14,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -966,7 +856,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 15,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1004,7 +894,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 23,
+      "order": 22,
       "mode": 4,
       "inputs": [
         {
@@ -1060,7 +950,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 25,
+      "order": 24,
       "mode": 4,
       "inputs": [
         {
@@ -1116,7 +1006,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 16,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1140,6 +1030,49 @@
       "bgcolor": "#335"
     },
     {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 650,
+        "1": 770
+      },
+      "size": {
+        "0": 350,
+        "1": 140
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            109
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "blurry"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
       "id": 3,
       "type": "KSampler",
       "pos": {
@@ -1151,7 +1084,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 26,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -1191,13 +1124,85 @@
       },
       "widgets_values": [
         25191512,
-        "fixed",
+        "randomize",
         20,
         1,
         "euler",
         "simple",
         0.55
       ]
+    },
+    {
+      "id": 78,
+      "type": "CLIPTextEncodeFlux",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 470
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null,
+          "label": "clip"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            178
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CONDITIONING"
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeFlux"
+      },
+      "widgets_values": [
+        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4",
+        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4",
+        3.5
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 74,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 2450,
+        "1": 750
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
     },
     {
       "id": 9,
@@ -1228,7 +1233,7 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BASIC_SDXL_DM_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BAS_SDXL_DM_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
@@ -1253,7 +1258,7 @@
         "text": ""
       },
       "widgets_values": [
-        "img2img-basic-fx10-dm\n==========================================================\nFX10 : Flux.1\nDM   : Diffusion Model\nCSD  : Clip Standard\nID   : I2I-BASIC_FX10_DM"
+        "img2img-basic-fx10-dm\n==========================================================\nFX10 : Flux.1\nDM   : Diffusion Model\nCSD  : Clip Standard\nID   : I2I-BAS_FX10_DM"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1283,14 +1288,6 @@
       50,
       2,
       "CONTROL_NET"
-    ],
-    [
-      108,
-      6,
-      0,
-      50,
-      0,
-      "CONDITIONING"
     ],
     [
       109,
@@ -1638,6 +1635,14 @@
     ],
     [
       178,
+      78,
+      0,
+      50,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      179,
       72,
       0,
       27,
@@ -1645,7 +1650,7 @@
       "VAE"
     ],
     [
-      179,
+      180,
       31,
       0,
       46,
@@ -1653,23 +1658,7 @@
       "IMAGE"
     ],
     [
-      180,
-      76,
-      0,
-      6,
-      0,
-      "CLIP"
-    ],
-    [
       181,
-      76,
-      0,
-      7,
-      0,
-      "CLIP"
-    ],
-    [
-      182,
       31,
       0,
       39,
@@ -1677,12 +1666,20 @@
       "IMAGE"
     ],
     [
-      183,
+      182,
       72,
       0,
       39,
       1,
       "VAE"
+    ],
+    [
+      183,
+      76,
+      0,
+      7,
+      0,
+      "CLIP"
     ],
     [
       184,
@@ -1691,21 +1688,17 @@
       3,
       0,
       "MODEL"
+    ],
+    [
+      185,
+      76,
+      0,
+      78,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
-    {
-      "title": " FX10 DM",
-      "bounding": [
-        -70,
-        -40,
-        160,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Img2Img",
       "bounding": [
@@ -1717,15 +1710,27 @@
       "color": "#ffffff",
       "font_size": 60,
       "flags": {}
+    },
+    {
+      "title": " FX10 DM",
+      "bounding": [
+        -70,
+        -40,
+        160,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.45,
+      "scale": 0.5445000000000003,
       "offset": [
-        416,
-        140
+        368.7309729485902,
+        213.11294765840208
       ]
     }
   },
