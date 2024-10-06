@@ -1025,12 +1025,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_cscmt_00005_.png&type=temp&subfolder=&rand=0.9540483636581152"
+            "url": "/api/view?filename=rgthree.compare._temp_cscmt_00007_.png&type=temp&subfolder=&rand=0.34018223967436856"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_cscmt_00006_.png&type=temp&subfolder=&rand=0.05330347604902386"
+            "url": "/api/view?filename=rgthree.compare._temp_cscmt_00008_.png&type=temp&subfolder=&rand=0.2054523706031337"
           }
         ]
       ]
@@ -1087,38 +1087,6 @@
         0,
         false
       ]
-    },
-    {
-      "id": 226,
-      "type": "SaveImage",
-      "pos": {
-        "0": 3240,
-        "1": 500
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 31,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 907
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_OUP-F_LDM_SDXL_CSD_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 240,
@@ -1233,6 +1201,38 @@
         "karras",
         1
       ]
+    },
+    {
+      "id": 226,
+      "type": "SaveImage",
+      "pos": {
+        "0": 3240,
+        "1": 500
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 907
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_OUP-F_SDXL_LDM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 227,
@@ -1568,18 +1568,6 @@
   ],
   "groups": [
     {
-      "title": " Outpaint Fooocus",
-      "bounding": [
-        -360,
-        -100,
-        520,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
-    {
       "title": " LDM SDXL",
       "bounding": [
         170,
@@ -1589,6 +1577,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Outpaint Fooocus",
+      "bounding": [
+        -360,
+        -100,
+        520,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],
