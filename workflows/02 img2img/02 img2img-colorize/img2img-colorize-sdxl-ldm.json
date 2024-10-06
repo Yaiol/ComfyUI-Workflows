@@ -207,32 +207,6 @@
       "bgcolor": "#533"
     },
     {
-      "id": 198,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": -350,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖1 input",
-      "properties": {},
-      "widgets_values": [
-        "1",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
       "id": 174,
       "type": "LoadImage",
       "pos": {
@@ -244,7 +218,7 @@
         "1": 450
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -287,7 +261,7 @@
         "1": 80
       },
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -439,12 +413,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_huyqn_00001_.png&type=temp&subfolder=&rand=0.40531867208105443"
+            "url": "/api/view?filename=rgthree.compare._temp_ldgal_00001_.png&type=temp&subfolder=&rand=0.7125355483075828"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_huyqn_00002_.png&type=temp&subfolder=&rand=0.9044164745121888"
+            "url": "/api/view?filename=rgthree.compare._temp_ldgal_00002_.png&type=temp&subfolder=&rand=0.5382364719764949"
           }
         ]
       ]
@@ -644,7 +618,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -700,7 +674,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -759,7 +733,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -830,7 +804,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -856,7 +830,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -882,7 +856,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -908,7 +882,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1001,6 +975,32 @@
         "showOutputText": false,
         "horizontal": false
       }
+    },
+    {
+      "id": 198,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": -350,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖1 input",
+      "properties": {},
+      "widgets_values": [
+        "1",
+        0.8
+      ],
+      "shape": 1
     },
     {
       "id": 2,
@@ -1326,18 +1326,6 @@
   ],
   "groups": [
     {
-      "title": " Img2Img Recolor",
-      "bounding": [
-        -350,
-        -80,
-        500,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
-    {
       "title": " SDXL LDM",
       "bounding": [
         160,
@@ -1347,6 +1335,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Img2Img Colorize",
+      "bounding": [
+        -350,
+        -80,
+        500,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],
