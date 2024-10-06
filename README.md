@@ -26,8 +26,9 @@ Num | ID | Name | Output File ID |
 Num | Catagory | Workflow | Output File ID | Description |
 --- | --- | --- |  --- |   --- |
 0100 | Text to Image | txt2img-basic | T2I-BASIC | Create an image using prompts |
-0200 | Image to Image | img2img+(cn+lora) | I2I-BASIC | Create an image using another image (2 Controlnet & 2 LoRAs as option) |
+0200 | Image to Image | img2img-basic | I2I-BAS | Create an image using another image (2 Controlnet & 2 LoRAs as option) |
 0201 | Image to Image | img2img-cn+upscale | I2I-CN+UPS | Create an image using constraint from another image + Latent Upscale |
+0202 | Image to Image | img2img-colorize | I2I-COL | Colorize a black and white image using Controlnet |
 0210 | Image to Image | img2img-wdtagger | I2I-WDT | Create an image using auto tag from another |
 0220 | Image to Image | img2img-ipa style | I2I-IAS | Create an image using IpAdapter Style Transfer |
 0221 | Image to Image | img2img-ipa style+composition | I2I-IASC | Create an image using IpAdapter Style Transfer & Composition |
