@@ -1,199 +1,7 @@
 {
-  "last_node_id": 52,
-  "last_link_id": 100,
+  "last_node_id": 53,
+  "last_link_id": 105,
   "nodes": [
-    {
-      "id": 35,
-      "type": "ConditioningZeroOut",
-      "pos": {
-        "0": 700,
-        "1": 560
-      },
-      "size": {
-        "0": 482.5600891113281,
-        "1": 32.28055953979492
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "conditioning",
-          "type": "CONDITIONING",
-          "link": 55
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            56
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "zero_out",
-      "properties": {
-        "Node name for S&R": "ConditioningZeroOut"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 20,
-      "type": "EmptyLatentImage",
-      "pos": {
-        "0": 460,
-        "1": 600
-      },
-      "size": {
-        "0": 350,
-        "1": 110
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            34
-          ],
-          "shape": 3
-        }
-      ],
-      "title": "latent_image",
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 44,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1260,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖9 ouput",
-      "properties": {},
-      "widgets_values": [
-        "9",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 7,
-      "type": "VAEDecode",
-      "pos": {
-        "0": 1260,
-        "1": 230
-      },
-      "size": {
-        "0": 200,
-        "1": 50
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 9
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            54
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "vae_decode",
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 46,
-      "type": "Anything Everywhere3",
-      "pos": {
-        "0": 460,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 82,
-          "color_on": "#B39DDB"
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 80,
-          "color_on": "#FFD500"
-        },
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 88,
-          "color_on": "#FF6E6E"
-        }
-      ],
-      "outputs": [],
-      "title": "mcv",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
     {
       "id": 28,
       "type": "DualCLIPLoader",
@@ -206,7 +14,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 2,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -288,7 +96,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 3,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -296,58 +104,6 @@
       "properties": {},
       "widgets_values": [
         "2",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 40,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 460,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖3 prompt",
-      "properties": {},
-      "widgets_values": [
-        "3",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 41,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 860,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖4 sampler",
-      "properties": {},
-      "widgets_values": [
-        "4",
         0.8
       ],
       "shape": 1
@@ -366,7 +122,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -375,32 +131,6 @@
       "widgets_values": [
         "0",
         0.5
-      ],
-      "shape": 1
-    },
-    {
-      "id": 52,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1260,
-        "1": 750
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖note",
-      "properties": {},
-      "widgets_values": [
-        ".",
-        2
       ],
       "shape": 1
     },
@@ -472,7 +202,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 8,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -507,7 +237,7 @@
         "1": 90
       },
       "flags": {},
-      "order": 9,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -530,52 +260,6 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
-    },
-    {
-      "id": 22,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 460,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 270
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            37,
-            55
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "portrait of a woman, John Kenn Mortensen Style"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 47,
@@ -634,10 +318,177 @@
       ]
     },
     {
+      "id": 40,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 450,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖3 prompt",
+      "properties": {},
+      "widgets_values": [
+        "3",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 46,
+      "type": "Anything Everywhere3",
+      "pos": {
+        "0": 450,
+        "1": 130
+      },
+      "size": {
+        "0": 252,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 82,
+          "color_on": "#B39DDB"
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 80,
+          "color_on": "#FFD500"
+        },
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 88,
+          "color_on": "#FF6E6E"
+        }
+      ],
+      "outputs": [],
+      "title": "mcv",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 41,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 850,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖4 sampler",
+      "properties": {},
+      "widgets_values": [
+        "4",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 7,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 1250,
+        "1": 230
+      },
+      "size": {
+        "0": 200,
+        "1": 50
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 9
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            54
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 44,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1250,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 ouput",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
       "id": 34,
       "type": "SaveImage",
       "pos": {
-        "0": 1260,
+        "0": 1250,
         "1": 290
       },
       "size": {
@@ -665,10 +516,36 @@
       "bgcolor": "#535"
     },
     {
+      "id": 52,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1250,
+        "1": 750
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
       "id": 5,
       "type": "KSampler",
       "pos": {
-        "0": 860,
+        "0": 850,
         "1": 230
       },
       "size": {
@@ -687,7 +564,7 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 37
+          "link": 101
         },
         {
           "name": "negative",
@@ -716,7 +593,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        25191512,
+        25191513,
         "randomize",
         20,
         1,
@@ -726,10 +603,134 @@
       ]
     },
     {
+      "id": 53,
+      "type": "CLIPTextEncodeFlux",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": [
+        350,
+        470
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null,
+          "label": "clip"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            101,
+            102
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CONDITIONING"
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeFlux"
+      },
+      "widgets_values": [
+        "portrait of a woman, John Kenn Mortensen Style",
+        "portrait of a woman, John Kenn Mortensen Style",
+        3.5
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 35,
+      "type": "ConditioningZeroOut",
+      "pos": {
+        "0": 690,
+        "1": 760
+      },
+      "size": {
+        "0": 482.5600891113281,
+        "1": 32.28055953979492
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 102
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            56
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "zero_out",
+      "properties": {
+        "Node name for S&R": "ConditioningZeroOut"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 20,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 460,
+        "1": 800
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            34
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "latent_image",
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 45,
       "type": "Note",
       "pos": {
-        "0": 1260,
+        "0": 1250,
         "1": 750
       },
       "size": {
@@ -745,7 +746,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-fx10-gguf\n===========================================================\nFX10 : Flux.1\nGGUF : GPT-Generated Unified Format\nCSD  : Clip Standard\nID   : T2I-BAS_FX10_GGUF"
+        "txt2img-basic-fx10-gguf\n===========================================================\nFX10 : Flux.1\nGGUF : GPT-Generated Unified Format\nCDL  : Clip Dual\nID   : T2I-BAS_FX10_GGUF"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -769,28 +770,12 @@
       "LATENT"
     ],
     [
-      37,
-      22,
-      0,
-      5,
-      1,
-      "CONDITIONING"
-    ],
-    [
       54,
       7,
       0,
       34,
       0,
       "IMAGE"
-    ],
-    [
-      55,
-      22,
-      0,
-      35,
-      0,
-      "CONDITIONING"
     ],
     [
       56,
@@ -1039,21 +1024,49 @@
       5,
       0,
       "MODEL"
+    ],
+    [
+      101,
+      53,
+      0,
+      5,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      102,
+      53,
+      0,
+      35,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      103,
+      8,
+      0,
+      7,
+      1,
+      "VAE"
+    ],
+    [
+      104,
+      23,
+      0,
+      5,
+      0,
+      "MODEL"
+    ],
+    [
+      105,
+      36,
+      0,
+      53,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
-    {
-      "title": " FX10 GGUF",
-      "bounding": [
-        320,
-        -40,
-        190,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Txt2Img",
       "bounding": [
@@ -1064,6 +1077,18 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " FX10 GGUF",
+      "bounding": [
+        320,
+        -40,
+        190,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
       "flags": {}
     }
   ],
