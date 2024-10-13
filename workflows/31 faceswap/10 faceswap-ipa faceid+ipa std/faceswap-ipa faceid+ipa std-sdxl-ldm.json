@@ -1792,98 +1792,6 @@
       "shape": 1
     },
     {
-      "id": 3,
-      "type": "KSampler",
-      "pos": {
-        "0": 2450,
-        "1": 350
-      },
-      "size": {
-        "0": 350,
-        "1": 270
-      },
-      "flags": {},
-      "order": 46,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 139
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 124
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 125
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            7
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "ksampler",
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        25191512,
-        "randomize",
-        20,
-        4,
-        "dpmpp_2m_sde",
-        "karras",
-        1
-      ]
-    },
-    {
-      "id": 9,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2850,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 410
-      },
-      "flags": {},
-      "order": 48,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 9
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IAF+IAS (iafw=%ipadapter_faceid.weight%, iafs=%ipadapter_faceid.start_at%, iafe=%ipadapter_faceid.end_at%)_SDXL_LDM_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 86,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -1983,6 +1891,98 @@
       "bgcolor": "#535"
     },
     {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2850,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 410
+      },
+      "flags": {},
+      "order": 48,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-IAF+IAS (iafw=%ipadapter_faceid.weight%, iafs=%ipadapter_faceid.start_at%, iafe=%ipadapter_faceid.end_at%)_SDXL_LDM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": {
+        "0": 2450,
+        "1": 350
+      },
+      "size": {
+        "0": 350,
+        "1": 270
+      },
+      "flags": {},
+      "order": 46,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 139
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 124
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 125
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            7
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        25191512,
+        "randomize",
+        20,
+        4,
+        "dpmpp_2m_sde",
+        "karras",
+        1
+      ]
+    },
+    {
       "id": 41,
       "type": "Note",
       "pos": {
@@ -2004,7 +2004,7 @@
         "text": ""
       },
       "widgets_values": [
-        "faceswap-ipa faceid+ipa std-sdxl-ldm\n=================================================\nSDXL : SD XL\nLDM  : Latent Diffusion Model\nCSD  : Clip Standard\nID   : FSW-IAF+IAS_LDM_SDXL"
+        "faceswap-ipa faceid+ipa std-sdxl-ldm\n=================================================\nSDXL : SD XL\nLDM  : Latent Diffusion Model\nCSD  : Clip Standard\nID   : FSW-IAF+IAS_SDXL_LDM"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -2478,18 +2478,6 @@
   ],
   "groups": [
     {
-      "title": " Faceswap IpAdapter+ FaceId v2",
-      "bounding": [
-        -750,
-        -80,
-        900,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
-    {
       "title": " LDM SDXL",
       "bounding": [
         160,
@@ -2499,6 +2487,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Faceswap IpAdapter+ FaceId v2",
+      "bounding": [
+        -750,
+        -80,
+        900,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],
