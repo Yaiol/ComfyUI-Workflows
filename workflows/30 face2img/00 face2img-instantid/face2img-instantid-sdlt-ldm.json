@@ -1,6 +1,6 @@
 {
-  "last_node_id": 150,
-  "last_link_id": 412,
+  "last_node_id": 151,
+  "last_link_id": 419,
   "nodes": [
     {
       "id": 11,
@@ -107,43 +107,6 @@
       ]
     },
     {
-      "id": 5,
-      "type": "EmptyLatentImage",
-      "pos": {
-        "0": 450,
-        "1": 650
-      },
-      "size": {
-        "0": 350,
-        "1": 110
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            319
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "latent_image",
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        1032,
-        1032,
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 125,
       "type": "ControlNetLoader",
       "pos": {
@@ -155,7 +118,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -543,7 +506,8 @@
         {
           "name": "vae",
           "type": "VAE",
-          "link": null
+          "link": null,
+          "shape": 7
         }
       ],
       "outputs": [
@@ -615,7 +579,8 @@
         {
           "name": "vae",
           "type": "VAE",
-          "link": null
+          "link": null,
+          "shape": 7
         }
       ],
       "outputs": [
@@ -702,7 +667,7 @@
         "1": 450
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -732,57 +697,6 @@
       ],
       "color": "#ffaa14",
       "bgcolor": "#ff9600"
-    },
-    {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            379
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            380
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            395
-          ],
-          "slot_index": 2
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "05 real\\sdxl-epinikion-realism-v80-p.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 135,
@@ -897,12 +811,14 @@
         {
           "name": "image_kps",
           "type": "IMAGE",
-          "link": null
+          "link": null,
+          "shape": 7
         },
         {
           "name": "mask",
           "type": "MASK",
-          "link": null
+          "link": null,
+          "shape": 7
         }
       ],
       "outputs": [
@@ -916,7 +832,7 @@
           "shape": 3
         },
         {
-          "name": "POSITIVE",
+          "name": "positive",
           "type": "CONDITIONING",
           "links": [
             362
@@ -925,7 +841,7 @@
           "shape": 3
         },
         {
-          "name": "NEGATIVE",
+          "name": "negative",
           "type": "CONDITIONING",
           "links": [
             363
@@ -958,7 +874,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -984,7 +900,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1010,7 +926,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1036,7 +952,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1047,141 +963,6 @@
         0.8
       ],
       "shape": 1
-    },
-    {
-      "id": 112,
-      "type": "RepeatLatentBatch",
-      "pos": {
-        "0": 450,
-        "1": 820
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 319
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            406
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "latent_batch",
-      "properties": {
-        "Node name for S&R": "RepeatLatentBatch"
-      },
-      "widgets_values": [
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 146,
-      "type": "Anything Everywhere",
-      "pos": {
-        "0": 710,
-        "1": 940
-      },
-      "size": [
-        140,
-        30
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "LATENT",
-          "type": "*",
-          "link": 406,
-          "color_on": "#FF9CF9"
-        }
-      ],
-      "outputs": [],
-      "title": "latent",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 3,
-      "type": "KSampler",
-      "pos": {
-        "0": 2050,
-        "1": 350
-      },
-      "size": {
-        "0": 350,
-        "1": 262
-      },
-      "flags": {},
-      "order": 39,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 387
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 364
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 365
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            7
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "ksampler",
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        195256897489000,
-        "randomize",
-        25,
-        4,
-        "dpmpp_2m_sde_gpu",
-        "karras",
-        1
-      ]
     },
     {
       "id": 147,
@@ -1197,7 +978,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1295,7 +1076,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1366,7 +1147,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1416,12 +1197,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_pfplf_00009_.png&type=temp&subfolder=&rand=0.26497333994084094"
+            "url": "/api/view?filename=rgthree.compare._temp_ncybe_00007_.png&type=temp&subfolder=&rand=0.24633366887529173"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_pfplf_00010_.png&type=temp&subfolder=&rand=0.014328530107429849"
+            "url": "/api/view?filename=rgthree.compare._temp_ncybe_00008_.png&type=temp&subfolder=&rand=0.5964756981090411"
           }
         ]
       ]
@@ -1476,7 +1257,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1487,39 +1268,6 @@
         0.4
       ],
       "shape": 1
-    },
-    {
-      "id": 90,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2850,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 390
-      },
-      "flags": {},
-      "order": 43,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 391,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_F2I-IID_LDM_SDXL_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 132,
@@ -1557,51 +1305,6 @@
         "showOutputText": false,
         "horizontal": false
       }
-    },
-    {
-      "id": 141,
-      "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 140
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 397,
-          "color_on": "#B39DDB"
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 396,
-          "color_on": "#FFD500"
-        },
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 395,
-          "color_on": "#FF6E6E"
-        }
-      ],
-      "outputs": [],
-      "title": "mcv",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
     },
     {
       "id": 117,
@@ -1750,6 +1453,297 @@
       }
     },
     {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            379
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            380
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            395
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "01 base\\sdlt-bd-8s.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 141,
+      "type": "Anything Everywhere3",
+      "pos": {
+        "0": 450,
+        "1": 130
+      },
+      "size": {
+        "0": 252,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 397,
+          "color_on": "#B39DDB",
+          "shape": 7
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 396,
+          "color_on": "#FFD500",
+          "shape": 7
+        },
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 395,
+          "color_on": "#FF6E6E",
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "title": "mcv",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 90,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2850,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 390
+      },
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 391,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_F2I-IID_SDLT_LDM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 151,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 2850,
+        "1": 740
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 450,
+        "1": 650
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            416
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "latent_image",
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1032,
+        1032,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 146,
+      "type": "Anything Everywhere",
+      "pos": {
+        "0": 710,
+        "1": 820
+      },
+      "size": {
+        "0": 140,
+        "1": 30
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "LATENT",
+          "type": "*",
+          "link": 416,
+          "color_on": "#FF9CF9",
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "title": "latent",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": [],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": {
+        "0": 2050,
+        "1": 350
+      },
+      "size": {
+        "0": 350,
+        "1": 262
+      },
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 387
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 364
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 365
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            7
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        25191512,
+        "randomize",
+        8,
+        1,
+        "euler",
+        "sgm_uniform",
+        1
+      ]
+    },
+    {
       "id": 111,
       "type": "Note",
       "pos": {
@@ -1761,7 +1755,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1769,7 +1763,7 @@
         "text": ""
       },
       "widgets_values": [
-        "face2img-instantid-ldm-sdxl\n===========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : F2I-IID_LDM_SDXL"
+        "face2img-instantid-sdlt-ldm\n===========================================================\nSDLT : SD Lightning\nLDM  : Latent Diffusion Model\nCSD  : Clip Standard\nID   : F2I-IID_SDLT_LDM"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1807,14 +1801,6 @@
       60,
       0,
       "INSTANTID"
-    ],
-    [
-      319,
-      5,
-      0,
-      112,
-      0,
-      "LATENT"
     ],
     [
       323,
@@ -2129,14 +2115,6 @@
       "MODEL"
     ],
     [
-      406,
-      112,
-      0,
-      146,
-      0,
-      "LATENT"
-    ],
-    [
       409,
       132,
       0,
@@ -2154,6 +2132,14 @@
     ],
     [
       411,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      412,
       112,
       0,
       3,
@@ -2161,15 +2147,75 @@
       "LATENT"
     ],
     [
-      412,
+      413,
+      4,
+      0,
+      60,
+      4,
+      "MODEL"
+    ],
+    [
+      414,
       4,
       2,
       8,
       1,
       "VAE"
+    ],
+    [
+      415,
+      112,
+      0,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      416,
+      5,
+      0,
+      146,
+      0,
+      "LATENT"
+    ],
+    [
+      417,
+      4,
+      0,
+      60,
+      4,
+      "MODEL"
+    ],
+    [
+      418,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      419,
+      5,
+      0,
+      3,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
+    {
+      "title": " SDLT LDM",
+      "bounding": [
+        240,
+        -40,
+        170,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
+    },
     {
       "title": " Face2Img InstandID",
       "bounding": [
@@ -2180,18 +2226,6 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
-      "flags": {}
-    },
-    {
-      "title": " LDM SDXL",
-      "bounding": [
-        240,
-        -40,
-        170,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
       "flags": {}
     }
   ],
