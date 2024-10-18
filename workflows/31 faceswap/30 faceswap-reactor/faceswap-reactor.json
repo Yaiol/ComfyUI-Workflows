@@ -1,12 +1,12 @@
 {
-  "last_node_id": 327,
-  "last_link_id": 687,
+  "last_node_id": 332,
+  "last_link_id": 688,
   "nodes": [
     {
       "id": 262,
       "type": "Reroute",
       "pos": {
-        "0": -350,
+        "0": 450,
         "1": 150
       },
       "size": [
@@ -14,7 +14,7 @@
         26
       ],
       "flags": {},
-      "order": 3,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -39,10 +39,10 @@
       }
     },
     {
-      "id": 295,
+      "id": 324,
       "type": "Reroute",
       "pos": {
-        "0": 50,
+        "0": 740,
         "1": 150
       },
       "size": [
@@ -50,13 +50,13 @@
         26
       ],
       "flags": {},
-      "order": 4,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 668
+          "link": 673
         }
       ],
       "outputs": [
@@ -64,7 +64,7 @@
           "name": "",
           "type": "IMAGE",
           "links": [
-            687
+            674
           ],
           "slot_index": 0
         }
@@ -75,96 +75,66 @@
       }
     },
     {
-      "id": 270,
-      "type": "LoadImage",
+      "id": 311,
+      "type": "Image Comparer (rgthree)",
       "pos": {
-        "0": -720,
+        "0": 1250,
         "1": 230
       },
       "size": {
-        "0": 360,
-        "1": 450
+        "0": 350,
+        "1": 400
       },
       "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            672
-          ],
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "image_input_1",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "character-arwyenn-real.jpg",
-        "image"
-      ],
-      "color": "#ffa014",
-      "bgcolor": "#ff8c00"
-    },
-    {
-      "id": 320,
-      "type": "Reroute",
-      "pos": {
-        "0": 720,
-        "1": 150
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 10,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
-          "name": "",
-          "type": "*",
-          "link": 686
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
+          "name": "image_a",
           "type": "IMAGE",
-          "links": [
-            671
-          ],
-          "slot_index": 0
+          "link": 681,
+          "dir": 3
+        },
+        {
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": 683,
+          "dir": 3
         }
       ],
+      "outputs": [],
+      "title": "image_comparer",
       "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
+        "comparer_mode": "Slide"
+      },
+      "widgets_values": [
+        [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_lffin_00001_.png&type=temp&subfolder=&rand=0.3290923845048681"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_lffin_00002_.png&type=temp&subfolder=&rand=0.9913263894086919"
+          }
+        ]
+      ]
     },
     {
       "id": 271,
       "type": "LoadImage",
       "pos": {
-        "0": -340,
+        "0": 450,
         "1": 230
       },
-      "size": {
-        "0": 360,
-        "1": 450
-      },
+      "size": [
+        350,
+        450
+      ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -197,24 +167,138 @@
       "bgcolor": "#8cf0f0"
     },
     {
-      "id": 327,
+      "id": 270,
+      "type": "LoadImage",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": [
+        350,
+        450
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            672
+          ],
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "image_input_1",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-avatar-cg.jpg",
+        "image"
+      ],
+      "color": "#ffa014",
+      "bgcolor": "#ff8c00"
+    },
+    {
+      "id": 295,
       "type": "Reroute",
       "pos": {
-        "0": 450,
-        "1": 150
+        "0": 850,
+        "1": 110
       },
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 685
+          "link": 668
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            687
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 308,
+      "type": "Reroute",
+      "pos": {
+        "0": 1130,
+        "1": 110
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 687
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            683
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 327,
+      "type": "Reroute",
+      "pos": {
+        "0": 1250,
+        "1": 110
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 688
         }
       ],
       "outputs": [
@@ -233,10 +317,46 @@
       }
     },
     {
+      "id": 320,
+      "type": "Reroute",
+      "pos": {
+        "0": 1520,
+        "1": 110
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 686
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            671
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
       "id": 257,
       "type": "ReActorFaceSwap",
       "pos": {
-        "0": 50,
+        "0": 850,
         "1": 230
       },
       "size": {
@@ -244,7 +364,7 @@
         "1": 360
       },
       "flags": {},
-      "order": 7,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -255,17 +375,20 @@
         {
           "name": "source_image",
           "type": "IMAGE",
-          "link": 674
+          "link": 674,
+          "shape": 7
         },
         {
           "name": "face_model",
           "type": "FACE_MODEL",
-          "link": null
+          "link": null,
+          "shape": 7
         },
         {
           "name": "face_boost",
           "type": "FACE_BOOST",
-          "link": null
+          "link": null,
+          "shape": 7
         }
       ],
       "outputs": [
@@ -274,7 +397,7 @@
           "type": "IMAGE",
           "links": [
             681,
-            685
+            688
           ],
           "slot_index": 0,
           "shape": 3
@@ -307,82 +430,114 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 324,
-      "type": "Reroute",
+      "id": 328,
+      "type": "Bookmark (rgthree)",
       "pos": {
-        "0": -60,
-        "1": 150
+        "0": 50,
+        "1": 170
       },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 5,
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 2,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 673
-        }
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖1 input",
+      "properties": {},
+      "widgets_values": [
+        "1",
+        0.8
       ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            674
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
+      "shape": 1
     },
     {
-      "id": 308,
-      "type": "Reroute",
+      "id": 329,
+      "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 320,
-        "1": 150
+        "0": 850,
+        "1": 170
       },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 6,
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 3,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 687
-        }
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖2 reactor",
+      "properties": {},
+      "widgets_values": [
+        "2",
+        0.8
       ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            683
-          ],
-          "slot_index": 0
-        }
+      "shape": 1
+    },
+    {
+      "id": 330,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1250,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 output",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
       ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
+      "shape": 1
+    },
+    {
+      "id": 332,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1650,
+        "1": 690
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
     },
     {
       "id": 318,
       "type": "SaveImage",
       "pos": {
-        "0": 850,
+        "0": 1650,
         "1": 230
       },
       "size": {
@@ -390,7 +545,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 11,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -405,72 +560,50 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-RFS+RMH"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-RFS"
       ],
       "color": "#323",
       "bgcolor": "#535"
     },
     {
-      "id": 311,
-      "type": "Image Comparer (rgthree)",
+      "id": 331,
+      "type": "Bookmark (rgthree)",
       "pos": {
-        "0": 450,
-        "1": 230
+        "0": 0,
+        "1": -110
       },
       "size": {
-        "0": 350,
-        "1": 400
+        "0": 210,
+        "1": 62
       },
-      "flags": {},
-      "order": 8,
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "image_a",
-          "type": "IMAGE",
-          "link": 681,
-          "dir": 3
-        },
-        {
-          "name": "image_b",
-          "type": "IMAGE",
-          "link": 683,
-          "dir": 3
-        }
-      ],
+      "inputs": [],
       "outputs": [],
-      "title": "image_comparer",
-      "properties": {
-        "comparer_mode": "Slide"
-      },
+      "title": "🔖workflow",
+      "properties": {},
       "widgets_values": [
-        [
-          {
-            "name": "A",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_kpkya_00009_.png&type=temp&subfolder=&rand=0.39996184530595724"
-          },
-          {
-            "name": "B",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_kpkya_00010_.png&type=temp&subfolder=&rand=0.7403117858162327"
-          }
-        ]
-      ]
+        "0",
+        0.5
+      ],
+      "shape": 1
     },
     {
       "id": 296,
       "type": "Note",
       "pos": {
-        "0": 850,
-        "1": 700
+        "0": 1650,
+        "1": 690
       },
       "size": {
         "0": 350,
         "1": 100
       },
       "flags": {},
-      "order": 2,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -550,14 +683,6 @@
       "IMAGE"
     ],
     [
-      685,
-      257,
-      0,
-      327,
-      0,
-      "*"
-    ],
-    [
       686,
       327,
       0,
@@ -572,16 +697,37 @@
       308,
       0,
       "*"
+    ],
+    [
+      688,
+      257,
+      0,
+      327,
+      0,
+      "*"
     ]
   ],
-  "groups": [],
+  "groups": [
+    {
+      "title": " Facewap Reactor",
+      "bounding": [
+        50,
+        -80,
+        510,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
+      "flags": {}
+    }
+  ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5644739300537776,
+      "scale": 0.5,
       "offset": [
-        976.7835521622449,
-        79.0043572543402
+        16,
+        150
       ]
     },
     "0246.VERSION": [
