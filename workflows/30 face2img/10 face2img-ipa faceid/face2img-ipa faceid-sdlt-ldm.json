@@ -1,6 +1,6 @@
 {
-  "last_node_id": 93,
-  "last_link_id": 214,
+  "last_node_id": 94,
+  "last_link_id": 226,
   "nodes": [
     {
       "id": 5,
@@ -38,64 +38,6 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
-    },
-    {
-      "id": 65,
-      "type": "LoraLoader",
-      "pos": {
-        "0": 50,
-        "1": 390
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
-      "flags": {},
-      "order": 21,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 156
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 155
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            152
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            153
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "lora_model_1",
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "lora\\00 tosort\\2000Comicsv20.safetensors",
-        1,
-        1
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 69,
@@ -146,7 +88,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 33,
+      "order": 32,
       "mode": 4,
       "inputs": [
         {
@@ -188,7 +130,7 @@
         "1": 186
       },
       "flags": {},
-      "order": 36,
+      "order": 35,
       "mode": 4,
       "inputs": [
         {
@@ -261,7 +203,7 @@
         "1": 370
       },
       "flags": {},
-      "order": 37,
+      "order": 36,
       "mode": 4,
       "inputs": [
         {
@@ -290,7 +232,7 @@
         "1": 186
       },
       "flags": {},
-      "order": 41,
+      "order": 40,
       "mode": 4,
       "inputs": [
         {
@@ -363,7 +305,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 39,
+      "order": 38,
       "mode": 4,
       "inputs": [
         {
@@ -405,7 +347,7 @@
         "1": 340
       },
       "flags": {},
-      "order": 32,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -432,7 +374,7 @@
         "1": 322
       },
       "flags": {},
-      "order": 29,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -522,7 +464,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 40,
+      "order": 39,
       "mode": 4,
       "inputs": [
         {
@@ -549,64 +491,6 @@
       "widgets_values": [
         0.7
       ]
-    },
-    {
-      "id": 66,
-      "type": "LoraLoader",
-      "pos": {
-        "0": 50,
-        "1": 580
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
-      "flags": {},
-      "order": 26,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 152
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 153
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            191
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            190
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "lora_model_2",
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "lora\\00 tosort\\2000Comicsv20.safetensors",
-        1,
-        1
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 80,
@@ -830,54 +714,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 83,
-      "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 28,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 191,
-          "color_on": "#B39DDB",
-          "shape": 7
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 190,
-          "color_on": "#FFD500",
-          "shape": 7
-        },
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 189,
-          "color_on": "#FF6E6E",
-          "shape": 7
-        }
-      ],
-      "outputs": [],
-      "title": "mcv",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
       "id": 87,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -1018,7 +854,7 @@
         26
       ],
       "flags": {},
-      "order": 31,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -1054,7 +890,7 @@
         26
       ],
       "flags": {},
-      "order": 35,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -1118,7 +954,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 44,
+      "order": 43,
       "mode": 0,
       "inputs": [
         {
@@ -1163,7 +999,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 45,
+      "order": 44,
       "mode": 0,
       "inputs": [
         {
@@ -1189,12 +1025,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_kygux_00011_.png&type=temp&subfolder=&rand=0.5495629594901985"
+            "url": "/api/view?filename=rgthree.compare._temp_gynif_00005_.png&type=temp&subfolder=&rand=0.23498558476153053"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_kygux_00012_.png&type=temp&subfolder=&rand=0.7409857652141365"
+            "url": "/api/view?filename=rgthree.compare._temp_gynif_00006_.png&type=temp&subfolder=&rand=0.9811855725330298"
           }
         ]
       ]
@@ -1211,7 +1047,7 @@
         26
       ],
       "flags": {},
-      "order": 46,
+      "order": 45,
       "mode": 0,
       "inputs": [
         {
@@ -1417,7 +1253,7 @@
         26
       ],
       "flags": {},
-      "order": 30,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -1527,7 +1363,7 @@
         26
       ],
       "flags": {},
-      "order": 34,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -1564,7 +1400,7 @@
         26
       ],
       "flags": {},
-      "order": 38,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -1697,57 +1533,6 @@
       "bgcolor": "#533"
     },
     {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            156
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            155
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            189
-          ],
-          "slot_index": 2
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "01 base\\sdlt-bd-8s.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 9,
       "type": "SaveImage",
       "pos": {
@@ -1759,7 +1544,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 47,
+      "order": 46,
       "mode": 0,
       "inputs": [
         {
@@ -1793,7 +1578,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1804,6 +1589,199 @@
         2
       ],
       "shape": 1
+    },
+    {
+      "id": 72,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 1650,
+        "1": 720
+      },
+      "size": {
+        "0": 350,
+        "1": 370
+      },
+      "flags": {},
+      "order": 41,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 167,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [],
+      "title": "image_preview_2",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 94,
+      "type": "Power Lora Loader (rgthree)",
+      "pos": {
+        "0": 50,
+        "1": 390
+      },
+      "size": {
+        "0": 350,
+        "1": 120
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 215,
+          "dir": 3
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 216,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            220
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "dir": 4
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            221
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "dir": 4
+        }
+      ],
+      "title": "lora_model",
+      "properties": {
+        "Show Strengths": "Single Strength"
+      },
+      "widgets_values": [
+        null,
+        {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        null,
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 83,
+      "type": "Anything Everywhere3",
+      "pos": {
+        "0": 450,
+        "1": 130
+      },
+      "size": {
+        "0": 252,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 220,
+          "color_on": "#B39DDB",
+          "shape": 7
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 221,
+          "color_on": "#FFD500",
+          "shape": 7
+        },
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 189,
+          "color_on": "#FF6E6E",
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "title": "mcv",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            215
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            216
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            189
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sdlt-bd-8s.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 3,
@@ -1817,7 +1795,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 43,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -1864,35 +1842,6 @@
         "sgm_uniform",
         1
       ]
-    },
-    {
-      "id": 72,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 1650,
-        "1": 720
-      },
-      "size": {
-        "0": 350,
-        "1": 370
-      },
-      "flags": {},
-      "order": 42,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 167,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [],
-      "title": "image_preview_2",
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
     },
     {
       "id": 34,
@@ -2008,38 +1957,6 @@
       59,
       0,
       "*"
-    ],
-    [
-      152,
-      65,
-      0,
-      66,
-      0,
-      "MODEL"
-    ],
-    [
-      153,
-      65,
-      1,
-      66,
-      1,
-      "CLIP"
-    ],
-    [
-      155,
-      4,
-      1,
-      65,
-      1,
-      "CLIP"
-    ],
-    [
-      156,
-      4,
-      0,
-      65,
-      0,
-      "MODEL"
     ],
     [
       160,
@@ -2266,22 +2183,6 @@
       "VAE"
     ],
     [
-      190,
-      66,
-      1,
-      83,
-      1,
-      "CLIP"
-    ],
-    [
-      191,
-      66,
-      0,
-      83,
-      0,
-      "MODEL"
-    ],
-    [
       195,
       23,
       0,
@@ -2408,21 +2309,81 @@
       3,
       3,
       "LATENT"
+    ],
+    [
+      215,
+      4,
+      0,
+      94,
+      0,
+      "MODEL"
+    ],
+    [
+      216,
+      4,
+      1,
+      94,
+      1,
+      "CLIP"
+    ],
+    [
+      220,
+      94,
+      0,
+      83,
+      0,
+      "MODEL"
+    ],
+    [
+      221,
+      94,
+      1,
+      83,
+      1,
+      "CLIP"
+    ],
+    [
+      222,
+      94,
+      0,
+      20,
+      0,
+      "MODEL"
+    ],
+    [
+      223,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      224,
+      94,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      225,
+      94,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      226,
+      23,
+      0,
+      3,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
-    {
-      "title": " Face2Img IPAdapter+ FaceID v2",
-      "bounding": [
-        -350,
-        -80,
-        910,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
     {
       "title": " SDLT LDM",
       "bounding": [
@@ -2433,6 +2394,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Face2Img IPAdapter+ FaceID v2",
+      "bounding": [
+        -350,
+        -80,
+        910,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],
