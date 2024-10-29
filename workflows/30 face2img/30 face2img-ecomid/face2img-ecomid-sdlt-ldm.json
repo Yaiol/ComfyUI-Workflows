@@ -1,6 +1,6 @@
 {
   "last_node_id": 48,
-  "last_link_id": 73,
+  "last_link_id": 78,
   "nodes": [
     {
       "id": 6,
@@ -760,60 +760,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            40
-          ],
-          "slot_index": 0,
-          "label": "MODEL"
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            41
-          ],
-          "slot_index": 1,
-          "label": "CLIP"
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            21
-          ],
-          "slot_index": 2,
-          "label": "VAE"
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "sdxl-epinikion-realism-v80-p.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 35,
       "type": "Power Lora Loader (rgthree)",
       "pos": {
@@ -825,7 +771,7 @@
         "1": 118
       },
       "flags": {},
-      "order": 27,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -927,38 +873,6 @@
       "widgets_values": []
     },
     {
-      "id": 31,
-      "type": "SaveImage",
-      "pos": {
-        "0": 3260,
-        "1": 280
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 41,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 34
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_F2I-EID_SDXL_LDM_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 27,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -972,7 +886,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -998,7 +912,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1024,7 +938,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1048,7 +962,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1289,7 +1203,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1315,7 +1229,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1339,7 +1253,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 20,
+      "order": 19,
       "mode": 4,
       "inputs": [
         {
@@ -1381,7 +1295,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 4,
       "inputs": [
         {
@@ -1569,7 +1483,7 @@
         "1": 370
       },
       "flags": {},
-      "order": 29,
+      "order": 28,
       "mode": 4,
       "inputs": [
         {
@@ -1598,7 +1512,7 @@
         "1": 370
       },
       "flags": {},
-      "order": 28,
+      "order": 27,
       "mode": 4,
       "inputs": [
         {
@@ -1614,6 +1528,91 @@
         "Node name for S&R": "PreviewImage"
       },
       "widgets_values": []
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            40
+          ],
+          "slot_index": 0,
+          "label": "MODEL"
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            41
+          ],
+          "slot_index": 1,
+          "label": "CLIP"
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            21
+          ],
+          "slot_index": 2,
+          "label": "VAE"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sdlt-bd-8s.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 31,
+      "type": "SaveImage",
+      "pos": {
+        "0": 3260,
+        "1": 280
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 34
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_F2I-EID_SDLT_LDM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 12,
@@ -1674,10 +1673,10 @@
       "widgets_values": [
         25191512,
         "randomize",
-        25,
-        4,
-        "dpmpp_2m_sde",
-        "karras",
+        8,
+        1,
+        "euler",
+        "sgm_uniform",
         1
       ]
     },
@@ -1703,7 +1702,7 @@
         "text": ""
       },
       "widgets_values": [
-        "face2img-ecomid-sdxl-ldm\n===========================================================\nSDXL : SD XL\nLDM  : Latent Diffusion Model\nCSD  : Clip Standard\nID   : F2I-EID_SDXL_LDM"
+        "face2img-ecomid-sdlt-ldm\n===========================================================\nSDLT : SD Lightning\nLDM  : Latent Diffusion Model\nCSD  : Clip Standard\nID   : F2I-EID_SDLT_LDM"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -2112,19 +2111,19 @@
     ],
     [
       67,
-      15,
-      0,
-      12,
-      3,
-      "LATENT"
-    ],
-    [
-      68,
       35,
       0,
       8,
       6,
       "MODEL"
+    ],
+    [
+      68,
+      15,
+      0,
+      12,
+      3,
+      "LATENT"
     ],
     [
       69,
@@ -2165,6 +2164,46 @@
       12,
       3,
       "LATENT"
+    ],
+    [
+      74,
+      35,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      75,
+      35,
+      1,
+      5,
+      0,
+      "CLIP"
+    ],
+    [
+      76,
+      4,
+      2,
+      13,
+      1,
+      "VAE"
+    ],
+    [
+      77,
+      35,
+      0,
+      8,
+      6,
+      "MODEL"
+    ],
+    [
+      78,
+      15,
+      0,
+      12,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
@@ -2181,7 +2220,7 @@
       "flags": {}
     },
     {
-      "title": " SDXL LDM",
+      "title": " SDLT LDM",
       "bounding": [
         600,
         -40,
