@@ -547,7 +547,7 @@
           "label": "CONDITIONING"
         }
       ],
-      "title": "prompt_positve",
+      "title": "prompt_positive",
       "properties": {
         "Node name for S&R": "CLIPTextEncode"
       },
