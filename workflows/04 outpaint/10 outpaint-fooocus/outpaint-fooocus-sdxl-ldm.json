@@ -1,6 +1,6 @@
 {
   "last_node_id": 241,
-  "last_link_id": 928,
+  "last_link_id": 940,
   "nodes": [
     {
       "id": 61,
@@ -204,64 +204,6 @@
       "widgets_values": []
     },
     {
-      "id": 139,
-      "type": "ImagePadForOutpaintMasked",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 180
-      },
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 844
-        },
-        {
-          "name": "mask",
-          "type": "MASK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            908
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            769,
-            909
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImagePadForOutpaintMasked"
-      },
-      "widgets_values": [
-        0,
-        128,
-        0,
-        128,
-        40
-      ]
-    },
-    {
       "id": 173,
       "type": "INPAINT_MaskedFill",
       "pos": {
@@ -353,60 +295,6 @@
         20,
         0
       ]
-    },
-    {
-      "id": 15,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 1250,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            913
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            914
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            915
-          ],
-          "slot_index": 2,
-          "shape": 3
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "05 real\\sdxl-epinikion-realism-v80-p.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 175,
@@ -505,7 +393,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -547,7 +435,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -639,7 +527,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -672,18 +560,21 @@
           "name": "IMAGE",
           "type": "*",
           "link": 908,
-          "color_on": "#64B5F6"
+          "color_on": "#64B5F6",
+          "shape": 7
         },
         {
           "name": "MASK",
           "type": "*",
           "link": 909,
-          "color_on": "#81C784"
+          "color_on": "#81C784",
+          "shape": 7
         },
         {
-          "name": "anything3",
+          "name": "anything",
           "type": "*",
-          "link": null
+          "link": null,
+          "shape": 7
         }
       ],
       "outputs": [],
@@ -709,7 +600,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -735,7 +626,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -768,19 +659,22 @@
           "name": "MODEL",
           "type": "*",
           "link": 913,
-          "color_on": "#B39DDB"
+          "color_on": "#B39DDB",
+          "shape": 7
         },
         {
           "name": "CLIP",
           "type": "*",
           "link": 914,
-          "color_on": "#FFD500"
+          "color_on": "#FFD500",
+          "shape": 7
         },
         {
           "name": "VAE",
           "type": "*",
           "link": 915,
-          "color_on": "#FF6E6E"
+          "color_on": "#FF6E6E",
+          "shape": 7
         }
       ],
       "outputs": [],
@@ -878,7 +772,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -904,7 +798,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -975,7 +869,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1025,12 +919,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_cscmt_00007_.png&type=temp&subfolder=&rand=0.34018223967436856"
+            "url": "/api/view?filename=rgthree.compare._temp_yrnva_00001_.png&type=temp&subfolder=&rand=0.06769319449647049"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_cscmt_00008_.png&type=temp&subfolder=&rand=0.2054523706031337"
+            "url": "/api/view?filename=rgthree.compare._temp_yrnva_00002_.png&type=temp&subfolder=&rand=0.1725648864764766"
           }
         ]
       ]
@@ -1042,10 +936,10 @@
         "0": 2850,
         "1": 290
       },
-      "size": [
-        350,
-        150
-      ],
+      "size": {
+        "0": 350,
+        "1": 150
+      },
       "flags": {},
       "order": 29,
       "mode": 0,
@@ -1063,7 +957,8 @@
         {
           "name": "mask",
           "type": "MASK",
-          "link": null
+          "link": null,
+          "shape": 7
         }
       ],
       "outputs": [
@@ -1102,7 +997,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1128,7 +1023,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1139,6 +1034,176 @@
         2
       ],
       "shape": 1
+    },
+    {
+      "id": 226,
+      "type": "SaveImage",
+      "pos": {
+        "0": 3240,
+        "1": 500
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 907
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_OUP-F_SDXL_LDM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 15,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 1250,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            913
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            914
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            915
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sdxl-epinikion-realism-v80-p.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 139,
+      "type": "ImagePadForOutpaintMasked",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 180
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 844
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            908
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            769,
+            909
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImagePadForOutpaintMasked"
+      },
+      "widgets_values": [
+        256,
+        0,
+        256,
+        0,
+        40
+      ]
+    },
+    {
+      "id": 227,
+      "type": "Note",
+      "pos": {
+        "0": 3240,
+        "1": 970
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "outpaint-fooocus-sdxl-ldm\n==========================================================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : OUP-F_SDXL_LDM"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     },
     {
       "id": 16,
@@ -1194,70 +1259,13 @@
       },
       "widgets_values": [
         25191512,
-        "fixed",
+        "randomize",
         25,
         6,
         "dpmpp_2m_sde",
         "karras",
         1
       ]
-    },
-    {
-      "id": 226,
-      "type": "SaveImage",
-      "pos": {
-        "0": 3240,
-        "1": 500
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 31,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 907
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_OUP-F_SDXL_LDM_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 227,
-      "type": "Note",
-      "pos": {
-        "0": 3240,
-        "1": 970
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "outpaint-fooocus-sdxl-ldm\n==========================================================\nLDM  : Large Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : OUP-F_SDXL_LDM"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1559,6 +1567,102 @@
     ],
     [
       928,
+      139,
+      1,
+      230,
+      2,
+      "MASK"
+    ],
+    [
+      929,
+      139,
+      0,
+      173,
+      0,
+      "IMAGE"
+    ],
+    [
+      930,
+      139,
+      1,
+      173,
+      1,
+      "MASK"
+    ],
+    [
+      931,
+      139,
+      1,
+      186,
+      1,
+      "MASK"
+    ],
+    [
+      932,
+      15,
+      2,
+      175,
+      2,
+      "VAE"
+    ],
+    [
+      933,
+      139,
+      1,
+      175,
+      4,
+      "MASK"
+    ],
+    [
+      934,
+      15,
+      1,
+      18,
+      0,
+      "CLIP"
+    ],
+    [
+      935,
+      15,
+      1,
+      19,
+      0,
+      "CLIP"
+    ],
+    [
+      936,
+      15,
+      0,
+      169,
+      0,
+      "MODEL"
+    ],
+    [
+      937,
+      15,
+      2,
+      17,
+      1,
+      "VAE"
+    ],
+    [
+      938,
+      139,
+      0,
+      110,
+      1,
+      "IMAGE"
+    ],
+    [
+      939,
+      139,
+      0,
+      230,
+      0,
+      "IMAGE"
+    ],
+    [
+      940,
       139,
       1,
       230,
