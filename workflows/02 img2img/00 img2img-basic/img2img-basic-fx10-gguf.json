@@ -1,6 +1,6 @@
 {
   "last_node_id": 80,
-  "last_link_id": 203,
+  "last_link_id": 210,
   "nodes": [
     {
       "id": 54,
@@ -485,12 +485,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_gmajs_00011_.png&type=temp&subfolder=&rand=0.5108991499076858"
+            "url": "/api/view?filename=rgthree.compare._temp_gmajs_00015_.png&type=temp&subfolder=&rand=0.51283928270703"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_gmajs_00012_.png&type=temp&subfolder=&rand=0.807007132129947"
+            "url": "/api/view?filename=rgthree.compare._temp_gmajs_00016_.png&type=temp&subfolder=&rand=0.6861886075184949"
           }
         ]
       ]
@@ -915,66 +915,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 3,
-      "type": "KSampler",
-      "pos": {
-        "0": 1650,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 262
-      },
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": null
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 123
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 124
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 69
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            115
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "ksampler",
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        212267076644039,
-        "randomize",
-        20,
-        1,
-        "euler",
-        "simple",
-        0.55
-      ]
-    },
-    {
       "id": 76,
       "type": "VAELoader",
       "pos": {
@@ -1241,6 +1181,66 @@
         "color_restricted": 0
       },
       "widgets_values": []
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": {
+        "0": 1650,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 262
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 123
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 124
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 69
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            115
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        25191512,
+        "randomize",
+        20,
+        1,
+        "euler",
+        "simple",
+        0.55
+      ]
     },
     {
       "id": 33,
@@ -1799,6 +1799,62 @@
     ],
     [
       203,
+      79,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      204,
+      76,
+      0,
+      27,
+      1,
+      "VAE"
+    ],
+    [
+      205,
+      31,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      206,
+      31,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      207,
+      76,
+      0,
+      39,
+      1,
+      "VAE"
+    ],
+    [
+      208,
+      79,
+      1,
+      75,
+      0,
+      "CLIP"
+    ],
+    [
+      209,
+      79,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      210,
       79,
       0,
       3,
