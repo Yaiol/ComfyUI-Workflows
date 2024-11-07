@@ -1,115 +1,7 @@
 {
-  "last_node_id": 43,
-  "last_link_id": 47,
+  "last_node_id": 45,
+  "last_link_id": 65,
   "nodes": [
-    {
-      "id": 19,
-      "type": "UNETLoader",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": [
-        350,
-        90
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            22
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UNETLoader"
-      },
-      "widgets_values": [
-        "fx10-dm\\fx10-bfl-flux dev-dm.safetensors",
-        "fp8_e4m3fn"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 16,
-      "type": "DualCLIPLoader",
-      "pos": {
-        "0": 50,
-        "1": 380
-      },
-      "size": [
-        350,
-        110
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            23
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DualCLIPLoader"
-      },
-      "widgets_values": [
-        "t5xxl_fp8_e4m3fn.safetensors",
-        "clip_l.safetensors",
-        "flux"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 17,
-      "type": "VAELoader",
-      "pos": {
-        "0": 50,
-        "1": 550
-      },
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            24
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAELoader"
-      },
-      "widgets_values": [
-        "fx10-bfl-ae-v10.safetensors"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
     {
       "id": 21,
       "type": "LoadImage",
@@ -122,7 +14,7 @@
         "1": 450
       },
       "flags": {},
-      "order": 3,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -138,12 +30,12 @@
           "name": "MASK",
           "type": "MASK",
           "links": [
-            34
+            48
           ],
           "slot_index": 1
         }
       ],
-      "title": "image_input",
+      "title": "input",
       "properties": {
         "Node name for S&R": "LoadImage"
       },
@@ -168,7 +60,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 4,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -194,7 +86,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 5,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -220,7 +112,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -231,121 +123,6 @@
         0.8
       ],
       "shape": 1
-    },
-    {
-      "id": 12,
-      "type": "ImpactGaussianBlurMask",
-      "pos": {
-        "0": 850,
-        "1": 350
-      },
-      "size": [
-        350,
-        80
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "mask",
-          "type": "MASK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            32
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImpactGaussianBlurMask"
-      },
-      "widgets_values": [
-        10,
-        10
-      ]
-    },
-    {
-      "id": 9,
-      "type": "InpaintModelConditioning",
-      "pos": {
-        "0": 850,
-        "1": 490
-      },
-      "size": [
-        350,
-        110
-      ],
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 10,
-          "slot_index": 0
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 11,
-          "slot_index": 1
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null
-        },
-        {
-          "name": "pixels",
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "mask",
-          "type": "MASK",
-          "link": 32,
-          "slot_index": 4
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            9
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            8
-          ],
-          "slot_index": 2,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "InpaintModelConditioning"
-      },
-      "widgets_values": []
     },
     {
       "id": 33,
@@ -361,7 +138,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -374,53 +151,16 @@
       "shape": 1
     },
     {
-      "id": 6,
-      "type": "DifferentialDiffusion",
-      "pos": {
-        "0": 1250,
-        "1": 370
-      },
-      "size": [
-        350,
-        40
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            5
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DifferentialDiffusion"
-      },
-      "widgets_values": []
-    },
-    {
       "id": 5,
       "type": "BasicGuider",
       "pos": {
         "0": 1250,
         "1": 470
       },
-      "size": [
-        350,
-        50
-      ],
+      "size": {
+        "0": 350,
+        "1": 50
+      },
       "flags": {},
       "order": 24,
       "mode": 0,
@@ -460,12 +200,12 @@
         "0": 1250,
         "1": 580
       },
-      "size": [
-        350,
-        60
-      ],
+      "size": {
+        "0": 350,
+        "1": 60
+      },
       "flags": {},
-      "order": 10,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -500,7 +240,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -526,7 +266,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -550,7 +290,7 @@
         26
       ],
       "flags": {},
-      "order": 28,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -580,12 +320,12 @@
         "0": 1650,
         "1": 230
       },
-      "size": [
-        250,
-        110
-      ],
+      "size": {
+        "0": 250,
+        "1": 110
+      },
       "flags": {},
-      "order": 25,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -615,7 +355,7 @@
         {
           "name": "latent_image",
           "type": "LATENT",
-          "link": 8
+          "link": 55
         }
       ],
       "outputs": [
@@ -657,7 +397,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 26,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -686,6 +426,7 @@
       "properties": {
         "Node name for S&R": "VAEDecode"
       },
+      "widgets_values": [],
       "color": "#323",
       "bgcolor": "#535"
     },
@@ -701,7 +442,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 27,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -727,12 +468,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_spknv_00033_.png&type=temp&subfolder=&rand=0.08883214992362132"
+            "url": "/api/view?filename=rgthree.compare._temp_pgyja_00015_.png&type=temp&subfolder=&rand=0.3553278329423324"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_spknv_00034_.png&type=temp&subfolder=&rand=0.0268248646428908"
+            "url": "/api/view?filename=rgthree.compare._temp_pgyja_00016_.png&type=temp&subfolder=&rand=0.6880380749751502"
           }
         ]
       ]
@@ -751,7 +492,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -762,95 +503,6 @@
         2
       ],
       "shape": 1
-    },
-    {
-      "id": 22,
-      "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 22,
-          "color_on": "#B39DDB"
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 23,
-          "color_on": "#FFD500"
-        },
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 24,
-          "color_on": "#FF6E6E"
-        }
-      ],
-      "outputs": [],
-      "title": "mcv",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 30,
-      "type": "Anything Everywhere3",
-      "pos": {
-        "0": 50,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "IMAGE",
-          "type": "*",
-          "link": 33,
-          "color_on": "#64B5F6"
-        },
-        {
-          "name": "MASK",
-          "type": "*",
-          "link": 34,
-          "color_on": "#81C784"
-        },
-        {
-          "name": "anything3",
-          "type": "*",
-          "link": null
-        }
-      ],
-      "outputs": [],
-      "title": "im",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
     },
     {
       "id": 11,
@@ -866,7 +518,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -896,48 +548,6 @@
       "bgcolor": "#533"
     },
     {
-      "id": 15,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": [
-        350,
-        270
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            15
-          ],
-          "shape": 3
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "photo of a bear standing in the street"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 37,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -951,7 +561,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -964,52 +574,18 @@
       "shape": 1
     },
     {
-      "id": 4,
-      "type": "RandomNoise",
-      "pos": {
-        "0": 1250,
-        "1": 230
-      },
-      "size": [
-        350,
-        80
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "NOISE",
-          "type": "NOISE",
-          "links": [
-            3
-          ],
-          "shape": 3
-        }
-      ],
-      "title": "noise",
-      "properties": {
-        "Node name for S&R": "RandomNoise"
-      },
-      "widgets_values": [
-        25191512,
-        "fixed"
-      ]
-    },
-    {
       "id": 8,
       "type": "BasicScheduler",
       "pos": {
         "0": 1250,
         "1": 700
       },
-      "size": [
-        350,
-        110
-      ],
+      "size": {
+        "0": 350,
+        "1": 110
+      },
       "flags": {},
-      "order": 18,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1045,12 +621,12 @@
         "0": 850,
         "1": 230
       },
-      "size": [
-        350,
-        60
-      ],
+      "size": {
+        "0": 350,
+        "1": 60
+      },
       "flags": {},
-      "order": 22,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1090,7 +666,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 29,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -1100,15 +676,489 @@
         }
       ],
       "outputs": [],
-      "title": "image_output",
+      "title": "output",
       "properties": {
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_INP-MSK_FX10_DM_%noise.noise_seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_INP-BAS_FX10_DM_%noise.noise_seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 6,
+      "type": "DifferentialDiffusion",
+      "pos": {
+        "0": 1250,
+        "1": 370
+      },
+      "size": {
+        "0": 350,
+        "1": 40
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            5
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "differential_diffusion",
+      "properties": {
+        "Node name for S&R": "DifferentialDiffusion"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 15,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 270
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            15
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "photo of a bear standing in the street"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 12,
+      "type": "ImpactGaussianBlurMask",
+      "pos": {
+        "0": -350,
+        "1": 740
+      },
+      "size": {
+        "0": 350,
+        "1": 82
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 48
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            49
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactGaussianBlurMask"
+      },
+      "widgets_values": [
+        10,
+        10
+      ]
+    },
+    {
+      "id": 30,
+      "type": "Anything Everywhere3",
+      "pos": {
+        "0": 50,
+        "1": 130
+      },
+      "size": {
+        "0": 252,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "IMAGE",
+          "type": "*",
+          "link": 33,
+          "color_on": "#64B5F6",
+          "shape": 7
+        },
+        {
+          "name": "MASK",
+          "type": "*",
+          "link": 49,
+          "color_on": "#81C784",
+          "shape": 7
+        },
+        {
+          "name": "anything",
+          "type": "*",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "title": "im",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 17,
+      "type": "VAELoader",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            50
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "fx10-bfl-ae-v10.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 19,
+      "type": "UNETLoader",
+      "pos": {
+        "0": 50,
+        "1": 350
+      },
+      "size": {
+        "0": 350,
+        "1": 90
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            51
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "diffusion_model",
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "fx10-bfl-flux dev-dm.safetensors",
+        "fp8_e4m3fn"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 16,
+      "type": "DualCLIPLoader",
+      "pos": {
+        "0": 50,
+        "1": 500
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            52
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "dualclip_model",
+      "properties": {
+        "Node name for S&R": "DualCLIPLoader"
+      },
+      "widgets_values": [
+        "clip_l.safetensors",
+        "t5xxl_fp8_e4m3fn.safetensors",
+        "flux"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 22,
+      "type": "Anything Everywhere3",
+      "pos": {
+        "0": 450,
+        "1": 130
+      },
+      "size": {
+        "0": 252,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 50,
+          "color_on": "#FF6E6E",
+          "shape": 7
+        },
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 51,
+          "color_on": "#B39DDB",
+          "shape": 7
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 52,
+          "color_on": "#FFD500",
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "title": "vmc",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 9,
+      "type": "InpaintModelConditioning",
+      "pos": {
+        "0": 850,
+        "1": 350
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 10,
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 11,
+          "slot_index": 1
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": null,
+          "slot_index": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            9
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            56
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "title": "inpaint_conditioning",
+      "properties": {
+        "Node name for S&R": "InpaintModelConditioning"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 44,
+      "type": "Reroute",
+      "pos": {
+        "0": 1250,
+        "1": 100
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 56
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "LATENT",
+          "links": [
+            54
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 45,
+      "type": "Reroute",
+      "pos": {
+        "0": 1520,
+        "1": 100
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 54
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "LATENT",
+          "links": [
+            55
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
     },
     {
       "id": 38,
@@ -1117,12 +1167,12 @@
         "0": 2350,
         "1": 750
       },
-      "size": [
-        350,
-        100
-      ],
+      "size": {
+        "0": 350,
+        "1": 100
+      },
       "flags": {},
-      "order": 19,
+      "order": 17,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1130,10 +1180,44 @@
         "text": ""
       },
       "widgets_values": [
-        "inpaint-mask-fx10-dm\n==========================================================\nFX10 : Flux.1\nDM   : Diffusion Model\nCSD  : Clip Standard\nID   : INP-MSK_FX10_DM"
+        "inpaint-basic-fx10-dm\n==========================================================\nFX10 : Flux.1\nDM   : Diffusion Model\nCSD  : Clip Standard\nID   : INP-BAS_FX10_DM"
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 4,
+      "type": "RandomNoise",
+      "pos": {
+        "0": 1250,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 82
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "NOISE",
+          "type": "NOISE",
+          "links": [
+            3
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "noise",
+      "properties": {
+        "Node name for S&R": "RandomNoise"
+      },
+      "widgets_values": [
+        25191512,
+        "randomize"
+      ]
     }
   ],
   "links": [
@@ -1178,14 +1262,6 @@
       "SIGMAS"
     ],
     [
-      8,
-      9,
-      2,
-      1,
-      4,
-      "LATENT"
-    ],
-    [
       9,
       9,
       0,
@@ -1218,52 +1294,12 @@
       "CONDITIONING"
     ],
     [
-      22,
-      19,
-      0,
-      22,
-      0,
-      "MODEL"
-    ],
-    [
-      23,
-      16,
-      0,
-      22,
-      1,
-      "CLIP"
-    ],
-    [
-      24,
-      17,
-      0,
-      22,
-      2,
-      "VAE"
-    ],
-    [
-      32,
-      12,
-      0,
-      9,
-      4,
-      "MASK"
-    ],
-    [
       33,
       21,
       0,
       30,
       0,
       "IMAGE"
-    ],
-    [
-      34,
-      21,
-      1,
-      30,
-      1,
-      "MASK"
     ],
     [
       35,
@@ -1368,21 +1404,145 @@
       8,
       0,
       "MODEL"
+    ],
+    [
+      48,
+      21,
+      1,
+      12,
+      0,
+      "MASK"
+    ],
+    [
+      49,
+      12,
+      0,
+      30,
+      1,
+      "MASK"
+    ],
+    [
+      50,
+      17,
+      0,
+      22,
+      0,
+      "VAE"
+    ],
+    [
+      51,
+      19,
+      0,
+      22,
+      1,
+      "MODEL"
+    ],
+    [
+      52,
+      16,
+      0,
+      22,
+      2,
+      "CLIP"
+    ],
+    [
+      54,
+      44,
+      0,
+      45,
+      0,
+      "*"
+    ],
+    [
+      55,
+      45,
+      0,
+      1,
+      4,
+      "LATENT"
+    ],
+    [
+      56,
+      9,
+      2,
+      44,
+      0,
+      "*"
+    ],
+    [
+      57,
+      17,
+      0,
+      39,
+      1,
+      "VAE"
+    ],
+    [
+      58,
+      21,
+      0,
+      41,
+      1,
+      "IMAGE"
+    ],
+    [
+      59,
+      16,
+      0,
+      11,
+      0,
+      "CLIP"
+    ],
+    [
+      60,
+      19,
+      0,
+      8,
+      0,
+      "MODEL"
+    ],
+    [
+      61,
+      19,
+      0,
+      6,
+      0,
+      "MODEL"
+    ],
+    [
+      62,
+      16,
+      0,
+      15,
+      0,
+      "CLIP"
+    ],
+    [
+      63,
+      17,
+      0,
+      9,
+      2,
+      "VAE"
+    ],
+    [
+      64,
+      21,
+      0,
+      9,
+      3,
+      "IMAGE"
+    ],
+    [
+      65,
+      12,
+      0,
+      9,
+      4,
+      "MASK"
     ]
   ],
   "groups": [
-    {
-      "title": " FX10 DM",
-      "bounding": [
-        -110,
-        -40,
-        150,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Inpaint",
       "bounding": [
@@ -1394,15 +1554,27 @@
       "color": "#ffffff",
       "font_size": 60,
       "flags": {}
+    },
+    {
+      "title": " FX10 DM",
+      "bounding": [
+        -110,
+        -40,
+        150,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.45,
+      "scale": 0.9646149645000006,
       "offset": [
-        416,
-        150
+        -610.2133262188265,
+        -158.7909839076524
       ]
     }
   },
