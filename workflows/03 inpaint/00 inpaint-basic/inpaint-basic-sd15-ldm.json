@@ -286,7 +286,7 @@
           "shape": 3
         }
       ],
-      "title": "image_input",
+      "title": "input",
       "properties": {
         "Node name for S&R": "LoadImage"
       },
@@ -460,6 +460,7 @@
         }
       ],
       "outputs": [],
+      "title": "compare",
       "properties": {
         "comparer_mode": "Slide"
       },
@@ -468,12 +469,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_dkcvc_00007_.png&type=temp&subfolder=&rand=0.5062931073158066"
+            "url": "/api/view?filename=rgthree.compare._temp_dkcvc_00009_.png&type=temp&subfolder=&rand=0.7749517390129086"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_dkcvc_00008_.png&type=temp&subfolder=&rand=0.4910154540557141"
+            "url": "/api/view?filename=rgthree.compare._temp_dkcvc_00010_.png&type=temp&subfolder=&rand=0.6621573721374328"
           }
         ]
       ]
@@ -661,7 +662,7 @@
         }
       ],
       "outputs": [],
-      "title": "image_output",
+      "title": "output",
       "properties": {
         "Node name for S&R": "SaveImage"
       },
@@ -722,7 +723,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        25191512,
+        910142694525380,
         "randomize",
         7,
         4,
@@ -921,18 +922,6 @@
   ],
   "groups": [
     {
-      "title": " Inpaint",
-      "bounding": [
-        50,
-        -80,
-        230,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
-    {
       "title": " SD15 LDM",
       "bounding": [
         300,
@@ -942,6 +931,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Inpaint",
+      "bounding": [
+        50,
+        -80,
+        230,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],
