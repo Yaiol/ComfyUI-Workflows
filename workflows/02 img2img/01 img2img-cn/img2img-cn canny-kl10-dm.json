@@ -1,0 +1,1507 @@
+{
+  "last_node_id": 100,
+  "last_link_id": 227,
+  "nodes": [
+    {
+      "id": 82,
+      "type": "MZ_ChatGLM3Loader",
+      "pos": {
+        "0": 450,
+        "1": 460
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "chatglm3_model",
+          "type": "CHATGLM3MODEL",
+          "links": [
+            204
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "chatglm3_model"
+        }
+      ],
+      "title": "chatglm3_model",
+      "properties": {
+        "Node name for S&R": "MZ_ChatGLM3Loader"
+      },
+      "widgets_values": [
+        "GLM3\\chatglm3-4bit.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 85,
+      "type": "MZ_KolorsUNETLoaderV2",
+      "pos": {
+        "0": 450,
+        "1": 340
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            203
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "title": "unet_model",
+      "properties": {
+        "Node name for S&R": "MZ_KolorsUNETLoaderV2"
+      },
+      "widgets_values": [
+        "kl10-kolors-fp16.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 86,
+      "type": "MZ_ChatGLM3_V2",
+      "pos": {
+        "0": 850,
+        "1": 220
+      },
+      "size": {
+        "0": 350,
+        "1": 190
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "chatglm3_model",
+          "type": "CHATGLM3MODEL",
+          "link": null,
+          "label": "chatglm3_model"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            195
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CONDITIONING"
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "MZ_ChatGLM3_V2"
+      },
+      "widgets_values": [
+        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 89,
+      "type": "MZ_KolorsControlNetPatch",
+      "pos": {
+        "0": 1250,
+        "1": 340
+      },
+      "size": {
+        "0": 350,
+        "1": 50
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 194,
+          "label": "control_net"
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null,
+          "slot_index": 1,
+          "label": "model"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            197
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CONTROL_NET"
+        }
+      ],
+      "title": "controlnet_patch",
+      "properties": {
+        "Node name for S&R": "MZ_KolorsControlNetPatch"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 90,
+      "type": "MZ_KolorsControlNetLoader",
+      "pos": {
+        "0": 1250,
+        "1": 220
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "ControlNet",
+          "type": "CONTROL_NET",
+          "links": [
+            194
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "controlnet_model",
+      "properties": {
+        "Node name for S&R": "MZ_KolorsControlNetLoader"
+      },
+      "widgets_values": [
+        "kl10-kolors-canny.safetensors"
+      ]
+    },
+    {
+      "id": 91,
+      "type": "CannyEdgePreprocessor",
+      "pos": {
+        "0": 1250,
+        "1": 450
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            193,
+            198
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "canny",
+      "properties": {
+        "Node name for S&R": "CannyEdgePreprocessor"
+      },
+      "widgets_values": [
+        100,
+        200,
+        512
+      ]
+    },
+    {
+      "id": 62,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 450,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖2 checkpoint",
+      "properties": {},
+      "widgets_values": [
+        "2",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 63,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 850,
+        "1": 160
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖3 prompt",
+      "properties": {},
+      "widgets_values": [
+        "3",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 65,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1250,
+        "1": 160
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖4 controlnet",
+      "properties": {},
+      "widgets_values": [
+        "4",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 66,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 1650,
+        "1": 160
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖5 sampler",
+      "properties": {},
+      "widgets_values": [
+        "5",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 68,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 2050,
+        "1": 160
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 output",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 97,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 2050,
+        "1": 220
+      },
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 206
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            208
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2050,
+        "1": 280
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 208
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BAS_SDXL_DM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 74,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 2050,
+        "1": 740
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
+      "id": 67,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 0,
+        "1": -110
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.45
+      ],
+      "shape": 1
+    },
+    {
+      "id": 88,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 1250,
+        "1": 870
+      },
+      "size": {
+        "0": 350,
+        "1": 380
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 193,
+          "label": "图像"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 94,
+      "type": "Anything Everywhere3",
+      "pos": {
+        "0": 850,
+        "1": 120
+      },
+      "size": {
+        "0": 252,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 202,
+          "shape": 7,
+          "color_on": "#FF6E6E"
+        },
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 203,
+          "shape": 7,
+          "color_on": "#B39DDB"
+        },
+        {
+          "name": "CHATGLM3MODEL",
+          "type": "*",
+          "link": 204,
+          "shape": 7,
+          "color_on": ""
+        }
+      ],
+      "outputs": [],
+      "title": "vmc",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 92,
+      "type": "ControlNetApplyAdvanced",
+      "pos": {
+        "0": 1250,
+        "1": 620
+      },
+      "size": {
+        "0": 350,
+        "1": 190
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 195
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 196
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 197
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 198
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            199
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            200
+          ],
+          "slot_index": 1
+        }
+      ],
+      "title": "controlnet",
+      "properties": {
+        "Node name for S&R": "ControlNetApplyAdvanced"
+      },
+      "widgets_values": [
+        0.9,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 95,
+      "type": "Anything Everywhere",
+      "pos": {
+        "0": 450,
+        "1": 130
+      },
+      "size": {
+        "0": 239.40000915527344,
+        "1": 26
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "IMAGE",
+          "type": "*",
+          "link": 210,
+          "shape": 7,
+          "color_on": "#64B5F6"
+        }
+      ],
+      "outputs": [],
+      "title": "i",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 99,
+      "type": "LoadImage",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 450
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            210
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "input",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-woman-pirate.jpg",
+        "image"
+      ],
+      "color": "#ffaa14",
+      "bgcolor": "#ff9600"
+    },
+    {
+      "id": 61,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 50,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖1 input",
+      "properties": {},
+      "widgets_values": [
+        "1",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 84,
+      "type": "VAELoader",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            202
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxl-sai-vae-v10.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 87,
+      "type": "MZ_ChatGLM3_V2",
+      "pos": {
+        "0": 850,
+        "1": 470
+      },
+      "size": {
+        "0": 350,
+        "1": 160
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "chatglm3_model",
+          "type": "CHATGLM3MODEL",
+          "link": null,
+          "label": "chatglm3_model"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            196
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CONDITIONING"
+        }
+      ],
+      "title": "negative_positive",
+      "properties": {
+        "Node name for S&R": "MZ_ChatGLM3_V2"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 83,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 850,
+        "1": 690
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            211
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "Latent"
+        }
+      ],
+      "title": "latent",
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 100,
+      "type": "Anything Everywhere",
+      "pos": {
+        "0": 1110,
+        "1": 860
+      },
+      "size": {
+        "0": 239.40000915527344,
+        "1": 26
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "LATENT",
+          "type": "*",
+          "link": 211,
+          "shape": 7,
+          "color_on": "#FF9CF9"
+        }
+      ],
+      "outputs": [],
+      "title": "latent",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": [],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 93,
+      "type": "KSampler",
+      "pos": {
+        "0": 1650,
+        "1": 220
+      },
+      "size": {
+        "0": 350,
+        "1": 270
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 199
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 200
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            206
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        25191512,
+        "randomize",
+        25,
+        4,
+        "dpmpp_2m_sde",
+        "karras",
+        0.9
+      ]
+    },
+    {
+      "id": 33,
+      "type": "Note",
+      "pos": {
+        "0": 2050,
+        "1": 740
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "img2img-cn canny-kl10-dm\n==========================================================\nKL10 : Kolors\nDM   : Diffusion Model\nCSD  : Clip Standard\nID   : I2I-CN CANNY_KL10_DM"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      155,
+      31,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      156,
+      72,
+      0,
+      39,
+      1,
+      "VAE"
+    ],
+    [
+      157,
+      72,
+      0,
+      27,
+      1,
+      "VAE"
+    ],
+    [
+      158,
+      31,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      159,
+      71,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      160,
+      71,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      161,
+      69,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      162,
+      72,
+      0,
+      27,
+      1,
+      "VAE"
+    ],
+    [
+      163,
+      31,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      164,
+      71,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      165,
+      71,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      166,
+      31,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      167,
+      72,
+      0,
+      39,
+      1,
+      "VAE"
+    ],
+    [
+      168,
+      69,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      169,
+      72,
+      0,
+      27,
+      1,
+      "VAE"
+    ],
+    [
+      170,
+      31,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      171,
+      71,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      172,
+      71,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      173,
+      31,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      174,
+      72,
+      0,
+      39,
+      1,
+      "VAE"
+    ],
+    [
+      175,
+      69,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      179,
+      72,
+      0,
+      27,
+      1,
+      "VAE"
+    ],
+    [
+      180,
+      31,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      181,
+      31,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      182,
+      72,
+      0,
+      39,
+      1,
+      "VAE"
+    ],
+    [
+      183,
+      76,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      184,
+      77,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      185,
+      76,
+      0,
+      78,
+      0,
+      "CLIP"
+    ],
+    [
+      193,
+      91,
+      0,
+      88,
+      0,
+      "IMAGE"
+    ],
+    [
+      194,
+      90,
+      0,
+      89,
+      0,
+      "CONTROL_NET"
+    ],
+    [
+      195,
+      86,
+      0,
+      92,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      196,
+      87,
+      0,
+      92,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      197,
+      89,
+      0,
+      92,
+      2,
+      "CONTROL_NET"
+    ],
+    [
+      198,
+      91,
+      0,
+      92,
+      3,
+      "IMAGE"
+    ],
+    [
+      199,
+      92,
+      0,
+      93,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      200,
+      92,
+      1,
+      93,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      202,
+      84,
+      0,
+      94,
+      0,
+      "VAE"
+    ],
+    [
+      203,
+      85,
+      0,
+      94,
+      1,
+      "MODEL"
+    ],
+    [
+      204,
+      82,
+      0,
+      94,
+      2,
+      "CHATGLM3MODEL"
+    ],
+    [
+      206,
+      93,
+      0,
+      97,
+      0,
+      "LATENT"
+    ],
+    [
+      208,
+      97,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      210,
+      99,
+      0,
+      95,
+      0,
+      "IMAGE"
+    ],
+    [
+      211,
+      83,
+      0,
+      100,
+      0,
+      "LATENT"
+    ],
+    [
+      212,
+      82,
+      0,
+      86,
+      0,
+      "CHATGLM3MODEL"
+    ],
+    [
+      213,
+      85,
+      0,
+      89,
+      1,
+      "MODEL"
+    ],
+    [
+      214,
+      99,
+      0,
+      91,
+      0,
+      "IMAGE"
+    ],
+    [
+      215,
+      84,
+      0,
+      97,
+      1,
+      "VAE"
+    ],
+    [
+      216,
+      84,
+      0,
+      92,
+      4,
+      "VAE"
+    ],
+    [
+      217,
+      82,
+      0,
+      87,
+      0,
+      "CHATGLM3MODEL"
+    ],
+    [
+      218,
+      85,
+      0,
+      93,
+      0,
+      "MODEL"
+    ],
+    [
+      219,
+      83,
+      0,
+      93,
+      3,
+      "LATENT"
+    ],
+    [
+      220,
+      82,
+      0,
+      86,
+      0,
+      "CHATGLM3MODEL"
+    ],
+    [
+      221,
+      85,
+      0,
+      89,
+      1,
+      "MODEL"
+    ],
+    [
+      222,
+      99,
+      0,
+      91,
+      0,
+      "IMAGE"
+    ],
+    [
+      223,
+      84,
+      0,
+      97,
+      1,
+      "VAE"
+    ],
+    [
+      224,
+      84,
+      0,
+      92,
+      4,
+      "VAE"
+    ],
+    [
+      225,
+      82,
+      0,
+      87,
+      0,
+      "CHATGLM3MODEL"
+    ],
+    [
+      226,
+      85,
+      0,
+      93,
+      0,
+      "MODEL"
+    ],
+    [
+      227,
+      83,
+      0,
+      93,
+      3,
+      "LATENT"
+    ]
+  ],
+  "groups": [
+    {
+      "title": " Img2Img Canny",
+      "bounding": [
+        50,
+        -80,
+        460,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " KL10 DM",
+      "bounding": [
+        530,
+        -40,
+        150,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.45,
+      "offset": [
+        16,
+        150
+      ]
+    }
+  },
+  "version": 0.4
+}
