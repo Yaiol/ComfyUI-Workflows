@@ -564,7 +564,7 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL-TCD_%sampler.noise_seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_TCD_%sampler.noise_seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
@@ -757,7 +757,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-sdxl-tcd\n==========================================================\nSDXL : SD XL\nTCD  : Trajectory Consistency Distillation\nCSD  : Clip Standard\nID   : T2I-BAS_SDXL-TCD"
+        "txt2img-basic-sdxl-tcd\n==========================================================\nSDXL : SD XL\nTCD  : Trajectory Consistency Distillation\nCSD  : Clip Standard\nID   : T2I-BAS_SDXL_TCD"
       ],
       "color": "#432",
       "bgcolor": "#653"

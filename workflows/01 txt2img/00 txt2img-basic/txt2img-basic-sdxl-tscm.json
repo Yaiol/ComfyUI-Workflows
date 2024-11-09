@@ -1,6 +1,6 @@
 {
   "last_node_id": 58,
-  "last_link_id": 146,
+  "last_link_id": 150,
   "nodes": [
     {
       "id": 49,
@@ -520,38 +520,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1240,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 54
-        }
-      ],
-      "outputs": [],
-      "title": "output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL-TSCM_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 55,
       "type": "CheckpointLoaderSimple",
       "pos": {
@@ -601,6 +569,63 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
+    },
+    {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1240,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_TSCM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 35,
+      "type": "Note",
+      "pos": {
+        "0": 1240,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-sdxl-tscm\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCSD  : Clip Standard\nID   : T2I-BAS_SDXL_TSCM"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     },
     {
       "id": 33,
@@ -663,31 +688,6 @@
         "sgm_uniform",
         1
       ]
-    },
-    {
-      "id": 35,
-      "type": "Note",
-      "pos": {
-        "0": 1240,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-sdxl-tscm\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCSD  : Clip Standard\nID   : T2I-BAS_SDXL-TSCM"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1034,21 +1034,41 @@
       33,
       0,
       "MODEL"
+    ],
+    [
+      147,
+      55,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      148,
+      58,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      149,
+      58,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      150,
+      58,
+      0,
+      33,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
-    {
-      "title": " SDXL TSCM",
-      "bounding": [
-        310,
-        -40,
-        200,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Txt2Img",
       "bounding": [
@@ -1059,6 +1079,18 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " SDXL TSCM",
+      "bounding": [
+        310,
+        -40,
+        200,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
       "flags": {}
     }
   ],

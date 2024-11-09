@@ -645,7 +645,7 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDLT_X0%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDLT_X0_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"

@@ -1,6 +1,6 @@
 {
   "last_node_id": 64,
-  "last_link_id": 152,
+  "last_link_id": 157,
   "nodes": [
     {
       "id": 49,
@@ -495,54 +495,6 @@
       ]
     },
     {
-      "id": 58,
-      "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 145,
-          "color_on": "#B39DDB",
-          "shape": 7
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 118,
-          "color_on": "#FFD500",
-          "shape": 7
-        },
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 116,
-          "color_on": "#FF6E6E",
-          "shape": 7
-        }
-      ],
-      "outputs": [],
-      "title": "vmc",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
       "id": 20,
       "type": "CheckpointLoaderSimple",
       "pos": {
@@ -639,6 +591,54 @@
       "bgcolor": "#353"
     },
     {
+      "id": 58,
+      "type": "Anything Everywhere3",
+      "pos": {
+        "0": 450,
+        "1": 130
+      },
+      "size": {
+        "0": 252,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 145,
+          "color_on": "#B39DDB",
+          "shape": 7
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 118,
+          "color_on": "#FFD500",
+          "shape": 7
+        },
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 116,
+          "color_on": "#FF6E6E",
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "title": "vmc",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
       "id": 33,
       "type": "KSampler",
       "pos": {
@@ -691,7 +691,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        25191513,
+        25191512,
         "randomize",
         30,
         12,
@@ -977,6 +977,46 @@
     ],
     [
       152,
+      5,
+      0,
+      33,
+      3,
+      "LATENT"
+    ],
+    [
+      153,
+      20,
+      2,
+      57,
+      1,
+      "VAE"
+    ],
+    [
+      154,
+      50,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      155,
+      50,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      156,
+      64,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      157,
       5,
       0,
       33,

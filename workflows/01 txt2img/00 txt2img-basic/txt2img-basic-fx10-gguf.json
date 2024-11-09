@@ -1,6 +1,6 @@
 {
   "last_node_id": 68,
-  "last_link_id": 132,
+  "last_link_id": 135,
   "nodes": [
     {
       "id": 39,
@@ -79,38 +79,6 @@
         0.8
       ],
       "shape": 1
-    },
-    {
-      "id": 34,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1250,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 54
-        }
-      ],
-      "outputs": [],
-      "title": "output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_FX10_GGUF_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 52,
@@ -629,29 +597,36 @@
       "bgcolor": "#353"
     },
     {
-      "id": 45,
-      "type": "Note",
+      "id": 34,
+      "type": "SaveImage",
       "pos": {
         "0": 1250,
-        "1": 750
+        "1": 290
       },
       "size": {
         "0": 350,
-        "1": 100
+        "1": 400
       },
       "flags": {},
-      "order": 11,
+      "order": 18,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
       "outputs": [],
+      "title": "output",
       "properties": {
-        "text": ""
+        "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "txt2img-basic-fx10-gguf\n===========================================================\nFX10 : Flux.1\nGGUF : GPT-Generated Unified Format\nCDL  : Clip Dual\nID   : T2I-BAS_FX10_GGUF"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_FX10_GGUF_%ksampler.seed%"
       ],
-      "color": "#432",
-      "bgcolor": "#653"
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 5,
@@ -713,6 +688,31 @@
         "simple",
         1
       ]
+    },
+    {
+      "id": 45,
+      "type": "Note",
+      "pos": {
+        "0": 1250,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-fx10-gguf\n===========================================================\nFX10 : Flux.1\nGGUF : GPT-Generated Unified Format\nCDL  : Clip Dual\nID   : T2I-BAS_FX10_GGUF"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1099,21 +1099,33 @@
       5,
       0,
       "MODEL"
+    ],
+    [
+      133,
+      8,
+      0,
+      7,
+      1,
+      "VAE"
+    ],
+    [
+      134,
+      66,
+      1,
+      53,
+      0,
+      "CLIP"
+    ],
+    [
+      135,
+      66,
+      0,
+      5,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
-    {
-      "title": " FX10 GGUF",
-      "bounding": [
-        320,
-        -40,
-        190,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Txt2Img",
       "bounding": [
@@ -1124,6 +1136,18 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " FX10 GGUF",
+      "bounding": [
+        320,
+        -40,
+        190,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
       "flags": {}
     }
   ],
