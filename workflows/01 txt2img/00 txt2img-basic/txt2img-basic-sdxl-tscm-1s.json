@@ -1,6 +1,6 @@
 {
   "last_node_id": 60,
-  "last_link_id": 159,
+  "last_link_id": 163,
   "nodes": [
     {
       "id": 49,
@@ -655,35 +655,10 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL-TSCM-1S_%sampler.noise_seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_TSCM-1S_%sampler.noise_seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
-    },
-    {
-      "id": 35,
-      "type": "Note",
-      "pos": {
-        "0": 1240,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-sdxl-tscm-1s\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCSD  : Clip Standard\nID   : T2I-BAS_SDXL-TSCM-1S"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     },
     {
       "id": 59,
@@ -758,6 +733,31 @@
         "randomize",
         1
       ]
+    },
+    {
+      "id": 35,
+      "type": "Note",
+      "pos": {
+        "0": 1240,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-sdxl-tscm-1s\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCSD  : Clip Standard\nID   : T2I-BAS_SDXL_TSCM-1S"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1152,21 +1152,41 @@
       6,
       0,
       "CLIP"
+    ],
+    [
+      160,
+      60,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      161,
+      55,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      162,
+      60,
+      0,
+      58,
+      0,
+      "MODEL"
+    ],
+    [
+      163,
+      60,
+      1,
+      6,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
-    {
-      "title": " Txt2Img",
-      "bounding": [
-        50,
-        -80,
-        250,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
     {
       "title": " SDXL TSCM 1S",
       "bounding": [
@@ -1177,6 +1197,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Txt2Img",
+      "bounding": [
+        50,
+        -80,
+        250,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],

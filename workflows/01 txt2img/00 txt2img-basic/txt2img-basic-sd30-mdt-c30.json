@@ -1,6 +1,6 @@
 {
   "last_node_id": 297,
-  "last_link_id": 657,
+  "last_link_id": 662,
   "nodes": [
     {
       "id": 135,
@@ -598,38 +598,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 283,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1550,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 617
-        }
-      ],
-      "outputs": [],
-      "title": "output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SD30_MDT-C30_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 285,
       "type": "CLIPTextEncodeSD3",
       "pos": {
@@ -876,6 +844,63 @@
       "widgets_values": []
     },
     {
+      "id": 283,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1550,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 617
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SD30_MDT-C30_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 284,
+      "type": "Note",
+      "pos": {
+        "0": 1550,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-sd30-mdt-c30\n========================================================\nMDT  : Multimodal Diffusion Transformer\nSD30 : SD 3\nC30  : Clip SD 3\nID   : T2I-BAS_SD30_MDT-C30\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 273,
       "type": "KSampler",
       "pos": {
@@ -935,31 +960,6 @@
         "sgm_uniform",
         1
       ]
-    },
-    {
-      "id": 284,
-      "type": "Note",
-      "pos": {
-        "0": 1550,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-sd30-mdt-c30\n========================================================\nMDT  : Multimodal Diffusion Transformer\nSD30 : SD 3\nC30  : Clip SD 3\nID   : T2I-BAS_SD30_MDT-C30\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1181,6 +1181,46 @@
     ],
     [
       657,
+      135,
+      0,
+      273,
+      3,
+      "LATENT"
+    ],
+    [
+      658,
+      297,
+      0,
+      13,
+      0,
+      "MODEL"
+    ],
+    [
+      659,
+      252,
+      2,
+      231,
+      1,
+      "VAE"
+    ],
+    [
+      660,
+      297,
+      1,
+      71,
+      0,
+      "CLIP"
+    ],
+    [
+      661,
+      297,
+      1,
+      285,
+      0,
+      "CLIP"
+    ],
+    [
+      662,
       135,
       0,
       273,

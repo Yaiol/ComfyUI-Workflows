@@ -1,6 +1,6 @@
 {
   "last_node_id": 66,
-  "last_link_id": 168,
+  "last_link_id": 173,
   "nodes": [
     {
       "id": 51,
@@ -720,10 +720,35 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BASIC_LDM-CXL_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_LDM-CXL_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 35,
+      "type": "Note",
+      "pos": {
+        "0": 1560,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-sdxl-ldm-cxl\n==========================================================\nSDXL : SD XL\nLDM  : Latent Diffusion Model\nCXL  : Clip XL\nID   : T2I-BAS_SDXL_LDM-CXL"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     },
     {
       "id": 33,
@@ -786,31 +811,6 @@
         "karras",
         1
       ]
-    },
-    {
-      "id": 35,
-      "type": "Note",
-      "pos": {
-        "0": 1560,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-sdxl-ldm-cxl\n==========================================================\nSDXL : SD XL\nLDM  : Latent Diffusion Model\nCXL  : Clip XL\nID   : T2I-BASIC_LDM-CXL"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1253,21 +1253,49 @@
       33,
       3,
       "LATENT"
+    ],
+    [
+      169,
+      66,
+      1,
+      47,
+      0,
+      "CLIP"
+    ],
+    [
+      170,
+      20,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      171,
+      66,
+      1,
+      48,
+      0,
+      "CLIP"
+    ],
+    [
+      172,
+      66,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      173,
+      5,
+      0,
+      33,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
-    {
-      "title": " SDXL LDM-CXL",
-      "bounding": [
-        310,
-        -40,
-        240,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Txt2Img",
       "bounding": [
@@ -1278,6 +1306,18 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " SDXL LDM-CXL",
+      "bounding": [
+        310,
+        -40,
+        240,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
       "flags": {}
     }
   ],
