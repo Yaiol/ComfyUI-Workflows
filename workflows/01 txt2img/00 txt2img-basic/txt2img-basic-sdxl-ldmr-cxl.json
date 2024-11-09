@@ -1,57 +1,7 @@
 {
-  "last_node_id": 92,
-  "last_link_id": 175,
+  "last_node_id": 93,
+  "last_link_id": 186,
   "nodes": [
-    {
-      "id": 39,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 1260,
-        "1": 230
-      },
-      "size": {
-        "0": 340,
-        "1": 100
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            148
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            63,
-            64
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [],
-          "slot_index": 2
-        }
-      ],
-      "title": "refiner_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "01 base\\sdxl-sai-refiner-v10-vae0.9.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
     {
       "id": 40,
       "type": "CLIPTextEncodeSDXLRefiner",
@@ -64,7 +14,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 34,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -99,7 +49,7 @@
         6,
         1024,
         1024,
-        "portrait of a woman, John Kenn Mortensen Style"
+        "cinematic photograph of an astronaut riding a horse in space"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -116,7 +66,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 33,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -168,7 +118,7 @@
         26
       ],
       "flags": {},
-      "order": 39,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -204,7 +154,7 @@
         26
       ],
       "flags": {},
-      "order": 41,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -240,7 +190,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 18,
+      "order": 22,
       "mode": 4,
       "inputs": [
         {
@@ -282,7 +232,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -293,56 +243,6 @@
         0.4
       ],
       "shape": 1
-    },
-    {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 340
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            140,
-            152
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            141
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [],
-          "slot_index": 2
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "01 base\\sdxl-sai-base-v10-vae0.9.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 89,
@@ -356,7 +256,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 3,
+      "order": 1,
       "mode": 4,
       "inputs": [
         {
@@ -385,152 +285,6 @@
       ]
     },
     {
-      "id": 84,
-      "type": "LoraLoader",
-      "pos": {
-        "0": 50,
-        "1": 500
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 140
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 141
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            138
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            139
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "lora_model_1",
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "lora\\00 tosort\\2000Comicsv20.safetensors",
-        1,
-        1
-      ]
-    },
-    {
-      "id": 85,
-      "type": "LoraLoader",
-      "pos": {
-        "0": 50,
-        "1": 690
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
-      "flags": {},
-      "order": 26,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 138
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 139
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            153
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "lora_model_2",
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "lora\\00 tosort\\2000Comicsv20.safetensors",
-        1,
-        1
-      ]
-    },
-    {
-      "id": 37,
-      "type": "VAELoader",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            156
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "vae_model",
-      "properties": {
-        "Node name for S&R": "VAELoader"
-      },
-      "widgets_values": [
-        "sdxl-sai-vae-v10.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 8,
       "type": "VAEDecode",
       "pos": {
@@ -544,7 +298,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 43,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -577,51 +331,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 90,
-      "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 32,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 152,
-          "color_on": "#B39DDB"
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 153,
-          "color_on": "#FFD500"
-        },
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 156,
-          "color_on": "#FF6E6E"
-        }
-      ],
-      "outputs": [],
-      "title": "mcv",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
       "id": 56,
       "type": "Reroute",
       "pos": {
@@ -633,7 +342,7 @@
         26
       ],
       "flags": {},
-      "order": 23,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -672,7 +381,7 @@
         26
       ],
       "flags": {},
-      "order": 22,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -712,7 +421,7 @@
         26
       ],
       "flags": {},
-      "order": 21,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -792,7 +501,7 @@
         26
       ],
       "flags": {},
-      "order": 29,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -831,7 +540,7 @@
         26
       ],
       "flags": {},
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -870,7 +579,7 @@
         26
       ],
       "flags": {},
-      "order": 36,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -908,7 +617,7 @@
         26
       ],
       "flags": {},
-      "order": 35,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -944,7 +653,7 @@
         26
       ],
       "flags": {},
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -1024,7 +733,7 @@
         26
       ],
       "flags": {},
-      "order": 38,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -1060,7 +769,7 @@
         170
       ],
       "flags": {},
-      "order": 5,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1100,7 +809,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 6,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1137,7 +846,7 @@
         80
       ],
       "flags": {},
-      "order": 7,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1175,7 +884,7 @@
         80
       ],
       "flags": {},
-      "order": 8,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1215,7 +924,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1241,7 +950,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 40,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -1284,7 +993,7 @@
         "1": 380
       },
       "flags": {},
-      "order": 42,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -1363,8 +1072,8 @@
         0,
         4096,
         4096,
-        "portrait of a woman, John Kenn Mortensen Style",
-        "portrait of a woman, John Kenn Mortensen Style"
+        "cinematic photograph of an astronaut riding a horse in space",
+        "cinematic photograph of an astronaut riding a horse in space"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -1383,7 +1092,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1450,7 +1159,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1476,7 +1185,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1502,7 +1211,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1528,7 +1237,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1554,7 +1263,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1580,7 +1289,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1593,44 +1302,390 @@
       "shape": 1
     },
     {
-      "id": 31,
-      "type": "PrimitiveNode",
+      "id": 28,
+      "type": "SaveImage",
       "pos": {
-        "0": 450,
+        "0": 2450,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 41
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_LDMR-CXL_%ksampler_base.noise_seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 37,
+      "type": "VAELoader",
+      "pos": {
+        "0": 50,
         "1": 230
       },
-      "size": [
-        350,
-        170
-      ],
+      "size": {
+        "0": 350,
+        "1": 60
+      },
       "flags": {},
-      "order": 16,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "STRING",
-          "type": "STRING",
+          "name": "VAE",
+          "type": "VAE",
           "links": [
-            82,
-            87,
-            88
+            176
           ],
           "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxl-sai-vae-v10.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 93,
+      "type": "Power Lora Loader (rgthree)",
+      "pos": {
+        "0": 50,
+        "1": 500
+      },
+      "size": {
+        "0": 350,
+        "1": 120
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 177,
+          "dir": 3
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 178,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            179
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "dir": 4
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            180
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "dir": 4
+        }
+      ],
+      "title": "lora_stack",
+      "properties": {
+        "Show Strengths": "Separate Model & Clip"
+      },
+      "widgets_values": [
+        null,
+        {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        null,
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 90,
+      "type": "Anything Everywhere3",
+      "pos": {
+        "0": 450,
+        "1": 130
+      },
+      "size": {
+        "0": 252,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 176,
+          "color_on": "#FF6E6E",
+          "shape": 7
+        },
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 179,
+          "color_on": "#B39DDB",
+          "shape": 7
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 180,
+          "color_on": "#FFD500",
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "title": "vmc",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 39,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 1260,
+        "1": 230
+      },
+      "size": {
+        "0": 340,
+        "1": 100
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            148
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            63,
+            64
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "title": "refiner_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sdxl-sai-refiner-v10-vae0.9.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 50,
+        "1": 340
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            177
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            178
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sdxl-sai-base-v10-vae0.9.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 72,
+      "type": "Note",
+      "pos": {
+        "0": 2450,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-sdxl-ldmr-cxl\n===========================================================\nSDXL : SD XL\nLDMR : Latent Diffusion Model + Refiner\nCXL  : Clip XL\nID   : T2I-BAS_SDXL_LDMR-CXL"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 38,
+      "type": "KSamplerAdvanced",
+      "pos": {
+        "0": 1660,
+        "1": 350
+      },
+      "size": {
+        "0": 340,
+        "1": 330
+      },
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 149
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 67
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 68
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 101
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 93,
           "widget": {
-            "name": "value"
+            "name": "steps"
+          }
+        },
+        {
+          "name": "start_at_step",
+          "type": "INT",
+          "link": 97,
+          "slot_index": 5,
+          "widget": {
+            "name": "start_at_step"
           }
         }
       ],
-      "title": "prompt_positive",
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            121
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "ksampler_refiner",
       "properties": {
-        "Run widget replace on values": false
+        "Node name for S&R": "KSamplerAdvanced"
       },
       "widgets_values": [
-        "portrait of a woman, John Kenn Mortensen Style"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
+        "disable",
+        25191512,
+        "randomize",
+        25,
+        4,
+        "dpmpp_2m_sde",
+        "karras",
+        20,
+        10000,
+        "disable"
+      ]
     },
     {
       "id": 36,
@@ -1703,7 +1758,7 @@
       "widgets_values": [
         "enable",
         25191512,
-        "fixed",
+        "randomize",
         25,
         4,
         "dpmpp_2m_sde",
@@ -1714,142 +1769,44 @@
       ]
     },
     {
-      "id": 38,
-      "type": "KSamplerAdvanced",
+      "id": 31,
+      "type": "PrimitiveNode",
       "pos": {
-        "0": 1660,
-        "1": 350
+        "0": 450,
+        "1": 230
       },
-      "size": {
-        "0": 340,
-        "1": 330
-      },
-      "flags": {},
-      "order": 37,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 149
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 67
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 68
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 101
-        },
-        {
-          "name": "steps",
-          "type": "INT",
-          "link": 93,
-          "widget": {
-            "name": "steps"
-          }
-        },
-        {
-          "name": "start_at_step",
-          "type": "INT",
-          "link": 97,
-          "slot_index": 5,
-          "widget": {
-            "name": "start_at_step"
-          }
-        }
+      "size": [
+        350,
+        170
       ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            121
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "ksampler_refiner",
-      "properties": {
-        "Node name for S&R": "KSamplerAdvanced"
-      },
-      "widgets_values": [
-        "disable",
-        25191512,
-        "fixed",
-        25,
-        4,
-        "dpmpp_2m_sde",
-        "karras",
-        20,
-        10000,
-        "disable"
-      ]
-    },
-    {
-      "id": 28,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2450,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 44,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 41
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_LDMR-CXL_%ksampler_base.noise_seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 72,
-      "type": "Note",
-      "pos": {
-        "0": 2450,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
       "flags": {},
       "order": 17,
       "mode": 0,
       "inputs": [],
-      "outputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            82,
+            87,
+            88
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "title": "prompt_positive",
       "properties": {
-        "text": ""
+        "Run widget replace on values": false
       },
       "widgets_values": [
-        "txt2img-basic-sdxl-ldmr-cxl\n===========================================================\nSDXL : SD XL\nLDMR : Latent Diffusion Model + Refiner\nCXL  : Clip XL\nID   : T2I-BAS_SDXL_LDMR-CXL"
+        "cinematic photograph of an astronaut riding a horse in space"
       ],
-      "color": "#432",
-      "bgcolor": "#653"
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -2118,38 +2075,6 @@
       "*"
     ],
     [
-      138,
-      84,
-      0,
-      85,
-      0,
-      "MODEL"
-    ],
-    [
-      139,
-      84,
-      1,
-      85,
-      1,
-      "CLIP"
-    ],
-    [
-      140,
-      4,
-      0,
-      84,
-      0,
-      "MODEL"
-    ],
-    [
-      141,
-      4,
-      1,
-      84,
-      1,
-      "CLIP"
-    ],
-    [
       148,
       39,
       0,
@@ -2172,30 +2097,6 @@
       36,
       0,
       "MODEL"
-    ],
-    [
-      152,
-      4,
-      0,
-      90,
-      0,
-      "MODEL"
-    ],
-    [
-      153,
-      85,
-      1,
-      90,
-      1,
-      "CLIP"
-    ],
-    [
-      156,
-      37,
-      0,
-      90,
-      2,
-      "VAE"
     ],
     [
       159,
@@ -2332,21 +2233,89 @@
       36,
       0,
       "MODEL"
+    ],
+    [
+      176,
+      37,
+      0,
+      90,
+      0,
+      "VAE"
+    ],
+    [
+      177,
+      4,
+      0,
+      93,
+      0,
+      "MODEL"
+    ],
+    [
+      178,
+      4,
+      1,
+      93,
+      1,
+      "CLIP"
+    ],
+    [
+      179,
+      93,
+      0,
+      90,
+      1,
+      "MODEL"
+    ],
+    [
+      180,
+      93,
+      1,
+      90,
+      2,
+      "CLIP"
+    ],
+    [
+      182,
+      37,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      183,
+      37,
+      0,
+      91,
+      1,
+      "VAE"
+    ],
+    [
+      184,
+      93,
+      1,
+      30,
+      0,
+      "CLIP"
+    ],
+    [
+      185,
+      93,
+      1,
+      33,
+      0,
+      "CLIP"
+    ],
+    [
+      186,
+      93,
+      0,
+      36,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
-    {
-      "title": " LDMR SDXL",
-      "bounding": [
-        320,
-        -100,
-        200,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Txt2Img",
       "bounding": [
@@ -2358,15 +2327,27 @@
       "color": "#ffffff",
       "font_size": 60,
       "flags": {}
+    },
+    {
+      "title": " LDMR SDXL",
+      "bounding": [
+        320,
+        -100,
+        200,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8784600000000012,
+      "scale": 0.4,
       "offset": [
-        -1506.4507703483523,
-        -224.17817354870405
+        16,
+        210
       ]
     }
   },

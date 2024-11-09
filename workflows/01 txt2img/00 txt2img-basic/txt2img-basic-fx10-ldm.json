@@ -1,6 +1,6 @@
 {
   "last_node_id": 58,
-  "last_link_id": 148,
+  "last_link_id": 151,
   "nodes": [
     {
       "id": 51,
@@ -16,7 +16,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -114,32 +114,6 @@
       "shape": 1
     },
     {
-      "id": 41,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 10,
-        "1": -120
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖workflow",
-      "properties": {},
-      "widgets_values": [
-        "0",
-        0.5
-      ],
-      "shape": 1
-    },
-    {
       "id": 43,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -153,7 +127,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -179,7 +153,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -205,7 +179,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -239,7 +213,7 @@
         }
       ],
       "outputs": [],
-      "title": "image_output",
+      "title": "output",
       "properties": {
         "Node name for S&R": "SaveImage"
       },
@@ -263,7 +237,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -274,49 +248,6 @@
         0.8
       ],
       "shape": 1
-    },
-    {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 270
-      },
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            64,
-            138
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "A highly detailed analog photo of a malevolent tribal chief, focusing intensely on his face. Ominous tribal markings, dark and supernatural, cover his face, pulsing with an unsettling energy. His sinister eyes, sharp and haunting, convey a lost soul filled with darkness and power. The extreme close-up captures every detail, from the shifting textures of his skin to the intricate markings. Rendered in 8k resolution, the photo highlights the unsettling aura of the chief, blending human and ancient malevolence."
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 55,
@@ -330,7 +261,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 4,
       "inputs": [
         {
@@ -372,7 +303,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -426,7 +357,7 @@
         "1": 120
       },
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -493,7 +424,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -541,7 +472,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -562,7 +493,8 @@
       ],
       "properties": {
         "Node name for S&R": "ConditioningZeroOut"
-      }
+      },
+      "widgets_values": []
     },
     {
       "id": 5,
@@ -576,7 +508,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -602,6 +534,75 @@
       "bgcolor": "#535"
     },
     {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 270
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            64,
+            138
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "cinematic photograph of an astronaut riding a horse in space"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 41,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 10,
+        "1": -120
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.5
+      ],
+      "shape": 1
+    },
+    {
       "id": 33,
       "type": "KSampler",
       "pos": {
@@ -613,7 +614,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1004,6 +1005,30 @@
     ],
     [
       148,
+      58,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      149,
+      20,
+      2,
+      51,
+      1,
+      "VAE"
+    ],
+    [
+      150,
+      58,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      151,
       58,
       0,
       33,

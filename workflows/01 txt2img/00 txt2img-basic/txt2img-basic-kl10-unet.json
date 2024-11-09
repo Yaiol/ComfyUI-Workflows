@@ -1,6 +1,6 @@
 {
   "last_node_id": 105,
-  "last_link_id": 140,
+  "last_link_id": 142,
   "nodes": [
     {
       "id": 93,
@@ -55,6 +55,7 @@
           "label": "Latent"
         }
       ],
+      "title": "latent_image",
       "properties": {
         "Node name for S&R": "EmptyLatentImage"
       },
@@ -751,21 +752,25 @@
       102,
       0,
       "MODEL"
+    ],
+    [
+      141,
+      101,
+      0,
+      103,
+      1,
+      "VAE"
+    ],
+    [
+      142,
+      97,
+      0,
+      102,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
-    {
-      "title": " Txt2Img",
-      "bounding": [
-        50,
-        -80,
-        270,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
     {
       "title": " KL10 UNET",
       "bounding": [
@@ -776,6 +781,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Txt2Img",
+      "bounding": [
+        50,
+        -80,
+        270,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],

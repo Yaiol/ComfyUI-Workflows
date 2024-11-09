@@ -1,6 +1,6 @@
 {
   "last_node_id": 56,
-  "last_link_id": 134,
+  "last_link_id": 138,
   "nodes": [
     {
       "id": 49,
@@ -329,58 +329,16 @@
       "shape": 1
     },
     {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            64
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "portrait of a woman, John Kenn Mortensen style"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 55,
       "type": "ModelSamplingDiscrete",
       "pos": {
         "0": 50,
         "1": 390
       },
-      "size": [
-        340,
-        80
-      ],
+      "size": {
+        "0": 340,
+        "1": 82
+      },
       "flags": {},
       "order": 12,
       "mode": 0,
@@ -410,92 +368,6 @@
         "x0",
         false
       ]
-    },
-    {
-      "id": 20,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            129
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            92
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            100
-          ],
-          "slot_index": 2,
-          "shape": 3
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "sdlt-bd-1s x0.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1240,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 54
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDLT_X0%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 47,
@@ -621,7 +493,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -649,6 +521,134 @@
       ],
       "color": "#322",
       "bgcolor": "#533"
+    },
+    {
+      "id": 20,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            129
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            92
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            100
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sdlt-bd-1s x0.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            64
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "cinematic photograph of an astronaut riding a horse in space"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1240,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDLT_X0%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 35,
@@ -1066,21 +1066,41 @@
       33,
       0,
       "MODEL"
+    ],
+    [
+      135,
+      20,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      136,
+      20,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      137,
+      20,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      138,
+      55,
+      0,
+      33,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
-    {
-      "title": " SDLT X0",
-      "bounding": [
-        310,
-        -40,
-        148,
-        37
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Txt2Img",
       "bounding": [
@@ -1092,6 +1112,18 @@
       "color": "#ffffff",
       "font_size": 60,
       "flags": {}
+    },
+    {
+      "title": " SDLT X0",
+      "bounding": [
+        310,
+        -40,
+        148,
+        37
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
     }
   ],
   "config": {},
@@ -1100,7 +1132,7 @@
       "scale": 0.6,
       "offset": [
         16,
-        150
+        148.66658528645834
       ]
     }
   },

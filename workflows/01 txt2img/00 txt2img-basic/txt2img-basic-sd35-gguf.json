@@ -1,6 +1,6 @@
 {
   "last_node_id": 330,
-  "last_link_id": 667,
+  "last_link_id": 672,
   "nodes": [
     {
       "id": 70,
@@ -171,42 +171,6 @@
       "widgets_values": []
     },
     {
-      "id": 318,
-      "type": "Anything Everywhere",
-      "pos": {
-        "0": 700,
-        "1": 910
-      },
-      "size": {
-        "0": 239.40000915527344,
-        "1": 26
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "LATENT",
-          "type": "*",
-          "link": 627,
-          "shape": 7,
-          "color_on": "#FF9CF9"
-        }
-      ],
-      "outputs": [],
-      "title": "latent",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 316,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -314,41 +278,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 303,
-      "type": "VAELoader",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            662
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "vae_model",
-      "properties": {
-        "Node name for S&R": "VAELoader"
-      },
-      "widgets_values": [
-        "sd35-sai-vae.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 13,
       "type": "ModelSamplingSD3",
       "pos": {
@@ -362,7 +291,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -393,113 +322,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 324,
-      "type": "Power Lora Loader (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 760
-      },
-      "size": {
-        "0": 350,
-        "1": 120
-      },
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 654,
-          "dir": 3
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 655,
-          "dir": 3
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            656
-          ],
-          "shape": 3,
-          "dir": 4,
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            657
-          ],
-          "shape": 3,
-          "dir": 4,
-          "slot_index": 1
-        }
-      ],
-      "title": "lora_models",
-      "properties": {
-        "Show Strengths": "Separate Model & Clip"
-      },
-      "widgets_values": [
-        null,
-        {
-          "type": "PowerLoraLoaderHeaderWidget"
-        },
-        null,
-        ""
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 280
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            660
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "A highly detailed analog photo of a malevolent tribal chief, focusing intensely on his face. Ominous tribal markings, dark and supernatural, cover his face, pulsing with an unsettling energy. His sinister eyes, sharp and haunting, convey a lost soul filled with darkness and power. The extreme close-up captures every detail, from the shifting textures of his skin to the intricate markings. Rendered in 8k resolution, the photo highlights the unsettling aura of the chief, blending human and ancient malevolence."
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 326,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -513,7 +335,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -539,7 +361,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -565,7 +387,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -591,7 +413,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -617,7 +439,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -673,38 +495,6 @@
         "Node name for S&R": "VAEDecode"
       },
       "widgets_values": []
-    },
-    {
-      "id": 301,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1650,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 606
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SD35_GGUF_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 308,
@@ -766,7 +556,7 @@
         26
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -802,7 +592,7 @@
         26
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -840,7 +630,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -864,7 +654,7 @@
         "1": 110
       },
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -901,7 +691,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -920,6 +710,180 @@
       },
       "widgets_values": [
         "sd35-sai-large-Q8_0.gguf"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 280
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            660
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "cinematic photograph of an astronaut riding a horse in space"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 301,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1650,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 606
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SD35_GGUF_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 303,
+      "type": "VAELoader",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            662
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sd3x-sai-vae.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 324,
+      "type": "Power Lora Loader (rgthree)",
+      "pos": {
+        "0": 50,
+        "1": 760
+      },
+      "size": {
+        "0": 350,
+        "1": 120
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 654,
+          "dir": 3
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 655,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            656
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "dir": 4
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            657
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "dir": 4
+        }
+      ],
+      "title": "lora_stack",
+      "properties": {
+        "Show Strengths": "Separate Model & Clip"
+      },
+      "widgets_values": [
+        null,
+        {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        null,
+        ""
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -984,6 +948,42 @@
         "sgm_uniform",
         1
       ]
+    },
+    {
+      "id": 318,
+      "type": "Anything Everywhere",
+      "pos": {
+        "0": 710,
+        "1": 910
+      },
+      "size": {
+        "0": 239.40000915527344,
+        "1": 26
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "LATENT",
+          "type": "*",
+          "link": 627,
+          "shape": 7,
+          "color_on": "#FF9CF9"
+        }
+      ],
+      "outputs": [],
+      "title": "latent",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": [],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 315,
@@ -1315,21 +1315,49 @@
       294,
       3,
       "LATENT"
+    ],
+    [
+      668,
+      324,
+      1,
+      71,
+      0,
+      "CLIP"
+    ],
+    [
+      669,
+      303,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      670,
+      324,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      671,
+      324,
+      0,
+      294,
+      0,
+      "MODEL"
+    ],
+    [
+      672,
+      135,
+      0,
+      294,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
-    {
-      "title": " Txt2Img",
-      "bounding": [
-        50,
-        -80,
-        260,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
     {
       "title": " SD35 GGUF",
       "bounding": [
@@ -1340,6 +1368,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Txt2Img",
+      "bounding": [
+        50,
+        -80,
+        260,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],

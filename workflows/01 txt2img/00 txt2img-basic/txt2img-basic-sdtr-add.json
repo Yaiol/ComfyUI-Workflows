@@ -1,119 +1,7 @@
 {
-  "last_node_id": 57,
-  "last_link_id": 145,
+  "last_node_id": 58,
+  "last_link_id": 156,
   "nodes": [
-    {
-      "id": 47,
-      "type": "LoraLoader",
-      "pos": {
-        "0": 50,
-        "1": 390
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 91
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 92
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            89
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            90
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "lora_model_1",
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "lora\\00 tosort\\2000Comicsv20.safetensors",
-        2,
-        0.5
-      ]
-    },
-    {
-      "id": 48,
-      "type": "LoraLoader",
-      "pos": {
-        "0": 50,
-        "1": 580
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
-      "flags": {},
-      "order": 15,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 89
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 90
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            98
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            99
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "lora_model_2",
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "lora\\00 tosort\\2000Comicsv20.safetensors",
-        1,
-        1
-      ]
-    },
     {
       "id": 41,
       "type": "Bookmark (rgthree)",
@@ -139,51 +27,6 @@
         0.6
       ],
       "shape": 1
-    },
-    {
-      "id": 50,
-      "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 98,
-          "color_on": "#B39DDB"
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 99,
-          "color_on": "#FFD500"
-        },
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 100,
-          "color_on": "#FF6E6E"
-        }
-      ],
-      "outputs": [],
-      "title": "mcv",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
     },
     {
       "id": 42,
@@ -349,102 +192,6 @@
       ]
     },
     {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            131
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "portrait of a woman, John Kenn Mortensen Style"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 20,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            91
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            92
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            100
-          ],
-          "slot_index": 2,
-          "shape": 3
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "01 base\\sdtr-sai-turbo-fp16.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 49,
       "type": "PerturbedAttentionGuidance",
       "pos": {
@@ -456,7 +203,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 4,
       "inputs": [
         {
@@ -496,7 +243,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -540,7 +287,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -566,7 +313,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -592,7 +339,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -621,9 +368,7 @@
       "properties": {
         "Node name for S&R": "VAEDecode"
       },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
+      "widgets_values": []
     },
     {
       "id": 54,
@@ -639,7 +384,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -650,6 +395,161 @@
         2
       ],
       "shape": 1
+    },
+    {
+      "id": 58,
+      "type": "Power Lora Loader (rgthree)",
+      "pos": {
+        "0": 50,
+        "1": 390
+      },
+      "size": {
+        "0": 350,
+        "1": 120
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 146,
+          "dir": 3
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 147,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            149
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "dir": 4
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            150
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "dir": 4
+        }
+      ],
+      "title": "lora_stack",
+      "properties": {
+        "Show Strengths": "Separate Model & Clip"
+      },
+      "widgets_values": [
+        null,
+        {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        null,
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 50,
+      "type": "Anything Everywhere3",
+      "pos": {
+        "0": 450,
+        "1": 130
+      },
+      "size": {
+        "0": 252,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 148,
+          "color_on": "#FF6E6E",
+          "shape": 7
+        },
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 149,
+          "color_on": "#B39DDB",
+          "shape": 7
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 150,
+          "color_on": "#FFD500",
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "title": "vmc",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            131
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "cinematic photograph of an astronaut riding a horse in space"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 27,
@@ -663,7 +563,7 @@
         "1": 400
       },
       "flags": {},
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -673,7 +573,7 @@
         }
       ],
       "outputs": [],
-      "title": "image_output",
+      "title": "output",
       "properties": {
         "Node name for S&R": "SaveImage"
       },
@@ -682,6 +582,85 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 20,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            146
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            147
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            148
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sdtr-sai-turbo-fp16.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 35,
+      "type": "Note",
+      "pos": {
+        "0": 1250,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-sdtr-add\n===========================================================\nSDTR : SD Turbo\nADD  : Adversarial Diffusion Distillation\nCSD  : Clip Standard\nID   : T2I-BAS_SDTR_ADD"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     },
     {
       "id": 55,
@@ -695,7 +674,7 @@
         "1": 230
       },
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -761,31 +740,6 @@
         "randomize",
         1
       ]
-    },
-    {
-      "id": 35,
-      "type": "Note",
-      "pos": {
-        "0": 1250,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-sdtr-add\n===========================================================\nSDTR : SD Turbo\nADD  : Adversarial Diffusion Distillation\nCSD  : Clip Standard\nID   : T2I-BAS_SDTR_ADD"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -796,62 +750,6 @@
       27,
       0,
       "IMAGE"
-    ],
-    [
-      89,
-      47,
-      0,
-      48,
-      0,
-      "MODEL"
-    ],
-    [
-      90,
-      47,
-      1,
-      48,
-      1,
-      "CLIP"
-    ],
-    [
-      91,
-      20,
-      0,
-      47,
-      0,
-      "MODEL"
-    ],
-    [
-      92,
-      20,
-      1,
-      47,
-      1,
-      "CLIP"
-    ],
-    [
-      98,
-      48,
-      0,
-      50,
-      0,
-      "MODEL"
-    ],
-    [
-      99,
-      48,
-      1,
-      50,
-      1,
-      "CLIP"
-    ],
-    [
-      100,
-      20,
-      2,
-      50,
-      2,
-      "VAE"
     ],
     [
       105,
@@ -1172,21 +1070,89 @@
       55,
       0,
       "MODEL"
+    ],
+    [
+      146,
+      20,
+      0,
+      58,
+      0,
+      "MODEL"
+    ],
+    [
+      147,
+      20,
+      1,
+      58,
+      1,
+      "CLIP"
+    ],
+    [
+      148,
+      20,
+      2,
+      50,
+      0,
+      "VAE"
+    ],
+    [
+      149,
+      58,
+      0,
+      50,
+      1,
+      "MODEL"
+    ],
+    [
+      150,
+      58,
+      1,
+      50,
+      2,
+      "CLIP"
+    ],
+    [
+      152,
+      58,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      153,
+      58,
+      0,
+      57,
+      0,
+      "MODEL"
+    ],
+    [
+      154,
+      20,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      155,
+      58,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      156,
+      58,
+      0,
+      55,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
-    {
-      "title": " Txt2Img",
-      "bounding": [
-        50,
-        -80,
-        250,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
     {
       "title": " SDTR ADD",
       "bounding": [
@@ -1197,6 +1163,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Txt2Img",
+      "bounding": [
+        50,
+        -80,
+        250,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],

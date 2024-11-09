@@ -1,6 +1,6 @@
 {
-  "last_node_id": 67,
-  "last_link_id": 166,
+  "last_node_id": 68,
+  "last_link_id": 177,
   "nodes": [
     {
       "id": 51,
@@ -80,53 +80,6 @@
       "widgets_values": [
         3
       ]
-    },
-    {
-      "id": 8,
-      "type": "VAEDecode",
-      "pos": {
-        "0": 1560,
-        "1": 230
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 104
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null,
-          "slot_index": 1
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            54
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "vae_decode",
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 45,
@@ -304,7 +257,8 @@
           "name": "LATENT",
           "type": "*",
           "link": 147,
-          "color_on": "#FF9CF9"
+          "color_on": "#FF9CF9",
+          "shape": 7
         }
       ],
       "outputs": [],
@@ -432,7 +386,7 @@
         "1": 220
       },
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -480,101 +434,11 @@
         0,
         4096,
         4096,
-        "portrait of a woman, John Kenn Mortensen style",
-        "portrait of a woman, John Kenn Mortensen style"
+        "cinematic photograph of an astronaut riding a horse in space",
+        "cinematic photograph of an astronaut riding a horse in space"
       ],
       "color": "#232",
       "bgcolor": "#353"
-    },
-    {
-      "id": 49,
-      "type": "PrimitiveNode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            91,
-            92
-          ],
-          "slot_index": 0,
-          "widget": {
-            "name": "text_g"
-          }
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "portrait of a woman, John Kenn Mortensen style"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 66,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            158
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            160
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            161
-          ],
-          "slot_index": 2
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "01 base\\sdxl-sai-base-v10-vae0.9.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 67,
@@ -585,10 +449,10 @@
       },
       "size": {
         "0": 350,
-        "1": 80
+        "1": 82
       },
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -602,7 +466,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            159
+            168
           ],
           "slot_index": 0,
           "shape": 3
@@ -620,29 +484,31 @@
       "bgcolor": "#335"
     },
     {
-      "id": 57,
-      "type": "LoraLoader",
+      "id": 68,
+      "type": "Power Lora Loader (rgthree)",
       "pos": {
         "0": 50,
         "1": 530
       },
       "size": {
         "0": 350,
-        "1": 130
+        "1": 120
       },
       "flags": {},
-      "order": 17,
-      "mode": 4,
+      "order": 16,
+      "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 159
+          "link": 168,
+          "dir": 3
         },
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 160
+          "link": 169,
+          "dir": 3
         }
       ],
       "outputs": [
@@ -650,86 +516,37 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            107
+            170
           ],
           "slot_index": 0,
-          "shape": 3
+          "shape": 3,
+          "dir": 4
         },
         {
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            108
+            171
           ],
           "slot_index": 1,
-          "shape": 3
+          "shape": 3,
+          "dir": 4
         }
       ],
-      "title": "lora_model_1",
+      "title": "lora_stack",
       "properties": {
-        "Node name for S&R": "LoraLoader"
+        "Show Strengths": "Separate Model & Clip"
       },
       "widgets_values": [
-        "",
-        1,
-        1
-      ]
-    },
-    {
-      "id": 58,
-      "type": "LoraLoader",
-      "pos": {
-        "0": 50,
-        "1": 720
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 4,
-      "inputs": [
+        null,
         {
-          "name": "model",
-          "type": "MODEL",
-          "link": 107
+          "type": "PowerLoraLoaderHeaderWidget"
         },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 108
-        }
+        null,
+        ""
       ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            117
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            118
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "lora_model_2",
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "",
-        1,
-        1
-      ]
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 62,
@@ -745,30 +562,33 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
+          "name": "VAE",
+          "type": "*",
+          "link": 167,
+          "color_on": "#FF6E6E",
+          "shape": 7
+        },
+        {
           "name": "MODEL",
           "type": "*",
-          "link": 117,
-          "color_on": "#B39DDB"
+          "link": 170,
+          "color_on": "#B39DDB",
+          "shape": 7
         },
         {
           "name": "CLIP",
           "type": "*",
-          "link": 118,
-          "color_on": "#FFD500"
-        },
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 161,
-          "color_on": "#FF6E6E"
+          "link": 171,
+          "color_on": "#FFD500",
+          "shape": 7
         }
       ],
       "outputs": [],
-      "title": "mcv",
+      "title": "vmc",
       "properties": {
         "Node name for S&R": "Anything Everywhere3",
         "group_restricted": 0,
@@ -798,7 +618,7 @@
         }
       ],
       "outputs": [],
-      "title": "image_output",
+      "title": "output",
       "properties": {
         "Node name for S&R": "SaveImage"
       },
@@ -807,6 +627,141 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 1560,
+        "1": 230
+      },
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 104
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            54
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 66,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            158
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            169
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            167
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sdxl-sai-base-v10-vae0.9.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 49,
+      "type": "PrimitiveNode",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            91,
+            92
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_g"
+          }
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "cinematic photograph of an astronaut riding a horse in space"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 33,
@@ -820,7 +775,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -962,44 +917,12 @@
       "LATENT"
     ],
     [
-      107,
-      57,
-      0,
-      58,
-      0,
-      "MODEL"
-    ],
-    [
-      108,
-      57,
-      1,
-      58,
-      1,
-      "CLIP"
-    ],
-    [
       116,
       61,
       0,
       33,
       0,
       "MODEL"
-    ],
-    [
-      117,
-      58,
-      0,
-      62,
-      0,
-      "MODEL"
-    ],
-    [
-      118,
-      58,
-      1,
-      62,
-      1,
-      "CLIP"
     ],
     [
       122,
@@ -1298,30 +1221,6 @@
       "MODEL"
     ],
     [
-      159,
-      67,
-      0,
-      57,
-      0,
-      "MODEL"
-    ],
-    [
-      160,
-      66,
-      1,
-      57,
-      1,
-      "CLIP"
-    ],
-    [
-      161,
-      66,
-      2,
-      62,
-      2,
-      "VAE"
-    ],
-    [
       162,
       66,
       2,
@@ -1360,21 +1259,89 @@
       33,
       3,
       "LATENT"
+    ],
+    [
+      167,
+      66,
+      2,
+      62,
+      0,
+      "VAE"
+    ],
+    [
+      168,
+      67,
+      0,
+      68,
+      0,
+      "MODEL"
+    ],
+    [
+      169,
+      66,
+      1,
+      68,
+      1,
+      "CLIP"
+    ],
+    [
+      170,
+      68,
+      0,
+      62,
+      1,
+      "MODEL"
+    ],
+    [
+      171,
+      68,
+      1,
+      62,
+      2,
+      "CLIP"
+    ],
+    [
+      173,
+      68,
+      1,
+      48,
+      0,
+      "CLIP"
+    ],
+    [
+      174,
+      68,
+      1,
+      47,
+      0,
+      "CLIP"
+    ],
+    [
+      175,
+      66,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      176,
+      68,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      177,
+      5,
+      0,
+      33,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
-    {
-      "title": " SDXL TSCM-CXL",
-      "bounding": [
-        310,
-        -40,
-        270,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
     {
       "title": " Txt2Img",
       "bounding": [
@@ -1385,6 +1352,18 @@
       ],
       "color": "#ffffff",
       "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " SDXL TSCM-CXL",
+      "bounding": [
+        310,
+        -40,
+        270,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
       "flags": {}
     }
   ],

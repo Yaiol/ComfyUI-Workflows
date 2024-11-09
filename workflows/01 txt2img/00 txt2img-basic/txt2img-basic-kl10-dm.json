@@ -3,42 +3,6 @@
   "last_link_id": 35,
   "nodes": [
     {
-      "id": 11,
-      "type": "VAELoader",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            22
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "vae_model",
-      "properties": {
-        "Node name for S&R": "VAELoader"
-      },
-      "widgets_values": [
-        "sdxl-sai-vae-v10.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 22,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -52,7 +16,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -78,7 +42,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -89,53 +53,6 @@
         0.8
       ],
       "shape": 1
-    },
-    {
-      "id": 18,
-      "type": "Anything Everywhere3",
-      "pos": {
-        "0": 460,
-        "1": 120
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 22,
-          "shape": 7,
-          "color_on": "#FF6E6E"
-        },
-        {
-          "name": "KOLORSMODEL",
-          "type": "*",
-          "link": 23,
-          "shape": 7,
-          "color_on": ""
-        },
-        {
-          "name": "CHATGLM3MODEL",
-          "type": "*",
-          "link": 24,
-          "shape": 7,
-          "color_on": ""
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
     },
     {
       "id": 23,
@@ -151,7 +68,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -177,7 +94,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -203,7 +120,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -307,7 +224,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -318,43 +235,6 @@
         2
       ],
       "shape": 1
-    },
-    {
-      "id": 6,
-      "type": "DownloadAndLoadKolorsModel",
-      "pos": {
-        "0": 50,
-        "1": 340
-      },
-      "size": {
-        "0": 350,
-        "1": 82
-      },
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "kolors_model",
-          "type": "KOLORSMODEL",
-          "links": [
-            23
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "diffuser_model",
-      "properties": {
-        "Node name for S&R": "DownloadAndLoadKolorsModel"
-      },
-      "widgets_values": [
-        "Kwai-Kolors/Kolors",
-        "fp16"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 13,
@@ -368,7 +248,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -399,12 +279,12 @@
         "0": 450,
         "1": 230
       },
-      "size": [
-        350,
-        370
-      ],
+      "size": {
+        "0": 350,
+        "1": 370
+      },
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -438,29 +318,125 @@
       "bgcolor": "#353"
     },
     {
-      "id": 20,
-      "type": "Note",
+      "id": 18,
+      "type": "Anything Everywhere3",
       "pos": {
-        "0": 1250,
-        "1": 760
+        "0": 460,
+        "1": 120
+      },
+      "size": {
+        "0": 252,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 22,
+          "shape": 7,
+          "color_on": "#FF6E6E"
+        },
+        {
+          "name": "KOLORSMODEL",
+          "type": "*",
+          "link": 23,
+          "shape": 7,
+          "color_on": ""
+        },
+        {
+          "name": "CHATGLM3MODEL",
+          "type": "*",
+          "link": 24,
+          "shape": 7,
+          "color_on": ""
+        }
+      ],
+      "outputs": [],
+      "title": "vmc",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 6,
+      "type": "DownloadAndLoadKolorsModel",
+      "pos": {
+        "0": 50,
+        "1": 340
       },
       "size": {
         "0": 350,
-        "1": 100
+        "1": 82
       },
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [],
-      "outputs": [],
+      "outputs": [
+        {
+          "name": "kolors_model",
+          "type": "KOLORSMODEL",
+          "links": [
+            23
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "diffuser_model",
       "properties": {
-        "text": ""
+        "Node name for S&R": "DownloadAndLoadKolorsModel"
       },
       "widgets_values": [
-        "txt2img-basic-kl10-dm\n==========================================================\nSDXL : SD XL\nDM   : Diffusion Model\nCSD  : Clip Standard\nID   : T2I-BAS_KL10_DM"
+        "Kwai-Kolors/Kolors",
+        "fp16"
       ],
-      "color": "#432",
-      "bgcolor": "#653"
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 11,
+      "type": "VAELoader",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 60
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            22
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxl-sai-vae-v10.safetensors"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 14,
@@ -474,7 +450,7 @@
         "1": 270
       },
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -519,6 +495,31 @@
         "EulerDiscreteScheduler",
         1
       ]
+    },
+    {
+      "id": 20,
+      "type": "Note",
+      "pos": {
+        "0": 1250,
+        "1": 760
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-kl10-dm\n==========================================================\nSDXL : SD XL\nDM   : Diffusion Model\nCSD  : Clip Standard\nID   : T2I-BAS_KL10_DM"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -621,18 +622,6 @@
   ],
   "groups": [
     {
-      "title": " KL10 DM",
-      "bounding": [
-        330,
-        -40,
-        150,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
-    {
       "title": " Txt2Img",
       "bounding": [
         50,
@@ -643,15 +632,27 @@
       "color": "#ffffff",
       "font_size": 60,
       "flags": {}
+    },
+    {
+      "title": " KL10 DM",
+      "bounding": [
+        330,
+        -40,
+        150,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8784600000000002,
+      "scale": 0.6,
       "offset": [
-        -361.7422990232908,
-        -39.66361587323286
+        16,
+        150
       ]
     }
   },

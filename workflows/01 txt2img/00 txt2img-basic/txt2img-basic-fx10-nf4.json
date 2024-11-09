@@ -1,6 +1,6 @@
 {
   "last_node_id": 75,
-  "last_link_id": 127,
+  "last_link_id": 132,
   "nodes": [
     {
       "id": 49,
@@ -14,7 +14,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -34,6 +34,7 @@
           "shape": 3
         }
       ],
+      "title": "flux_guidance",
       "properties": {
         "Node name for S&R": "FluxGuidance"
       },
@@ -158,6 +159,7 @@
           "shape": 3
         }
       ],
+      "title": "ksampler",
       "properties": {
         "Node name for S&R": "SamplerCustomAdvanced"
       },
@@ -246,7 +248,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 4,
       "inputs": [
         {
@@ -290,7 +292,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -398,7 +400,7 @@
         "1": 50
       },
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -423,6 +425,7 @@
           "shape": 3
         }
       ],
+      "title": "guider",
       "properties": {
         "Node name for S&R": "BasicGuider"
       },
@@ -579,6 +582,7 @@
           "slot_index": 0
         }
       ],
+      "title": "latent_image",
       "properties": {
         "Node name for S&R": "EmptyLatentImage"
       },
@@ -627,6 +631,79 @@
       "bgcolor": "#535"
     },
     {
+      "id": 47,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": -150,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            74
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "cinematic photograph of an astronaut riding a horse in space"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 52,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1050,
+        "1": 290
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 79
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_FX10_NF4_%noise.noise_seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 37,
       "type": "CheckpointLoaderNF4",
       "pos": {
@@ -638,7 +715,7 @@
         "1": 100
       },
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -676,108 +753,10 @@
         "Node name for S&R": "CheckpointLoaderNF4"
       },
       "widgets_values": [
-        "fx10-lllyasviel-flux dev-v10-bnb nf4.safetensors"
+        "fx10-lllyasviel-dev-v20-bnb nf4.safetensors"
       ],
       "color": "#223",
       "bgcolor": "#335"
-    },
-    {
-      "id": 47,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": -150,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            74
-          ],
-          "shape": 3
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "A highly detailed analog photo of a malevolent tribal chief, focusing intensely on his face. Ominous tribal markings, dark and supernatural, cover his face, pulsing with an unsettling energy. His sinister eyes, sharp and haunting, convey a lost soul filled with darkness and power. The extreme close-up captures every detail, from the shifting textures of his skin to the intricate markings. Rendered in 8k resolution, the photo highlights the unsettling aura of the chief, blending human and ancient malevolence."
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 52,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1050,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 79
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_FX10_NF4_%noise.noise_seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 51,
-      "type": "Note",
-      "pos": {
-        "0": 1050,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-fx10-nf4\n==========================================================\nFX10 : Flux 1\nNF4  : NF4\nCSD  : Clip Standard\nID   : T2I-BAS_FX10_NF4"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     },
     {
       "id": 42,
@@ -791,7 +770,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -812,6 +791,31 @@
         25191512,
         "randomize"
       ]
+    },
+    {
+      "id": 51,
+      "type": "Note",
+      "pos": {
+        "0": 1050,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-fx10-nf4\n==========================================================\nFX10 : Flux 1\nNF4  : NF4\nCSD  : Clip Standard\nID   : T2I-BAS_FX10_NF4"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1054,21 +1058,49 @@
       47,
       0,
       "CLIP"
+    ],
+    [
+      128,
+      74,
+      0,
+      39,
+      4,
+      "LATENT"
+    ],
+    [
+      129,
+      48,
+      0,
+      40,
+      1,
+      "VAE"
+    ],
+    [
+      130,
+      37,
+      0,
+      43,
+      0,
+      "MODEL"
+    ],
+    [
+      131,
+      37,
+      0,
+      45,
+      0,
+      "MODEL"
+    ],
+    [
+      132,
+      37,
+      1,
+      47,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
-    {
-      "title": " Txt2Img",
-      "bounding": [
-        -550,
-        -80,
-        269,
-        78
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
     {
       "title": " FX10 NF4",
       "bounding": [
@@ -1080,15 +1112,27 @@
       "color": "#00ffff",
       "font_size": 30,
       "flags": {}
+    },
+    {
+      "title": " Txt2Img",
+      "bounding": [
+        -550,
+        -80,
+        269,
+        78
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
+      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7320500000000076,
+      "scale": 0.5,
       "offset": [
-        526.5549010651805,
-        43.966328620605736
+        616,
+        150
       ]
     }
   },
