@@ -1,6 +1,6 @@
 {
   "last_node_id": 58,
-  "last_link_id": 150,
+  "last_link_id": 154,
   "nodes": [
     {
       "id": 49,
@@ -603,31 +603,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 35,
-      "type": "Note",
-      "pos": {
-        "0": 1240,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-sdxl-tscm\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCSD  : Clip Standard\nID   : T2I-BAS_SDXL_TSCM"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 33,
       "type": "KSampler",
       "pos": {
@@ -688,6 +663,31 @@
         "sgm_uniform",
         1
       ]
+    },
+    {
+      "id": 35,
+      "type": "Note",
+      "pos": {
+        "0": 1240,
+        "1": 750
+      },
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-sdxl-tscm\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCSD  : Clip Standard\nID   : T2I-BAS_SDXL_TSCM"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1066,21 +1066,41 @@
       33,
       0,
       "MODEL"
+    ],
+    [
+      151,
+      55,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      152,
+      58,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      153,
+      58,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      154,
+      58,
+      0,
+      33,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
-    {
-      "title": " Txt2Img",
-      "bounding": [
-        50,
-        -80,
-        250,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
     {
       "title": " SDXL TSCM",
       "bounding": [
@@ -1091,6 +1111,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Txt2Img",
+      "bounding": [
+        50,
+        -80,
+        250,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],

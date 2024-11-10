@@ -1,6 +1,6 @@
 {
   "last_node_id": 68,
-  "last_link_id": 182,
+  "last_link_id": 187,
   "nodes": [
     {
       "id": 51,
@@ -758,7 +758,7 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BASIC_SDXL_TSCM-CXL_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_TSCM-CXL_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
@@ -783,7 +783,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-sdxl-tscm-cxl\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCXL  : Clip XL\nID   : T2I-BASIC_SDXL_TSCM-CXL"
+        "txt2img-basic-sdxl-tscm-cxl\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCXL  : Clip XL\nID   : T2I-BAS_SDXL_TSCM-CXL"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1374,6 +1374,46 @@
     ],
     [
       182,
+      5,
+      0,
+      33,
+      3,
+      "LATENT"
+    ],
+    [
+      183,
+      68,
+      1,
+      48,
+      0,
+      "CLIP"
+    ],
+    [
+      184,
+      68,
+      1,
+      47,
+      0,
+      "CLIP"
+    ],
+    [
+      185,
+      66,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      186,
+      68,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      187,
       5,
       0,
       33,
