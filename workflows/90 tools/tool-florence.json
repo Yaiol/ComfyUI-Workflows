@@ -1,0 +1,829 @@
+{
+  "last_node_id": 179,
+  "last_link_id": 500,
+  "nodes": [
+    {
+      "id": 164,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 2850,
+        "1": 740
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
+      "id": 165,
+      "type": "Florence2Run",
+      "pos": {
+        "0": 450,
+        "1": 400
+      },
+      "size": {
+        "0": 350,
+        "1": 360
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 491
+        },
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "link": 466,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            488
+          ],
+          "slot_index": 2,
+          "shape": 3
+        },
+        {
+          "name": "data",
+          "type": "JSON",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "florence2",
+      "properties": {
+        "Node name for S&R": "Florence2Run"
+      },
+      "widgets_values": [
+        "",
+        "more_detailed_caption",
+        true,
+        false,
+        1024,
+        3,
+        true,
+        "",
+        25191512,
+        "fixed"
+      ]
+    },
+    {
+      "id": 175,
+      "type": "Text Multiline",
+      "pos": {
+        "0": 850,
+        "1": 430
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            487
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Multiline"
+      },
+      "widgets_values": [
+        "Shot on Canon EOS, f/1.4, 85mm."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 168,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 850,
+        "1": 650
+      },
+      "size": {
+        "0": 350,
+        "1": 170
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 486,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Photography of a young woman wearing a brown cowboy hat and a brown leather jacket. She has long dark hair and is looking off to the side with a serious expression on her face. The background is a desert landscape with rocky cliffs and a clear blue sky. The overall mood of the image is rugged and adventurous. Shot on Canon EOS, f/1.4, 85mm."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 169,
+      "type": "Text Find and Replace",
+      "pos": {
+        "0": 850,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 142
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 488,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result_text",
+          "type": "STRING",
+          "links": [
+            483
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "replacement_count_number",
+          "type": "NUMBER",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "replacement_count_float",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "replacement_count_int",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Find and Replace"
+      },
+      "widgets_values": [
+        "",
+        "The image is a portrait",
+        "Photography"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 172,
+      "type": "easy promptConcat",
+      "pos": {
+        "0": 1060,
+        "1": 590
+      },
+      "size": {
+        "0": 350,
+        "1": 80
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt1",
+          "type": "STRING",
+          "link": 483,
+          "widget": {
+            "name": "prompt1"
+          },
+          "shape": 7
+        },
+        {
+          "name": "prompt2",
+          "type": "STRING",
+          "link": 487,
+          "widget": {
+            "name": "prompt2"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            486
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy promptConcat"
+      },
+      "widgets_values": [
+        "",
+        "Shot on Canon EOS, f/1.4, 85mm",
+        " "
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 166,
+      "type": "DownloadAndLoadFlorence2Model",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 110
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora",
+          "type": "PEFTLORA",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "links": [
+            466
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "florence2_model",
+      "properties": {
+        "Node name for S&R": "DownloadAndLoadFlorence2Model"
+      },
+      "widgets_values": [
+        "microsoft/Florence-2-base",
+        "fp16",
+        "sdpa"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 131,
+      "type": "LoadImage",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 450
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            491
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "image_input_2",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-woman-cowboy.jpg",
+        "image"
+      ],
+      "color": "#8cd2ff",
+      "bgcolor": "#78beff"
+    },
+    {
+      "id": 178,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 850,
+        "1": 880
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
+      "id": 156,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 50,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖1 checkpoint",
+      "properties": {},
+      "widgets_values": [
+        "1",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 157,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 450,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖2 florence",
+      "properties": {},
+      "widgets_values": [
+        "2",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 179,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 860,
+        "1": 170
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖3 prompt",
+      "properties": {},
+      "widgets_values": [
+        "3",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 163,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 0,
+        "1": -110
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.6
+      ],
+      "shape": 1
+    },
+    {
+      "id": 177,
+      "type": "Note",
+      "pos": {
+        "0": 850,
+        "1": 880
+      },
+      "size": [
+        350,
+        100
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "tool-florence\n==========================================================\nID   : TOO-FLORENCE"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      446,
+      4,
+      1,
+      39,
+      0,
+      "CLIP"
+    ],
+    [
+      447,
+      4,
+      1,
+      40,
+      0,
+      "CLIP"
+    ],
+    [
+      448,
+      4,
+      0,
+      60,
+      4,
+      "MODEL"
+    ],
+    [
+      449,
+      4,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      450,
+      132,
+      0,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      451,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      452,
+      4,
+      1,
+      39,
+      0,
+      "CLIP"
+    ],
+    [
+      453,
+      4,
+      1,
+      40,
+      0,
+      "CLIP"
+    ],
+    [
+      454,
+      4,
+      0,
+      60,
+      4,
+      "MODEL"
+    ],
+    [
+      455,
+      4,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      456,
+      132,
+      0,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      457,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      460,
+      4,
+      1,
+      39,
+      0,
+      "CLIP"
+    ],
+    [
+      461,
+      4,
+      1,
+      40,
+      0,
+      "CLIP"
+    ],
+    [
+      462,
+      4,
+      0,
+      60,
+      4,
+      "MODEL"
+    ],
+    [
+      463,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      464,
+      4,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      465,
+      5,
+      0,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      466,
+      166,
+      0,
+      165,
+      1,
+      "FL2MODEL"
+    ],
+    [
+      473,
+      4,
+      0,
+      60,
+      4,
+      "MODEL"
+    ],
+    [
+      474,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      475,
+      4,
+      1,
+      170,
+      0,
+      "CLIP"
+    ],
+    [
+      476,
+      4,
+      1,
+      167,
+      0,
+      "CLIP"
+    ],
+    [
+      477,
+      4,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      478,
+      5,
+      0,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      483,
+      169,
+      0,
+      172,
+      0,
+      "STRING"
+    ],
+    [
+      486,
+      172,
+      0,
+      168,
+      0,
+      "STRING"
+    ],
+    [
+      487,
+      175,
+      0,
+      172,
+      1,
+      "STRING"
+    ],
+    [
+      488,
+      165,
+      2,
+      169,
+      0,
+      "STRING"
+    ],
+    [
+      491,
+      131,
+      0,
+      165,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "title": " Florence",
+      "bounding": [
+        50,
+        -80,
+        278,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
+      "flags": {}
+    },
+    {
+      "title": " SDLT LDM",
+      "bounding": [
+        340,
+        -40,
+        170,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6,
+      "offset": [
+        16,
+        150
+      ]
+    }
+  },
+  "version": 0.4
+}
