@@ -1,6 +1,6 @@
 {
   "last_node_id": 180,
-  "last_link_id": 516,
+  "last_link_id": 522,
   "nodes": [
     {
       "id": 11,
@@ -2152,7 +2152,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        25191513,
+        25191512,
         "randomize",
         8,
         1,
@@ -2875,21 +2875,57 @@
       3,
       3,
       "LATENT"
+    ],
+    [
+      517,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      518,
+      179,
+      0,
+      60,
+      4,
+      "MODEL"
+    ],
+    [
+      519,
+      179,
+      1,
+      170,
+      0,
+      "CLIP"
+    ],
+    [
+      520,
+      179,
+      1,
+      167,
+      0,
+      "CLIP"
+    ],
+    [
+      521,
+      179,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      522,
+      5,
+      0,
+      3,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
-    {
-      "title": " Faceswap InstandID",
-      "bounding": [
-        -750,
-        -80,
-        590,
-        80
-      ],
-      "color": "#ffffff",
-      "font_size": 60,
-      "flags": {}
-    },
     {
       "title": " SDLT LCML",
       "bounding": [
@@ -2900,6 +2936,18 @@
       ],
       "color": "#00ffff",
       "font_size": 30,
+      "flags": {}
+    },
+    {
+      "title": " Faceswap InstandID",
+      "bounding": [
+        -750,
+        -80,
+        590,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
       "flags": {}
     }
   ],
