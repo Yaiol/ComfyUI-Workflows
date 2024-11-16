@@ -39,115 +39,6 @@
       }
     },
     {
-      "id": 1,
-      "type": "ReActorFaceSwap",
-      "pos": {
-        "0": 850,
-        "1": 230
-      },
-      "size": [
-        350,
-        360
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "input_image",
-          "type": "IMAGE",
-          "link": 41,
-          "slot_index": 0
-        },
-        {
-          "name": "source_image",
-          "type": "IMAGE",
-          "link": 40,
-          "slot_index": 1,
-          "shape": 7
-        },
-        {
-          "name": "face_model",
-          "type": "FACE_MODEL",
-          "link": null,
-          "shape": 7
-        },
-        {
-          "name": "face_boost",
-          "type": "FACE_BOOST",
-          "link": null,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            16
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "FACE_MODEL",
-          "type": "FACE_MODEL",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ReActorFaceSwap"
-      },
-      "widgets_values": [
-        true,
-        "inswapper_128.onnx",
-        "retinaface_resnet50",
-        "GPEN-BFR-512.onnx",
-        1,
-        1,
-        "no",
-        "no",
-        "0",
-        "0",
-        1
-      ]
-    },
-    {
-      "id": 13,
-      "type": "FaceRestoreModelLoader",
-      "pos": {
-        "0": 1250,
-        "1": 230
-      },
-      "size": {
-        "0": 350.94866943359375,
-        "1": 58
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "FACERESTORE_MODEL",
-          "type": "FACERESTORE_MODEL",
-          "links": [
-            18
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "FaceRestoreModelLoader"
-      },
-      "widgets_values": [
-        "codeformer-v0.1.0.pth"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 30,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -161,7 +52,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -187,7 +78,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -213,7 +104,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -298,96 +189,6 @@
       }
     },
     {
-      "id": 11,
-      "type": "FaceRestoreCFWithModel",
-      "pos": {
-        "0": 1250,
-        "1": 350
-      },
-      "size": [
-        350,
-        100
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "facerestore_model",
-          "type": "FACERESTORE_MODEL",
-          "link": 18,
-          "slot_index": 0
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 16
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            33,
-            39
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "FaceRestoreCFWithModel"
-      },
-      "widgets_values": [
-        "retinaface_resnet50",
-        1
-      ]
-    },
-    {
-      "id": 2,
-      "type": "LoadImage",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 352.1821594238281,
-        "1": 437.82684326171875
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            27
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "image_input",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "character-avatar-cg.jpg",
-        "image"
-      ],
-      "color": "#ffa014",
-      "bgcolor": "#ff8c00"
-    },
-    {
       "id": 29,
       "type": "Reroute",
       "pos": {
@@ -424,50 +225,6 @@
       }
     },
     {
-      "id": 3,
-      "type": "LoadImage",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 440
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            28,
-            41
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "image_input",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "character-woman-cowboy.jpg",
-        "image"
-      ],
-      "color": "#8cd2ff",
-      "bgcolor": "#78beff"
-    },
-    {
       "id": 33,
       "type": "Bookmark (rgthree)",
       "pos": {
@@ -481,7 +238,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -566,6 +323,336 @@
       }
     },
     {
+      "id": 35,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 2050,
+        "1": 690
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
+      "id": 34,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 0,
+        "1": -110
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.5
+      ],
+      "shape": 1
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 352.1821594238281,
+        "1": 437.82684326171875
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            27
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "input_1",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-avatar-cg.jpg",
+        "image"
+      ],
+      "color": "#ffa014",
+      "bgcolor": "#ff8c00"
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 440
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            28,
+            41
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "input_2",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-woman-cowboy.jpg",
+        "image"
+      ],
+      "color": "#8cd2ff",
+      "bgcolor": "#78beff"
+    },
+    {
+      "id": 1,
+      "type": "ReActorFaceSwap",
+      "pos": {
+        "0": 850,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 360
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_image",
+          "type": "IMAGE",
+          "link": 41,
+          "slot_index": 0
+        },
+        {
+          "name": "source_image",
+          "type": "IMAGE",
+          "link": 40,
+          "slot_index": 1,
+          "shape": 7
+        },
+        {
+          "name": "face_model",
+          "type": "FACE_MODEL",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "face_boost",
+          "type": "FACE_BOOST",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            16
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "reactor_faceswap",
+      "properties": {
+        "Node name for S&R": "ReActorFaceSwap"
+      },
+      "widgets_values": [
+        true,
+        "inswapper_128.onnx",
+        "retinaface_resnet50",
+        "GPEN-BFR-512.onnx",
+        1,
+        1,
+        "no",
+        "no",
+        "0",
+        "0",
+        1
+      ]
+    },
+    {
+      "id": 13,
+      "type": "FaceRestoreModelLoader",
+      "pos": {
+        "0": 1250,
+        "1": 230
+      },
+      "size": {
+        "0": 350.94866943359375,
+        "1": 58
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACERESTORE_MODEL",
+          "type": "FACERESTORE_MODEL",
+          "links": [
+            18
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "facerestore",
+      "properties": {
+        "Node name for S&R": "FaceRestoreModelLoader"
+      },
+      "widgets_values": [
+        "codeformer-v0.1.0.pth"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 11,
+      "type": "FaceRestoreCFWithModel",
+      "pos": {
+        "0": 1250,
+        "1": 350
+      },
+      "size": {
+        "0": 350,
+        "1": 102
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "facerestore_model",
+          "type": "FACERESTORE_MODEL",
+          "link": 18,
+          "slot_index": 0
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            33,
+            39
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "facerestore_apply",
+      "properties": {
+        "Node name for S&R": "FaceRestoreCFWithModel"
+      },
+      "widgets_values": [
+        "retinaface_resnet50",
+        1
+      ]
+    },
+    {
+      "id": 17,
+      "type": "SaveImage",
+      "pos": {
+        "0": 2050,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 36
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-RFS+RES"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 20,
       "type": "Image Comparer (rgthree)",
       "pos": {
@@ -594,6 +681,7 @@
         }
       ],
       "outputs": [],
+      "title": "compare",
       "properties": {
         "comparer_mode": "Slide"
       },
@@ -602,99 +690,15 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_prnik_00001_.png&type=temp&subfolder=&rand=0.7739132481095694"
+            "url": "/api/view?filename=rgthree.compare._temp_kgieb_00001_.png&type=temp&subfolder=&rand=0.1998844671087563"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_prnik_00002_.png&type=temp&subfolder=&rand=0.51336634150313"
+            "url": "/api/view?filename=rgthree.compare._temp_kgieb_00002_.png&type=temp&subfolder=&rand=0.06732652190532384"
           }
         ]
       ]
-    },
-    {
-      "id": 35,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 2050,
-        "1": 690
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖note",
-      "properties": {},
-      "widgets_values": [
-        ".",
-        2
-      ],
-      "shape": 1
-    },
-    {
-      "id": 17,
-      "type": "SaveImage",
-      "pos": {
-        "0": 2050,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 36
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-RFS+RES"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 34,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -110
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖workflow",
-      "properties": {},
-      "widgets_values": [
-        "0",
-        0.5
-      ],
-      "shape": 1
     },
     {
       "id": 21,

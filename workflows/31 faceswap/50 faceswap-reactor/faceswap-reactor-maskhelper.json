@@ -3,187 +3,6 @@
   "last_link_id": 692,
   "nodes": [
     {
-      "id": 271,
-      "type": "LoadImage",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": [
-        350,
-        450
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            668,
-            675
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "image_input_2",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "character-woman-cowboy.jpg",
-        "image"
-      ],
-      "color": "#a0ffff",
-      "bgcolor": "#8cf0f0"
-    },
-    {
-      "id": 270,
-      "type": "LoadImage",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": [
-        350,
-        450
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            692
-          ],
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "image_input_1",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "character-avatar-cg.jpg",
-        "image"
-      ],
-      "color": "#ffa014",
-      "bgcolor": "#ff8c00"
-    },
-    {
-      "id": 327,
-      "type": "Image Comparer (rgthree)",
-      "pos": {
-        "0": 1250,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image_a",
-          "type": "IMAGE",
-          "link": 682,
-          "dir": 3
-        },
-        {
-          "name": "image_b",
-          "type": "IMAGE",
-          "link": 681,
-          "dir": 3
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "comparer_mode": "Slide"
-      },
-      "widgets_values": [
-        [
-          {
-            "name": "A",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_rsypf_00001_.png&type=temp&subfolder=&rand=0.4561194516988256"
-          },
-          {
-            "name": "B",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_rsypf_00002_.png&type=temp&subfolder=&rand=0.638565655444173"
-          }
-        ]
-      ]
-    },
-    {
-      "id": 311,
-      "type": "Image Comparer (rgthree)",
-      "pos": {
-        "0": 2050,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image_a",
-          "type": "IMAGE",
-          "link": 662,
-          "dir": 3
-        },
-        {
-          "name": "image_b",
-          "type": "IMAGE",
-          "link": 691,
-          "dir": 3
-        }
-      ],
-      "outputs": [],
-      "title": "image_comparer",
-      "properties": {
-        "comparer_mode": "Slide"
-      },
-      "widgets_values": [
-        [
-          {
-            "name": "A",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_lffin_00003_.png&type=temp&subfolder=&rand=0.36794919220249933"
-          },
-          {
-            "name": "B",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_lffin_00004_.png&type=temp&subfolder=&rand=0.1589493555811421"
-          }
-        ]
-      ]
-    },
-    {
       "id": 324,
       "type": "Reroute",
       "pos": {
@@ -195,7 +14,7 @@
         26
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -231,7 +50,7 @@
         26
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -340,7 +159,7 @@
         26
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -376,7 +195,7 @@
         26
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -412,7 +231,7 @@
         26
       ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -559,7 +378,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 2,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -585,7 +404,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 3,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -611,7 +430,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 4,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -635,7 +454,7 @@
         "1": 360
       },
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -800,7 +619,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -826,7 +645,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -837,6 +656,214 @@
         0.8
       ],
       "shape": 1
+    },
+    {
+      "id": 336,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 0,
+        "1": -110
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.5
+      ],
+      "shape": 1
+    },
+    {
+      "id": 270,
+      "type": "LoadImage",
+      "pos": {
+        "0": 50,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 450
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            692
+          ],
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "input_1",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-avatar-cg.jpg",
+        "image"
+      ],
+      "color": "#ffa014",
+      "bgcolor": "#ff8c00"
+    },
+    {
+      "id": 271,
+      "type": "LoadImage",
+      "pos": {
+        "0": 450,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 450
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            668,
+            675
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "input_2",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-woman-cowboy.jpg",
+        "image"
+      ],
+      "color": "#a0ffff",
+      "bgcolor": "#8cf0f0"
+    },
+    {
+      "id": 311,
+      "type": "Image Comparer (rgthree)",
+      "pos": {
+        "0": 2050,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_a",
+          "type": "IMAGE",
+          "link": 662,
+          "dir": 3
+        },
+        {
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": 691,
+          "dir": 3
+        }
+      ],
+      "outputs": [],
+      "title": "compare_2",
+      "properties": {
+        "comparer_mode": "Slide"
+      },
+      "widgets_values": [
+        [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_mnnvk_00009_.png&type=temp&subfolder=&rand=0.6951531928220891"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_mnnvk_00010_.png&type=temp&subfolder=&rand=0.45155965450500135"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 327,
+      "type": "Image Comparer (rgthree)",
+      "pos": {
+        "0": 1250,
+        "1": 230
+      },
+      "size": {
+        "0": 350,
+        "1": 400
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_a",
+          "type": "IMAGE",
+          "link": 682,
+          "dir": 3
+        },
+        {
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": 681,
+          "dir": 3
+        }
+      ],
+      "outputs": [],
+      "title": "compare_1",
+      "properties": {
+        "comparer_mode": "Slide"
+      },
+      "widgets_values": [
+        [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_cahbj_00003_.png&type=temp&subfolder=&rand=0.884789959027557"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_cahbj_00004_.png&type=temp&subfolder=&rand=0.6111601653615764"
+          }
+        ]
+      ]
     },
     {
       "id": 318,
@@ -860,41 +887,15 @@
         }
       ],
       "outputs": [],
-      "title": "image_output",
+      "title": "output",
       "properties": {
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-RFS+RMH"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-RFSMH"
       ],
       "color": "#323",
       "bgcolor": "#535"
-    },
-    {
-      "id": 336,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -110
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖workflow",
-      "properties": {},
-      "widgets_values": [
-        "0",
-        0.5
-      ],
-      "shape": 1
     },
     {
       "id": 296,
@@ -916,7 +917,7 @@
         "text": ""
       },
       "widgets_values": [
-        "faceswap-reactor+mask helper\n==========================================================\nID   : FSW-RFS+RMH"
+        "faceswap-reactor-maskhelper\n==========================================================\nID   : FSW-RFSMH"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1093,10 +1094,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5,
+      "scale": 0.7972024500000005,
       "offset": [
-        16,
-        150
+        -1321.1872936925104,
+        -33.91037067058036
       ]
     },
     "0246.VERSION": [
