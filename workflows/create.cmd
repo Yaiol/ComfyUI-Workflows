@@ -9,5 +9,8 @@ for %%d in (sdxl,pyxl,sdlt,sdtr,sdca,sd30,sd35,fx10,kl10) do (
   pushd "02 img2img"
   mkdir "00 txt2img-basic"
   popd
+  mkdir "03 inpaint"
+  mkdir "04 outpaint"
+  mkdir "30 face2img"
   popd
 )
