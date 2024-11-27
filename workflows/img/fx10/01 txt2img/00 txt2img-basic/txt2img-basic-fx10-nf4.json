@@ -357,7 +357,7 @@
         "Node name for S&R": "VAELoader"
       },
       "widgets_values": [
-        "fx10-bfl-ae-v10.safetensors"
+        "fx10-bfl-ae-v10.sft"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -753,7 +753,7 @@
         "Node name for S&R": "CheckpointLoaderNF4"
       },
       "widgets_values": [
-        "fx10-lllyasviel-dev-v20-bnb nf4.safetensors"
+        "fx10-lllyasviel-dev-v20-bnb nf4.sft"
       ],
       "color": "#223",
       "bgcolor": "#335"

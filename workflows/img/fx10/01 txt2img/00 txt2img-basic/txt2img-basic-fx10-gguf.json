@@ -1,18 +1,18 @@
 {
   "last_node_id": 68,
-  "last_link_id": 135,
+  "last_link_id": 138,
   "nodes": [
     {
       "id": 39,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        50,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -31,14 +31,14 @@
     {
       "id": 43,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -110
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        0,
+        -110
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -57,14 +57,14 @@
     {
       "id": 44,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1250,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1250,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -83,14 +83,14 @@
     {
       "id": 52,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1250,
-        "1": 750
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1250,
+        750
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -109,14 +109,14 @@
     {
       "id": 35,
       "type": "ConditioningZeroOut",
-      "pos": {
-        "0": 690,
-        "1": 760
-      },
-      "size": {
-        "0": 482.5600891113281,
-        "1": 32.28055953979492
-      },
+      "pos": [
+        690,
+        760
+      ],
+      "size": [
+        482.5600891113281,
+        32.28055953979492
+      ],
       "flags": {
         "collapsed": true
       },
@@ -151,14 +151,14 @@
     {
       "id": 20,
       "type": "EmptyLatentImage",
-      "pos": {
-        "0": 450,
-        "1": 800
-      },
-      "size": {
-        "0": 350,
-        "1": 110
-      },
+      "pos": [
+        450,
+        800
+      ],
+      "size": [
+        350,
+        110
+      ],
       "flags": {},
       "order": 4,
       "mode": 0,
@@ -188,14 +188,14 @@
     {
       "id": 40,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 450,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        450,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -214,14 +214,14 @@
     {
       "id": 41,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 850,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        850,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -240,14 +240,14 @@
     {
       "id": 7,
       "type": "VAEDecode",
-      "pos": {
-        "0": 1250,
-        "1": 230
-      },
-      "size": {
-        "0": 200,
-        "1": 50
-      },
+      "pos": [
+        1250,
+        230
+      ],
+      "size": [
+        200,
+        50
+      ],
       "flags": {
         "collapsed": true
       },
@@ -284,14 +284,14 @@
     {
       "id": 46,
       "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
+      "pos": [
+        450,
+        130
+      ],
+      "size": [
+        252,
+        66
+      ],
       "flags": {
         "collapsed": true
       },
@@ -330,51 +330,16 @@
       "widgets_values": []
     },
     {
-      "id": 8,
-      "type": "VAELoader",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            111
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "vae_model",
-      "properties": {
-        "Node name for S&R": "VAELoader"
-      },
-      "widgets_values": [
-        "fx10-bfl-ae-v10.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 66,
       "type": "Power Lora Loader (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 900
-      },
-      "size": {
-        "0": 350,
-        "1": 120
-      },
+      "pos": [
+        50,
+        900
+      ],
+      "size": [
+        350,
+        120
+      ],
       "flags": {},
       "order": 14,
       "mode": 0,
@@ -432,18 +397,18 @@
     {
       "id": 65,
       "type": "UnetLoaderGGUFAdvanced",
-      "pos": {
-        "0": 50,
-        "1": 350
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
+      "pos": [
+        50,
+        350
+      ],
+      "size": [
+        350,
+        130
+      ],
       "flags": {
         "collapsed": false
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -471,53 +436,16 @@
       "bgcolor": "#335"
     },
     {
-      "id": 68,
-      "type": "DualCLIPLoaderGGUF",
-      "pos": {
-        "0": 50,
-        "1": 730
-      },
-      "size": {
-        "0": 350,
-        "1": 110
-      },
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            125
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "gguf_dualclip_model",
-      "properties": {
-        "Node name for S&R": "DualCLIPLoaderGGUF"
-      },
-      "widgets_values": [
-        "clip_l.safetensors",
-        "city-t5 xxl-v11-Q8_K.gguf",
-        "flux"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 54,
       "type": "ModelSamplingFlux",
-      "pos": {
-        "0": 50,
-        "1": 540
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
+      "pos": [
+        50,
+        540
+      ],
+      "size": [
+        350,
+        130
+      ],
       "flags": {},
       "order": 12,
       "mode": 4,
@@ -552,16 +480,16 @@
     {
       "id": 53,
       "type": "CLIPTextEncodeFlux",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 470
-      },
+      "pos": [
+        450,
+        230
+      ],
+      "size": [
+        350,
+        470
+      ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -599,14 +527,14 @@
     {
       "id": 34,
       "type": "SaveImage",
-      "pos": {
-        "0": 1250,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
+      "pos": [
+        1250,
+        290
+      ],
+      "size": [
+        350,
+        400
+      ],
       "flags": {},
       "order": 18,
       "mode": 0,
@@ -629,16 +557,88 @@
       "bgcolor": "#535"
     },
     {
+      "id": 8,
+      "type": "VAELoader",
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        60
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            111
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "fx10-bfl-ae.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 68,
+      "type": "DualCLIPLoaderGGUF",
+      "pos": [
+        50,
+        730
+      ],
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            125
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "gguf_dualclip_model",
+      "properties": {
+        "Node name for S&R": "DualCLIPLoaderGGUF"
+      },
+      "widgets_values": [
+        "clip_l.sft",
+        "city-t5 xxl-v11-Q8_K.gguf",
+        "flux"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 5,
       "type": "KSampler",
-      "pos": {
-        "0": 850,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 270
-      },
+      "pos": [
+        850,
+        230
+      ],
+      "size": [
+        350,
+        270
+      ],
       "flags": {},
       "order": 15,
       "mode": 0,
@@ -692,14 +692,14 @@
     {
       "id": 45,
       "type": "Note",
-      "pos": {
-        "0": 1250,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
+      "pos": [
+        1250,
+        750
+      ],
+      "size": [
+        350,
+        100
+      ],
       "flags": {},
       "order": 11,
       "mode": 0,
@@ -1123,10 +1123,35 @@
       5,
       0,
       "MODEL"
+    ],
+    [
+      136,
+      8,
+      0,
+      7,
+      1,
+      "VAE"
+    ],
+    [
+      137,
+      66,
+      1,
+      53,
+      0,
+      "CLIP"
+    ],
+    [
+      138,
+      66,
+      0,
+      5,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
     {
+      "id": 1,
       "title": " Txt2Img",
       "bounding": [
         50,
@@ -1139,6 +1164,7 @@
       "flags": {}
     },
     {
+      "id": 2,
       "title": " FX10 GGUF",
       "bounding": [
         320,
@@ -1154,10 +1180,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5,
+      "scale": 0.7247295000000009,
       "offset": [
-        16,
-        150
+        153.9496338532361,
+        -28.08405950922996
       ]
     },
     "groupNodes": {}

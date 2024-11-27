@@ -1,22 +1,22 @@
 {
   "last_node_id": 58,
-  "last_link_id": 151,
+  "last_link_id": 154,
   "nodes": [
     {
       "id": 51,
       "type": "VAEDecode",
-      "pos": {
-        "0": 1250,
-        "1": 230
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
+      "pos": [
+        1250,
+        230
+      ],
+      "size": [
+        210,
+        46
+      ],
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -50,14 +50,14 @@
     {
       "id": 49,
       "type": "PerturbedAttentionGuidance",
-      "pos": {
-        "0": 850,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
+      "pos": [
+        850,
+        230
+      ],
+      "size": [
+        350,
+        60
+      ],
       "flags": {},
       "order": 0,
       "mode": 4,
@@ -90,14 +90,14 @@
     {
       "id": 45,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1250,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1250,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -116,14 +116,14 @@
     {
       "id": 43,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 450,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        450,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -142,14 +142,14 @@
     {
       "id": 44,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 850,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        850,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -168,14 +168,14 @@
     {
       "id": 54,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1250,
-        "1": 750
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1250,
+        750
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -194,14 +194,14 @@
     {
       "id": 27,
       "type": "SaveImage",
-      "pos": {
-        "0": 1250,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
+      "pos": [
+        1250,
+        290
+      ],
+      "size": [
+        350,
+        400
+      ],
       "flags": {},
       "order": 17,
       "mode": 0,
@@ -226,14 +226,14 @@
     {
       "id": 42,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        50,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -252,16 +252,16 @@
     {
       "id": 55,
       "type": "ModelSamplingFlux",
-      "pos": {
-        "0": 50,
-        "1": 390
-      },
-      "size": {
-        "0": 350,
-        "1": 130
-      },
+      "pos": [
+        50,
+        390
+      ],
+      "size": [
+        350,
+        130
+      ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 4,
       "inputs": [
         {
@@ -292,72 +292,18 @@
       ]
     },
     {
-      "id": 20,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            136
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            142
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            110
-          ],
-          "slot_index": 2,
-          "shape": 3
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "fx10-alswaiti-speed-fp8-e5m2.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 58,
       "type": "Power Lora Loader (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 580
-      },
-      "size": {
-        "0": 350,
-        "1": 120
-      },
+      "pos": [
+        50,
+        580
+      ],
+      "size": [
+        350,
+        120
+      ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -413,18 +359,18 @@
     {
       "id": 53,
       "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 130
-      },
-      "size": {
-        "0": 140,
-        "1": 70
-      },
+      "pos": [
+        450,
+        130
+      ],
+      "size": [
+        140,
+        70
+      ],
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -461,18 +407,18 @@
     {
       "id": 57,
       "type": "ConditioningZeroOut",
-      "pos": {
-        "0": 630,
-        "1": 560
-      },
-      "size": {
-        "0": 317.4000244140625,
-        "1": 26
-      },
+      "pos": [
+        630,
+        560
+      ],
+      "size": [
+        317.4000244140625,
+        26
+      ],
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -499,16 +445,16 @@
     {
       "id": 5,
       "type": "EmptyLatentImage",
-      "pos": {
-        "0": 450,
-        "1": 620
-      },
-      "size": {
-        "0": 350,
-        "1": 110
-      },
+      "pos": [
+        450,
+        620
+      ],
+      "size": [
+        350,
+        110
+      ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -536,16 +482,16 @@
     {
       "id": 6,
       "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 270
-      },
+      "pos": [
+        450,
+        230
+      ],
+      "size": [
+        350,
+        270
+      ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -579,18 +525,18 @@
     {
       "id": 41,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 10,
-        "1": -120
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        10,
+        -120
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -603,18 +549,72 @@
       "shape": 1
     },
     {
+      "id": 20,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        100
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            136
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            142
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            110
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "fx10-alswaiti-speed-fp8-e5m2.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 33,
       "type": "KSampler",
-      "pos": {
-        "0": 850,
-        "1": 350
-      },
-      "size": {
-        "0": 350,
-        "1": 262
-      },
+      "pos": [
+        850,
+        350
+      ],
+      "size": [
+        350,
+        262
+      ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -667,14 +667,14 @@
     {
       "id": 35,
       "type": "Note",
-      "pos": {
-        "0": 1250,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
+      "pos": [
+        1250,
+        750
+      ],
+      "size": [
+        350,
+        100
+      ],
       "flags": {},
       "order": 10,
       "mode": 0,
@@ -1034,10 +1034,35 @@
       33,
       0,
       "MODEL"
+    ],
+    [
+      152,
+      20,
+      2,
+      51,
+      1,
+      "VAE"
+    ],
+    [
+      153,
+      58,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      154,
+      58,
+      0,
+      33,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
     {
+      "id": 1,
       "title": " Txt2Img",
       "bounding": [
         50,
@@ -1050,6 +1075,7 @@
       "flags": {}
     },
     {
+      "id": 2,
       "title": " FX10 LDM",
       "bounding": [
         310,
@@ -1065,10 +1091,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5,
+      "scale": 0.7972024500000009,
       "offset": [
-        6,
-        160
+        25.69290947597824,
+        -5.678583050128793
       ]
     }
   },
