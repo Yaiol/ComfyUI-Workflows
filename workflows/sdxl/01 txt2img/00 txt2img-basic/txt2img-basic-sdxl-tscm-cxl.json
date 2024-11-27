@@ -1,18 +1,18 @@
 {
   "last_node_id": 68,
-  "last_link_id": 187,
+  "last_link_id": 192,
   "nodes": [
     {
       "id": 51,
       "type": "PrimitiveNode",
-      "pos": {
-        "0": 450,
-        "1": 460
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
+      "pos": [
+        450,
+        460
+      ],
+      "size": [
+        350,
+        170
+      ],
       "flags": {},
       "order": 0,
       "mode": 0,
@@ -44,14 +44,14 @@
     {
       "id": 61,
       "type": "PerturbedAttentionGuidance",
-      "pos": {
-        "0": 1150,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
+      "pos": [
+        1150,
+        230
+      ],
+      "size": [
+        350,
+        60
+      ],
       "flags": {},
       "order": 1,
       "mode": 4,
@@ -84,14 +84,14 @@
     {
       "id": 45,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1560,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1560,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -110,14 +110,14 @@
     {
       "id": 48,
       "type": "CLIPTextEncodeSDXL",
-      "pos": {
-        "0": 850,
-        "1": 510
-      },
-      "size": {
-        "0": 250,
-        "1": 220
-      },
+      "pos": [
+        850,
+        510
+      ],
+      "size": [
+        250,
+        220
+      ],
       "flags": {},
       "order": 12,
       "mode": 0,
@@ -176,14 +176,14 @@
     {
       "id": 41,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -110
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        0,
+        -110
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -202,14 +202,14 @@
     {
       "id": 5,
       "type": "EmptyLatentImage",
-      "pos": {
-        "0": 450,
-        "1": 690
-      },
-      "size": {
-        "0": 350,
-        "1": 110
-      },
+      "pos": [
+        450,
+        690
+      ],
+      "size": [
+        350,
+        110
+      ],
       "flags": {},
       "order": 4,
       "mode": 0,
@@ -239,14 +239,14 @@
     {
       "id": 63,
       "type": "Anything Everywhere",
-      "pos": {
-        "0": 710,
-        "1": 860
-      },
-      "size": {
-        "0": 239.40000915527344,
-        "1": 26
-      },
+      "pos": [
+        710,
+        860
+      ],
+      "size": [
+        239.40000915527344,
+        26
+      ],
       "flags": {
         "collapsed": true
       },
@@ -273,14 +273,14 @@
     {
       "id": 42,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        50,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -299,14 +299,14 @@
     {
       "id": 43,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 450,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        450,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -325,14 +325,14 @@
     {
       "id": 44,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1150,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1150,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -351,14 +351,14 @@
     {
       "id": 65,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1560,
-        "1": 750
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1560,
+        750
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -377,16 +377,16 @@
     {
       "id": 47,
       "type": "CLIPTextEncodeSDXL",
-      "pos": {
-        "0": 850,
-        "1": 230
-      },
-      "size": {
-        "0": 250,
-        "1": 220
-      },
+      "pos": [
+        850,
+        230
+      ],
+      "size": [
+        250,
+        220
+      ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -441,61 +441,18 @@
       "bgcolor": "#353"
     },
     {
-      "id": 67,
-      "type": "LoraLoaderModelOnly",
-      "pos": {
-        "0": 50,
-        "1": 390
-      },
-      "size": {
-        "0": 350,
-        "1": 82
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 158
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            168
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "hyper_lora_model",
-      "properties": {
-        "Node name for S&R": "LoraLoaderModelOnly"
-      },
-      "widgets_values": [
-        "lora\\01 base\\sdxl-hyper-bd-lora-8s.safetensors",
-        1
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 68,
       "type": "Power Lora Loader (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 530
-      },
-      "size": {
-        "0": 350,
-        "1": 120
-      },
+      "pos": [
+        50,
+        530
+      ],
+      "size": [
+        350,
+        120
+      ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -551,18 +508,18 @@
     {
       "id": 62,
       "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
+      "pos": [
+        450,
+        130
+      ],
+      "size": [
+        252,
+        66
+      ],
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -599,18 +556,18 @@
     {
       "id": 8,
       "type": "VAEDecode",
-      "pos": {
-        "0": 1560,
-        "1": 230
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
+      "pos": [
+        1560,
+        230
+      ],
+      "size": [
+        210,
+        46
+      ],
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -642,18 +599,89 @@
       "widgets_values": []
     },
     {
-      "id": 66,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
+      "id": 49,
+      "type": "PrimitiveNode",
+      "pos": [
+        450,
+        230
+      ],
+      "size": [
+        350,
+        170
+      ],
       "flags": {},
       "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            91,
+            92
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_g"
+          }
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "cinematic photograph of an astronaut riding a horse in space"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": [
+        1560,
+        290
+      ],
+      "size": [
+        350,
+        400
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_TSCM-CXL_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 66,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        100
+      ],
+      "flags": {},
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -687,120 +715,67 @@
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "sdxl-sai-base-v10-vae0.9.safetensors"
+        "sdxl-sai-base-v10-vae0.9.sft"
       ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
-      "id": 49,
-      "type": "PrimitiveNode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            91,
-            92
-          ],
-          "slot_index": 0,
-          "widget": {
-            "name": "text_g"
-          }
-        }
+      "id": 67,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        50,
+        390
       ],
-      "title": "prompt_positive",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "cinematic photograph of an astronaut riding a horse in space"
+      "size": [
+        350,
+        82
       ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1560,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
       "flags": {},
-      "order": 20,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 54
+          "name": "model",
+          "type": "MODEL",
+          "link": 158
         }
       ],
-      "outputs": [],
-      "title": "output",
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            168
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "hyper_lora_model",
       "properties": {
-        "Node name for S&R": "SaveImage"
+        "Node name for S&R": "LoraLoaderModelOnly"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_TSCM-CXL_%ksampler.seed%"
+        "lora\\01 base\\sdxl-hyper-bd-lora-8s.sft",
+        1
       ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 35,
-      "type": "Note",
-      "pos": {
-        "0": 1560,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-sdxl-tscm-cxl\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCXL  : Clip XL\nID   : T2I-BAS_SDXL_TSCM-CXL"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 33,
       "type": "KSampler",
-      "pos": {
-        "0": 1150,
-        "1": 360
-      },
-      "size": {
-        "0": 350,
-        "1": 262
-      },
+      "pos": [
+        1150,
+        360
+      ],
+      "size": [
+        350,
+        262
+      ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -849,6 +824,31 @@
         "sgm_uniform",
         1
       ]
+    },
+    {
+      "id": 35,
+      "type": "Note",
+      "pos": [
+        1560,
+        750
+      ],
+      "size": [
+        350,
+        100
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-sdxl-tscm-cxl\n==========================================================\nSDXL : SD XL\nTSCM : Trajectory Segmented Consistency Model\nCXL  : Clip XL\nID   : T2I-BAS_SDXL_TSCM-CXL"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1419,10 +1419,51 @@
       33,
       3,
       "LATENT"
+    ],
+    [
+      188,
+      68,
+      1,
+      48,
+      0,
+      "CLIP"
+    ],
+    [
+      189,
+      68,
+      1,
+      47,
+      0,
+      "CLIP"
+    ],
+    [
+      190,
+      66,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      191,
+      68,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      192,
+      5,
+      0,
+      33,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
     {
+      "id": 1,
       "title": " Txt2Img",
       "bounding": [
         50,
@@ -1435,6 +1476,7 @@
       "flags": {}
     },
     {
+      "id": 2,
       "title": " SDXL TSCM-CXL",
       "bounding": [
         310,

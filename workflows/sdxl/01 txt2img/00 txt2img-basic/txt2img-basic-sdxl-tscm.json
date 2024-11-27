@@ -1,18 +1,18 @@
 {
   "last_node_id": 58,
-  "last_link_id": 154,
+  "last_link_id": 158,
   "nodes": [
     {
       "id": 49,
       "type": "PerturbedAttentionGuidance",
-      "pos": {
-        "0": 840,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
+      "pos": [
+        840,
+        230
+      ],
+      "size": [
+        350,
+        60
+      ],
       "flags": {},
       "order": 0,
       "mode": 4,
@@ -45,14 +45,14 @@
     {
       "id": 8,
       "type": "VAEDecode",
-      "pos": {
-        "0": 1240,
-        "1": 230
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
+      "pos": [
+        1240,
+        230
+      ],
+      "size": [
+        210,
+        46
+      ],
       "flags": {
         "collapsed": true
       },
@@ -90,14 +90,14 @@
     {
       "id": 41,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -110
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        0,
+        -110
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -116,14 +116,14 @@
     {
       "id": 45,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1240,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1240,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -142,14 +142,14 @@
     {
       "id": 42,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        50,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -168,14 +168,14 @@
     {
       "id": 52,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 450,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        450,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -194,14 +194,14 @@
     {
       "id": 5,
       "type": "EmptyLatentImage",
-      "pos": {
-        "0": 450,
-        "1": 690
-      },
-      "size": {
-        "0": 350,
-        "1": 110
-      },
+      "pos": [
+        450,
+        690
+      ],
+      "size": [
+        350,
+        110
+      ],
       "flags": {},
       "order": 5,
       "mode": 0,
@@ -231,14 +231,14 @@
     {
       "id": 54,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1240,
-        "1": 750
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1240,
+        750
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -257,14 +257,14 @@
     {
       "id": 44,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 840,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        840,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -283,14 +283,14 @@
     {
       "id": 7,
       "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 460
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
+      "pos": [
+        450,
+        460
+      ],
+      "size": [
+        350,
+        170
+      ],
       "flags": {},
       "order": 8,
       "mode": 0,
@@ -322,59 +322,16 @@
       "bgcolor": "#533"
     },
     {
-      "id": 56,
-      "type": "LoraLoaderModelOnly",
-      "pos": {
-        "0": 50,
-        "1": 390
-      },
-      "size": {
-        "0": 350,
-        "1": 82
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 129
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            138
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "hyper_lora_model",
-      "properties": {
-        "Node name for S&R": "LoraLoaderModelOnly"
-      },
-      "widgets_values": [
-        "lora\\01 base\\sdxl-hyper-bd-lora-8s.safetensors",
-        1
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 58,
       "type": "Power Lora Loader (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 530
-      },
-      "size": {
-        "0": 350,
-        "1": 120
-      },
+      "pos": [
+        50,
+        530
+      ],
+      "size": [
+        350,
+        120
+      ],
       "flags": {},
       "order": 15,
       "mode": 0,
@@ -432,14 +389,14 @@
     {
       "id": 50,
       "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
+      "pos": [
+        450,
+        130
+      ],
+      "size": [
+        252,
+        66
+      ],
       "flags": {
         "collapsed": true
       },
@@ -480,14 +437,14 @@
     {
       "id": 6,
       "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
+      "pos": [
+        450,
+        230
+      ],
+      "size": [
+        350,
+        170
+      ],
       "flags": {},
       "order": 9,
       "mode": 0,
@@ -520,16 +477,48 @@
       "bgcolor": "#353"
     },
     {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": [
+        1240,
+        290
+      ],
+      "size": [
+        350,
+        400
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_TSCM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 55,
       "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        100
+      ],
       "flags": {},
       "order": 10,
       "mode": 0,
@@ -565,54 +554,65 @@
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "sdxl-sai-base-v10-vae0.9.safetensors"
+        "sdxl-sai-base-v10-vae0.9.sft"
       ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1240,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
+      "id": 56,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        50,
+        390
+      ],
+      "size": [
+        350,
+        82
+      ],
       "flags": {},
-      "order": 16,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 54
+          "name": "model",
+          "type": "MODEL",
+          "link": 129
         }
       ],
-      "outputs": [],
-      "title": "output",
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            138
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "hyper_lora_model",
       "properties": {
-        "Node name for S&R": "SaveImage"
+        "Node name for S&R": "LoraLoaderModelOnly"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_TSCM_%ksampler.seed%"
+        "lora\\01 base\\sdxl-hyper-bd-lora-8s.sft",
+        1
       ],
-      "color": "#323",
-      "bgcolor": "#535"
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 33,
       "type": "KSampler",
-      "pos": {
-        "0": 840,
-        "1": 350
-      },
-      "size": {
-        "0": 350,
-        "1": 262
-      },
+      "pos": [
+        840,
+        350
+      ],
+      "size": [
+        350,
+        262
+      ],
       "flags": {},
       "order": 12,
       "mode": 0,
@@ -667,14 +667,14 @@
     {
       "id": 35,
       "type": "Note",
-      "pos": {
-        "0": 1240,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
+      "pos": [
+        1240,
+        750
+      ],
+      "size": [
+        350,
+        100
+      ],
       "flags": {},
       "order": 11,
       "mode": 0,
@@ -1098,10 +1098,43 @@
       33,
       0,
       "MODEL"
+    ],
+    [
+      155,
+      55,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      156,
+      58,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      157,
+      58,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      158,
+      58,
+      0,
+      33,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
     {
+      "id": 1,
       "title": " SDXL TSCM",
       "bounding": [
         310,
@@ -1114,6 +1147,7 @@
       "flags": {}
     },
     {
+      "id": 2,
       "title": " Txt2Img",
       "bounding": [
         50,

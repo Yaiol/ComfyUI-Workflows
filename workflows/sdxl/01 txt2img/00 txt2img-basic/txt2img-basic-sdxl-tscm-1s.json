@@ -1,18 +1,18 @@
 {
   "last_node_id": 60,
-  "last_link_id": 163,
+  "last_link_id": 167,
   "nodes": [
     {
       "id": 49,
       "type": "PerturbedAttentionGuidance",
-      "pos": {
-        "0": 840,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
+      "pos": [
+        840,
+        230
+      ],
+      "size": [
+        350,
+        60
+      ],
       "flags": {},
       "order": 0,
       "mode": 4,
@@ -43,14 +43,14 @@
     {
       "id": 41,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -110
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        0,
+        -110
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -69,14 +69,14 @@
     {
       "id": 45,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1240,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1240,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -95,14 +95,14 @@
     {
       "id": 42,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        50,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -121,14 +121,14 @@
     {
       "id": 52,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 450,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        450,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -147,14 +147,14 @@
     {
       "id": 54,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1240,
-        "1": 750
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1240,
+        750
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -173,14 +173,14 @@
     {
       "id": 44,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 840,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        840,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -199,14 +199,14 @@
     {
       "id": 7,
       "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 460
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
+      "pos": [
+        450,
+        460
+      ],
+      "size": [
+        350,
+        170
+      ],
       "flags": {},
       "order": 7,
       "mode": 0,
@@ -240,14 +240,14 @@
     {
       "id": 5,
       "type": "EmptyLatentImage",
-      "pos": {
-        "0": 450,
-        "1": 690
-      },
-      "size": {
-        "0": 350,
-        "1": 110
-      },
+      "pos": [
+        450,
+        690
+      ],
+      "size": [
+        350,
+        110
+      ],
       "flags": {},
       "order": 8,
       "mode": 0,
@@ -277,18 +277,18 @@
     {
       "id": 8,
       "type": "VAEDecode",
-      "pos": {
-        "0": 1240,
-        "1": 230
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
+      "pos": [
+        1240,
+        230
+      ],
+      "size": [
+        210,
+        46
+      ],
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -320,78 +320,18 @@
       "widgets_values": []
     },
     {
-      "id": 58,
-      "type": "TCDModelSamplingDiscrete",
-      "pos": {
-        "0": 840,
-        "1": 350
-      },
-      "size": {
-        "0": 360,
-        "1": 170
-      },
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            141
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "SAMPLER",
-          "type": "SAMPLER",
-          "links": [
-            142
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "SIGMAS",
-          "type": "SIGMAS",
-          "links": [
-            143
-          ],
-          "slot_index": 2,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "TCDModelSamplingDiscrete"
-      },
-      "widgets_values": [
-        4,
-        "sgm_uniform",
-        1,
-        0.8
-      ]
-    },
-    {
       "id": 60,
       "type": "Power Lora Loader (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 530
-      },
-      "size": {
-        "0": 350,
-        "1": 120
-      },
+      "pos": [
+        50,
+        530
+      ],
+      "size": [
+        350,
+        120
+      ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -445,63 +385,20 @@
       "bgcolor": "#335"
     },
     {
-      "id": 56,
-      "type": "LoraLoaderModelOnly",
-      "pos": {
-        "0": 50,
-        "1": 390
-      },
-      "size": {
-        "0": 350,
-        "1": 82
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 129
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            155
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "hyper_lora_model",
-      "properties": {
-        "Node name for S&R": "LoraLoaderModelOnly"
-      },
-      "widgets_values": [
-        "lora\\01 base\\sdxl-hyper-bd-lora-1s.safetensors",
-        1
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 50,
       "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
+      "pos": [
+        450,
+        130
+      ],
+      "size": [
+        252,
+        66
+      ],
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -538,16 +435,16 @@
     {
       "id": 6,
       "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
+      "pos": [
+        450,
+        230
+      ],
+      "size": [
+        350,
+        170
+      ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -578,18 +475,50 @@
       "bgcolor": "#353"
     },
     {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": [
+        1240,
+        290
+      ],
+      "size": [
+        350,
+        400
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_TSCM-1S_%sampler.noise_seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 55,
       "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        100
+      ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -623,56 +552,127 @@
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "sdxl-sai-base-v10-vae0.9.safetensors"
+        "sdxl-sai-base-v10-vae0.9.sft"
       ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1240,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
+      "id": 58,
+      "type": "TCDModelSamplingDiscrete",
+      "pos": [
+        840,
+        350
+      ],
+      "size": [
+        360,
+        170
+      ],
       "flags": {},
-      "order": 17,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 54
+          "name": "model",
+          "type": "MODEL",
+          "link": null
         }
       ],
-      "outputs": [],
-      "title": "output",
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            141
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            142
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "SIGMAS",
+          "type": "SIGMAS",
+          "links": [
+            143
+          ],
+          "slot_index": 2,
+          "shape": 3
+        }
+      ],
       "properties": {
-        "Node name for S&R": "SaveImage"
+        "Node name for S&R": "TCDModelSamplingDiscrete"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SDXL_TSCM-1S_%sampler.noise_seed%"
+        1,
+        "sgm_uniform",
+        1,
+        0.8
+      ]
+    },
+    {
+      "id": 56,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        50,
+        390
       ],
-      "color": "#323",
-      "bgcolor": "#535"
+      "size": [
+        350,
+        82
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 129
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            155
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "hyper_lora_model",
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "lora\\01 base\\sdxl-hyper-bd-lora-1s.sft",
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 59,
       "type": "SamplerCustom",
-      "pos": {
-        "0": 840,
-        "1": 580
-      },
-      "size": {
-        "0": 360,
-        "1": 230
-      },
+      "pos": [
+        840,
+        580
+      ],
+      "size": [
+        360,
+        230
+      ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -737,14 +737,14 @@
     {
       "id": 35,
       "type": "Note",
-      "pos": {
-        "0": 1240,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
+      "pos": [
+        1240,
+        750
+      ],
+      "size": [
+        350,
+        100
+      ],
       "flags": {},
       "order": 12,
       "mode": 0,
@@ -1184,10 +1184,43 @@
       6,
       0,
       "CLIP"
+    ],
+    [
+      164,
+      60,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      165,
+      55,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      166,
+      60,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      167,
+      60,
+      0,
+      58,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
     {
+      "id": 1,
       "title": " SDXL TSCM 1S",
       "bounding": [
         310,
@@ -1200,6 +1233,7 @@
       "flags": {}
     },
     {
+      "id": 2,
       "title": " Txt2Img",
       "bounding": [
         50,
