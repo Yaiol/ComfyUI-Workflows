@@ -1,6 +1,6 @@
 {
-  "last_node_id": 240,
-  "last_link_id": 451,
+  "last_node_id": 244,
+  "last_link_id": 462,
   "nodes": [
     {
       "id": 205,
@@ -180,47 +180,6 @@
       "bgcolor": "#533"
     },
     {
-      "id": 224,
-      "type": "CLIPTextEncode",
-      "pos": [
-        850,
-        230
-      ],
-      "size": [
-        350,
-        170
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            439
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "Astronaut riding a white horse in outer space. The astronaut is wearing a white suit with a helmet and carrying a large backpack on his back. The horse is galloping forward with its mane and tail flowing in the wind. The background shows a vast expanse of space with a planet in the distance. The sky is filled with clouds and there is a hint of smoke in the air. The overall mood of the image is peaceful and serene. Shot on Canon EOS, f/1.4, 85mm."
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 235,
       "type": "LoadImage",
       "pos": [
@@ -229,10 +188,10 @@
       ],
       "size": [
         350,
-        300
+        310
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -273,7 +232,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -355,7 +314,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -381,7 +340,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -394,70 +353,185 @@
       "shape": 1
     },
     {
-      "id": 230,
-      "type": "LTXVConditioning",
+      "id": 226,
+      "type": "VAEDecode",
       "pos": [
-        1260,
-        820
+        1850,
+        230
       ],
       "size": [
-        240,
-        80
+        210,
+        46
       ],
-      "flags": {},
-      "order": 16,
+      "flags": {
+        "collapsed": false
+      },
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 431
+          "name": "samples",
+          "type": "LATENT",
+          "link": 429
         },
         {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 432
+          "name": "vae",
+          "type": "VAE",
+          "link": null
         }
       ],
       "outputs": [
         {
-          "name": "positive",
-          "type": "CONDITIONING",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            434
+            446
           ],
           "slot_index": 0
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            435
-          ],
-          "slot_index": 1
         }
       ],
-      "title": "ltxv_conditioning",
+      "title": "vae_decode",
       "properties": {
-        "Node name for S&R": "LTXVConditioning"
+        "Node name for S&R": "VAEDecode"
       },
+      "widgets_values": []
+    },
+    {
+      "id": 202,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        1850,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 ouput",
+      "properties": {},
       "widgets_values": [
-        25
-      ]
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 242,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        1850,
+        840
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
+      "id": 241,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        1850,
+        340
+      ],
+      "size": [
+        350,
+        440
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 446
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "meta_batch",
+          "type": "VHS_BatchManager",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 24,
+        "loop_count": 0,
+        "filename_prefix": "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2V-BAS_LTXV10_%ksampler.seed%",
+        "format": "image/webp",
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "241128-012633_I2V-BAS_LTXV10_%ksampler.seed%_00001.webp",
+            "subfolder": "241128",
+            "type": "output",
+            "format": "image/webp",
+            "frame_rate": 24
+          }
+        }
+      }
     },
     {
       "id": 234,
       "type": "LTXVImgToVideo",
       "pos": [
-        1260,
-        570
+        1550,
+        230
       ],
       "size": [
-        240,
+        250,
         190
       ],
       "flags": {},
-      "order": 14,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -515,23 +589,81 @@
       "widgets_values": [
         768,
         448,
-        73,
+        97,
         1
+      ]
+    },
+    {
+      "id": 201,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        1250,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖4 sampler",
+      "properties": {},
+      "widgets_values": [
+        "4",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 233,
+      "type": "KSamplerSelect",
+      "pos": [
+        1250,
+        230
+      ],
+      "size": [
+        250,
+        60
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            436
+          ]
+        }
+      ],
+      "title": "sampler",
+      "properties": {
+        "Node name for S&R": "KSamplerSelect"
+      },
+      "widgets_values": [
+        "euler"
       ]
     },
     {
       "id": 231,
       "type": "LTXVScheduler",
       "pos": [
-        1260,
+        1250,
         350
       ],
       "size": [
-        240,
+        250,
         150
       ],
       "flags": {},
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -564,180 +696,181 @@
       ]
     },
     {
-      "id": 233,
-      "type": "KSamplerSelect",
+      "id": 230,
+      "type": "LTXVConditioning",
       "pos": [
-        1260,
-        230
+        1550,
+        480
       ],
       "size": [
-        240,
-        60
+        250,
+        80
       ],
       "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "SAMPLER",
-          "type": "SAMPLER",
-          "links": [
-            436
-          ]
-        }
-      ],
-      "title": "sampler",
-      "properties": {
-        "Node name for S&R": "KSamplerSelect"
-      },
-      "widgets_values": [
-        "euler"
-      ]
-    },
-    {
-      "id": 226,
-      "type": "VAEDecode",
-      "pos": [
-        1850,
-        230
-      ],
-      "size": [
-        210,
-        46
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 429
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 431
         },
         {
-          "name": "vae",
-          "type": "VAE",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 432
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            434
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            435
+          ],
+          "slot_index": 1
+        }
+      ],
+      "title": "ltxv_conditioning",
+      "properties": {
+        "Node name for S&R": "LTXVConditioning"
+      },
+      "widgets_values": [
+        24
+      ]
+    },
+    {
+      "id": 224,
+      "type": "CLIPTextEncode",
+      "pos": [
+        850,
+        230
+      ],
+      "size": [
+        350,
+        170
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
           "link": null
         }
       ],
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
           "links": [
-            445
+            439,
+            454
           ],
           "slot_index": 0
         }
       ],
-      "title": "vae_decode",
+      "title": "prompt_positive",
       "properties": {
-        "Node name for S&R": "VAEDecode"
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "Astronaut riding a white horse in outer space. The astronaut is wearing a white suit with a helmet and carrying a large backpack on his back. The horse is galloping forward with its mane and tail flowing in the wind. The background shows a vast expanse of space with a planet in the distance. The sky is filled with clouds and there is a hint of smoke in the air. The overall mood of the image is peaceful and serene. Shot on Canon EOS, f/1.4, 85mm."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 243,
+      "type": "Reroute",
+      "pos": [
+        1240.072998046875,
+        87.20973205566406
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 454
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "CONDITIONING",
+          "links": [
+            455
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
       }
     },
     {
-      "id": 202,
-      "type": "Bookmark (rgthree)",
+      "id": 244,
+      "type": "Reroute",
       "pos": [
-        1850,
-        170
+        1480,
+        90
       ],
       "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖9 ouput",
-      "properties": {},
-      "widgets_values": [
-        "9",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 201,
-      "type": "Bookmark (rgthree)",
-      "pos": [
-        1260,
-        170
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖4 sampler",
-      "properties": {},
-      "widgets_values": [
-        "4",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 239,
-      "type": "SaveAnimatedWEBP",
-      "pos": [
-        1850,
-        340
-      ],
-      "size": [
-        350,
-        360
+        75,
+        26
       ],
       "flags": {},
       "order": 20,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 445
+          "name": "",
+          "type": "*",
+          "link": 455
         }
       ],
-      "outputs": [],
-      "title": "output",
+      "outputs": [
+        {
+          "name": "",
+          "type": "CONDITIONING",
+          "links": null
+        }
+      ],
       "properties": {
-        "Node name for S&R": "SaveAnimatedWEBP"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2V-BAS_LTXV10_%ksampler.seed%",
-        24,
-        true,
-        100,
-        "default",
-        null
-      ]
+        "showOutputText": false,
+        "horizontal": false
+      }
     },
     {
       "id": 232,
       "type": "SamplerCustom",
       "pos": [
         1550,
-        230
+        620
       ],
       "size": [
         250,
         230
       ],
       "flags": {},
-      "order": 18,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -802,7 +935,7 @@
       "type": "Note",
       "pos": [
         1850,
-        760
+        840
       ],
       "size": [
         350,
@@ -811,7 +944,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1107,15 +1240,15 @@
       "IMAGE"
     ],
     [
-      445,
+      446,
       226,
       0,
-      239,
+      241,
       0,
       "IMAGE"
     ],
     [
-      446,
+      447,
       227,
       0,
       225,
@@ -1123,7 +1256,7 @@
       "CLIP"
     ],
     [
-      447,
+      448,
       227,
       0,
       224,
@@ -1131,7 +1264,7 @@
       "CLIP"
     ],
     [
-      448,
+      449,
       229,
       2,
       234,
@@ -1139,7 +1272,7 @@
       "VAE"
     ],
     [
-      449,
+      450,
       235,
       0,
       234,
@@ -1147,7 +1280,7 @@
       "IMAGE"
     ],
     [
-      450,
+      451,
       229,
       2,
       226,
@@ -1155,7 +1288,87 @@
       "VAE"
     ],
     [
-      451,
+      452,
+      229,
+      0,
+      232,
+      0,
+      "MODEL"
+    ],
+    [
+      453,
+      229,
+      2,
+      241,
+      3,
+      "VAE"
+    ],
+    [
+      454,
+      224,
+      0,
+      243,
+      0,
+      "*"
+    ],
+    [
+      455,
+      243,
+      0,
+      244,
+      0,
+      "*"
+    ],
+    [
+      456,
+      227,
+      0,
+      225,
+      0,
+      "CLIP"
+    ],
+    [
+      457,
+      229,
+      2,
+      226,
+      1,
+      "VAE"
+    ],
+    [
+      458,
+      229,
+      2,
+      241,
+      3,
+      "VAE"
+    ],
+    [
+      459,
+      229,
+      2,
+      234,
+      2,
+      "VAE"
+    ],
+    [
+      460,
+      235,
+      0,
+      234,
+      3,
+      "IMAGE"
+    ],
+    [
+      461,
+      227,
+      0,
+      224,
+      0,
+      "CLIP"
+    ],
+    [
+      462,
       229,
       0,
       232,
@@ -1194,10 +1407,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8769226950000113,
+      "scale": 0.5,
       "offset": [
-        -646.9036712081879,
-        -261.36339841099993
+        16,
+        140
       ]
     }
   },

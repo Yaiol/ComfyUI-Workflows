@@ -1,6 +1,6 @@
 {
-  "last_node_id": 223,
-  "last_link_id": 426,
+  "last_node_id": 224,
+  "last_link_id": 432,
   "nodes": [
     {
       "id": 199,
@@ -29,32 +29,6 @@
       "shape": 1
     },
     {
-      "id": 205,
-      "type": "Bookmark (rgthree)",
-      "pos": [
-        0,
-        -100
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖workflow",
-      "properties": {},
-      "widgets_values": [
-        "0",
-        0.5
-      ],
-      "shape": 1
-    },
-    {
       "id": 200,
       "type": "Bookmark (rgthree)",
       "pos": [
@@ -68,7 +42,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -94,7 +68,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -140,7 +114,7 @@
         170
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -183,7 +157,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -277,7 +251,7 @@
         60
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -295,58 +269,6 @@
       },
       "widgets_values": [
         "euler"
-      ]
-    },
-    {
-      "id": 213,
-      "type": "LTXVConditioning",
-      "pos": [
-        1250,
-        230
-      ],
-      "size": [
-        350,
-        80
-      ],
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 400
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 401
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            403
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            404
-          ],
-          "slot_index": 1
-        }
-      ],
-      "title": "ltxv_conditioning",
-      "properties": {
-        "Node name for S&R": "LTXVConditioning"
-      },
-      "widgets_values": [
-        25
       ]
     },
     {
@@ -433,7 +355,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -444,113 +366,6 @@
         0.8
       ],
       "shape": 1
-    },
-    {
-      "id": 214,
-      "type": "EmptyLTXVLatentVideo",
-      "pos": [
-        850,
-        560
-      ],
-      "size": [
-        350,
-        130
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            402,
-            407
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "latent_video",
-      "properties": {
-        "Node name for S&R": "EmptyLTXVLatentVideo"
-      },
-      "widgets_values": [
-        768,
-        448,
-        73,
-        1
-      ]
-    },
-    {
-      "id": 206,
-      "type": "Bookmark (rgthree)",
-      "pos": [
-        1650,
-        710
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖note",
-      "properties": {},
-      "widgets_values": [
-        ".",
-        2
-      ],
-      "shape": 1
-    },
-    {
-      "id": 209,
-      "type": "VAEDecode",
-      "pos": [
-        1650,
-        230
-      ],
-      "size": [
-        210,
-        46
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 398
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            399
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "vae_decode",
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "widgets_values": []
     },
     {
       "id": 212,
@@ -564,7 +379,7 @@
         100
       ],
       "flags": {},
-      "order": 9,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -612,7 +427,7 @@
         82
       ],
       "flags": {},
-      "order": 10,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -637,40 +452,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 211,
-      "type": "SaveAnimatedWEBP",
-      "pos": [
-        1650,
-        290
-      ],
-      "size": [
-        350,
-        370
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 399
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "SaveAnimatedWEBP"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2V-BAS_LTXV10_%ksampler.seed%",
-        18,
-        true,
-        100,
-        "default",
-        null
-      ]
-    },
-    {
       "id": 215,
       "type": "LTXVScheduler",
       "pos": [
@@ -682,7 +463,7 @@
         154
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -715,6 +496,239 @@
       ]
     },
     {
+      "id": 209,
+      "type": "VAEDecode",
+      "pos": [
+        1650,
+        230
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 398
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            427
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 214,
+      "type": "EmptyLTXVLatentVideo",
+      "pos": [
+        850,
+        560
+      ],
+      "size": [
+        350,
+        130
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            402,
+            407
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "latent_video",
+      "properties": {
+        "Node name for S&R": "EmptyLTXVLatentVideo"
+      },
+      "widgets_values": [
+        768,
+        448,
+        97,
+        1
+      ]
+    },
+    {
+      "id": 224,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        1650,
+        340
+      ],
+      "size": [
+        350,
+        520
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 427
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "meta_batch",
+          "type": "VHS_BatchManager",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 24,
+        "loop_count": 0,
+        "filename_prefix": "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2V-BAS_LTXV10_%ksampler.seed%",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "241128-014134_I2V-BAS_LTXV10_%ksampler.seed%_00001.mp4",
+            "subfolder": "241128",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 24
+          }
+        }
+      }
+    },
+    {
+      "id": 206,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        1650,
+        920
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
+      "id": 213,
+      "type": "LTXVConditioning",
+      "pos": [
+        850,
+        750
+      ],
+      "size": [
+        350,
+        80
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 400
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 401
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            403
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            404
+          ],
+          "slot_index": 1
+        }
+      ],
+      "title": "ltxv_conditioning",
+      "properties": {
+        "Node name for S&R": "LTXVConditioning"
+      },
+      "widgets_values": [
+        24
+      ]
+    },
+    {
       "id": 207,
       "type": "CLIPTextEncode",
       "pos": [
@@ -726,7 +740,7 @@
         170
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -750,10 +764,36 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "Young woman wearing a brown cowboy hat and a brown leather jacket. She has long dark hair and is looking off to the side with a serious expression on her face. The background is a desert landscape with rocky cliffs and a blue sky with light clouds. Golden hours. The overall mood of the image is cinematic. Shot on Canon EOS, f/1.4, 85mm."
+        "Astronaut riding a white horse in outer space. The astronaut is wearing a white suit with a helmet and carrying a large backpack on his back. The horse is galloping forward with its mane and tail flowing in the wind. The background shows a vast expanse of space with a planet in the distance. The sky is filled with clouds and there is a hint of smoke in the air. The overall mood of the image is peaceful and serene. Shot on Canon EOS, f/1.4, 85mm."
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 205,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        0,
+        -100
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.6
+      ],
+      "shape": 1
     },
     {
       "id": 216,
@@ -832,7 +872,7 @@
       "type": "Note",
       "pos": [
         1650,
-        710
+        920
       ],
       "size": [
         350,
@@ -927,14 +967,6 @@
       209,
       0,
       "LATENT"
-    ],
-    [
-      399,
-      209,
-      0,
-      211,
-      0,
-      "IMAGE"
     ],
     [
       400,
@@ -1151,6 +1183,54 @@
       216,
       0,
       "MODEL"
+    ],
+    [
+      427,
+      209,
+      0,
+      224,
+      0,
+      "IMAGE"
+    ],
+    [
+      428,
+      210,
+      0,
+      208,
+      0,
+      "CLIP"
+    ],
+    [
+      429,
+      212,
+      2,
+      209,
+      1,
+      "VAE"
+    ],
+    [
+      430,
+      212,
+      2,
+      224,
+      3,
+      "VAE"
+    ],
+    [
+      431,
+      210,
+      0,
+      207,
+      0,
+      "CLIP"
+    ],
+    [
+      432,
+      212,
+      0,
+      216,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
@@ -1184,10 +1264,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7320500000000005,
+      "scale": 0.6,
       "offset": [
-        -239.20848798963573,
-        -134.79644238034464
+        16,
+        140
       ]
     }
   },
