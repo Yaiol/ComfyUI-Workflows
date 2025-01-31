@@ -1,18 +1,18 @@
 {
   "last_node_id": 119,
-  "last_link_id": 234,
+  "last_link_id": 239,
   "nodes": [
     {
       "id": 93,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 0,
-        "1": -110
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        0,
+        -110
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -31,10 +31,10 @@
     {
       "id": 106,
       "type": "Reroute",
-      "pos": {
-        "0": 1770,
-        "1": 90
-      },
+      "pos": [
+        1770,
+        90
+      ],
       "size": [
         75,
         26
@@ -66,10 +66,10 @@
     {
       "id": 107,
       "type": "Reroute",
-      "pos": {
-        "0": 2030,
-        "1": 90
-      },
+      "pos": [
+        2030,
+        90
+      ],
       "size": [
         75,
         26
@@ -101,14 +101,14 @@
     {
       "id": 113,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 60,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        60,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -127,14 +127,14 @@
     {
       "id": 114,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 960,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        960,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -153,14 +153,14 @@
     {
       "id": 115,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1770,
-        "1": 160
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1770,
+        160
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -179,14 +179,14 @@
     {
       "id": 116,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1370,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1370,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -205,14 +205,14 @@
     {
       "id": 108,
       "type": "Anything Everywhere",
-      "pos": {
-        "0": 960,
-        "1": 130
-      },
-      "size": {
-        "0": 239.40000915527344,
-        "1": 26
-      },
+      "pos": [
+        960,
+        130
+      ],
+      "size": [
+        239.40000915527344,
+        26
+      ],
       "flags": {
         "collapsed": true
       },
@@ -239,14 +239,14 @@
     {
       "id": 119,
       "type": "Power Lora Loader (rgthree)",
-      "pos": {
-        "0": 960,
-        "1": 390
-      },
-      "size": {
-        "0": 350,
-        "1": 120
-      },
+      "pos": [
+        960,
+        390
+      ],
+      "size": [
+        350,
+        120
+      ],
       "flags": {},
       "order": 18,
       "mode": 0,
@@ -304,14 +304,14 @@
     {
       "id": 105,
       "type": "Anything Everywhere3",
-      "pos": {
-        "0": 1370,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
+      "pos": [
+        1370,
+        130
+      ],
+      "size": [
+        252,
+        66
+      ],
       "flags": {
         "collapsed": true
       },
@@ -352,14 +352,14 @@
     {
       "id": 100,
       "type": "PhotoMakerLoaderPlus",
-      "pos": {
-        "0": 1360,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 60
-      },
+      "pos": [
+        1360,
+        230
+      ],
+      "size": [
+        350,
+        60
+      ],
       "flags": {},
       "order": 5,
       "mode": 0,
@@ -389,14 +389,14 @@
     {
       "id": 103,
       "type": "PhotoMakerInsightFaceLoader",
-      "pos": {
-        "0": 1370,
-        "1": 500
-      },
-      "size": {
-        "0": 340,
-        "1": 60
-      },
+      "pos": [
+        1370,
+        500
+      ],
+      "size": [
+        340,
+        60
+      ],
       "flags": {},
       "order": 6,
       "mode": 0,
@@ -425,14 +425,14 @@
     {
       "id": 96,
       "type": "EmptyLatentImage",
-      "pos": {
-        "0": 1760,
-        "1": 730
-      },
-      "size": {
-        "0": 350,
-        "1": 110
-      },
+      "pos": [
+        1760,
+        730
+      ],
+      "size": [
+        350,
+        110
+      ],
       "flags": {},
       "order": 7,
       "mode": 0,
@@ -462,14 +462,14 @@
     {
       "id": 104,
       "type": "LoadImage",
-      "pos": {
-        "0": 60,
-        "1": 340
-      },
-      "size": {
-        "0": 250,
-        "1": 350
-      },
+      "pos": [
+        60,
+        340
+      ],
+      "size": [
+        250,
+        350
+      ],
       "flags": {},
       "order": 8,
       "mode": 0,
@@ -503,14 +503,14 @@
     {
       "id": 110,
       "type": "LoadImage",
-      "pos": {
-        "0": 360,
-        "1": 340
-      },
-      "size": {
-        "0": 250,
-        "1": 350
-      },
+      "pos": [
+        360,
+        340
+      ],
+      "size": [
+        250,
+        350
+      ],
       "flags": {},
       "order": 9,
       "mode": 0,
@@ -542,14 +542,14 @@
     {
       "id": 112,
       "type": "LoadImage",
-      "pos": {
-        "0": 660,
-        "1": 340
-      },
-      "size": {
-        "0": 250,
-        "1": 350
-      },
+      "pos": [
+        660,
+        340
+      ],
+      "size": [
+        250,
+        350
+      ],
       "flags": {},
       "order": 10,
       "mode": 0,
@@ -581,14 +581,14 @@
     {
       "id": 109,
       "type": "ImageBatch",
-      "pos": {
-        "0": 360,
-        "1": 230
-      },
-      "size": {
-        "0": 250,
-        "1": 50
-      },
+      "pos": [
+        360,
+        230
+      ],
+      "size": [
+        250,
+        50
+      ],
       "flags": {},
       "order": 17,
       "mode": 0,
@@ -617,19 +617,20 @@
       "title": "batch_2",
       "properties": {
         "Node name for S&R": "ImageBatch"
-      }
+      },
+      "widgets_values": []
     },
     {
       "id": 111,
       "type": "ImageBatch",
-      "pos": {
-        "0": 660,
-        "1": 230
-      },
-      "size": {
-        "0": 240,
-        "1": 50
-      },
+      "pos": [
+        660,
+        230
+      ],
+      "size": [
+        240,
+        50
+      ],
       "flags": {},
       "order": 20,
       "mode": 0,
@@ -658,19 +659,20 @@
       "title": "batch_3",
       "properties": {
         "Node name for S&R": "ImageBatch"
-      }
+      },
+      "widgets_values": []
     },
     {
       "id": 98,
       "type": "VAEDecode",
-      "pos": {
-        "0": 2560,
-        "1": 230
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
+      "pos": [
+        2560,
+        230
+      ],
+      "size": [
+        210,
+        46
+      ],
       "flags": {
         "collapsed": true
       },
@@ -701,19 +703,20 @@
       "title": "vae_decode",
       "properties": {
         "Node name for S&R": "VAEDecode"
-      }
+      },
+      "widgets_values": []
     },
     {
       "id": 102,
       "type": "PhotoMakerLoraLoaderPlus",
-      "pos": {
-        "0": 1370,
-        "1": 350
-      },
-      "size": {
-        "0": 340,
-        "1": 80
-      },
+      "pos": [
+        1370,
+        350
+      ],
+      "size": [
+        340,
+        80
+      ],
       "flags": {},
       "order": 15,
       "mode": 0,
@@ -751,63 +754,12 @@
       "bgcolor": "#335"
     },
     {
-      "id": 95,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 960,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            226
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            225
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            229
-          ],
-          "slot_index": 2
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "sdxl-epinikion-realism-v80-p.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 99,
       "type": "SaveImage",
-      "pos": {
-        "0": 2560,
-        "1": 290
-      },
+      "pos": [
+        2560,
+        290
+      ],
       "size": [
         360,
         410
@@ -838,18 +790,18 @@
     {
       "id": 118,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 2560,
-        "1": 760
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        2560,
+        760
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -864,14 +816,14 @@
     {
       "id": 101,
       "type": "PhotoMakerEncodePlus",
-      "pos": {
-        "0": 1760,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 210
-      },
+      "pos": [
+        1760,
+        230
+      ],
+      "size": [
+        350,
+        210
+      ],
       "flags": {},
       "order": 16,
       "mode": 0,
@@ -923,16 +875,16 @@
     {
       "id": 97,
       "type": "CLIPTextEncode",
-      "pos": {
-        "0": 1760,
-        "1": 490
-      },
-      "size": {
-        "0": 350,
-        "1": 180
-      },
+      "pos": [
+        1760,
+        490
+      ],
+      "size": [
+        350,
+        180
+      ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -961,16 +913,94 @@
       "bgcolor": "#533"
     },
     {
+      "id": 95,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        960,
+        230
+      ],
+      "size": [
+        350,
+        100
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            226
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            225
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            229
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sdxl-epinikion-realism-v80-p.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 117,
+      "type": "Note",
+      "pos": [
+        2560,
+        760
+      ],
+      "size": [
+        350,
+        100
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "face2img-photomaker-v2-sdxl-ldm\n===========================================================\nSDXL : SD XL\nLDM  : Latent Diffusion Model\nCSD  : Clip Standard\nID   : F2I-PM2_SDXL_LDM"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 94,
       "type": "KSampler",
-      "pos": {
-        "0": 2160,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 270
-      },
+      "pos": [
+        2160,
+        230
+      ],
+      "size": [
+        350,
+        474
+      ],
       "flags": {},
       "order": 24,
       "mode": 0,
@@ -1012,40 +1042,13 @@
       },
       "widgets_values": [
         25191512,
-        "fixed",
+        "randomize",
         25,
         4,
         "dpmpp_2m_sde",
         "karras",
         1
       ]
-    },
-    {
-      "id": 117,
-      "type": "Note",
-      "pos": {
-        "0": 2560,
-        "1": 760
-      },
-      "size": [
-        350,
-        100
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 14,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "face2img-photomaker-v2-sdxl-ldm\n===========================================================\nSDXL : SD XL\nLDM  : Latent Diffusion Model\nCSD  : Clip Standard\nID   : F2I-PM2_SDXL_LDM"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1336,10 +1339,51 @@
       97,
       0,
       "CLIP"
+    ],
+    [
+      235,
+      95,
+      2,
+      98,
+      1,
+      "VAE"
+    ],
+    [
+      236,
+      119,
+      0,
+      102,
+      0,
+      "MODEL"
+    ],
+    [
+      237,
+      119,
+      1,
+      101,
+      0,
+      "CLIP"
+    ],
+    [
+      238,
+      111,
+      0,
+      101,
+      2,
+      "IMAGE"
+    ],
+    [
+      239,
+      119,
+      1,
+      97,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
     {
+      "id": 1,
       "title": " SDXL LDM",
       "bounding": [
         800,
@@ -1352,6 +1396,7 @@
       "flags": {}
     },
     {
+      "id": 2,
       "title": " Face2Img Photomaker v2",
       "bounding": [
         50,
@@ -1367,17 +1412,67 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5,
+      "scale": 0.3755102040816327,
       "offset": [
-        16,
-        150
+        500,
+        553.9565217391305
       ]
     },
     "0246.VERSION": [
       0,
       0,
       4
-    ]
+    ],
+    "node_versions": {
+      "cg-use-everywhere": "ce510b97d10e69d5fd0042e115ecd946890d2079",
+      "rgthree-comfy": "5d771b8b56a343c24a26e8cea1f0c87c3d58102f",
+      "ComfyUI-PhotoMaker-Plus": "459f5c009e8bc3fe76bd63a7f302ddf3406c7062",
+      "comfy-core": "0.3.13"
+    },
+    "ue_links": [
+      {
+        "downstream": 98,
+        "downstream_slot": 1,
+        "upstream": "95",
+        "upstream_slot": 2,
+        "controller": 105,
+        "type": "VAE"
+      },
+      {
+        "downstream": 102,
+        "downstream_slot": 0,
+        "upstream": "119",
+        "upstream_slot": 0,
+        "controller": 105,
+        "type": "MODEL"
+      },
+      {
+        "downstream": 101,
+        "downstream_slot": 0,
+        "upstream": "119",
+        "upstream_slot": 1,
+        "controller": 105,
+        "type": "CLIP"
+      },
+      {
+        "downstream": 101,
+        "downstream_slot": 2,
+        "upstream": "111",
+        "upstream_slot": 0,
+        "controller": 108,
+        "type": "IMAGE"
+      },
+      {
+        "downstream": 97,
+        "downstream_slot": 0,
+        "upstream": "119",
+        "upstream_slot": 1,
+        "controller": 105,
+        "type": "CLIP"
+      }
+    ],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0
   },
   "version": 0.4
 }
