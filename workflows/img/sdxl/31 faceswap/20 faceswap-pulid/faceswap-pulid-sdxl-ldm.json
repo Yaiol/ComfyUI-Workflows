@@ -1,6 +1,6 @@
 {
   "last_node_id": 174,
-  "last_link_id": 485,
+  "last_link_id": 490,
   "nodes": [
     {
       "id": 166,
@@ -103,48 +103,6 @@
       "shape": 1
     },
     {
-      "id": 39,
-      "type": "CLIPTextEncode",
-      "pos": [
-        1250,
-        230
-      ],
-      "size": [
-        350,
-        170
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            458
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "photo of woman cowboy, shot on sony a1, 85mm F/1.4 ISO 100, dark light, medium format, high quality, realistic, perfect, detailed"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 40,
       "type": "CLIPTextEncode",
       "pos": [
@@ -156,7 +114,7 @@
         150
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -200,7 +158,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -224,7 +182,7 @@
         110
       ],
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 4,
       "inputs": [
         {
@@ -266,7 +224,7 @@
         450
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -310,7 +268,7 @@
         450
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -353,7 +311,7 @@
         60
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -388,7 +346,7 @@
         30
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -421,7 +379,7 @@
         60
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -600,7 +558,7 @@
         110
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -639,7 +597,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -711,7 +669,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 23,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -817,7 +775,7 @@
         26
       ],
       "flags": {},
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -853,7 +811,7 @@
         26
       ],
       "flags": {},
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -889,7 +847,7 @@
         26
       ],
       "flags": {},
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -925,7 +883,7 @@
         26
       ],
       "flags": {},
-      "order": 26,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -961,7 +919,7 @@
         26
       ],
       "flags": {},
-      "order": 25,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -997,7 +955,7 @@
         26
       ],
       "flags": {},
-      "order": 19,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1180,7 +1138,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1206,7 +1164,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1232,7 +1190,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1258,7 +1216,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1426,7 +1384,7 @@
         110
       ],
       "flags": {},
-      "order": 22,
+      "order": 21,
       "mode": 4,
       "inputs": [
         {
@@ -1468,7 +1426,7 @@
         60
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1620,7 +1578,7 @@
         150
       ],
       "flags": {},
-      "order": 24,
+      "order": 23,
       "mode": 4,
       "inputs": [
         {
@@ -1681,7 +1639,7 @@
         150
       ],
       "flags": {},
-      "order": 29,
+      "order": 28,
       "mode": 4,
       "inputs": [
         {
@@ -1742,7 +1700,7 @@
         100
       ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1815,29 +1773,46 @@
       "bgcolor": "#535"
     },
     {
-      "id": 111,
-      "type": "Note",
+      "id": 39,
+      "type": "CLIPTextEncode",
       "pos": [
-        3250,
-        740
+        1250,
+        230
       ],
       "size": [
         350,
-        100
+        170
       ],
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
-      "inputs": [],
-      "outputs": [],
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            458
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "prompt_positive",
       "properties": {
-        "text": ""
+        "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "faceswap-pulid-sdxl-ldm\n==========================================================\nSDXL : SD XL\nLCML : Latent Consistency Model + LoRA\nCSD  : Clip Standard\nID   : FSW-PID_SDXL_LDM"
+        "photo of woman cowboy, shot on sony a1, 85mm F/1.4 ISO 100, dark light, medium format, high quality, realistic, perfect, detailed"
       ],
-      "color": "#432",
-      "bgcolor": "#653"
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 3,
@@ -1898,6 +1873,31 @@
         "karras",
         1
       ]
+    },
+    {
+      "id": 111,
+      "type": "Note",
+      "pos": [
+        3250,
+        740
+      ],
+      "size": [
+        350,
+        100
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "faceswap-pulid-sdxl-ldm\n==========================================================\nSDXL : SD XL\nLCML : Latent Consistency Model + LoRA\nCSD  : Clip Standard\nID   : FSW-PID_SDXL_LDM"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -2452,6 +2452,46 @@
       3,
       3,
       "LATENT"
+    ],
+    [
+      486,
+      162,
+      1,
+      40,
+      0,
+      "CLIP"
+    ],
+    [
+      487,
+      162,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      488,
+      162,
+      0,
+      156,
+      0,
+      "MODEL"
+    ],
+    [
+      489,
+      162,
+      1,
+      39,
+      0,
+      "CLIP"
+    ],
+    [
+      490,
+      5,
+      0,
+      3,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
@@ -2495,19 +2535,11 @@
       "cg-use-everywhere": "ce510b97d10e69d5fd0042e115ecd946890d2079",
       "comfy-core": "0.3.13",
       "ComfyUI_IPAdapter_plus": "b188a6cb39b512a9c6da7235b880af42c78ccd0d",
-      "PuLID_ComfyUI": "4e1fd4024cae77a0c53edb8ecc3c8ee04027ebef",
+      "pulid_comfyui": "4e1fd4024cae77a0c53edb8ecc3c8ee04027ebef",
       "comfyui_controlnet_aux": "5a049bde9cc117dafc327cded156459289097ea1",
       "was-node-suite-comfyui": "056badacda52e88d29d6a65f9509cd3115ace0f2"
     },
     "ue_links": [
-      {
-        "downstream": 39,
-        "downstream_slot": 0,
-        "upstream": "162",
-        "upstream_slot": 1,
-        "controller": 164,
-        "type": "CLIP"
-      },
       {
         "downstream": 40,
         "downstream_slot": 0,
@@ -2531,6 +2563,14 @@
         "upstream_slot": 0,
         "controller": 164,
         "type": "MODEL"
+      },
+      {
+        "downstream": 39,
+        "downstream_slot": 0,
+        "upstream": "162",
+        "upstream_slot": 1,
+        "controller": 164,
+        "type": "CLIP"
       },
       {
         "downstream": 3,
