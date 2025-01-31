@@ -1,6 +1,6 @@
 {
-  "last_node_id": 209,
-  "last_link_id": 613,
+  "last_node_id": 210,
+  "last_link_id": 610,
   "nodes": [
     {
       "id": 118,
@@ -726,42 +726,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 205,
-      "type": "ControlNetLoader",
-      "pos": [
-        860,
-        470
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            581
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "instantid_controlnet",
-      "properties": {
-        "Node name for S&R": "ControlNetLoader"
-      },
-      "widgets_values": [
-        "sdxl-instantx-istantid.sft"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 198,
       "type": "CLIPTextEncode",
       "pos": [
@@ -773,7 +737,7 @@
         170
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -815,7 +779,7 @@
         150
       ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -871,7 +835,7 @@
           "name": "",
           "type": "IMAGE",
           "links": [
-            595
+            602
           ],
           "slot_index": 0
         }
@@ -882,10 +846,159 @@
       }
     },
     {
+      "id": 194,
+      "type": "Reroute",
+      "pos": [
+        720,
+        70
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 565
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            563,
+            588
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 187,
+      "type": "Reroute",
+      "pos": [
+        720,
+        40
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 560
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            587
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 210,
+      "type": "Zoe-DepthMapPreprocessor",
+      "pos": [
+        1250,
+        350
+      ],
+      "size": [
+        350,
+        60
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 602
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            603,
+            604
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Zoe-DepthMapPreprocessor"
+      },
+      "widgets_values": [
+        1024
+      ]
+    },
+    {
+      "id": 205,
+      "type": "ControlNetLoader",
+      "pos": [
+        850,
+        470
+      ],
+      "size": [
+        350,
+        60
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            581
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "instantid_controlnet",
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "sdxl-instantx-istantid.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 208,
       "type": "ApplyInstantID",
       "pos": [
-        860,
+        850,
         590
       ],
       "size": [
@@ -982,153 +1095,6 @@
       ]
     },
     {
-      "id": 196,
-      "type": "SaveImage",
-      "pos": [
-        2050,
-        290
-      ],
-      "size": [
-        350,
-        400
-      ],
-      "flags": {},
-      "order": 34,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 570,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [],
-      "title": "image_output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-FSW-IID+CN (%controlnet_preprocessor.preprocessor%)_FSW-IID-CANNY_SDXL_LDM_CSD_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 194,
-      "type": "Reroute",
-      "pos": [
-        720,
-        70
-      ],
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 565
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            563,
-            588
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 187,
-      "type": "Reroute",
-      "pos": [
-        720,
-        40
-      ],
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 560
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            587
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 199,
-      "type": "Canny",
-      "pos": [
-        1250,
-        340
-      ],
-      "size": [
-        350,
-        82
-      ],
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 595
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            569,
-            574
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Canny"
-      },
-      "widgets_values": [
-        0.3,
-        0.7000000000000001
-      ]
-    },
-    {
       "id": 204,
       "type": "ControlNetLoader",
       "pos": [
@@ -1158,7 +1124,7 @@
         "Node name for S&R": "ControlNetLoader"
       },
       "widgets_values": [
-        "sdxl-diffuserslib-canny medium.sft"
+        "sdxl-diffuserslib-depth medium.sft"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -1168,14 +1134,14 @@
       "type": "ControlNetApplyAdvanced",
       "pos": [
         1250,
-        480
+        470
       ],
       "size": [
         350,
         186
       ],
       "flags": {},
-      "order": 30,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -1197,7 +1163,7 @@
         {
           "name": "image",
           "type": "IMAGE",
-          "link": 569
+          "link": 604
         },
         {
           "name": "vae",
@@ -1248,13 +1214,13 @@
         390
       ],
       "flags": {},
-      "order": 31,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 574,
+          "link": 603,
           "slot_index": 0
         }
       ],
@@ -1264,6 +1230,39 @@
         "Node name for S&R": "PreviewImage"
       },
       "widgets_values": []
+    },
+    {
+      "id": 196,
+      "type": "SaveImage",
+      "pos": [
+        2050,
+        290
+      ],
+      "size": [
+        350,
+        400
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 570,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_FSW-FSW-IID+CN (%controlnet_preprocessor.preprocessor%)_FSW-IID-DEPTH_SDXL_LDM_CSD_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 203,
@@ -1285,7 +1284,7 @@
         "text": ""
       },
       "widgets_values": [
-        "faceswap-instantid+cn canny-sdxl-ldm-csd\n===========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID-CANNY_SDXL_LDM_CSD"
+        "faceswap-instantid+cn depth-sdxl-ldm-csd\n===========================================================\nLDM  : Latent Diffusion Model\nSDXL : SD XL\nCSD  : Clip Standard\nID   : FSW-IID-DEPTH_SDXL_LDM_CSD"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1873,26 +1872,10 @@
       "CONTROL_NET"
     ],
     [
-      569,
-      199,
-      0,
-      195,
-      3,
-      "IMAGE"
-    ],
-    [
       570,
       209,
       0,
       196,
-      0,
-      "IMAGE"
-    ],
-    [
-      574,
-      199,
-      0,
-      202,
       0,
       "IMAGE"
     ],
@@ -2001,14 +1984,6 @@
       "CONDITIONING"
     ],
     [
-      595,
-      192,
-      0,
-      199,
-      0,
-      "IMAGE"
-    ],
-    [
       596,
       207,
       2,
@@ -2058,62 +2033,38 @@
     ],
     [
       602,
-      207,
-      2,
-      209,
-      1,
-      "VAE"
+      192,
+      0,
+      210,
+      0,
+      "IMAGE"
     ],
     [
       603,
-      207,
-      1,
-      198,
+      210,
       0,
-      "CLIP"
+      202,
+      0,
+      "IMAGE"
     ],
     [
       604,
-      207,
-      1,
-      197,
+      210,
       0,
-      "CLIP"
+      195,
+      3,
+      "IMAGE"
     ],
     [
       605,
       207,
       2,
-      195,
-      4,
-      "VAE"
-    ],
-    [
-      606,
-      207,
-      0,
-      208,
-      4,
-      "MODEL"
-    ],
-    [
-      607,
-      207,
-      0,
-      206,
-      0,
-      "MODEL"
-    ],
-    [
-      608,
-      207,
-      2,
       209,
       1,
       "VAE"
     ],
     [
-      609,
+      606,
       207,
       1,
       198,
@@ -2121,7 +2072,7 @@
       "CLIP"
     ],
     [
-      610,
+      607,
       207,
       1,
       197,
@@ -2129,7 +2080,7 @@
       "CLIP"
     ],
     [
-      611,
+      608,
       207,
       0,
       208,
@@ -2137,7 +2088,7 @@
       "MODEL"
     ],
     [
-      612,
+      609,
       207,
       2,
       195,
@@ -2145,7 +2096,7 @@
       "VAE"
     ],
     [
-      613,
+      610,
       207,
       0,
       206,
@@ -2156,7 +2107,7 @@
   "groups": [
     {
       "id": 1,
-      "title": " Faceswap InstandID Cn Canny",
+      "title": " Faceswap InstandID Cn Depth",
       "bounding": [
         -750,
         -80,
@@ -2186,14 +2137,15 @@
     "ds": {
       "scale": 0.34285714285714286,
       "offset": [
-        1346.6666666666663,
+        1346.6666666666665,
         516
       ]
     },
     "node_versions": {
       "comfy-core": "0.3.13",
       "cg-use-everywhere": "ce510b97d10e69d5fd0042e115ecd946890d2079",
-      "ComfyUI_InstantID": "1ef34ef573581bd9727c1e0ac05aa956b356a510"
+      "ComfyUI_InstantID": "1ef34ef573581bd9727c1e0ac05aa956b356a510",
+      "comfyui_controlnet_aux": "5a049bde9cc117dafc327cded156459289097ea1"
     },
     "ue_links": [
       {
