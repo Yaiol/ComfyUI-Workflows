@@ -1,14 +1,14 @@
 {
   "last_node_id": 51,
-  "last_link_id": 127,
+  "last_link_id": 143,
   "nodes": [
     {
       "id": 46,
       "type": "Reroute",
-      "pos": {
-        "0": 1520,
-        "1": 200
-      },
+      "pos": [
+        1520,
+        200
+      ],
       "size": [
         75,
         26
@@ -41,14 +41,14 @@
     {
       "id": 47,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1250,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1250,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -67,14 +67,14 @@
     {
       "id": 45,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 850,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        850,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -93,14 +93,14 @@
     {
       "id": 44,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 450,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        450,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -119,14 +119,14 @@
     {
       "id": 43,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 50,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        50,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -145,14 +145,14 @@
     {
       "id": 7,
       "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 460
-      },
-      "size": {
-        "0": 350,
-        "1": 170
-      },
+      "pos": [
+        450,
+        460
+      ],
+      "size": [
+        350,
+        170
+      ],
       "flags": {},
       "order": 4,
       "mode": 0,
@@ -186,14 +186,14 @@
     {
       "id": 49,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": -350,
-        "1": 170
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        -350,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -212,14 +212,14 @@
     {
       "id": 48,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": -400,
-        "1": -100
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        -400,
+        -100
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -238,14 +238,14 @@
     {
       "id": 8,
       "type": "VAEDecode",
-      "pos": {
-        "0": 1250,
-        "1": 230
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
+      "pos": [
+        1250,
+        230
+      ],
+      "size": [
+        210,
+        46
+      ],
       "flags": {
         "collapsed": true
       },
@@ -285,14 +285,14 @@
     {
       "id": 50,
       "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 1650,
-        "1": 750
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
+      "pos": [
+        1650,
+        750
+      ],
+      "size": [
+        210,
+        62
+      ],
       "flags": {
         "collapsed": true
       },
@@ -311,14 +311,14 @@
     {
       "id": 6,
       "type": "CLIPTextEncode",
-      "pos": {
-        "0": 450,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 160
-      },
+      "pos": [
+        450,
+        230
+      ],
+      "size": [
+        350,
+        160
+      ],
       "flags": {},
       "order": 8,
       "mode": 0,
@@ -352,14 +352,14 @@
     {
       "id": 20,
       "type": "LoadImage",
-      "pos": {
-        "0": -350,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 450
-      },
+      "pos": [
+        -350,
+        230
+      ],
+      "size": [
+        350,
+        450
+      ],
       "flags": {},
       "order": 9,
       "mode": 0,
@@ -396,14 +396,14 @@
     {
       "id": 40,
       "type": "Image Comparer (rgthree)",
-      "pos": {
-        "0": 1250,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
+      "pos": [
+        1250,
+        290
+      ],
+      "size": [
+        350,
+        400
+      ],
       "flags": {},
       "order": 17,
       "mode": 0,
@@ -431,12 +431,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ophmp_00003_.png&type=temp&subfolder=&rand=0.5111346708168045"
+            "url": "/api/view?filename=rgthree.compare._temp_ddrkf_00011_.png&type=temp&subfolder=&rand=0.1311296565489739"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ophmp_00004_.png&type=temp&subfolder=&rand=0.5066269340914944"
+            "url": "/api/view?filename=rgthree.compare._temp_ddrkf_00012_.png&type=temp&subfolder=&rand=0.42440326540383255"
           }
         ]
       ]
@@ -444,14 +444,14 @@
     {
       "id": 26,
       "type": "VAEEncodeForInpaint",
-      "pos": {
-        "0": 850,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
+      "pos": [
+        850,
+        230
+      ],
+      "size": [
+        350,
+        100
+      ],
       "flags": {
         "collapsed": false
       },
@@ -497,14 +497,14 @@
     {
       "id": 51,
       "type": "Anything Everywhere3",
-      "pos": {
-        "0": 50,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
+      "pos": [
+        50,
+        130
+      ],
+      "size": [
+        252,
+        66
+      ],
       "flags": {
         "collapsed": true
       },
@@ -544,14 +544,14 @@
     {
       "id": 42,
       "type": "Anything Everywhere3",
-      "pos": {
-        "0": 450,
-        "1": 130
-      },
-      "size": {
-        "0": 252,
-        "1": 66
-      },
+      "pos": [
+        450,
+        130
+      ],
+      "size": [
+        252,
+        66
+      ],
       "flags": {
         "collapsed": true
       },
@@ -590,16 +590,48 @@
       "widgets_values": []
     },
     {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        1650,
+        290
+      ],
+      "size": [
+        350,
+        400
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 110
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_INP-BAS_SDXL_LDM_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 29,
       "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 50,
-        "1": 230
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        100
+      ],
       "flags": {},
       "order": 11,
       "mode": 0,
@@ -635,79 +667,22 @@
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "sdxl-sai-base-v10-inpainting.safetensors"
+        "sdxl-sai-base-v10-inpainting.sft"
       ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
-      "id": 9,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1650,
-        "1": 290
-      },
-      "size": {
-        "0": 350,
-        "1": 400
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 110
-        }
-      ],
-      "outputs": [],
-      "title": "output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_INP-BAS_SDXL_LDM_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 36,
-      "type": "Note",
-      "pos": {
-        "0": 1650,
-        "1": 750
-      },
-      "size": {
-        "0": 350,
-        "1": 100
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "inpaint-basic-sdxl-ldm\n==========================================================\nSDXL : SD XL\nLDM  : Large Diffusion Model\nCSD  : Clip Standard\nID   : INP-BAS_SDXL_LDM"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 3,
       "type": "KSampler",
-      "pos": {
-        "0": 850,
-        "1": 390
-      },
-      "size": {
-        "0": 350,
-        "1": 262
-      },
+      "pos": [
+        850,
+        390
+      ],
+      "size": [
+        350,
+        474
+      ],
       "flags": {},
       "order": 14,
       "mode": 0,
@@ -756,6 +731,31 @@
         "karras",
         1
       ]
+    },
+    {
+      "id": 36,
+      "type": "Note",
+      "pos": [
+        1650,
+        750
+      ],
+      "size": [
+        350,
+        100
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "inpaint-basic-sdxl-ldm\n==========================================================\nSDXL : SD XL\nLDM  : Large Diffusion Model\nCSD  : Clip Standard\nID   : INP-BAS_SDXL_LDM"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -958,13 +958,142 @@
       3,
       0,
       "MODEL"
+    ],
+    [
+      128,
+      29,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      129,
+      29,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      130,
+      29,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      131,
+      20,
+      0,
+      40,
+      1,
+      "IMAGE"
+    ],
+    [
+      132,
+      20,
+      0,
+      26,
+      0,
+      "IMAGE"
+    ],
+    [
+      133,
+      29,
+      2,
+      26,
+      1,
+      "VAE"
+    ],
+    [
+      134,
+      20,
+      1,
+      26,
+      2,
+      "MASK"
+    ],
+    [
+      135,
+      29,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      136,
+      29,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      137,
+      29,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      138,
+      29,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      139,
+      20,
+      0,
+      40,
+      1,
+      "IMAGE"
+    ],
+    [
+      140,
+      20,
+      0,
+      26,
+      0,
+      "IMAGE"
+    ],
+    [
+      141,
+      29,
+      2,
+      26,
+      1,
+      "VAE"
+    ],
+    [
+      142,
+      20,
+      1,
+      26,
+      2,
+      "MASK"
+    ],
+    [
+      143,
+      29,
+      0,
+      3,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
     {
+      "id": 1,
       "title": " SDXL LDM",
       "bounding": [
-        -110,
+        60,
         -30,
         141,
         32
@@ -974,11 +1103,12 @@
       "flags": {}
     },
     {
-      "title": " Inpaint",
+      "id": 2,
+      "title": " Inpaint Basic",
       "bounding": [
         -350,
         -80,
-        230,
+        390,
         80
       ],
       "color": "#ffffff",
@@ -989,12 +1119,85 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5,
+      "scale": 0.8769226950000009,
       "offset": [
-        416,
-        140
+        -850.4803663173508,
+        -261.05848258858737
       ]
-    }
+    },
+    "node_versions": {
+      "comfy-core": "0.3.13",
+      "rgthree-comfy": "5d771b8b56a343c24a26e8cea1f0c87c3d58102f",
+      "cg-use-everywhere": "ce510b97d10e69d5fd0042e115ecd946890d2079"
+    },
+    "ue_links": [
+      {
+        "downstream": 7,
+        "downstream_slot": 0,
+        "upstream": "29",
+        "upstream_slot": 1,
+        "controller": 42,
+        "type": "CLIP"
+      },
+      {
+        "downstream": 8,
+        "downstream_slot": 1,
+        "upstream": "29",
+        "upstream_slot": 2,
+        "controller": 42,
+        "type": "VAE"
+      },
+      {
+        "downstream": 6,
+        "downstream_slot": 0,
+        "upstream": "29",
+        "upstream_slot": 1,
+        "controller": 42,
+        "type": "CLIP"
+      },
+      {
+        "downstream": 40,
+        "downstream_slot": 1,
+        "upstream": "20",
+        "upstream_slot": 0,
+        "controller": 51,
+        "type": "IMAGE"
+      },
+      {
+        "downstream": 26,
+        "downstream_slot": 0,
+        "upstream": "20",
+        "upstream_slot": 0,
+        "controller": 51,
+        "type": "IMAGE"
+      },
+      {
+        "downstream": 26,
+        "downstream_slot": 1,
+        "upstream": "29",
+        "upstream_slot": 2,
+        "controller": 42,
+        "type": "VAE"
+      },
+      {
+        "downstream": 26,
+        "downstream_slot": 2,
+        "upstream": "20",
+        "upstream_slot": 1,
+        "controller": 51,
+        "type": "MASK"
+      },
+      {
+        "downstream": 3,
+        "downstream_slot": 0,
+        "upstream": "29",
+        "upstream_slot": 0,
+        "controller": 42,
+        "type": "MODEL"
+      }
+    ],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0
   },
   "version": 0.4
 }
