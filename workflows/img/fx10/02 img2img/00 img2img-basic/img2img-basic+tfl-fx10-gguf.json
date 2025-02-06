@@ -1,12 +1,12 @@
 {
-  "last_node_id": 89,
-  "last_link_id": 250,
+  "last_node_id": 87,
+  "last_link_id": 240,
   "nodes": [
     {
       "id": 54,
       "type": "AIO_Preprocessor",
       "pos": [
-        850,
+        1250,
         350
       ],
       "size": [
@@ -48,7 +48,7 @@
       "id": 50,
       "type": "ControlNetApplyAdvanced",
       "pos": [
-        850,
+        1250,
         500
       ],
       "size": [
@@ -56,13 +56,13 @@
         186
       ],
       "flags": {},
-      "order": 24,
+      "order": 30,
       "mode": 4,
       "inputs": [
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 243
+          "link": 217
         },
         {
           "name": "negative",
@@ -121,7 +121,7 @@
       "id": 56,
       "type": "ControlNetApplyAdvanced",
       "pos": [
-        1250,
+        1650,
         500
       ],
       "size": [
@@ -129,7 +129,7 @@
         186
       ],
       "flags": {},
-      "order": 26,
+      "order": 31,
       "mode": 4,
       "inputs": [
         {
@@ -194,7 +194,7 @@
       "id": 57,
       "type": "AIO_Preprocessor",
       "pos": [
-        1250,
+        1650,
         350
       ],
       "size": [
@@ -307,7 +307,7 @@
       "id": 27,
       "type": "VAEDecode",
       "pos": [
-        2050,
+        2450,
         230
       ],
       "size": [
@@ -317,7 +317,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -355,7 +355,7 @@
       "id": 53,
       "type": "Reroute",
       "pos": [
-        2330,
+        2730,
         200
       ],
       "size": [
@@ -363,7 +363,7 @@
         26
       ],
       "flags": {},
-      "order": 30,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -391,7 +391,7 @@
       "id": 68,
       "type": "Bookmark (rgthree)",
       "pos": [
-        2050,
+        2450,
         170
       ],
       "size": [
@@ -417,7 +417,7 @@
       "id": 46,
       "type": "Image Comparer (rgthree)",
       "pos": [
-        2050,
+        2450,
         290
       ],
       "size": [
@@ -425,7 +425,7 @@
         400
       ],
       "flags": {},
-      "order": 29,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -451,12 +451,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ygolx_00023_.png&type=temp&subfolder=&rand=0.020458392898980993"
+            "url": "/api/view?filename=rgthree.compare._temp_ygolx_00019_.png&type=temp&subfolder=&rand=0.5989536639936441"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ygolx_00024_.png&type=temp&subfolder=&rand=0.37667863259200485"
+            "url": "/api/view?filename=rgthree.compare._temp_ygolx_00020_.png&type=temp&subfolder=&rand=0.5535235402604024"
           }
         ]
       ]
@@ -491,7 +491,7 @@
       "id": 43,
       "type": "PreviewImage",
       "pos": [
-        850,
+        1250,
         740
       ],
       "size": [
@@ -499,7 +499,7 @@
         370
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 4,
       "inputs": [
         {
@@ -519,7 +519,7 @@
       "id": 55,
       "type": "PreviewImage",
       "pos": [
-        1250,
+        1650,
         740
       ],
       "size": [
@@ -527,7 +527,7 @@
         370
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 4,
       "inputs": [
         {
@@ -547,7 +547,7 @@
       "id": 39,
       "type": "VAEEncode",
       "pos": [
-        1650,
+        2050,
         230
       ],
       "size": [
@@ -557,7 +557,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -620,7 +620,7 @@
       "id": 66,
       "type": "Bookmark (rgthree)",
       "pos": [
-        1650,
+        2050,
         170
       ],
       "size": [
@@ -646,7 +646,7 @@
       "id": 65,
       "type": "Bookmark (rgthree)",
       "pos": [
-        850,
+        1250,
         170
       ],
       "size": [
@@ -706,7 +706,7 @@
         120
       ],
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -773,7 +773,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -860,7 +860,7 @@
         130
       ],
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 4,
       "inputs": [
         {
@@ -904,7 +904,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -997,25 +997,77 @@
       "bgcolor": "#335"
     },
     {
-      "id": 88,
-      "type": "CLIPTextEncode",
+      "id": 85,
+      "type": "ShowText|pysssss",
       "pos": [
-        450,
-        230
+        850,
+        660
       ],
       "size": [
         350,
-        270
+        170
       ],
       "flags": {},
-      "order": 13,
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 213,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "portrait of a young woman dressed in a pirate costume. She is wearing a blue and yellow cocked top with a black cocked hat and a gold corset. The corset is decorated with intricate gold embroidery and has a red ribbon tied around the waist. The woman is holding a sword in her right hand and is looking off to the side with a serious expression on her face. The background is black, making the woman and the sword stand out.. Shot on Canon EOS, f/1.4, 85mm."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 87,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1060,
+        600
+      ],
+      "size": [
+        210,
+        54
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
           "name": "clip",
           "type": "CLIP",
-          "link": null,
-          "slot_index": 0
+          "link": null
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 214,
+          "widget": {
+            "name": "text"
+          }
         }
       ],
       "outputs": [
@@ -1023,7 +1075,7 @@
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
-            241
+            217
           ],
           "slot_index": 0
         }
@@ -1033,54 +1085,17 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4"
+        ""
       ],
       "color": "#232",
       "bgcolor": "#353"
     },
     {
-      "id": 51,
-      "type": "ControlNetLoader",
-      "pos": [
-        850,
-        230
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            104,
-            125
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_model",
-      "properties": {
-        "Node name for S&R": "ControlNetLoader"
-      },
-      "widgets_values": [
-        "fx10-shakkerlabs-union pro-fp8 e4m3fn.sft"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 7,
       "type": "CLIPTextEncode",
       "pos": [
-        650,
-        620
+        1050,
+        900
       ],
       "size": [
         350,
@@ -1089,7 +1104,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1119,10 +1134,287 @@
       "bgcolor": "#533"
     },
     {
+      "id": 84,
+      "type": "Text Multiline",
+      "pos": [
+        850,
+        430
+      ],
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            216
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Multiline"
+      },
+      "widgets_values": [
+        "Shot on Canon EOS, f/1.4, 85mm."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 86,
+      "type": "easy promptConcat",
+      "pos": [
+        850,
+        600
+      ],
+      "size": [
+        350,
+        80
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt1",
+          "type": "STRING",
+          "link": 215,
+          "widget": {
+            "name": "prompt1"
+          },
+          "shape": 7
+        },
+        {
+          "name": "prompt2",
+          "type": "STRING",
+          "link": 216,
+          "widget": {
+            "name": "prompt2"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            213,
+            214
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy promptConcat"
+      },
+      "widgets_values": [
+        "",
+        "Shot on Canon EOS, f/1.4, 85mm",
+        ". "
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 82,
+      "type": "DownloadAndLoadFlorence2Model",
+      "pos": [
+        450,
+        230
+      ],
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora",
+          "type": "PEFTLORA",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "links": [
+            211
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "florence2_model",
+      "properties": {
+        "Node name for S&R": "DownloadAndLoadFlorence2Model"
+      },
+      "widgets_values": [
+        "microsoft/Florence-2-base",
+        "fp16",
+        "sdpa"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 81,
+      "type": "Florence2Run",
+      "pos": [
+        450,
+        400
+      ],
+      "size": [
+        350,
+        360
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "link": 211,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            212
+          ],
+          "slot_index": 2,
+          "shape": 3
+        },
+        {
+          "name": "data",
+          "type": "JSON",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "florence2",
+      "properties": {
+        "Node name for S&R": "Florence2Run"
+      },
+      "widgets_values": [
+        "",
+        "more_detailed_caption",
+        true,
+        false,
+        1024,
+        3,
+        true,
+        "",
+        25191512,
+        "fixed"
+      ]
+    },
+    {
+      "id": 83,
+      "type": "Text Find and Replace",
+      "pos": [
+        850,
+        230
+      ],
+      "size": [
+        350,
+        142
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 212,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result_text",
+          "type": "STRING",
+          "links": [
+            215
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "replacement_count_number",
+          "type": "NUMBER",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "replacement_count_float",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "replacement_count_int",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Find and Replace"
+      },
+      "widgets_values": [
+        "",
+        "The image is a ",
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
       "id": 9,
       "type": "SaveImage",
       "pos": [
-        2450,
+        2850,
         290
       ],
       "size": [
@@ -1132,7 +1424,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 31,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -1147,53 +1439,53 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BAS_FX10_GGUF_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BAS+TFL_FX10_GGUF_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
     },
     {
-      "id": 89,
-      "type": "ConditioningZeroOut",
+      "id": 51,
+      "type": "ControlNetLoader",
       "pos": [
-        630,
-        560
+        1250,
+        230
       ],
       "size": [
-        317.4000244140625,
-        26
+        350,
+        60
       ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 22,
+      "flags": {},
+      "order": 16,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "conditioning",
-          "type": "CONDITIONING",
-          "link": 241
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
           "links": [
-            243
+            104,
+            125
           ],
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
+      "title": "controlnet_model",
       "properties": {
-        "Node name for S&R": "ConditioningZeroOut"
-      }
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "fx10-shakkerlabs-union pro-fp8 e4m3fn.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 3,
       "type": "KSampler",
       "pos": [
-        1650,
+        2050,
         290
       ],
       "size": [
@@ -1201,7 +1493,7 @@
         474
       ],
       "flags": {},
-      "order": 27,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -1253,7 +1545,7 @@
       "id": 33,
       "type": "Note",
       "pos": [
-        2450,
+        2850,
         750
       ],
       "size": [
@@ -1261,7 +1553,7 @@
         100
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1269,7 +1561,7 @@
         "text": ""
       },
       "widgets_values": [
-        "img2img-basic-fx10-gguf\n==========================================================\nFX10 : Flux.1\nGGUF : GPT-Generated Unified Format\nCSD  : Clip Standard\nID   : I2I-BAS_FX10_GGUF"
+        "img2img-basic+tfl-fx10-gguf\n==========================================================\nFX10 : Flux.1\nGGUF : GPT-Generated Unified Format\nCSD  : Clip Standard\nID   : I2I-BAS+TFL_FX10_GGUF"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1861,6 +2153,62 @@
       "MODEL"
     ],
     [
+      211,
+      82,
+      0,
+      81,
+      1,
+      "FL2MODEL"
+    ],
+    [
+      212,
+      81,
+      2,
+      83,
+      0,
+      "STRING"
+    ],
+    [
+      213,
+      86,
+      0,
+      85,
+      0,
+      "STRING"
+    ],
+    [
+      214,
+      86,
+      0,
+      87,
+      1,
+      "STRING"
+    ],
+    [
+      215,
+      83,
+      0,
+      86,
+      0,
+      "STRING"
+    ],
+    [
+      216,
+      84,
+      0,
+      86,
+      1,
+      "STRING"
+    ],
+    [
+      217,
+      87,
+      0,
+      50,
+      0,
+      "CONDITIONING"
+    ],
+    [
       218,
       76,
       0,
@@ -2043,78 +2391,6 @@
       3,
       0,
       "MODEL"
-    ],
-    [
-      241,
-      88,
-      0,
-      89,
-      0,
-      "CONDITIONING"
-    ],
-    [
-      243,
-      89,
-      0,
-      50,
-      0,
-      "CONDITIONING"
-    ],
-    [
-      244,
-      76,
-      0,
-      27,
-      1,
-      "VAE"
-    ],
-    [
-      245,
-      31,
-      0,
-      46,
-      0,
-      "IMAGE"
-    ],
-    [
-      246,
-      31,
-      0,
-      39,
-      0,
-      "IMAGE"
-    ],
-    [
-      247,
-      76,
-      0,
-      39,
-      1,
-      "VAE"
-    ],
-    [
-      248,
-      79,
-      1,
-      88,
-      0,
-      "CLIP"
-    ],
-    [
-      249,
-      79,
-      1,
-      7,
-      0,
-      "CLIP"
-    ],
-    [
-      250,
-      79,
-      0,
-      3,
-      0,
-      "MODEL"
     ]
   ],
   "groups": [
@@ -2148,10 +2424,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.34285714285714286,
+      "scale": 0.30497237569060776,
       "offset": [
-        946.6666666666667,
-        511
+        1013.3333333333333,
+        635.3478260869565
       ]
     },
     "node_versions": {
@@ -2159,7 +2435,11 @@
       "comfy-core": "0.3.13",
       "rgthree-comfy": "5d771b8b56a343c24a26e8cea1f0c87c3d58102f",
       "cg-use-everywhere": "ce510b97d10e69d5fd0042e115ecd946890d2079",
-      "ComfyUI-GGUF": "5875c52f59baca3a9372d68c43a3775e21846fe0"
+      "ComfyUI-GGUF": "5875c52f59baca3a9372d68c43a3775e21846fe0",
+      "ComfyUI-Custom-Scripts": "bc8922deff73f59311c05cef27b9d4caaf43e87b",
+      "was-node-suite-comfyui": "056badacda52e88d29d6a65f9509cd3115ace0f2",
+      "ComfyUI-Easy-Use": "3515268de557bb165cbfa7ee830710a45fabe8ef",
+      "ComfyUI-Florence2": "dffd12506d50f0540b8a7f4b36a05d4fb5fed2de"
     },
     "ue_links": [
       {
@@ -2195,7 +2475,7 @@
         "type": "VAE"
       },
       {
-        "downstream": 88,
+        "downstream": 87,
         "downstream_slot": 0,
         "upstream": "79",
         "upstream_slot": 1,
@@ -2209,6 +2489,14 @@
         "upstream_slot": 1,
         "controller": 60,
         "type": "CLIP"
+      },
+      {
+        "downstream": 81,
+        "downstream_slot": 0,
+        "upstream": "31",
+        "upstream_slot": 0,
+        "controller": 64,
+        "type": "IMAGE"
       },
       {
         "downstream": 3,

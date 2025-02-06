@@ -1,12 +1,12 @@
 {
   "last_node_id": 89,
-  "last_link_id": 250,
+  "last_link_id": 223,
   "nodes": [
     {
       "id": 54,
       "type": "AIO_Preprocessor",
       "pos": [
-        850,
+        1250,
         350
       ],
       "size": [
@@ -45,83 +45,10 @@
       ]
     },
     {
-      "id": 50,
-      "type": "ControlNetApplyAdvanced",
-      "pos": [
-        850,
-        500
-      ],
-      "size": [
-        350,
-        186
-      ],
-      "flags": {},
-      "order": 24,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 243
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 109
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 104,
-          "slot_index": 2
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 117
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            121
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            122
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "controlnet_1",
-      "properties": {
-        "Node name for S&R": "ControlNetApplyAdvanced"
-      },
-      "widgets_values": [
-        1,
-        0,
-        0.5
-      ]
-    },
-    {
       "id": 56,
       "type": "ControlNetApplyAdvanced",
       "pos": [
-        1250,
+        1650,
         500
       ],
       "size": [
@@ -129,7 +56,7 @@
         186
       ],
       "flags": {},
-      "order": 26,
+      "order": 31,
       "mode": 4,
       "inputs": [
         {
@@ -194,7 +121,7 @@
       "id": 57,
       "type": "AIO_Preprocessor",
       "pos": [
-        1250,
+        1650,
         350
       ],
       "size": [
@@ -260,54 +187,10 @@
       "shape": 1
     },
     {
-      "id": 31,
-      "type": "LoadImage",
-      "pos": [
-        -350,
-        230
-      ],
-      "size": [
-        350,
-        450
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            144
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "title": "input",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "character-woman-pirate.jpg",
-        "image"
-      ],
-      "color": "#ffaa14",
-      "bgcolor": "#ff9600"
-    },
-    {
       "id": 27,
       "type": "VAEDecode",
       "pos": [
-        2050,
+        2450,
         230
       ],
       "size": [
@@ -317,7 +200,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -355,7 +238,7 @@
       "id": 53,
       "type": "Reroute",
       "pos": [
-        2330,
+        2730,
         200
       ],
       "size": [
@@ -363,7 +246,7 @@
         26
       ],
       "flags": {},
-      "order": 30,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -388,10 +271,44 @@
       }
     },
     {
+      "id": 64,
+      "type": "Anything Everywhere",
+      "pos": [
+        -90,
+        740
+      ],
+      "size": [
+        140,
+        30
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "IMAGE",
+          "type": "*",
+          "link": 144,
+          "color_on": "#64B5F6",
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "title": "image",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
       "id": 68,
       "type": "Bookmark (rgthree)",
       "pos": [
-        2050,
+        2450,
         170
       ],
       "size": [
@@ -401,7 +318,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -417,7 +334,7 @@
       "id": 46,
       "type": "Image Comparer (rgthree)",
       "pos": [
-        2050,
+        2450,
         290
       ],
       "size": [
@@ -425,7 +342,7 @@
         400
       ],
       "flags": {},
-      "order": 29,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -451,12 +368,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ygolx_00023_.png&type=temp&subfolder=&rand=0.020458392898980993"
+            "url": "/api/view?filename=rgthree.compare._temp_ygolx_00021_.png&type=temp&subfolder=&rand=0.9548335572767106"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ygolx_00024_.png&type=temp&subfolder=&rand=0.37667863259200485"
+            "url": "/api/view?filename=rgthree.compare._temp_ygolx_00022_.png&type=temp&subfolder=&rand=0.8639191976387111"
           }
         ]
       ]
@@ -475,7 +392,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -491,7 +408,7 @@
       "id": 43,
       "type": "PreviewImage",
       "pos": [
-        850,
+        1250,
         740
       ],
       "size": [
@@ -499,7 +416,7 @@
         370
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 4,
       "inputs": [
         {
@@ -519,7 +436,7 @@
       "id": 55,
       "type": "PreviewImage",
       "pos": [
-        1250,
+        1650,
         740
       ],
       "size": [
@@ -527,7 +444,7 @@
         370
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 4,
       "inputs": [
         {
@@ -547,7 +464,7 @@
       "id": 39,
       "type": "VAEEncode",
       "pos": [
-        1650,
+        2050,
         230
       ],
       "size": [
@@ -557,7 +474,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -604,7 +521,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -620,7 +537,7 @@
       "id": 66,
       "type": "Bookmark (rgthree)",
       "pos": [
-        1650,
+        2050,
         170
       ],
       "size": [
@@ -630,7 +547,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -646,7 +563,7 @@
       "id": 65,
       "type": "Bookmark (rgthree)",
       "pos": [
-        850,
+        1250,
         170
       ],
       "size": [
@@ -656,7 +573,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -682,7 +599,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -695,30 +612,78 @@
       "shape": 1
     },
     {
-      "id": 79,
+      "id": 60,
+      "type": "Anything Everywhere3",
+      "pos": [
+        450,
+        130
+      ],
+      "size": [
+        252,
+        66
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 188,
+          "color_on": "#FF6E6E",
+          "shape": 7
+        },
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 189,
+          "color_on": "#B39DDB",
+          "shape": 7
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 190,
+          "color_on": "#FFD500",
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "title": "vmc",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 81,
       "type": "Power Lora Loader (rgthree)",
       "pos": [
         50,
-        900
+        850
       ],
       "size": [
         350,
         120
       ],
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 192,
+          "link": 200,
           "dir": 3
         },
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 193,
+          "link": 186,
           "dir": 3
         }
       ],
@@ -727,7 +692,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            195
+            189
           ],
           "slot_index": 0,
           "shape": 3,
@@ -737,7 +702,7 @@
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            196
+            190
           ],
           "slot_index": 1,
           "shape": 3,
@@ -760,172 +725,51 @@
       "bgcolor": "#335"
     },
     {
-      "id": 60,
-      "type": "Anything Everywhere3",
+      "id": 31,
+      "type": "LoadImage",
       "pos": [
-        450,
-        130
-      ],
-      "size": [
-        252,
-        66
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 194,
-          "color_on": "#FF6E6E",
-          "shape": 7
-        },
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 195,
-          "color_on": "#B39DDB",
-          "shape": 7
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 196,
-          "color_on": "#FFD500",
-          "shape": 7
-        }
-      ],
-      "outputs": [],
-      "title": "vmc",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 78,
-      "type": "UnetLoaderGGUFAdvanced",
-      "pos": [
-        50,
-        350
+        -350,
+        230
       ],
       "size": [
         350,
-        130
+        450
       ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 10,
+      "flags": {},
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            191
+            144
           ],
           "slot_index": 0,
           "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
         }
       ],
-      "title": "gguf",
+      "title": "input",
       "properties": {
-        "Node name for S&R": "UnetLoaderGGUFAdvanced"
+        "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "fx10-bfl-dev-Q8_0.gguf",
-        "default",
-        "default",
-        true
+        "character-woman-pirate.jpg",
+        "image"
       ],
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#ffaa14",
+      "bgcolor": "#ff9600"
     },
     {
-      "id": 77,
-      "type": "ModelSamplingFlux",
-      "pos": [
-        50,
-        540
-      ],
-      "size": [
-        350,
-        130
-      ],
-      "flags": {},
-      "order": 21,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 191
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            192
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "sampling_flux",
-      "properties": {
-        "Node name for S&R": "ModelSamplingFlux"
-      },
-      "widgets_values": [
-        1.1500000000000001,
-        0.5,
-        1024,
-        1024
-      ]
-    },
-    {
-      "id": 64,
-      "type": "Anything Everywhere",
-      "pos": [
-        -60,
-        740
-      ],
-      "size": [
-        140,
-        30
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "IMAGE",
-          "type": "*",
-          "link": 144,
-          "color_on": "#64B5F6",
-          "shape": 7
-        }
-      ],
-      "outputs": [],
-      "title": "i",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 76,
+      "id": 72,
       "type": "VAELoader",
       "pos": [
         50,
@@ -936,7 +780,7 @@
         60
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -944,7 +788,7 @@
           "name": "VAE",
           "type": "VAE",
           "links": [
-            194
+            188
           ],
           "slot_index": 0
         }
@@ -960,18 +804,18 @@
       "bgcolor": "#335"
     },
     {
-      "id": 80,
-      "type": "DualCLIPLoaderGGUF",
+      "id": 76,
+      "type": "DualCLIPLoader",
       "pos": [
         50,
-        730
+        680
       ],
       "size": [
         350,
         110
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -979,70 +823,74 @@
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            193
+            186
           ],
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
-      "title": "gguf_dualclip",
+      "title": "dualclip",
       "properties": {
-        "Node name for S&R": "DualCLIPLoaderGGUF"
+        "Node name for S&R": "DualCLIPLoader"
       },
       "widgets_values": [
+        "t5xxl_fp8_e4m3fn.sft",
         "clip_l.sft",
-        "city-t5 xxl-v11-Q8_K.gguf",
-        "flux"
+        "flux",
+        "default"
       ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
-      "id": 88,
-      "type": "CLIPTextEncode",
+      "id": 82,
+      "type": "ModelSamplingFlux",
       "pos": [
-        450,
-        230
+        50,
+        490
       ],
       "size": [
         350,
-        270
+        130
       ],
       "flags": {},
-      "order": 13,
-      "mode": 0,
+      "order": 22,
+      "mode": 4,
       "inputs": [
         {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null,
-          "slot_index": 0
+          "name": "model",
+          "type": "MODEL",
+          "link": 199
         }
       ],
       "outputs": [
         {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
+          "name": "MODEL",
+          "type": "MODEL",
           "links": [
-            241
+            200
           ],
           "slot_index": 0
         }
       ],
-      "title": "prompt_positive",
+      "title": "samplingflux",
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "ModelSamplingFlux"
       },
       "widgets_values": [
-        "photography of a standing woman pirate, crew in background, highly detailed, cinematic light, shot on canon EOS 85 mm F/1.4"
+        1.15,
+        0.5,
+        1024,
+        1024
       ],
-      "color": "#232",
-      "bgcolor": "#353"
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 51,
       "type": "ControlNetLoader",
       "pos": [
-        850,
+        1250,
         230
       ],
       "size": [
@@ -1050,7 +898,7 @@
         60
       ],
       "flags": {},
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1070,17 +918,95 @@
         "Node name for S&R": "ControlNetLoader"
       },
       "widgets_values": [
-        "fx10-shakkerlabs-union pro-fp8 e4m3fn.sft"
+        "sdxl-xinsir\\sdxl-xinsir-union-v20.safetensors"
       ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
+      "id": 86,
+      "type": "Text Multiline",
+      "pos": [
+        850,
+        430
+      ],
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            205
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "text",
+      "properties": {
+        "Node name for S&R": "Text Multiline"
+      },
+      "widgets_values": [
+        "Shot on Canon EOS, f/1.4, 85mm."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 87,
+      "type": "ShowText|pysssss",
+      "pos": [
+        850,
+        660
+      ],
+      "size": [
+        350,
+        170
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 203,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "portrait of a young woman dressed in a pirate costume. She is wearing a blue and yellow cocked top with a black cocked hat and a gold corset. The corset is decorated with intricate gold embroidery and has a red ribbon tied around the waist. The woman is holding a sword in her right hand and is looking off to the side with a serious expression on her face. The background is black, making the woman and the sword stand out.. Shot on Canon EOS, f/1.4, 85mm."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
       "id": 7,
       "type": "CLIPTextEncode",
       "pos": [
-        650,
-        620
+        1050,
+        890
       ],
       "size": [
         350,
@@ -1089,7 +1015,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1119,10 +1045,416 @@
       "bgcolor": "#533"
     },
     {
+      "id": 50,
+      "type": "ControlNetApplyAdvanced",
+      "pos": [
+        1250,
+        500
+      ],
+      "size": [
+        350,
+        186
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 208
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 109
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 104,
+          "slot_index": 2
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 117
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            121
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            122
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "controlnet_1",
+      "properties": {
+        "Node name for S&R": "ControlNetApplyAdvanced"
+      },
+      "widgets_values": [
+        1,
+        0,
+        0.5
+      ]
+    },
+    {
+      "id": 89,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1060,
+        600
+      ],
+      "size": [
+        210,
+        54
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 206,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            208
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 77,
+      "type": "UNETLoader",
+      "pos": [
+        50,
+        350
+      ],
+      "size": [
+        350,
+        82
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            199
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "diffusion",
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "fx10-bfl-flux dev-dm.sft",
+        "fp8_e4m3fn"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 84,
+      "type": "DownloadAndLoadFlorence2Model",
+      "pos": [
+        450,
+        230
+      ],
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora",
+          "type": "PEFTLORA",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "links": [
+            201
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "florence2_model",
+      "properties": {
+        "Node name for S&R": "DownloadAndLoadFlorence2Model"
+      },
+      "widgets_values": [
+        "microsoft/Florence-2-base",
+        "fp16",
+        "sdpa"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 83,
+      "type": "Florence2Run",
+      "pos": [
+        450,
+        400
+      ],
+      "size": [
+        350,
+        360
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "link": 201,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            202
+          ],
+          "slot_index": 2,
+          "shape": 3
+        },
+        {
+          "name": "data",
+          "type": "JSON",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "florence2",
+      "properties": {
+        "Node name for S&R": "Florence2Run"
+      },
+      "widgets_values": [
+        "",
+        "more_detailed_caption",
+        true,
+        false,
+        1024,
+        3,
+        true,
+        "",
+        25191512,
+        "fixed"
+      ]
+    },
+    {
+      "id": 88,
+      "type": "easy promptConcat",
+      "pos": [
+        920,
+        600
+      ],
+      "size": [
+        350,
+        80
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt1",
+          "type": "STRING",
+          "link": 204,
+          "widget": {
+            "name": "prompt1"
+          },
+          "shape": 7
+        },
+        {
+          "name": "prompt2",
+          "type": "STRING",
+          "link": 205,
+          "widget": {
+            "name": "prompt2"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            203,
+            206
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "concat",
+      "properties": {
+        "Node name for S&R": "easy promptConcat"
+      },
+      "widgets_values": [
+        "",
+        "Shot on Canon EOS, f/1.4, 85mm",
+        ". "
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 85,
+      "type": "Text Find and Replace",
+      "pos": [
+        850,
+        230
+      ],
+      "size": [
+        350,
+        142
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 202,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result_text",
+          "type": "STRING",
+          "links": [
+            204
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "replacement_count_number",
+          "type": "NUMBER",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "replacement_count_float",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "replacement_count_int",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "replace",
+      "properties": {
+        "Node name for S&R": "Text Find and Replace"
+      },
+      "widgets_values": [
+        "",
+        "The image is a ",
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
       "id": 9,
       "type": "SaveImage",
       "pos": [
-        2450,
+        2850,
         290
       ],
       "size": [
@@ -1132,7 +1464,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 31,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -1147,53 +1479,16 @@
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BAS_FX10_GGUF_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BAS+TFL_FX10_DM_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
     },
     {
-      "id": 89,
-      "type": "ConditioningZeroOut",
-      "pos": [
-        630,
-        560
-      ],
-      "size": [
-        317.4000244140625,
-        26
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "conditioning",
-          "type": "CONDITIONING",
-          "link": 241
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            243
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ConditioningZeroOut"
-      }
-    },
-    {
       "id": 3,
       "type": "KSampler",
       "pos": [
-        1650,
+        2050,
         290
       ],
       "size": [
@@ -1201,7 +1496,7 @@
         474
       ],
       "flags": {},
-      "order": 27,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -1253,7 +1548,7 @@
       "id": 33,
       "type": "Note",
       "pos": [
-        2450,
+        2850,
         750
       ],
       "size": [
@@ -1261,7 +1556,7 @@
         100
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1269,7 +1564,7 @@
         "text": ""
       },
       "widgets_values": [
-        "img2img-basic-fx10-gguf\n==========================================================\nFX10 : Flux.1\nGGUF : GPT-Generated Unified Format\nCSD  : Clip Standard\nID   : I2I-BAS_FX10_GGUF"
+        "img2img-basic+tfl-fx10-dm\n==========================================================\nFX10 : Flux.1\nDM   : Diffusion Model\nCSD  : Clip Standard\nID   : I2I-BAS+TFL_FX10_DM"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1589,79 +1884,23 @@
       "MODEL"
     ],
     [
-      176,
+      179,
       72,
       0,
       27,
       1,
       "VAE"
-    ],
-    [
-      177,
-      31,
-      0,
-      46,
-      0,
-      "IMAGE"
-    ],
-    [
-      178,
-      71,
-      0,
-      6,
-      0,
-      "CLIP"
-    ],
-    [
-      179,
-      71,
-      0,
-      7,
-      0,
-      "CLIP"
     ],
     [
       180,
       31,
       0,
-      39,
-      0,
-      "IMAGE"
-    ],
-    [
-      181,
-      72,
-      0,
-      39,
-      1,
-      "VAE"
-    ],
-    [
-      182,
-      69,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
-    [
-      184,
-      72,
-      0,
-      27,
-      1,
-      "VAE"
-    ],
-    [
-      185,
-      31,
-      0,
       46,
       0,
       "IMAGE"
     ],
     [
-      186,
+      181,
       31,
       0,
       39,
@@ -1669,7 +1908,7 @@
       "IMAGE"
     ],
     [
-      187,
+      182,
       72,
       0,
       39,
@@ -1677,383 +1916,183 @@
       "VAE"
     ],
     [
-      188,
-      71,
-      0,
-      75,
-      0,
-      "CLIP"
-    ],
-    [
-      189,
-      71,
+      183,
+      76,
       0,
       7,
       0,
       "CLIP"
     ],
     [
-      190,
-      69,
+      184,
+      77,
       0,
       3,
       0,
       "MODEL"
     ],
     [
-      191,
+      185,
+      76,
+      0,
       78,
       0,
-      77,
-      0,
-      "MODEL"
+      "CLIP"
     ],
     [
-      192,
-      77,
+      186,
+      76,
       0,
-      79,
-      0,
-      "MODEL"
-    ],
-    [
-      193,
-      80,
-      0,
-      79,
+      81,
       1,
       "CLIP"
     ],
     [
-      194,
-      76,
+      188,
+      72,
       0,
       60,
       0,
       "VAE"
     ],
     [
-      195,
-      79,
+      189,
+      81,
       0,
       60,
       1,
       "MODEL"
     ],
     [
-      196,
-      79,
+      190,
+      81,
       1,
       60,
       2,
       "CLIP"
     ],
     [
-      197,
-      76,
+      192,
+      72,
       0,
       27,
       1,
       "VAE"
+    ],
+    [
+      193,
+      31,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      194,
+      31,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      195,
+      72,
+      0,
+      39,
+      1,
+      "VAE"
+    ],
+    [
+      196,
+      81,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      197,
+      81,
+      1,
+      78,
+      0,
+      "CLIP"
     ],
     [
       198,
-      31,
+      81,
       0,
-      46,
+      3,
       0,
-      "IMAGE"
+      "MODEL"
     ],
     [
       199,
-      31,
+      77,
       0,
-      39,
+      82,
       0,
-      "IMAGE"
+      "MODEL"
     ],
     [
       200,
-      76,
+      82,
       0,
-      39,
-      1,
-      "VAE"
+      81,
+      0,
+      "MODEL"
     ],
     [
       201,
-      79,
-      1,
-      75,
+      84,
       0,
-      "CLIP"
+      83,
+      1,
+      "FL2MODEL"
     ],
     [
       202,
-      79,
-      1,
-      7,
+      83,
+      2,
+      85,
       0,
-      "CLIP"
+      "STRING"
     ],
     [
       203,
-      79,
+      88,
       0,
-      3,
+      87,
       0,
-      "MODEL"
+      "STRING"
     ],
     [
       204,
-      76,
+      85,
       0,
-      27,
-      1,
-      "VAE"
+      88,
+      0,
+      "STRING"
     ],
     [
       205,
-      31,
+      86,
       0,
-      46,
-      0,
-      "IMAGE"
+      88,
+      1,
+      "STRING"
     ],
     [
       206,
-      31,
-      0,
-      39,
-      0,
-      "IMAGE"
-    ],
-    [
-      207,
-      76,
-      0,
-      39,
-      1,
-      "VAE"
-    ],
-    [
-      208,
-      79,
-      1,
-      75,
-      0,
-      "CLIP"
-    ],
-    [
-      209,
-      79,
-      1,
-      7,
-      0,
-      "CLIP"
-    ],
-    [
-      210,
-      79,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
-    [
-      218,
-      76,
-      0,
-      27,
-      1,
-      "VAE"
-    ],
-    [
-      219,
-      31,
-      0,
-      46,
-      0,
-      "IMAGE"
-    ],
-    [
-      220,
-      31,
-      0,
-      39,
-      0,
-      "IMAGE"
-    ],
-    [
-      221,
-      76,
-      0,
-      39,
-      1,
-      "VAE"
-    ],
-    [
-      222,
-      79,
-      1,
-      87,
-      0,
-      "CLIP"
-    ],
-    [
-      223,
-      79,
-      1,
-      7,
-      0,
-      "CLIP"
-    ],
-    [
-      224,
-      79,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
-    [
-      225,
-      76,
-      0,
-      27,
-      1,
-      "VAE"
-    ],
-    [
-      226,
-      31,
-      0,
-      46,
-      0,
-      "IMAGE"
-    ],
-    [
-      227,
-      31,
-      0,
-      39,
-      0,
-      "IMAGE"
-    ],
-    [
-      228,
-      76,
-      0,
-      39,
-      1,
-      "VAE"
-    ],
-    [
-      229,
-      79,
-      1,
-      87,
-      0,
-      "CLIP"
-    ],
-    [
-      230,
-      79,
-      1,
-      7,
-      0,
-      "CLIP"
-    ],
-    [
-      231,
-      31,
-      0,
-      81,
-      0,
-      "IMAGE"
-    ],
-    [
-      232,
-      79,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
-    [
-      233,
-      76,
-      0,
-      27,
-      1,
-      "VAE"
-    ],
-    [
-      234,
-      31,
-      0,
-      46,
-      0,
-      "IMAGE"
-    ],
-    [
-      235,
-      31,
-      0,
-      39,
-      0,
-      "IMAGE"
-    ],
-    [
-      236,
-      76,
-      0,
-      39,
-      1,
-      "VAE"
-    ],
-    [
-      237,
-      79,
-      1,
-      87,
-      0,
-      "CLIP"
-    ],
-    [
-      238,
-      79,
-      1,
-      7,
-      0,
-      "CLIP"
-    ],
-    [
-      239,
-      31,
-      0,
-      81,
-      0,
-      "IMAGE"
-    ],
-    [
-      240,
-      79,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
-    [
-      241,
       88,
       0,
       89,
-      0,
-      "CONDITIONING"
+      1,
+      "STRING"
     ],
     [
-      243,
+      208,
       89,
       0,
       50,
@@ -2061,15 +2100,15 @@
       "CONDITIONING"
     ],
     [
-      244,
-      76,
+      209,
+      72,
       0,
       27,
       1,
       "VAE"
     ],
     [
-      245,
+      210,
       31,
       0,
       46,
@@ -2077,7 +2116,7 @@
       "IMAGE"
     ],
     [
-      246,
+      211,
       31,
       0,
       39,
@@ -2085,32 +2124,96 @@
       "IMAGE"
     ],
     [
-      247,
-      76,
+      212,
+      72,
       0,
       39,
       1,
       "VAE"
     ],
     [
-      248,
-      79,
-      1,
-      88,
-      0,
-      "CLIP"
-    ],
-    [
-      249,
-      79,
+      213,
+      81,
       1,
       7,
       0,
       "CLIP"
     ],
     [
-      250,
-      79,
+      214,
+      81,
+      1,
+      89,
+      0,
+      "CLIP"
+    ],
+    [
+      215,
+      81,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      216,
+      72,
+      0,
+      27,
+      1,
+      "VAE"
+    ],
+    [
+      217,
+      31,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      218,
+      31,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      219,
+      72,
+      0,
+      39,
+      1,
+      "VAE"
+    ],
+    [
+      220,
+      81,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      221,
+      81,
+      1,
+      89,
+      0,
+      "CLIP"
+    ],
+    [
+      222,
+      31,
+      0,
+      83,
+      0,
+      "IMAGE"
+    ],
+    [
+      223,
+      81,
       0,
       3,
       0,
@@ -2120,11 +2223,11 @@
   "groups": [
     {
       "id": 1,
-      "title": " FX10 GGUF",
+      "title": " FX10 DM",
       "bounding": [
         -70,
         -40,
-        190,
+        160,
         40
       ],
       "color": "#00ffff",
@@ -2148,24 +2251,27 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.34285714285714286,
+      "scale": 0.30497237569060776,
       "offset": [
-        946.6666666666667,
-        511
+        1013.333333333333,
+        635.3478260869566
       ]
     },
     "node_versions": {
       "comfyui_controlnet_aux": "5a049bde9cc117dafc327cded156459289097ea1",
       "comfy-core": "0.3.13",
-      "rgthree-comfy": "5d771b8b56a343c24a26e8cea1f0c87c3d58102f",
       "cg-use-everywhere": "ce510b97d10e69d5fd0042e115ecd946890d2079",
-      "ComfyUI-GGUF": "5875c52f59baca3a9372d68c43a3775e21846fe0"
+      "rgthree-comfy": "5d771b8b56a343c24a26e8cea1f0c87c3d58102f",
+      "was-node-suite-comfyui": "056badacda52e88d29d6a65f9509cd3115ace0f2",
+      "ComfyUI-Custom-Scripts": "bc8922deff73f59311c05cef27b9d4caaf43e87b",
+      "ComfyUI-Florence2": "dffd12506d50f0540b8a7f4b36a05d4fb5fed2de",
+      "ComfyUI-Easy-Use": "3515268de557bb165cbfa7ee830710a45fabe8ef"
     },
     "ue_links": [
       {
         "downstream": 27,
         "downstream_slot": 1,
-        "upstream": "76",
+        "upstream": "72",
         "upstream_slot": 0,
         "controller": 60,
         "type": "VAE"
@@ -2189,31 +2295,39 @@
       {
         "downstream": 39,
         "downstream_slot": 1,
-        "upstream": "76",
+        "upstream": "72",
         "upstream_slot": 0,
         "controller": 60,
         "type": "VAE"
       },
       {
-        "downstream": 88,
+        "downstream": 7,
         "downstream_slot": 0,
-        "upstream": "79",
+        "upstream": "81",
         "upstream_slot": 1,
         "controller": 60,
         "type": "CLIP"
       },
       {
-        "downstream": 7,
+        "downstream": 89,
         "downstream_slot": 0,
-        "upstream": "79",
+        "upstream": "81",
         "upstream_slot": 1,
         "controller": 60,
         "type": "CLIP"
+      },
+      {
+        "downstream": 83,
+        "downstream_slot": 0,
+        "upstream": "31",
+        "upstream_slot": 0,
+        "controller": 64,
+        "type": "IMAGE"
       },
       {
         "downstream": 3,
         "downstream_slot": 0,
-        "upstream": "79",
+        "upstream": "81",
         "upstream_slot": 0,
         "controller": 60,
         "type": "MODEL"
