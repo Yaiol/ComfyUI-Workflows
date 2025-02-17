@@ -1,6 +1,6 @@
 {
-  "last_node_id": 257,
-  "last_link_id": 991,
+  "last_node_id": 258,
+  "last_link_id": 1002,
   "nodes": [
     {
       "id": 234,
@@ -116,49 +116,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 243,
-      "type": "CLIPTextEncode",
-      "pos": [
-        650,
-        460
-      ],
-      "size": [
-        425.27801513671875,
-        180.6060791015625
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            951
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_negative",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        ""
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 236,
       "type": "Bookmark (rgthree)",
       "pos": [
@@ -172,7 +129,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -198,7 +155,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -224,7 +181,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -281,80 +238,6 @@
       "widgets_values": []
     },
     {
-      "id": 241,
-      "type": "Bookmark (rgthree)",
-      "pos": [
-        1650,
-        750
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖note",
-      "properties": {},
-      "widgets_values": [
-        ".",
-        2
-      ],
-      "shape": 1
-    },
-    {
-      "id": 255,
-      "type": "Anything Everywhere3",
-      "pos": [
-        450,
-        130
-      ],
-      "size": [
-        252,
-        66
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 953,
-          "shape": 7,
-          "color_on": "#FF6E6E"
-        },
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 982,
-          "shape": 7,
-          "color_on": "#B39DDB"
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 955,
-          "shape": 7,
-          "color_on": "#FFD500"
-        }
-      ],
-      "outputs": [],
-      "title": "vmc",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
       "id": 256,
       "type": "Anything Everywhere3",
       "pos": [
@@ -368,7 +251,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -528,7 +411,7 @@
         440
       ],
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -563,81 +446,6 @@
       "bgcolor": "#ff8c00"
     },
     {
-      "id": 257,
-      "type": "DifferentialDiffusion",
-      "pos": [
-        60,
-        550
-      ],
-      "size": [
-        340,
-        30
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 981
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            982
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "differential_diffusion",
-      "properties": {
-        "Node name for S&R": "DifferentialDiffusion"
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 254,
-      "type": "DualCLIPLoaderGGUF",
-      "pos": [
-        60,
-        640
-      ],
-      "size": [
-        340,
-        110
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            955
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "gguf_dualclip",
-      "properties": {
-        "Node name for S&R": "DualCLIPLoaderGGUF"
-      },
-      "widgets_values": [
-        "clip_l.sft",
-        "city-t5 xxl-v11-Q8_K.gguf",
-        "flux"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 237,
       "type": "Bookmark (rgthree)",
       "pos": [
@@ -651,7 +459,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -696,6 +504,47 @@
       "bgcolor": "#535"
     },
     {
+      "id": 253,
+      "type": "UnetLoaderGGUFAdvanced",
+      "pos": [
+        60,
+        360
+      ],
+      "size": [
+        340,
+        130
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            981
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "gguf",
+      "properties": {
+        "Node name for S&R": "UnetLoaderGGUFAdvanced"
+      },
+      "widgets_values": [
+        "fx10-bfl-fill dev-Q8_0.gguf",
+        "default",
+        "default",
+        true
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 247,
       "type": "CLIPTextEncode",
       "pos": [
@@ -707,7 +556,7 @@
         170
       ],
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -737,45 +586,236 @@
       "bgcolor": "#353"
     },
     {
-      "id": 253,
-      "type": "UnetLoaderGGUFAdvanced",
+      "id": 243,
+      "type": "CLIPTextEncode",
+      "pos": [
+        650,
+        460
+      ],
+      "size": [
+        425.27801513671875,
+        180.6060791015625
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            951
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_negative",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 257,
+      "type": "DifferentialDiffusion",
       "pos": [
         60,
-        360
+        550
       ],
       "size": [
         340,
-        130
+        30
       ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 13,
+      "flags": {},
+      "order": 15,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 981
+        }
+      ],
       "outputs": [
         {
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            981
+            992
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
-      "title": "gguf",
+      "title": "differential_diffusion",
       "properties": {
-        "Node name for S&R": "UnetLoaderGGUFAdvanced"
+        "Node name for S&R": "DifferentialDiffusion"
+      },
+      "widgets_values": [],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 254,
+      "type": "DualCLIPLoaderGGUF",
+      "pos": [
+        60,
+        640
+      ],
+      "size": [
+        340,
+        110
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            993
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "gguf_dualclip",
+      "properties": {
+        "Node name for S&R": "DualCLIPLoaderGGUF"
       },
       "widgets_values": [
-        "fx10-bfl-fill dev-Q4_0.gguf",
-        "default",
-        "default",
-        true
+        "clip_l.sft",
+        "city-t5 xxl-v11-Q8_K.gguf",
+        "flux"
       ],
       "color": "#223",
       "bgcolor": "#335"
+    },
+    {
+      "id": 258,
+      "type": "Power Lora Loader (rgthree)",
+      "pos": [
+        60,
+        810
+      ],
+      "size": [
+        340.20001220703125,
+        118
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 992,
+          "dir": 3
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 993,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            994
+          ],
+          "shape": 3,
+          "dir": 4,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            995
+          ],
+          "shape": 3,
+          "dir": 4,
+          "slot_index": 1
+        }
+      ],
+      "title": "lora_stack",
+      "properties": {
+        "Show Strengths": "Single Strength"
+      },
+      "widgets_values": [
+        null,
+        {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        null,
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 255,
+      "type": "Anything Everywhere3",
+      "pos": [
+        450,
+        130
+      ],
+      "size": [
+        252,
+        66
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 953,
+          "shape": 7,
+          "color_on": "#FF6E6E"
+        },
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 994,
+          "shape": 7,
+          "color_on": "#B39DDB"
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 995,
+          "shape": 7,
+          "color_on": "#FFD500"
+        }
+      ],
+      "outputs": [],
+      "title": "ew vmc",
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
     },
     {
       "id": 242,
@@ -786,7 +826,7 @@
       ],
       "size": [
         350,
-        262
+        474
       ],
       "flags": {},
       "order": 20,
@@ -849,7 +889,7 @@
         100
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1121,14 +1161,6 @@
       "VAE"
     ],
     [
-      955,
-      254,
-      0,
-      255,
-      2,
-      "CLIP"
-    ],
-    [
       959,
       244,
       0,
@@ -1313,14 +1345,6 @@
       "MODEL"
     ],
     [
-      982,
-      257,
-      0,
-      255,
-      1,
-      "MODEL"
-    ],
-    [
       983,
       4,
       1,
@@ -1391,6 +1415,94 @@
       242,
       0,
       "MODEL"
+    ],
+    [
+      992,
+      257,
+      0,
+      258,
+      0,
+      "MODEL"
+    ],
+    [
+      993,
+      254,
+      0,
+      258,
+      1,
+      "CLIP"
+    ],
+    [
+      994,
+      258,
+      0,
+      255,
+      1,
+      "MODEL"
+    ],
+    [
+      995,
+      258,
+      1,
+      255,
+      2,
+      "CLIP"
+    ],
+    [
+      996,
+      249,
+      0,
+      244,
+      1,
+      "VAE"
+    ],
+    [
+      997,
+      249,
+      0,
+      250,
+      2,
+      "VAE"
+    ],
+    [
+      998,
+      4,
+      0,
+      250,
+      3,
+      "IMAGE"
+    ],
+    [
+      999,
+      4,
+      1,
+      250,
+      4,
+      "MASK"
+    ],
+    [
+      1000,
+      258,
+      1,
+      247,
+      0,
+      "CLIP"
+    ],
+    [
+      1001,
+      258,
+      1,
+      243,
+      0,
+      "CLIP"
+    ],
+    [
+      1002,
+      258,
+      0,
+      242,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
@@ -1398,8 +1510,8 @@
       "id": 1,
       "title": " FX10 GGUF",
       "bounding": [
-        -38.846168518066406,
-        -63.05488967895508,
+        -40,
+        -60,
         190,
         40
       ],
@@ -1424,12 +1536,78 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.876922695000015,
+      "scale": 0.5520000000000002,
       "offset": [
-        -458.0531477933371,
-        -155.93084076505733
+        500.45398628789735,
+        163.07395811876654
       ]
-    }
+    },
+    "node_versions": {
+      "comfy-core": "0.3.13",
+      "cg-use-everywhere": "ce510b97d10e69d5fd0042e115ecd946890d2079",
+      "ComfyUI-GGUF": "5875c52f59baca3a9372d68c43a3775e21846fe0",
+      "rgthree-comfy": "5d771b8b56a343c24a26e8cea1f0c87c3d58102f"
+    },
+    "ue_links": [
+      {
+        "downstream": 244,
+        "downstream_slot": 1,
+        "upstream": "249",
+        "upstream_slot": 0,
+        "controller": 255,
+        "type": "VAE"
+      },
+      {
+        "downstream": 250,
+        "downstream_slot": 2,
+        "upstream": "249",
+        "upstream_slot": 0,
+        "controller": 255,
+        "type": "VAE"
+      },
+      {
+        "downstream": 250,
+        "downstream_slot": 3,
+        "upstream": "4",
+        "upstream_slot": 0,
+        "controller": 256,
+        "type": "IMAGE"
+      },
+      {
+        "downstream": 250,
+        "downstream_slot": 4,
+        "upstream": "4",
+        "upstream_slot": 1,
+        "controller": 256,
+        "type": "MASK"
+      },
+      {
+        "downstream": 247,
+        "downstream_slot": 0,
+        "upstream": "258",
+        "upstream_slot": 1,
+        "controller": 255,
+        "type": "CLIP"
+      },
+      {
+        "downstream": 243,
+        "downstream_slot": 0,
+        "upstream": "258",
+        "upstream_slot": 1,
+        "controller": 255,
+        "type": "CLIP"
+      },
+      {
+        "downstream": 242,
+        "downstream_slot": 0,
+        "upstream": "258",
+        "upstream_slot": 0,
+        "controller": 255,
+        "type": "MODEL"
+      }
+    ],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0
   },
   "version": 0.4
 }
