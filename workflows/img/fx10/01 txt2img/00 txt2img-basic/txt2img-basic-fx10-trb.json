@@ -1,6 +1,6 @@
 {
   "last_node_id": 88,
-  "last_link_id": 251,
+  "last_link_id": 256,
   "nodes": [
     {
       "id": 43,
@@ -94,7 +94,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -166,7 +166,7 @@
         130
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 4,
       "inputs": [
         {
@@ -206,7 +206,7 @@
         130
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -240,6 +240,7 @@
           "slot_index": 1
         }
       ],
+      "title": "turbo_model",
       "properties": {
         "Node name for S&R": "LoraLoader"
       },
@@ -320,7 +321,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -359,7 +360,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -387,32 +388,6 @@
       "widgets_values": []
     },
     {
-      "id": 45,
-      "type": "Bookmark (rgthree)",
-      "pos": [
-        1250,
-        170
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖5 ouput base",
-      "properties": {},
-      "widgets_values": [
-        "5",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
       "id": 51,
       "type": "VAEDecode",
       "pos": [
@@ -426,7 +401,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -469,7 +444,7 @@
         110
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -495,182 +470,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 77,
-      "type": "Anything Everywhere",
-      "pos": [
-        1250,
-        130
-      ],
-      "size": [
-        239.40000915527344,
-        26
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "INT",
-          "type": "*",
-          "shape": 7,
-          "color_on": "",
-          "link": 187
-        }
-      ],
-      "outputs": [],
-      "title": "ew seed",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 49,
-      "type": "PerturbedAttentionGuidance",
-      "pos": [
-        850,
-        380
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "shape": 3,
-          "links": [
-            97
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "pag",
-      "properties": {
-        "Node name for S&R": "PerturbedAttentionGuidance"
-      },
-      "widgets_values": [
-        3
-      ]
-    },
-    {
-      "id": 33,
-      "type": "KSampler",
-      "pos": [
-        850,
-        500
-      ],
-      "size": [
-        350,
-        474
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 97
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": null
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": null
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 135,
-          "slot_index": 3
-        },
-        {
-          "name": "seed",
-          "type": "INT",
-          "widget": {
-            "name": "seed"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "shape": 3,
-          "links": [
-            101
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "ksampler",
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        25192227,
-        "increment",
-        12,
-        1,
-        "euler",
-        "simple",
-        1
-      ]
-    },
-    {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": [
-        1250,
-        280
-      ],
-      "size": [
-        350,
-        400
-      ],
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 102
-        }
-      ],
-      "outputs": [],
-      "title": "output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%seed.seed%-0_%date:yyMMdd-hhmmss%_T2I-BAS_FX10_TR"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": [
@@ -682,7 +481,7 @@
         270
       ],
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -725,7 +524,7 @@
         166
       ],
       "flags": {},
-      "order": 16,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -779,41 +578,163 @@
       "bgcolor": "#335"
     },
     {
-      "id": 76,
-      "type": "Seed Everywhere",
+      "id": 49,
+      "type": "PerturbedAttentionGuidance",
       "pos": [
         850,
         230
       ],
       "size": [
         350,
-        82
+        60
       ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
+      "flags": {},
+      "order": 7,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        }
+      ],
       "outputs": [
         {
-          "name": "INT",
-          "type": "INT",
+          "name": "MODEL",
+          "type": "MODEL",
+          "shape": 3,
           "links": [
-            187
+            97
           ],
           "slot_index": 0
         }
       ],
-      "title": "seed",
+      "title": "pag",
       "properties": {
-        "Node name for S&R": "Seed Everywhere",
-        "group_restricted": 0,
-        "color_restricted": 0
+        "Node name for S&R": "PerturbedAttentionGuidance"
+      },
+      "widgets_values": [
+        3
+      ]
+    },
+    {
+      "id": 45,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        1250,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 ouput",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": [
+        1250,
+        280
+      ],
+      "size": [
+        350,
+        400
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 102
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%seed.seed%-0_%date:yyMMdd-hhmmss%_T2I-BAS_FX10_TRB"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 33,
+      "type": "KSampler",
+      "pos": [
+        850,
+        350
+      ],
+      "size": [
+        350,
+        474
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 97
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 135,
+          "slot_index": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "shape": 3,
+          "links": [
+            101
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "Node name for S&R": "KSampler"
       },
       "widgets_values": [
         25191512,
-        "fixed"
+        "randomize",
+        12,
+        1,
+        "euler",
+        "simple",
+        1
       ]
     },
     {
@@ -828,7 +749,7 @@
         100
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -836,7 +757,7 @@
         "text": ""
       },
       "widgets_values": [
-        "txt2img-basic-fx10-tr\n==========================================================\nFX10 : Flux.1\nLDM  : Turbo\nID   : T2I-BAS_FX10_LDM"
+        "txt2img-basic-fx10-trb\n==========================================================\nFX10 : Flux.1\nTRB  : Turbo\nID   : T2I-BAS_FX10_LDM"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1324,14 +1245,6 @@
       "CONDITIONING"
     ],
     [
-      187,
-      76,
-      0,
-      77,
-      0,
-      "INT"
-    ],
-    [
       207,
       58,
       0,
@@ -1602,6 +1515,46 @@
       6,
       0,
       "CLIP"
+    ],
+    [
+      252,
+      20,
+      2,
+      51,
+      1,
+      "VAE"
+    ],
+    [
+      253,
+      58,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      254,
+      58,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      255,
+      6,
+      0,
+      33,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      256,
+      57,
+      0,
+      33,
+      2,
+      "CONDITIONING"
     ]
   ],
   "groups": [
@@ -1620,7 +1573,7 @@
     },
     {
       "id": 2,
-      "title": " FX10 TR",
+      "title": " FX10 TRB",
       "bounding": [
         310,
         -40,
@@ -1635,10 +1588,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.44999999999999996,
+      "scale": 0.4784386617100371,
       "offset": [
-        830.5555555555557,
-        350.66666666666674
+        733.3372183372185,
+        339.33333333333337
       ]
     },
     "ue_links": [
@@ -1649,6 +1602,14 @@
         "upstream_slot": 2,
         "controller": 53,
         "type": "VAE"
+      },
+      {
+        "downstream": 6,
+        "downstream_slot": 0,
+        "upstream": "58",
+        "upstream_slot": 1,
+        "controller": 53,
+        "type": "CLIP"
       },
       {
         "downstream": 33,
@@ -1673,22 +1634,6 @@
         "upstream_slot": 0,
         "controller": 75,
         "type": "CONDITIONING"
-      },
-      {
-        "downstream": 33,
-        "downstream_slot": 4,
-        "upstream": "76",
-        "upstream_slot": 0,
-        "controller": 76,
-        "type": "INT"
-      },
-      {
-        "downstream": 6,
-        "downstream_slot": 0,
-        "upstream": "58",
-        "upstream_slot": 1,
-        "controller": 53,
-        "type": "CLIP"
       }
     ],
     "VHS_latentpreview": false,
